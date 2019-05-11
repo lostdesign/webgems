@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    h1 CSS
+    h1 Design
     .cards
       template(v-for='resource in resources')
         Card(:title='resource.title' :desc='resource.desc' :url='resource.url')
@@ -14,14 +14,9 @@ export default {
     return {
       resources: [
         {
-          title: 'Flexbox froggy',
-          desc: 'A game to learn Flexbox',
-          url: 'https://flexboxfroggy.com'
-        },
-        {
-          title: 'CSS Gridgarden',
-          desc: 'A game to learn Grid',
-          url: 'https://cssgridgarden.com'
+          title: 'Undraw',
+          desc: 'Free vector illustrations for your website.',
+          url: 'https://undraw.co'
         },
       ]
     }

@@ -1,10 +1,39 @@
 <template lang="pug">
-  h1 HTML resources
+  div
+    h1 HTML
+    .cards
+      template(v-for='resource in resources')
+        Card(:title='resource.title' :desc='resource.desc' :url='resource.url')
 </template>
 
 <script>
-export default {}
+import Card from '../../components/Card'
+
+export default {
+  data() {
+    return {
+      resources: [
+        {
+          title: 'HTML ELEMENTS',
+          desc: 'All the HTML elemens you can use. There is more than just a div :)',
+          url: 'https://developer.mozilla.org/de/docs/Web/HTML/Element'
+        },
+      ]
+    }
+  },
+  components: {
+    Card
+  }
+}
 </script>
 
 <style lang="scss" scoped>
+h1 {
+  margin-bottom: 2rem;
+}
+.cards {
+  display:grid;
+  grid-template-columns: repeat(4, 20%);
+  grid-gap: 3rem;
+}
 </style>

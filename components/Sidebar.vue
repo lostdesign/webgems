@@ -1,0 +1,25 @@
+<template lang="pug">
+  aside.sidebar
+    nuxt-link(to="/html") HTML
+    nuxt-link(to="/css") CSS
+    nuxt-link(to="/javascript") Javascript
+    nuxt-link(to="/design") Designs
+    nuxt-link(to="/devops") Devops
+    nuxt-link(to="/servers") Servers
+    nuxt-link(to="/communities") Communities
+</template>
+
+
+<style lang="scss" scoped>
+.sidebar {
+  padding-left: .5rem;
+  font-size: 14px;
+  margin: .5rem;
+
+  a {
+    display: block;
+    padding: 0 1rem 1rem 1rem;
+    text-decoration: none;
+  }
+}
+</style>

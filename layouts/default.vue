@@ -1,11 +1,32 @@
-<template>
-  <div>
-    <nuxt />
-  </div>
+<template lang="pug">
+  .layout
+    Logo
+    Search
+    Sidebar
+    nuxt.content
 </template>
 
-<style>
+<script>
+import Logo from '../components/Logo'
+import Search from '../components/Search'
+import Sidebar from '../components/Sidebar'
+
+export default {
+  components: {
+    Logo,
+    Search,
+    Sidebar
+  }
+}
+</script>
+
+
+<style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,900');
+
+body {
+  margin: 0;
+}
 
 html {
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -17,41 +38,38 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  color: #22292F;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+a {
+  color: #3490DC;
   text-decoration: none;
-  padding: 10px 30px;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+.layout {
+  display: grid;
+  grid-template-columns: 4vw 4vw 92vw;
+  grid-gap: 1rem;
+  margin-top: 1rem;
+  grid-template-areas:
+    'logo logo search'
+    '. . .'
+    'sidebar sidebar content';
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+.logo {
+  grid-area: logo;
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.search {
+  grid-area: search;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
 }
 </style>
