@@ -1,5 +1,5 @@
 <template lang="pug">
-  input.search(placeholder="Search")
+  input.search(placeholder="Search (does not work currently, sorry)")
 </template>
 
 <style lang="scss">

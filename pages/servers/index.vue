@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    h1 Design
+    h1 Servers
     .cards
       template(v-for='resource in resources')
         Card(:title='resource.title' :desc='resource.desc' :url='resource.url')
@@ -14,20 +14,21 @@ export default {
     return {
       resources: [
         {
-          title: 'Undraw',
-          desc: 'Free vector illustrations for your website.',
-          url: 'https://undraw.co'
+          title: 'Netlify',
+          desc: 'Free static hosting with privacy in mind!',
+          url: 'https://netlify.com'
         },
         {
-          title: 'Practical UI tips',
-          desc: '7 Tips to boost your UI design.',
-          url: 'https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886'
+          title: 'Github Pages',
+          desc: 'Free static hosting by Github.',
+          url: 'https://pages.github.com'
         },
         {
-          title: 'UI tips',
-          desc: 'Design tips by Steve Schoger',
-          url: 'https://twitter.com/i/moments/880688233641848832'
+          title: 'Namecheap',
+          desc: 'Domains for your projects',
+          url: 'https://namecheap.com'
         },
+
       ]
     }
   },

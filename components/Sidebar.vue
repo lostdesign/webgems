@@ -4,9 +4,9 @@
     nuxt-link(to="/css") CSS
     nuxt-link(to="/javascript") Javascript
     nuxt-link(to="/design") Designs
-    nuxt-link(to="/devops") Devops
     nuxt-link(to="/servers") Servers
     nuxt-link(to="/communities") Communities
+    small And many more to come :)
 </template>
 
 
