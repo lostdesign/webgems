@@ -48,7 +48,7 @@ a {
 
 .layout {
   display: grid;
-  grid-template-columns: 4vw 4vw 92vw;
+  grid-template-columns: 100px 100px auto;
   grid-gap: 1rem;
   margin-top: 1rem;
   grid-template-areas:
@@ -71,5 +71,31 @@ a {
 
 .content {
   grid-area: content;
+  width: 90%;
+}
+
+.cards {
+  display:grid;
+  grid-template-columns: repeat(4, 20%);
+  grid-gap: 3rem;
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+ {
+
+  .cards {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+  .layout {
+    grid-template-columns: 50px 50px auto;
+    grid-template-areas:
+    'logo logo search'
+    '. . .'
+    'sidebar sidebar content';
+  }
 }
 </style>

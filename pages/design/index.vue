@@ -41,9 +41,4 @@ export default {
 h1 {
   margin-bottom: 2rem;
 }
-.cards {
-  display:grid;
-  grid-template-columns: repeat(4, 20%);
-  grid-gap: 3rem;
-}
 </style>

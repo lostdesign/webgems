@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    h1 Javascript
+    h1 Frontend
     .cards
       template(v-for='resource in resources')
         Card(:title='resource.title' :desc='resource.desc' :url='resource.url')
@@ -14,14 +14,9 @@ export default {
     return {
       resources: [
         {
-          title: 'Javascript30',
-          desc: 'Free video courses about javascript. Made by WesBos',
-          url: 'https://javascript30.com'
-        },
-        {
-          title: 'Learn vanilla js',
-          desc: 'A vanilla JS roadmap, along with learning resources and project ideas to help you get started.',
-          url: 'https://learnvanillajs.com/'
+          title: 'Frontend Handbook 2019',
+          desc: 'A lovely guide made by frontendmasters.',
+          url: 'https://frontendmasters.com/books/front-end-handbook/2019/'
         },
       ]
     }
@@ -36,5 +31,4 @@ export default {
 h1 {
   margin-bottom: 2rem;
 }
-
 </style>

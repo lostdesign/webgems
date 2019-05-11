@@ -4,7 +4,7 @@
       p {{title}}
     .card--body
       p {{desc}}
-      a(:href="url") {{url}}
+      a(:href="url" target='_blank') {{url}}
 </template>
 
 <script>
