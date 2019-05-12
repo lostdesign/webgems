@@ -17,7 +17,8 @@ export default {
 <style lang="scss" scoped>
 .card {
   background: #eee;
-  border-radius: .5rem;
+  border-radius: .3rem;
+  padding: 1rem;
 
   &--title {
     font-weight: 900;
