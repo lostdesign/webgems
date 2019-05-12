@@ -5,7 +5,7 @@
     nuxt-link(to="/javascript") Javascript
     nuxt-link(to="/design") Designs
     nuxt-link(to="/servers") Servers
-    nuxt-link(to="/communities") Communities
+    nuxt-link(to="/tools") Tools
     small And many more to come :)
 </template>
 

@@ -7,8 +7,8 @@ div
     p As of now, it's a curated list of resources for developers and designers.
     p If you want to suggest a resource, go ahead and contact me&nbsp;
       a(href="https://twitter.com/lostdesign") @lostdesign&nbsp;
-      | or join&nbsp;
-      a(href="https://discord.gg/Bjgjdrr") my discord server
+      //- | or join&nbsp;
+      //- a(href="https://discord.gg/Bjgjdrr") my discord server
 
 </template>
 
