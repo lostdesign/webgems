@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    h1 Servers
+    h1 Tools
     .cards
       template(v-for='resource in resources')
         Card(:title='resource.title' :desc='resource.desc' :url='resource.url')
@@ -17,6 +17,11 @@ export default {
           title: 'JSON Generator',
           desc: 'Random JSON generator for your project - because debugging without data, does not make sense!',
           url: 'https://www.json-generator.com'
+        },
+        {
+          title: 'Fathom',
+          desc: 'Fathom Analytics provides simple, useful website stats without tracking or storing personal data of your users.',
+          url: 'https://usefathom.com'
         },
       ]
     }

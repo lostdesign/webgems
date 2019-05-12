@@ -23,6 +23,11 @@ export default {
           desc: 'A vanilla JS roadmap, along with learning resources and project ideas to help you get started.',
           url: 'https://learnvanillajs.com/'
         },
+        {
+          title: 'Javascript Info',
+          desc: 'How it\'s done now. From the basics to advanced topics with simple, but detailed explanations.',
+          url: 'https://javascript.info/'
+        },
       ]
     }
   },

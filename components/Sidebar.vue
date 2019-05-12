@@ -1,8 +1,10 @@
 <template lang="pug">
   aside.sidebar
+    nuxt-link(to="/general") General
     nuxt-link(to="/html") HTML
     nuxt-link(to="/css") CSS
     nuxt-link(to="/javascript") Javascript
+    nuxt-link(to="/php") PHP
     nuxt-link(to="/design") Designs
     nuxt-link(to="/servers") Servers
     nuxt-link(to="/tools") Tools
