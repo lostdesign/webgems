@@ -28,6 +28,16 @@ export default {
           desc: 'Design tips by Steve Schoger',
           url: 'https://twitter.com/i/moments/880688233641848832'
         },
+        {
+          title: 'Colorhunt',
+          desc: 'Color Hunt is a free and open platform for color inspiration with thousands of trendy hand-picked color palettes',
+          url: 'http://colorhunt.co/'
+        },
+        {
+          title: 'Flatuicolorpicker',
+          desc: 'Flatuicolorpicker is a project digging the Flat Color Picker which gives you the perfect colors for flat designs',
+          url: 'http://www.flatuicolorpicker.com'
+        },
       ]
     }
   },

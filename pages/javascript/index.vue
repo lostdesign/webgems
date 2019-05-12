@@ -28,6 +28,11 @@ export default {
           desc: 'How it\'s done now. From the basics to advanced topics with simple, but detailed explanations.',
           url: 'https://javascript.info/'
         },
+        {
+          title: '30 Seconds of Code',
+          desc: 'A curated collection of useful JavaScript snippets that you can understand in 30 seconds or less.',
+          url: 'https://30secondsofcode.org'
+        },
       ]
     }
   },

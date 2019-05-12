@@ -14,7 +14,7 @@ export default {
     return {
       resources: [
         {
-          title: 'Flexbox froggy',
+          title: 'Flexbox Froggy',
           desc: 'A game to learn Flexbox',
           url: 'https://flexboxfroggy.com'
         },
@@ -22,6 +22,11 @@ export default {
           title: 'CSS Gridgarden',
           desc: 'A game to learn Grid',
           url: 'https://cssgridgarden.com'
+        },
+        {
+          title: '30 Seconds of Code',
+          desc: 'A curated collection of useful CSS snippets you can understand in 30 seconds or less.',
+          url: 'https://30-seconds.github.io/30-seconds-of-css/'
         },
       ]
     }
