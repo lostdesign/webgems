@@ -23,6 +23,11 @@ export default {
           desc: 'Tutorials, guides, and best practices for building the next generation of web experiences.',
           url: 'https://developers.google.com/web/'
         },
+        {
+          title: 'Google Chrome Youtube',
+          desc: 'Making the web more awesome - latest news about google chrome',
+          url: 'https://www.youtube.com/channel/UCnUYZLuoy1rq1aVMwx4aTzw'
+        },
       ]
     }
   },
