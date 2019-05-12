@@ -77,7 +77,7 @@ a {
 .cards {
   display:grid;
   grid-template-columns: repeat(4, 20%);
-  grid-gap: 3rem;
+  grid-gap: 2rem;
 }
 
 @media only screen
@@ -88,7 +88,7 @@ a {
   .cards {
     display:grid;
     grid-template-columns: 1fr;
-    grid-gap: 3rem;
+    grid-gap: 2rem;
   }
   .layout {
     grid-template-columns: 50px 50px auto;
