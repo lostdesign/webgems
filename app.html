@@ -4,7 +4,6 @@
     {{ HEAD }}
   </head>
   <body {{ BODY_ATTRS }}>
-    {{ APP }}
     <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
     <script>
       (function (f, a, t, h, o, m) {
@@ -22,5 +21,6 @@
       fathom('trackPageview');
     </script>
     <!-- / Fathom -->
+    {{ APP }}
   </body>
 </html>
