@@ -33,6 +33,11 @@ export default {
           desc: 'A curated collection of useful JavaScript snippets that you can understand in 30 seconds or less.',
           url: 'https://30secondsofcode.org'
         },
+        {
+          title: 'JS Tips',
+          desc: 'JS Tips is a collection of useful daily JavaScript tips that will allow you to improve your code writing',
+          url: 'https://www.jstips.co'
+        },
       ]
     }
   },

@@ -28,6 +28,11 @@ export default {
           desc: 'A curated collection of useful CSS snippets you can understand in 30 seconds or less.',
           url: 'https://30-seconds.github.io/30-seconds-of-css/'
         },
+        {
+          title: 'BEM naming convention',
+          desc: 'Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development',
+          url: 'https://getbem.com/'
+        },
       ]
     }
   },
