@@ -8,6 +8,7 @@
     nuxt-link(to="/design") Designs
     nuxt-link(to="/servers") Servers
     nuxt-link(to="/tools") Tools
+    nuxt-link(to="/daily") Daily
     small And many more to come :)
 </template>
 
