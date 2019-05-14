@@ -67,7 +67,7 @@ h1 {
 
 .layout {
   display: grid;
-  grid-template-columns: fit-content(150px) auto;
+  grid-template-columns: fit-content(200px) auto;
   grid-gap: 1rem;
   grid-template-areas:
     'logo .'
