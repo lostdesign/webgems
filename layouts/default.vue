@@ -80,9 +80,6 @@ a {
 
 
 @media (max-width: 600px) {
-  body {
-    margin: 1rem;
-  }
   .layout {
     display: grid;
     grid-template-columns: auto;
