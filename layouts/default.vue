@@ -49,13 +49,13 @@ a {
 
 .layout {
   display: grid;
-  grid-template-columns: 100px 100px auto;
+  grid-template-columns: 20vw auto;
   grid-gap: 1rem;
   margin-top: 1rem;
   grid-template-areas:
-    'logo logo search'
-    '. . .'
-    'sidebar sidebar content';
+    'logo search'
+    '. .'
+    'sidebar content';
 }
 
 .logo {
@@ -81,4 +81,18 @@ a {
   grid-gap: 2rem;
 }
 
+
+@media (max-width: 500px) {
+  .layout {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+    margin-top: 1rem;
+    grid-template-areas:
+      'logo'
+      'search'
+      'sidebar'
+      'content';
+  }
+}
 </style>
