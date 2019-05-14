@@ -1,18 +1,17 @@
 <template lang="pug">
-  .card(@click="goToSite(url)")
-    .card--title
-      p {{title}}
+  .card(@click="goToSite(title,url)")
+    p.card--title {{title}}
     .card--body
       p {{desc}}
-      a(:href="url" target='_blank') Visit Website
+      a(:href="url" :target='title' rel='noreferrer') Visit Website
 </template>
 
 <script>
 export default {
   props: ['title', 'desc', 'url'],
   methods: {
-    goToSite(url){
-      location.href = url
+    goToSite(title,url){
+      window.open(url, title, 'noopener')
     }
   }
 }
@@ -25,8 +24,6 @@ export default {
   border-radius: .3rem;
   padding: 1rem;
   transition: .2s ease-in-out;
-  display:flex;
-  flex-direction: column;
 
   &:hover {
     transform: scale(1.002);
@@ -37,13 +34,14 @@ export default {
   }
 
   &--title {
-    p{
-      font-weight: 900;
-      margin: 0;
-    }
+    font-weight: 900;
+    margin: 0;
   }
 
   &--body {
+    display:flex;
+    flex-direction: column;
+
     p {
       font-size: 13px;
       color: white;
@@ -52,9 +50,9 @@ export default {
       letter-spacing: .5px;
     }
     a {
-     font-size: 12px;
-     line-height: 1;
-     align-self: bottom;
+      font-size: 12px;
+      line-height: 1;
+      align-self: flex-end;
     }
   }
 }
