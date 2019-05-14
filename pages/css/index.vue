@@ -33,6 +33,11 @@ export default {
           desc: 'Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development',
           url: 'https://getbem.com/'
         },
+        {
+          title: 'CSS Triggers',
+          desc: 'Overview of css attributes which trigger either layout, paint or composite. Good to know if you want to learn more about css performance.',
+          url: 'https://csstriggers.com/'
+        },
       ]
     }
   },
