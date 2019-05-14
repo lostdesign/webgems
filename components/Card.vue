@@ -1,11 +1,11 @@
 <template lang="pug">
-  .card(:class="checkReference()")
+  .card(:class="{'card--active': isReferenced}")
     //- a.card--link(:href="url" :target='title' rel='noreferrer')
     p.card--title {{title}}
     p.card--description {{desc}}
     div
-      a.card--reference(@click='createCopyUrl') Copy reference
-      br
+      //- a.card--reference(@click='createCopyUrl') Copy reference
+      //- br
       a(:href="url" :target='title' rel='noreferrer') Visit website
 </template>
 
@@ -26,9 +26,9 @@ export default {
         const query = this.$route.hash.substring(1);
         const title = this.$props.title.replace(/ /g, '');
 
-        return {
-          'card--active': title.toLowerCase() === query
-        }
+        title.toLowerCase() === query
+          ? this.isReferenced = true
+          : this.isReferenced = false
       }
     },
   },
@@ -50,7 +50,7 @@ export default {
   position: relative;
 
   &--active{
-    border: 1px solid red !important;
+    box-shadow:inset 0px 0px 0px 3px #08e5ff;
   }
 
   &--reference {
