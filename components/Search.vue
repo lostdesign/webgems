@@ -4,7 +4,7 @@
 
 <style lang="scss">
 input {
-  padding: .7rem 2rem .7rem 2rem;
+  padding: .5rem 1.5rem .5rem 1.5rem;
   border-radius: .3rem;
   background: #eee;
   font-size:12px;
