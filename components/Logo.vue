@@ -26,7 +26,7 @@ export default {
     cursor: pointer;
   }
   img {
-    max-width: 35px;
+    width: 35px;
   }
   p {
     margin: 0 0 0 .3rem;
