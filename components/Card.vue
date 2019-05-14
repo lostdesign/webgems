@@ -11,7 +11,7 @@ export default {
   props: ['title', 'desc', 'url'],
   methods: {
     goToSite(title,url){
-      window.open(url, title, 'noopener')
+      window.open(url, title)
     }
   }
 }
@@ -41,6 +41,7 @@ export default {
   &--body {
     display:flex;
     flex-direction: column;
+    justify-content: space-between;
 
     p {
       font-size: 13px;
