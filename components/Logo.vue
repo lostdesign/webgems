@@ -26,11 +26,11 @@ export default {
     cursor: pointer;
   }
   img {
-    max-width:30px;
+    max-width: 35px;
   }
   p {
     margin: 0 0 0 .3rem;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
