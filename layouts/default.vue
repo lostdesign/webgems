@@ -44,6 +44,7 @@ html {
 a {
   color: #3490DC;
   text-decoration: none;
+  overflow-wrap: break-word;
 }
 
 .layout {
@@ -76,26 +77,8 @@ a {
 
 .cards {
   display:grid;
-  grid-template-columns: repeat(4, 20%);
+  grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
   grid-gap: 2rem;
 }
 
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
- {
-
-  .cards {
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-  }
-  .layout {
-    grid-template-columns: 50px 50px auto;
-    grid-template-areas:
-    'logo logo search'
-    '. . .'
-    'sidebar sidebar content';
-  }
-}
 </style>
