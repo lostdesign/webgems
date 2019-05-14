@@ -25,7 +25,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,900');
 
 body {
-  margin: 0;
+  margin: .5rem;
 }
 
 html {
@@ -49,12 +49,10 @@ a {
 
 .layout {
   display: grid;
-  grid-template-columns: 20vw auto;
+  grid-template-columns: 15vw auto;
   grid-gap: 1rem;
-  margin-top: 1rem;
   grid-template-areas:
     'logo search'
-    '. .'
     'sidebar content';
 }
 
@@ -72,7 +70,6 @@ a {
 
 .content {
   grid-area: content;
-  width: 90%;
 }
 
 .cards {
@@ -82,7 +79,10 @@ a {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  body {
+    margin: 1rem;
+  }
   .layout {
     display: grid;
     grid-template-columns: auto;

@@ -4,10 +4,10 @@
 
 <style lang="scss">
 input {
-  width: 50%;
   padding: .7rem 2rem .7rem 2rem;
-  border-radius: .5rem;
+  border-radius: .3rem;
   background: #eee;
+  font-size:12px;
 
   &:focus {
     outline:none;

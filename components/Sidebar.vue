@@ -1,28 +1,34 @@
 <template lang="pug">
-  aside.sidebar
-    nuxt-link(to="/general") General
-    nuxt-link(to="/html") HTML
-    nuxt-link(to="/css") CSS
-    nuxt-link(to="/javascript") Javascript
-    nuxt-link(to="/php") PHP
-    nuxt-link(to="/design") Designs
-    nuxt-link(to="/servers") Servers
-    nuxt-link(to="/tools") Tools
-    nuxt-link(to="/daily") Daily
-    small And many more to come :)
+  aside
+    .sidebar
+      nuxt-link(to="/general") General
+      nuxt-link(to="/html") HTML
+      nuxt-link(to="/css") CSS
+      nuxt-link(to="/javascript") Javascript
+      nuxt-link(to="/php") PHP
+      nuxt-link(to="/design") Designs
+      nuxt-link(to="/servers") Servers
+      nuxt-link(to="/tools") Tools
+      nuxt-link(to="/daily") Daily
 </template>
 
 
 <style lang="scss" scoped>
 .sidebar {
-  padding-left: .5rem;
+  display:grid;
+  grid-template-columns: 1fr;
   font-size: 14px;
-  margin: .5rem;
 
   a {
-    display: block;
-    padding: 0 1rem 1rem 1rem;
+    padding: .5rem 1rem .5rem 1rem;
     text-decoration: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(6rem,1fr));
   }
 }
 </style>
