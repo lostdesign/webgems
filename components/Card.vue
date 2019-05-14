@@ -1,9 +1,12 @@
 <template lang="pug">
   .card(:class="checkReference")
-    a.card--link(:href="url" :target='title' rel='noreferrer')
+    //- a.card--link(:href="url" :target='title' rel='noreferrer')
     p.card--title {{title}}
     p.card--description {{desc}}
-    a(:href="url" :target='title' rel='noreferrer') Visit Website
+    div
+      a.card--reference(@click='createCopyUrl') Copy reference
+      br
+      a(:href="url" :target='title' rel='noreferrer') Visit website
 </template>
 
 <script>
@@ -20,11 +23,15 @@ export default {
         const query = this.$route.hash.substring(1);
         const title = this.$props.title.replace(/ /g, '');
 
-        console.log(title.toLowerCase(), query)
         return {
           'card--active': title.toLowerCase() === query
         }
       }
+    },
+  },
+  methods:{
+    createCopyUrl() {
+      this.$router.push(`${this.$router.history.current.path}#${this.$props.title.replace(/ /g, '').toLowerCase()}`)
     }
   },
 }
@@ -45,6 +52,10 @@ export default {
     border: 1px solid red !important;
   }
 
+  &--reference {
+    cursor: pointer;
+  }
+
   &--link {
     position: absolute;
     left: 0;
@@ -53,12 +64,12 @@ export default {
     bottom: 0;
   }
 
-  &:hover {
-    transform: scale(1.002);
-    background: #008190;
-    cursor: pointer;
-    box-shadow: 0 4px 6px -1px rgba(45, 55, 72, 0.1), 0 2px 4px -1px rgba(45, 55, 72, 0.06);
-  }
+  // &:hover {
+  //   transform: scale(1.002);
+  //   background: #008190;
+  //   cursor: pointer;
+  //   box-shadow: 0 4px 6px -1px rgba(45, 55, 72, 0.1), 0 2px 4px -1px rgba(45, 55, 72, 0.06);
+  // }
 
   &--title {
     font-weight: 900;
