@@ -1,5 +1,5 @@
 <template lang="pug">
-  .card
+  .card(@click="goToSite(url)")
     .card--title
       p {{title}}
     .card--body
@@ -9,7 +9,12 @@
 
 <script>
 export default {
-  props: ['title', 'desc', 'url']
+  props: ['title', 'desc', 'url'],
+  methods: {
+    goToSite(url){
+      location.href = url
+    }
+  }
 }
 </script>
 
@@ -19,6 +24,17 @@ export default {
   background: #2D3748;
   border-radius: .3rem;
   padding: 1rem;
+  transition: .2s ease-in-out;
+  display:flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: scale(1.002);
+    background: #008190;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(45, 55, 72, 0.1), 0 2px 4px -1px rgba(45, 55, 72, 0.06);
+
+  }
 
   &--title {
     p{
@@ -38,6 +54,7 @@ export default {
     a {
      font-size: 12px;
      line-height: 1;
+     align-self: bottom;
     }
   }
 }
