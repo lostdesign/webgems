@@ -35,8 +35,13 @@ export default {
         },
         {
           title: 'JS Tips',
-          desc: 'JS Tips is a collection of useful daily JavaScript tips that will allow you to improve your code writing',
+          desc: 'JS Tips is a collection of useful daily JavaScript tips that will allow you to improve your code writing.',
           url: 'https://www.jstips.co'
+        },
+        {
+          title: 'YDKJS',
+          desc: 'This is a free series of books diving deep into the core mechanisms of the JavaScript language. The first edition of the series is now complete.',
+          url: 'https://github.com/getify/You-Dont-Know-JS'
         },
       ]
     }
