@@ -1,5 +1,5 @@
 <template lang="pug">
-  .card
+  .card(:class="checkReference")
     a.card--link(:href="url" :target='title' rel='noreferrer')
     p.card--title {{title}}
     p.card--description {{desc}}
@@ -9,6 +9,24 @@
 <script>
 export default {
   props: ['title', 'desc', 'url'],
+  data(){
+    return {
+      isReferenced: false,
+    }
+  },
+  computed: {
+    checkReference(){
+      if(typeof this.$route.hash !== undefined) {
+        const query = this.$route.hash.substring(1);
+        const title = this.$props.title.replace(/ /g, '');
+
+        console.log(title.toLowerCase(), query)
+        return {
+          'card--active': title.toLowerCase() === query
+        }
+      }
+    }
+  },
 }
 </script>
 
@@ -23,6 +41,9 @@ export default {
   flex-direction: column;
   position: relative;
 
+  &--active{
+    border: 1px solid red !important;
+  }
 
   &--link {
     position: absolute;
