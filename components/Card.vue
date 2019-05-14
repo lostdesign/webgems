@@ -1,19 +1,14 @@
 <template lang="pug">
-  .card(@click="goToSite(title,url)")
+  .card
+    a.card--link(:href="url" :target='title' rel='noreferrer')
     p.card--title {{title}}
-    .card--body
-      p {{desc}}
-      a(:href="url" :target='title' rel='noreferrer') Visit Website
+    p.card--description {{desc}}
+    a(:href="url" :target='title' rel='noreferrer') Visit Website
 </template>
 
 <script>
 export default {
   props: ['title', 'desc', 'url'],
-  methods: {
-    goToSite(title,url){
-      window.open(url, title)
-    }
-  }
 }
 </script>
 
@@ -24,13 +19,24 @@ export default {
   border-radius: .3rem;
   padding: 1rem;
   transition: .2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+
+  &--link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
 
   &:hover {
     transform: scale(1.002);
     background: #008190;
     cursor: pointer;
     box-shadow: 0 4px 6px -1px rgba(45, 55, 72, 0.1), 0 2px 4px -1px rgba(45, 55, 72, 0.06);
-
   }
 
   &--title {
@@ -38,23 +44,24 @@ export default {
     margin: 0;
   }
 
-  &--body {
-    display:flex;
+  &--description {
+    display: flex;
+    align-content: stretch;
+    flex: 1 1 auto;
     flex-direction: column;
-    justify-content: space-between;
-
-    p {
-      font-size: 13px;
-      color: white;
-      margin: 0 0 .7rem 0;
-      line-height: 1.3;
-      letter-spacing: .5px;
-    }
-    a {
-      font-size: 12px;
-      line-height: 1;
-      align-self: flex-end;
-    }
+  }
+  p {
+    font-size: 13px;
+    color: white;
+    margin: 0 0 .7rem 0;
+    line-height: 1.3;
+    letter-spacing: .5px;
+    z-index: 1;
+  }
+  a {
+    font-size: 12px;
+    line-height: 1;
+    align-self: flex-end;
   }
 }
 </style>
