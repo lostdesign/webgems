@@ -1,7 +1,6 @@
 <template lang="pug">
   .layout
     Logo
-    Search
     Sidebar
     nuxt.content
 </template>
@@ -22,10 +21,11 @@ export default {
 
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,900');
 
 body {
-  margin: .5rem;
+  margin: 1rem;
+  background: #232331;
 }
 
 html {
@@ -38,21 +38,39 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  color: #22292F;
+  // color: #22292F;
 }
 
 a {
-  color: #3490DC;
+  color: #08e5ff;
   text-decoration: none;
   overflow-wrap: break-word;
+
+  &:hover {
+    color: #008190;
+  }
+}
+
+.nuxt-link-active {
+  color: white;
+  text-decoration: underline;
+}
+
+h1, p {
+  color: white;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .layout {
   display: grid;
-  grid-template-columns: 15vw auto;
+  grid-template-columns: fit-content(150px) auto;
   grid-gap: 1rem;
   grid-template-areas:
-    'logo search'
+    'logo .'
     'sidebar content';
 }
 
@@ -64,7 +82,7 @@ a {
   grid-area: search;
 }
 
-.sidebar {
+.nav {
   grid-area: sidebar;
 }
 
@@ -74,12 +92,12 @@ a {
 
 .cards {
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem,auto));
   grid-gap: 1rem;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .layout {
     display: grid;
     grid-template-columns: auto;
@@ -87,9 +105,13 @@ a {
     margin-top: 1rem;
     grid-template-areas:
       'logo'
-      'search'
       'sidebar'
       'content';
   }
 }
+
+
+// #232331 dark bg
+// #2D3748 ligher cards
+// #ff3e35 or #08e5ff links
 </style>

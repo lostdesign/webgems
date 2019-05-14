@@ -1,5 +1,5 @@
 <template lang="pug">
-  aside
+  aside.nav
     .sidebar
       nuxt-link(to="/general") General
       nuxt-link(to="/html") HTML
@@ -21,11 +21,11 @@
 
   a {
     padding: .5rem 1rem .5rem 1rem;
-    text-decoration: none;
+    font-weight: 600;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .sidebar {
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(6rem,1fr));
