@@ -1,5 +1,5 @@
 <template lang="pug">
-  .card(:class="checkReference")
+  .card(:class="checkReference()")
     //- a.card--link(:href="url" :target='title' rel='noreferrer')
     p.card--title {{title}}
     p.card--description {{desc}}
@@ -17,7 +17,10 @@ export default {
       isReferenced: false,
     }
   },
-  computed: {
+  methods:{
+    createCopyUrl() {
+      this.$router.push(`${this.$router.history.current.path}#${this.$props.title.replace(/ /g, '').toLowerCase()}`)
+    },
     checkReference(){
       if(typeof this.$route.hash !== undefined) {
         const query = this.$route.hash.substring(1);
@@ -29,10 +32,8 @@ export default {
       }
     },
   },
-  methods:{
-    createCopyUrl() {
-      this.$router.push(`${this.$router.history.current.path}#${this.$props.title.replace(/ /g, '').toLowerCase()}`)
-    }
+  mounted() {
+    this.checkReference()
   },
 }
 </script>
