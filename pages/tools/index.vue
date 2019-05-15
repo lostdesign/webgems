@@ -38,6 +38,41 @@ export default {
           desc: 'A List of Static Site Generators for JAMstack Sites',
           url: 'https://www.staticgen.com'
         },
+        {
+          title: 'Snippet generator',
+          desc: 'Create your own snippets for VSCode, Sublime or Atom using this generator. No need to format the snippet yourself',
+          url: 'https://snippet-generator.app/'
+        },
+        {
+          title: 'gitignore.io',
+          desc: 'Create usefull .gitignore files for your projects.',
+          url: 'https://www.gitignore.io'
+        },
+        {
+          title: 'Github',
+          desc: 'GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code, manage projects, and build software alongside 36 million developers.',
+          url: 'https://github.com'
+        },
+        {
+          title: 'NASA APIs',
+          desc: 'Welcome to the NASA API portal. The objective of this site is to make NASA data, including imagery, eminently accessible to application developers. The api.nasa.gov catalog is growing.',
+          url: 'https://api.nasa.gov'
+        },
+        {
+          title: 'PokéAPI',
+          desc: 'The RESTful Pokémon API',
+          url: 'https://pokeapi.co'
+        },
+        {
+          title: 'Reddit API .json',
+          desc: 'Take a any subreddit you like and append ".json" to consume it as an API (https://reddit.com/r/cats.json).',
+          url: 'https://www.reddit.com/.json'
+        },
+        {
+          title: 'quicktype',
+          desc: 'Generate types and serializers from JSON.',
+          url: 'https://quicktype.io'
+        },
       ]
     }
   },

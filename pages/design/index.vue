@@ -58,6 +58,11 @@ export default {
           desc: 'The best resources for learning design.',
           url: 'https://www.lapa.ninja/learn/'
         },
+        {
+          title: 'Typography Handbook',
+          desc: 'A concise, referential guide on best web typographic practices.',
+          url: 'http://typographyhandbook.com'
+        },
       ]
     }
   },
