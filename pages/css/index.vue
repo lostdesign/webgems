@@ -29,6 +29,11 @@ export default {
           url: 'https://30-seconds.github.io/30-seconds-of-css/'
         },
         {
+          title: 'Grid by example',
+          desc: 'Everything you need to learn CSS Grid Layout',
+          url: 'https://gridbyexample.com/learn/'
+        },
+        {
           title: 'BEM naming convention',
           desc: 'Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development',
           url: 'https://getbem.com/'
@@ -52,6 +57,11 @@ export default {
           title: 'CSSmatic - box shadow generator',
           desc: 'The ultimate box shadow generator',
           url: 'https://www.cssmatic.com/box-shadow'
+        },
+        {
+          title: 'AirBnB CSS / Sass Styleguide',
+          desc: 'A mostly reasonable approach to css and sass.',
+          url: 'https://github.com/airbnb/css'
         },
       ]
     }

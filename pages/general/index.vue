@@ -24,6 +24,11 @@ export default {
           url: 'https://github.com/kamranahmedse/developer-roadmap/blob/master/readme.md'
         },
         {
+          title: 'ebookfoundation',
+          desc: 'Freely available programming books',
+          url: 'https://ebookfoundation.github.io/free-programming-books/'
+        },
+        {
           title: 'Google Developer',
           desc: 'Tutorials, guides, and best practices for building the next generation of web experiences.',
           url: 'https://developers.google.com/web/'

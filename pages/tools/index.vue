@@ -73,6 +73,21 @@ export default {
           desc: 'Generate types and serializers from JSON.',
           url: 'https://quicktype.io'
         },
+        {
+          title: 'NGINXconfig.io',
+          desc: 'Quickly generate a NGINX config for your server.',
+          url: 'https://nginxconfig.io/'
+        },
+        {
+          title: 'Online tools',
+          desc: 'Decode, encode and hash any string quickly.',
+          url: 'https://emn178.github.io/online-tools'
+        },
+        {
+          title: 'Favicon generator. For real.',
+          desc: 'A favicon generator for all browsers and platforms.',
+          url: 'https://realfavicongenerator.net'
+        },
       ]
     }
   },
