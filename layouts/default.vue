@@ -92,7 +92,7 @@ h1 {
 
 .cards {
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem,auto));
+  grid-template-columns: repeat(auto-fill, minmax(15rem,auto));
   grid-gap: 1rem;
 }
 

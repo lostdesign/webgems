@@ -38,6 +38,26 @@ export default {
           desc: 'Flatuicolorpicker is a project digging the Flat Color Picker which gives you the perfect colors for flat designs',
           url: 'http://www.flatuicolorpicker.com'
         },
+        {
+          title: 'awwwards',
+          desc: 'The awards for design, creativity and innovation on the Internet. Get your inspiration here or even submit your own website!',
+          url: 'https://awwwards.com'
+        },
+        {
+          title: 'siteinspire',
+          desc: 'siteInspire is a showcase of the finest web and interactive design.',
+          url: 'https://www.siteinspire.com'
+        },
+        {
+          title: 'ShapeFactory',
+          desc: 'Simple design tools for everyone. Simply create a logo, pigment/color scheme, gradient or duetone style.',
+          url: 'https://shapefactory.co'
+        },
+        {
+          title: 'lapa.ninja',
+          desc: 'The best resources for learning design.',
+          url: 'https://www.lapa.ninja/learn/'
+        },
       ]
     }
   },

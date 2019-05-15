@@ -6,8 +6,10 @@
       nuxt-link(to="/css") CSS
       nuxt-link(to="/javascript") Javascript
       nuxt-link(to="/php") PHP
-      nuxt-link(to="/design") Designs
-      nuxt-link(to="/servers") Servers
+      nuxt-link(to="/design") Design
+      nuxt-link(to="/frontend") Frontend
+      nuxt-link(to="/fullstack") Fullstack
+      nuxt-link(to="/servers") Server
       nuxt-link(to="/tools") Tools
       nuxt-link(to="/daily") Daily
 </template>

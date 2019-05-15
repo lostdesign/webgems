@@ -23,6 +23,21 @@ export default {
           desc: 'Fathom Analytics provides simple, useful website stats without tracking or storing personal data of your users.',
           url: 'https://usefathom.com'
         },
+        {
+          title: '10 free tools',
+          desc: '10 free-but-professional tools for your dev projects',
+          url: 'https://dev.to/sauloco/10-free-but-professional-tools-for-your-dev-projects-2eeo'
+        },
+        {
+          title: 'headless cms',
+          desc: 'A List of Content Management Systems for JAMstack Sites',
+          url: 'https://headlesscms.org'
+        },
+        {
+          title: 'StaticGen',
+          desc: 'A List of Static Site Generators for JAMstack Sites',
+          url: 'https://www.staticgen.com'
+        },
       ]
     }
   },

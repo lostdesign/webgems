@@ -15,8 +15,13 @@ export default {
       resources: [
         {
           title: 'dev.to',
-          desc: 'Where programmers share ideas and help each other grow. It is an online community for sharing and discovering great ideas, having debates, and making friends. Anyone can share articles, questions, discussions, etc. as long as they have the rights to the words they are sharing. Cross-posting from your own blog is welcome.',
+          desc: 'Where programmers share ideas and help each other grow. It is an online community for sharing and discovering great ideas, having debates, and making friends.',
           url: 'https://www.dev.to'
+        },
+        {
+          title: 'CSS Tricks',
+          desc: 'Daily webdev related articles, snippets and guides since 2007',
+          url: 'https://css-tricks.com/'
         },
       ]
     }

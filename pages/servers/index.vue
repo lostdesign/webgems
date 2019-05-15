@@ -28,7 +28,6 @@ export default {
           desc: 'Domains for your projects',
           url: 'https://namecheap.com'
         },
-
       ]
     }
   },

@@ -14,6 +14,11 @@ export default {
     return {
       resources: [
         {
+          title: 'DevDocs',
+          desc: 'DevDocs combines multiple API documentations in a fast, organized, and searchable interface. Online and offline, always have your docs with you.',
+          url: 'https://devdocs.io'
+        },
+        {
           title: 'Developer Roadmap',
           desc: 'Below you find a set of charts demonstrating the paths that you can take and the technologies that you would want to adopt in order to become a frontend, backend or a devops. I made these charts for an old professor of mine who wanted something to share with his college students to give them a perspective; sharing them here to help the community.',
           url: 'https://github.com/kamranahmedse/developer-roadmap/blob/master/readme.md'

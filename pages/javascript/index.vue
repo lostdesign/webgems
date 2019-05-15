@@ -43,6 +43,16 @@ export default {
           desc: 'This is a free series of books diving deep into the core mechanisms of the JavaScript language. The first edition of the series is now complete.',
           url: 'https://github.com/getify/You-Dont-Know-JS'
         },
+        {
+          title: 'Eloquent Javascript 3rd Edition',
+          desc: 'This is a book about javascript, programming, and the wonders of the digital. You can read it online or get a paperback copy of it.',
+          url: 'http://eloquentjavascript.net'
+        },
+        {
+          title: 'MDN web docs - Javascript',
+          desc: 'Tutorials, references, tools and resources. Your goto documentation to learn js.',
+          url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+        },
       ]
     }
   },

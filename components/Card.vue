@@ -87,6 +87,7 @@ export default {
     margin: 0 0 .7rem 0;
     line-height: 1.3;
     letter-spacing: .5px;
+    max-width: 15rem;
   }
   a {
     font-size: 12px;

@@ -38,6 +38,21 @@ export default {
           desc: 'Overview of css attributes which trigger either layout, paint or composite. Good to know if you want to learn more about css performance.',
           url: 'https://csstriggers.com/'
         },
+        {
+          title: 'A complete guide to flexbox',
+          desc: 'A comprehensive guide to flexbox, focusing on all the different possible properties for the parent element (the flex container) and the child elemends (the flex items). It also includes history, demos, patterns and a browser support chart. By css-tricks.com',
+          url: 'https://css-tricks.com/snippets/css/a-guide-to-flexbox/'
+        },
+        {
+          title: 'Learn CSS layout',
+          desc: 'This site teaches the CSS fundamentals that are used in any website\'s layout (Unfortunately nothing abour display:grid yet).',
+          url: 'http://learnlayout.com'
+        },
+        {
+          title: 'CSSmatic - box shadow generator',
+          desc: 'The ultimate box shadow generator',
+          url: 'https://www.cssmatic.com/box-shadow'
+        },
       ]
     }
   },
