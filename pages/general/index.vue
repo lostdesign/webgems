@@ -38,6 +38,11 @@ export default {
           desc: 'Making the web more awesome - latest news about google chrome',
           url: 'https://www.youtube.com/channel/UCnUYZLuoy1rq1aVMwx4aTzw'
         },
+        {
+          title: 'Code wars',
+          desc: 'Challenge yourself on kata, created by the community to strengthen different skills. Master your current language of choice, or expand your understanding of a new one.',
+          url: 'https://www.codewars.com/'
+        },
       ]
     }
   },

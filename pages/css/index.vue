@@ -14,6 +14,11 @@ export default {
     return {
       resources: [
         {
+          title: 'Keyframes Editor',
+          desc: 'An insanely simple way to create CSS animations',
+          url: 'https://keyframes.app/editor/'
+        },
+        {
           title: 'Flexbox Froggy',
           desc: 'A game to learn Flexbox',
           url: 'https://flexboxfroggy.com'
@@ -62,6 +67,16 @@ export default {
           title: 'AirBnB CSS / Sass Styleguide',
           desc: 'A mostly reasonable approach to css and sass.',
           url: 'https://github.com/airbnb/css'
+        },
+        {
+          title: 'Animista',
+          desc: 'CSS animations on demand.',
+          url: 'http://animista.net/'
+        },
+        {
+          title: 'Use CSS Grids the right way',
+          desc: 'CSS Grid is robust, flexible, and a refreshing paradigm shift from other CSS layout systems. While these are selling points for Grid, they also make it hard to learn.',
+          url: 'https://vgpena.github.io/using-css-grid-the-right-way/'
         },
       ]
     }

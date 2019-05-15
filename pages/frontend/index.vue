@@ -33,6 +33,11 @@ export default {
           desc: 'Premium tier video courses for any modern stack. Monthly or yearly subscription.',
           url: 'https://frontendmasters.com'
         },
+        {
+          title: 'Don\'t fear the internet',
+          desc: 'Basic HTML & CSS for NON-WEB DESIGNERS',
+          url: 'http://www.dontfeartheinternet.com/'
+        },
       ]
     }
   },

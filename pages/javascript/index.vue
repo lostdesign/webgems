@@ -14,9 +14,19 @@ export default {
     return {
       resources: [
         {
+          title: 'WarriorJS',
+          desc: 'An exciting game of programming and Artificial Intelligence',
+          url: 'https://warrior.js.org/'
+        },
+        {
           title: 'Javascript30',
           desc: 'Free video courses about javascript. Made by WesBos',
           url: 'https://javascript30.com'
+        },
+        {
+          title: 'JS the right way',
+          desc: 'This is a guide intended to introduce new developers to JavaScript and help experienced developers learn more about its best practices.',
+          url: 'https://jstherightway.org'
         },
         {
           title: 'Learn vanilla js',
@@ -52,6 +62,16 @@ export default {
           title: 'MDN web docs - Javascript',
           desc: 'Tutorials, references, tools and resources. Your goto documentation to learn js.',
           url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+        },
+        {
+          title: 'Learn javascript fast',
+          desc: 'Welcome to learnjavascriptfast.com, a free online course designed to help you learn Javascript fast with hands-on project. Our aim is to equip you with enough knowledge to start coding your own Javascript pages immediately upon completion of this course.',
+          url: 'https://learnjavascriptfast.com/'
+        },
+        {
+          title: 'ECMAScript 6 ',
+          desc: 'ES6 is a significant update to the language, and the first update to the language since ES5 was standardized in 2009.',
+          url: 'https://github.com/lukehoban/es6features#readme'
         },
       ]
     }

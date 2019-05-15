@@ -88,6 +88,21 @@ export default {
           desc: 'A favicon generator for all browsers and platforms.',
           url: 'https://realfavicongenerator.net'
         },
+        {
+          title: 'JSFiddle',
+          desc: 'JSFiddle is for: Demos for docs, Bug reporting (test-case) for Github Issues, Live code collaboration, Code snippets hosting for free!',
+          url: 'https://jsfiddle.net'
+        },
+        {
+          title: 'Gifless',
+          desc: 'Create emoji & text gifs in seconds',
+          url: 'https://www.gifless.com/'
+        },
+        {
+          title: 'Learn Git',
+          desc: 'Become a git guru - a tutorial series by Atlassian.',
+          url: 'https://www.atlassian.com/git/tutorials'
+        },
       ]
     }
   },

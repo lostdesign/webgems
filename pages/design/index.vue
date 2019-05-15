@@ -14,6 +14,11 @@ export default {
     return {
       resources: [
         {
+          title: 'UX/UI Designer Roadmap 2017',
+          desc: 'Roadmap to becoming a UI/UX Designer in 2017',
+          url: 'https://github.com/togiberlin/ui-ux-designer-roadmap'
+        },
+        {
           title: 'Undraw',
           desc: 'Free vector illustrations for your website.',
           url: 'https://undraw.co'
@@ -62,6 +67,26 @@ export default {
           title: 'Typography Handbook',
           desc: 'A concise, referential guide on best web typographic practices.',
           url: 'http://typographyhandbook.com'
+        },
+        {
+          title: 'Hyperpixel.io',
+          desc: 'Discover the latest designs for your own inspiration from our curated list of landing pages.',
+          url: 'https://hyperpixel.io/'
+        },
+        {
+          title: 'sharpen.design',
+          desc: 'Sharpen is where designers hone their craft - randomly generated design challenges.',
+          url: 'https://sharpen.design/'
+        },
+        {
+          title: 'Good UI',
+          desc: 'A Good User Interface Is One That\'s Backed By Reproducible Evidence (A/B Tests)',
+          url: 'https://goodui.org/'
+        },
+        {
+          title: 'SVG ON THE WEB',
+          desc: 'A Practical Guide',
+          url: 'https://svgontheweb.com/'
         },
       ]
     }

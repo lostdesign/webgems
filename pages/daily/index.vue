@@ -23,6 +23,21 @@ export default {
           desc: 'Daily webdev related articles, snippets and guides since 2007',
           url: 'https://css-tricks.com/'
         },
+        {
+          title: 'Smashing magazine',
+          desc: 'Founded in September 2006 in Germany, Smashing Magazine delivers reliable, useful, but most importantly practical articles to web designers and developers. ',
+          url: 'https://www.smashingmagazine.com/'
+        },
+        {
+          title: 'Hackernews',
+          desc: 'Hacker News is a social news website focusing on computer science and entrepreneurship.',
+          url: 'https://news.ycombinator.com/'
+        },
+        {
+          title: 'Producthunt',
+          desc: 'Check popular new products out and get inspired, maybe even post yours?',
+          url: 'https://www.producthunt.com/'
+        },
       ]
     }
   },
