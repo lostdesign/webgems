@@ -18,8 +18,8 @@ export default {
         let currentPath = this.$router.history.current.path
         let reference =  this.createReferenceTag(this.$props.title)
 
-        await this.$copyText(`https://webgems.io${currentPath}?card=${reference}`)
-        this.$router.push(`${currentPath}?card=${reference}`)
+        await this.$copyText(`https://webgems.io${currentPath}/?card=${reference}`)
+        this.$router.push(`${currentPath}/?card=${reference}`)
       } catch (e) {
         console.error(e);
       }
@@ -34,7 +34,7 @@ export default {
 
         const query = this.$route.query.card
         const title = this.createReferenceTag(this.$props.title)
-        console.log(query, title, title === query? 'card--active': '')
+        if(title === query) console.log(query, title, title === query? 'card--active': '')
 
         return title === query
           ? 'card--active'
