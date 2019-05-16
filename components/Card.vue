@@ -25,7 +25,7 @@ export default {
 
         await this.$copyText(`https://webgems.io${currentPath}#${reference}`)
 
-        this.$router.push(`https://webgems.io${currentPath}#${reference}`)
+        this.$router.push(`${currentPath}#${reference}`)
       } catch (e) {
         console.error(e);
       }
