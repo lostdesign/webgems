@@ -24,7 +24,7 @@ export default {
         let reference =  this.$props.title.replace(/ /g, '').toLowerCase()
 
         await this.$copyText(`https://webgems.io${currentPath}/#${reference}`)
-        window.location = `https://webgems.io${currentPath}#${reference}`
+        window.location = `https://webgems.io${currentPath}/#${reference}`
         // this.$router.push(`${currentPath}#${reference}`)
       } catch (e) {
         console.error(e);
