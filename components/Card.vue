@@ -25,9 +25,9 @@ export default {
 
         await this.$copyText(`https://webgems.io${currentPath}/#${reference}`)
 
-        this.$router.push(`${currentPath}#${reference}`)
-        this.checkReference()
-        // window.location = `https://webgems.io${currentPath}/#${reference}`
+        window.location.reload(`https://webgems.io${currentPath}#${reference}`)
+        // this.$router.push(`${currentPath}#${reference}`)
+        // this.checkReference()
       } catch (e) {
         console.error(e);
       }
