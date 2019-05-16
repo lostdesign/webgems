@@ -28,6 +28,11 @@ export default {
           desc: 'Domains for your projects',
           url: 'https://namecheap.com'
         },
+        {
+          title: 'Servers for hackers',
+          desc: 'Tutorials on how to handle your servers.',
+          url: 'https://serversforhackers.com/'
+        },
       ]
     }
   },
