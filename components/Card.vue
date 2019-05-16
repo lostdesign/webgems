@@ -33,7 +33,7 @@ export default {
       if(typeof this.$route.query.card != undefined) {
         const query = this.$route.query.card
         const title = this.createReferenceTag(this.$props.title)
-        console.log(query, title)
+        console.log(query, title, title === query? 'card--active': '')
 
         return title === query
           ? 'card--active'
