@@ -1,5 +1,5 @@
 <template lang="pug">
-  .card(:class="{'card--active': isReferenced}")
+  .card(:class="checkReference")
     //- a.card--link(:href="url" :target='title' rel='noreferrer')
     p.card--title {{title}}
     p.card--description {{desc}}
@@ -12,43 +12,33 @@
 <script>
 export default {
   props: ['title', 'desc', 'url'],
-  data(){
-    return {
-      isReferenced: false,
-    }
-  },
   methods: {
      async createCopyUrl() {
       try {
         let currentPath = this.$router.history.current.path
-        let reference =  this.$props.title.replace(/ /g, '').toLowerCase()
+        let reference =  this.createReferenceTag(this.$props.title)
 
         await this.$copyText(`https://webgems.io${currentPath}?card=${reference}`)
-
         this.$router.push(`${currentPath}?card=${reference}`)
-        this.$forceUpdate()
       } catch (e) {
         console.error(e);
       }
     },
-    screateCopyUrl() {
-      this.$router.push(`${this.$router.history.current.path}#${this.$props.title.replace(/ /g, '').toLowerCase()}`)
-    },
+    createReferenceTag(tag){
+      return tag.replace(/ /g, '').toLowerCase()
+    }
+  },
+  computed: {
     checkReference(){
       if(typeof this.$route.query.card != undefined) {
-        console.log(this.$route.query.card)
+        const query = this.$route.query.card
+        const title = this.createReferenceTag(this.$props.title)
 
-        const query = this.$route.query.card;
-        const title = this.$props.title.replace(/ /g, '');
-
-        title.toLowerCase() === query
-          ? this.isReferenced = true
-          : this.isReferenced = false
+        return title === query
+          ? 'card--active'
+          : ''
       }
     },
-  },
-  mounted() {
-    this.checkReference()
   },
 }
 </script>
@@ -116,5 +106,39 @@ export default {
     line-height: 1;
     align-self: flex-end;
   }
+}
+
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 </style>
