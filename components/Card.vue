@@ -23,7 +23,7 @@ export default {
         let currentPath = this.$router.history.current.path
         let reference =  this.$props.title.replace(/ /g, '').toLowerCase()
 
-        await this.$copyText(`https://webgems.io${currentPath}/#${reference}`)
+        await this.$copyText(`https://webgems.io${currentPath}#${reference}`)
 
         window.location.replace(`https://webgems.io${currentPath}#${reference}`)
         // this.$router.push(`${currentPath}#${reference}`)
