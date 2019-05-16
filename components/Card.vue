@@ -30,7 +30,8 @@ export default {
   },
   computed: {
     checkReference(){
-      if(typeof this.$route.query.card != undefined) {
+      if(this.$route.query.card) {
+
         const query = this.$route.query.card
         const title = this.createReferenceTag(this.$props.title)
         console.log(query, title, title === query? 'card--active': '')
@@ -39,7 +40,7 @@ export default {
           ? 'card--active'
           : ''
       }
-    },
+    }
   },
 }
 </script>
