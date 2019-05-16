@@ -50,7 +50,7 @@ export default {
         },
         {
           title: 'A complete guide to flexbox',
-          desc: 'A comprehensive guide to flexbox, focusing on all the different possible properties for the parent element (the flex container) and the child elemends (the flex items). It also includes history, demos, patterns and a browser support chart. By css-tricks.com',
+          desc: 'A comprehensive guide to flexbox, focusing on all the different possible properties for the parent element (the flex container).',
           url: 'https://css-tricks.com/snippets/css/a-guide-to-flexbox/'
         },
         {
