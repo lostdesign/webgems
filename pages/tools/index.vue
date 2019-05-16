@@ -34,6 +34,11 @@ export default {
           url: 'https://headlesscms.org'
         },
         {
+          title: 'Git & Git flow cheatsheet',
+          desc: 'Git cheat sheet saves you from learning all the commands by heart.',
+          url: 'https://github.com/arslanbilal/git-cheat-sheet#readme'
+        },
+        {
           title: 'StaticGen',
           desc: 'A List of Static Site Generators for JAMstack Sites',
           url: 'https://www.staticgen.com'
@@ -102,6 +107,11 @@ export default {
           title: 'Learn Git',
           desc: 'Become a git guru - a tutorial series by Atlassian.',
           url: 'https://www.atlassian.com/git/tutorials'
+        },
+        {
+          title: 'Git form the inside out',
+          desc: 'This essay explains how Git works. It assumes you understand Git well enough to use it to version control your projects.',
+          url: 'https://codewords.recurse.com/issues/two/git-from-the-inside-out'
         },
       ]
     }

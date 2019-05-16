@@ -78,6 +78,11 @@ export default {
           desc: 'CSS Grid is robust, flexible, and a refreshing paradigm shift from other CSS layout systems. While these are selling points for Grid, they also make it hard to learn.',
           url: 'https://vgpena.github.io/using-css-grid-the-right-way/'
         },
+        {
+          title: 'CSS Protips',
+          desc: 'A collection of tips to help take your CSS skills pro.',
+          url: 'https://github.com/AllThingsSmitty/css-protips#readme'
+        },
       ]
     }
   },
