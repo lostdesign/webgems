@@ -23,9 +23,10 @@ export default {
         let currentPath = this.$router.history.current.path
         let reference =  this.$props.title.replace(/ /g, '').toLowerCase()
 
-        await this.$copyText(`https://webgems.io${currentPath}#${reference}`)
+        await this.$copyText(`https://webgems.io${currentPath}?card=${reference}`)
 
-        this.$router.push(`${currentPath}#${reference}`)
+        this.$router.push(`${currentPath}?card=${reference}`)
+        this.$forceUpdate()
       } catch (e) {
         console.error(e);
       }
@@ -34,8 +35,10 @@ export default {
       this.$router.push(`${this.$router.history.current.path}#${this.$props.title.replace(/ /g, '').toLowerCase()}`)
     },
     checkReference(){
-      if(typeof this.$route.hash !== undefined) {
-        const query = this.$route.hash.substring(1);
+      if(typeof this.$route.query.card != undefined) {
+        console.log(this.$route.query.card)
+
+        const query = this.$route.query.card;
         const title = this.$props.title.replace(/ /g, '');
 
         title.toLowerCase() === query
