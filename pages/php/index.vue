@@ -23,6 +23,31 @@ export default {
           desc: 'The PHP manual is documenting the whole spec while giving examples for each property.',
           url: 'https://www.php.net/manual/en/'
         },
+        {
+          title: 'PHP for beginners',
+          desc: 'We all start somewhere. When it comes to web development with PHP, well, your first stop is this series. Designed specifically and exclusively for beginners, here, you'll learn the fundamentals of PHP - all the way down to defining variables and arrays.',
+          url: 'https://laracasts.com/series/php-for-beginners'
+        },
+        {
+          title: 'Learn PHP in Y Minutes',
+          desc: 'A quick short overview of PHP utilizing most of the spec.',
+          url: 'https://learnxinyminutes.com/docs/php/'
+        },
+        {
+          title: 'An online book for learning PHP',
+          desc: 'PHP Apprentice is an online, open source book about the PHP programming language. PHP is one of the most popular platforms for building websites and web services.',
+          url: 'https://phpapprentice.com/'
+        },
+        {
+          title: 'PHP-FIG',
+          desc: 'Moving PHP forward through collaboration and standards. Welcome to the PHP Framework Interop Group! We're a group of established PHP projects whose goal is to talk about commonalities between our projects and find ways we can work better together.',
+          url: 'https://www.php-fig.org/'
+        },
+        {
+          title: 'PHP Subreddit',
+          desc: 'Ask questions about frameworks, try your hand at php golf and strike gold or simply show off your latest work.',
+          url: 'https://reddit.com/r/php'
+        },
       ]
     }
   },
