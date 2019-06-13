@@ -25,7 +25,7 @@ export default {
         },
         {
           title: 'PHP for beginners',
-          desc: 'We all start somewhere. When it comes to web development with PHP, well, your first stop is this series. Designed specifically and exclusively for beginners, here, you'll learn the fundamentals of PHP - all the way down to defining variables and arrays.',
+          desc: 'We all start somewhere. When it comes to web development with PHP, well, your first stop is this series. Designed specifically and exclusively for beginners, here, you\'ll learn the fundamentals of PHP - all the way down to defining variables and arrays.',
           url: 'https://laracasts.com/series/php-for-beginners'
         },
         {
@@ -40,7 +40,7 @@ export default {
         },
         {
           title: 'PHP-FIG',
-          desc: 'Moving PHP forward through collaboration and standards. Welcome to the PHP Framework Interop Group! We're a group of established PHP projects whose goal is to talk about commonalities between our projects and find ways we can work better together.',
+          desc: 'Moving PHP forward through collaboration and standards. Welcome to the PHP Framework Interop Group! We\'re a group of established PHP projects whose goal is to talk about commonalities between our projects and find ways we can work better together.',
           url: 'https://www.php-fig.org/'
         },
         {
