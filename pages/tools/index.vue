@@ -34,7 +34,7 @@ export default {
           url: 'https://headlesscms.org'
         },
         {
-          title: 'Git & Git flow cheatsheet',
+          title: 'Git and Git flow cheatsheet',
           desc: 'Git cheat sheet saves you from learning all the commands by heart.',
           url: 'https://github.com/arslanbilal/git-cheat-sheet#readme'
         },
@@ -100,7 +100,7 @@ export default {
         },
         {
           title: 'Gifless',
-          desc: 'Create emoji & text gifs in seconds',
+          desc: 'Create emoji and text gifs in seconds',
           url: 'https://www.gifless.com/'
         },
         {

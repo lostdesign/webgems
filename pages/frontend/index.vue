@@ -24,7 +24,7 @@ export default {
           url: 'https://kaliop.github.io/frontend-style-guide/2.0/'
         },
         {
-          title: 'Learn to Code HTML & CSS',
+          title: 'Learn to Code HTML and CSS',
           desc: 'Learn to Code HTML & CSS is a simple and comprehensive guide dedicated to helping beginners learn HTML and CSS. Outlining the fundamentals, this guide works through all common elements of front-end design and development.',
           url: 'https://learn.shayhowe.com/html-css/'
         },
