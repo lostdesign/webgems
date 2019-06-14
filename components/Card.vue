@@ -42,7 +42,7 @@ export default {
       }
     },
   },
-  created() {
+  mounted() {
     this.checkReference();
   },
   watch: {
