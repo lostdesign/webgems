@@ -33,6 +33,11 @@ export default {
           desc: 'A curated list of awesome Canvas examples, related articles and posts.',
           url: 'https://github.com/raphamorim/awesome-canvas#readme'
         },
+        {
+          title: 'HTML Spec',
+          desc: 'This specification defines a big part of the Web platform, in lots of detail.',
+          url: 'https://html.spec.whatwg.org/'
+        },
       ]
     }
   },
