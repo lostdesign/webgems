@@ -128,7 +128,6 @@ h1 {
 
     &-thumb{
       background: #08e5ff;
-      border-radius: 1rem;
     }
 
     &-track{
