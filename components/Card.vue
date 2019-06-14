@@ -32,6 +32,8 @@ export default {
     checkReference(){
       if(this.$route.query.card) {
         const query = this.$route.query.card
+        console.log(query);
+
         const title = this.createReferenceTag(this.$props.title)
 
         return title === query
