@@ -1,5 +1,5 @@
 <template lang="pug">
-  .card(:class="checkReference")
+  .card(:class="active")
     p.card--title {{title}}
     p.card--description {{desc}}
     .card--links
@@ -11,6 +11,11 @@
 <script>
 export default {
   props: ['title', 'desc', 'url'],
+  data(){
+    return {
+      active:''
+    }
+  },
   methods: {
      async createCopyUrl() {
       try {
@@ -25,20 +30,26 @@ export default {
     },
     createReferenceTag(tag){
       return tag.replace(/ /g, '').toLowerCase()
-    }
-  },
-  computed: {
+    },
     checkReference(){
       if(this.$route.query.card) {
         const query = this.$route.query.card
         const title = this.createReferenceTag(this.$props.title)
 
-        return title === query
+        this.active = title === query
           ? 'card--active'
           : ''
       }
     },
   },
+  created() {
+    this.checkReference();
+  },
+  watch: {
+    '$route': function() {
+      this.checkReference();
+    }
+  }
 }
 </script>
 
