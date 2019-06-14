@@ -14,6 +14,11 @@ export default {
     return {
       resources: [
         {
+          title: 'CSS Grid Generator',
+          desc: 'Visually create your css grid and export the code.',
+          url: 'https://cssgrid-generator.netlify.com/'
+        },
+        {
           title: 'Keyframes Editor',
           desc: 'An insanely simple way to create CSS animations',
           url: 'https://keyframes.app/editor/'
@@ -82,6 +87,21 @@ export default {
           title: 'CSS Protips',
           desc: 'A collection of tips to help take your CSS skills pro.',
           url: 'https://github.com/AllThingsSmitty/css-protips#readme'
+        },
+        {
+          title: 'Flexbox Defense',
+          desc: 'Your job is to stop the incoming enemies from getting past your defenses. Unlike other tower defense games, you must position your towers using CSS!',
+          url: 'http://www.flexboxdefense.com/'
+        },
+        {
+          title: 'CSS Diner',
+          desc: 'Learn CSS selectors while playing a game.',
+          url: 'https://flukeout.github.io/'
+        },
+        {
+          title: 'CSS Animation',
+          desc: 'CSS animation articles, tips and tutorials. Level Up Your CSS Animation Skills.',
+          url: 'https://cssanimation.rocks/'
         },
       ]
     }

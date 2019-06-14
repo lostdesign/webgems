@@ -53,6 +53,31 @@ export default {
           desc: 'There are many tutorials on PDO already, but unfortunately, most of them fail to explain the real benefits of PDO, or even promote rather bad practices. The only two exceptions are phptherightway.com and hashphp.org, but they miss a lot of important information. As a result, half of PDO\'s features remain in obscurity and are almost never used by PHP developers, who, as a result, are constantly trying to reinvent the wheel which already exists in PDO.',
           url: 'https://phpdelusions.net/pdo'
         },
+        {
+          title: 'Online PHP shell',
+          desc: '3v4l.org (leetspeak for eval) is an online shell that allows you to run your code on my server. I compiled more than 200 different PHP versions (every version released since 4.3.0) plus HHVM for you to use.',
+          url: 'https://3v4l.org/'
+        },
+        {
+          title: 'Safe Password Hashing',
+          desc: 'This section explains the reasons behind using hashing functions to secure passwords, as well as how to do so effectively.',
+          url: 'https://www.php.net/manual/en/faq.passwords.php'
+        },
+        {
+          title: '14 Tips',
+          desc: '14 Tips to Write PHP Code that is Hard to Maintain and Upgrade',
+          url: 'https://www.tomasvotruba.cz/blog/2018/11/26/14-tips-to-write-php-code-that-is-hard-to-maintain-and-upgrade/'
+        },
+        {
+          title: 'Object Calisthenics',
+          desc: 'Object Calisthenics are programming exercises, formalized as a set of 9 rules invented by Jeff Bay in his book The ThoughtWorks Anthology. The word Object is related to Object Oriented Programming. The word Calisthenics is derived from greek, and means exercises under the context of gymnastics.',
+          url: 'https://williamdurand.fr/2013/06/03/object-calisthenics/'
+        },
+        {
+          title: 'Your code sucks, let\'s fix it',
+          desc: '134 Slides to help fix your code. Performance and testing are just one aspect of code, to really be successful your code needs to be readable, maintainable and generally easier to comprehend and work with.',
+          url: 'https://www.slideshare.net/rdohms/your-code-sucks-lets-fix-it-15471808'
+        },
       ]
     }
   },

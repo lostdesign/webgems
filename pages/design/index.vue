@@ -88,6 +88,11 @@ export default {
           desc: 'A Practical Guide',
           url: 'https://svgontheweb.com/'
         },
+        {
+          title: 'UI Gradients',
+          desc: 'Beautiful colour gradients for design and code.',
+          url: 'https://uigradients.com/#NoontoDusk'
+        },
       ]
     }
   },

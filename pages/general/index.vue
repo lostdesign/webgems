@@ -14,9 +14,19 @@ export default {
     return {
       resources: [
         {
+          title: 'Caniuse',
+          desc: '"Can I use" provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.',
+          url: 'https://caniuse.com/'
+        },
+        {
           title: 'DevDocs',
           desc: 'DevDocs combines multiple API documentations in a fast, organized, and searchable interface. Online and offline, always have your docs with you.',
           url: 'https://devdocs.io'
+        },
+        {
+          title: 'Rico\'s cheatsheets',
+          desc: 'Cheatsheets for any kind of technologies in the web domain.',
+          url: 'https://devhints.io'
         },
         {
           title: 'Developer Roadmap',

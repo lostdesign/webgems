@@ -38,6 +38,11 @@ export default {
           desc: 'This specification defines a big part of the Web platform, in lots of detail.',
           url: 'https://html.spec.whatwg.org/'
         },
+        {
+          title: 'Markup validator',
+          desc: 'This tool is checking your markup if it complies with the specification and will show you possible errors.',
+          url: 'https://validator.w3.org/nu/'
+        },
       ]
     }
   },

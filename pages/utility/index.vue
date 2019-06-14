@@ -19,6 +19,11 @@ export default {
           url: 'https://www.json-generator.com'
         },
         {
+          title: 'Matomo',
+          desc: 'A free open source web analytics tool which can be compared to GA but actually gives a shit about privacy.',
+          url: 'https://matomo.org/'
+        },
+        {
           title: 'Fathom',
           desc: 'Fathom Analytics provides simple, useful website stats without tracking or storing personal data of your users.',
           url: 'https://usefathom.com'
@@ -112,6 +117,11 @@ export default {
           title: 'Git form the inside out',
           desc: 'This essay explains how Git works. It assumes you understand Git well enough to use it to version control your projects.',
           url: 'https://codewords.recurse.com/issues/two/git-from-the-inside-out'
+        },
+        {
+          title: 'List of Public APIs',
+          desc: 'A collective list of free APIs for use in software and web development.',
+          url: 'https://github.com/public-apis/public-apis'
         },
       ]
     }
