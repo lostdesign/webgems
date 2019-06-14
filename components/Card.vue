@@ -18,8 +18,8 @@ export default {
 
         let reference =  this.createReferenceTag(this.$props.title)
 
-        await this.$copyText(`https://webgems.io${currentPath}/?card=${reference}`)
-        this.$router.push(`${currentPath}/?card=${reference}`)
+        await this.$copyText(`https://webgems.io${currentPath}?card=${reference}`)
+        this.$router.push(`${currentPath}?card=${reference}`)
       } catch (e) {
         console.error(e);
       }
@@ -32,8 +32,6 @@ export default {
     checkReference(){
       if(this.$route.query.card) {
         const query = this.$route.query.card
-        console.log(query);
-
         const title = this.createReferenceTag(this.$props.title)
 
         return title === query
