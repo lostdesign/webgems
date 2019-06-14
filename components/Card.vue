@@ -38,7 +38,6 @@ export default {
       this.active = title === query
         ? 'card--active'
         : ''
-
     },
   },
   mounted() {
