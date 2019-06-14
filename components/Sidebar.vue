@@ -10,7 +10,7 @@
       nuxt-link(to="/frontend") Frontend
       nuxt-link(to="/fullstack") Fullstack
       nuxt-link(to="/servers") Server
-      nuxt-link(to="/tools") Utility
+      nuxt-link(to="/utility") Utility
       nuxt-link(to="/daily") Daily
 </template>
 
