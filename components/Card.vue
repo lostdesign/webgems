@@ -15,10 +15,11 @@ export default {
      async createCopyUrl() {
       try {
         let currentPath = this.$router.history.current.path
+
         let reference =  this.createReferenceTag(this.$props.title)
 
-        await this.$copyText(`https://webgems.io${currentPath}?card=${reference}`)
-        this.$router.push(`${currentPath}?card=${reference}`)
+        await this.$copyText(`https://webgems.io${currentPath}/?card=${reference}`)
+        this.$router.push(`${currentPath}/?card=${reference}`)
       } catch (e) {
         console.error(e);
       }
@@ -37,7 +38,7 @@ export default {
           ? 'card--active'
           : ''
       }
-    }
+    },
   },
 }
 </script>

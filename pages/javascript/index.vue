@@ -69,7 +69,7 @@ export default {
           url: 'https://learnjavascriptfast.com/'
         },
         {
-          title: 'ECMAScript 6 ',
+          title: 'ECMAScript 6',
           desc: 'ES6 is a significant update to the language, and the first update to the language since ES5 was standardized in 2009.',
           url: 'https://github.com/lukehoban/es6features#readme'
         },
