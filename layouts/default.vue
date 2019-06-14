@@ -115,3 +115,27 @@ h1 {
 // #2D3748 ligher cards
 // #ff3e35 or #08e5ff links
 </style>
+
+
+<style lang="scss">
+::-webkit {
+  &-scrollbar{
+    width: 5px;
+    height: 5px;
+
+    &-thumb{
+      background: #08e5ff;
+      border-radius: 1rem;
+    }
+
+    &-track{
+      background:#232331;
+    }
+  }
+  &-resizer,
+  &-scrollbar-corner {
+    background: #232331;
+  }
+}
+
+</style>
