@@ -32,14 +32,13 @@ export default {
       return tag.replace(/ /g, '').toLowerCase()
     },
     checkReference(){
-      if(this.$route.query.card) {
-        const query = this.$route.query.card
-        const title = this.createReferenceTag(this.$props.title)
+      const query = this.$route.query.card
+      const title = this.createReferenceTag(this.$props.title)
 
-        this.active = title === query
-          ? 'card--active'
-          : ''
-      }
+      this.active = title === query
+        ? 'card--active'
+        : ''
+
     },
   },
   mounted() {
