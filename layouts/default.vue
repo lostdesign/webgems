@@ -1,17 +1,20 @@
 <template lang="pug">
   .layout
+    Github
     Logo
     Sidebar
     nuxt.content
 </template>
 
 <script>
+import Github from '../components/Github'
 import Logo from '../components/Logo'
 import Search from '../components/Search'
 import Sidebar from '../components/Sidebar'
 
 export default {
   components: {
+    Github,
     Logo,
     Search,
     Sidebar
