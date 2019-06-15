@@ -6,7 +6,7 @@
     p Webgems is a goto place for devs and designers to find new resources and more. As a beginner it's sometimes not easy to find what you need since you don't know what you should look for.
     p Therefore i created this project to have the most common and best resources for beginners and veterans in one place. Kinda like a bookmarks list for devs and designers, containing only the best gems out there.
     p If you want to add your own gem, go ahead and open a pull request on github (click on that octocat at the top right corner).&nbsp;
-    p By the way, this project lives by getting shared, if you find with worthy please share it with others.
+    p By the way, this project lives by getting shared, if you find this worthy please share it with others.
     p made with love by&nbsp;
         a(href="https://twitter.com/lostdesign") @lostdesign
 
