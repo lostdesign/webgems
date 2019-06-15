@@ -12,6 +12,7 @@
       nuxt-link(to="/servers") Server
       nuxt-link(to="/utility") Utility
       nuxt-link(to="/daily") Daily
+      nuxt-link(to="/communities") Communities
 </template>
 
 
