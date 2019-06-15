@@ -48,10 +48,6 @@ Please use this schema:
 For a whole new section, create a new folder in the `pages` directory - be aware that the folder name is equal to the route of the site `webgems.io/NEWFOLDERNAME`.
 Inside the new section add at least the `index.vue` file and copy the structure of another section. Change the title and add it's own resources.
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
 
 * [Nuxt.js docs](https://nuxtjs.org) Nuxt.js
