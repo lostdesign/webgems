@@ -26,5 +26,11 @@ main {
   align-items: center;
   max-width: 50%;
 }
+
+@media (max-width: 800px) {
+  main {
+    max-width: 90%;
+  }
+}
 </style>
 
