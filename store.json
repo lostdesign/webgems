@@ -1,0 +1,682 @@
+[
+  { 
+    "title": "Communities",
+    "resources": [
+      {
+        "title": "Devcord",
+        "desc": "A community of developers and designers helping each other. ",
+        "url": "https://devcord.com"
+      },
+      {
+        "title": "DomainCord",
+        "desc": "DomainCord is the only domain name marketplace and discussion community built on top of the Discord platform.",
+        "url": "https://discord.gg/4KjgdNd"
+      },
+      {
+        "title": "WebGL and Threejs",
+        "desc": "desc",
+        "url": "https://discord.gg/PJAjxvX"
+      },
+      {
+        "title": "Design Drop",
+        "desc": "We're a community built up of creatives, who are looking to improve ourselves, meet new people, and have fun.",
+        "url": "discord.gg/yNBY9bP"
+      },
+      {
+        "title": "/r/webdev",
+        "desc": "A community dedicated to all things web development: both front-end and back-end.",
+        "url": "https://reddit.com/r/webdev"
+      },
+      {
+        "title": "/r/web_design",
+        "desc": "A community dedicated to all things web design.",
+        "url": "https://reddit.com/r/web_design"
+      },
+      {
+        "title": "/r/javascript",
+        "desc": "All about the JavaScript programming language!",
+        "url": "https://reddit.com/r/javascript"
+      },
+      {
+        "title": "/r/php",
+        "desc": "Ask questions about frameworks, try your hand at php golf and strike gold or simply show off your latest work.",
+        "url": "https://reddit.com/r/php"
+      },
+      {
+        "title": "/r/html",
+        "desc": "A subreddit about HTML.",
+        "url": "https://reddit.com/r/html"
+      },
+      {
+        "title": "/r/css",
+        "desc": "For discussing Cascading Style Sheets, design principles, and technological innovations related to web development.",
+        "url": "https://reddit.com/r/css"
+      }
+    ]
+  },
+  {
+    "title": "CSS",
+    "resources": [
+      {
+        "title": "CSS Grid Generator",
+        "desc": "Visually create your css grid and export the code.",
+        "url": "https://cssgrid-generator.netlify.com/"
+      },
+      {
+        "title": "Keyframes Editor",
+        "desc": "An insanely simple way to create CSS animations",
+        "url": "https://keyframes.app/editor/"
+      },
+      {
+        "title": "Flexbox Froggy",
+        "desc": "A game to learn Flexbox",
+        "url": "https://flexboxfroggy.com"
+      },
+      {
+        "title": "CSS Gridgarden",
+        "desc": "A game to learn Grid",
+        "url": "https://cssgridgarden.com"
+      },
+      {
+        "title": "30 Seconds of Code",
+        "desc": "A curated collection of useful CSS snippets you can understand in 30 seconds or less.",
+        "url": "https://30-seconds.github.io/30-seconds-of-css/"
+      },
+      {
+        "title": "Grid by example",
+        "desc": "Everything you need to learn CSS Grid Layout",
+        "url": "https://gridbyexample.com/learn/"
+      },
+      {
+        "title": "BEM naming convention",
+        "desc": "Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development",
+        "url": "https://getbem.com/"
+      },
+      {
+        "title": "CSS Triggers",
+        "desc": "Overview of css attributes which trigger either layout, paint or composite. Good to know if you want to learn more about css performance.",
+        "url": "https://csstriggers.com/"
+      },
+      {
+        "title": "A complete guide to flexbox",
+        "desc": "A comprehensive guide to flexbox, focusing on all the different possible properties for the parent element (the flex container).",
+        "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+      },
+      {
+        "title": "Learn CSS layout",
+        "desc": "This site teaches the CSS fundamentals that are used in any website\"s layout (Unfortunately nothing abour display:grid yet).",
+        "url": "http://learnlayout.com"
+      },
+      {
+        "title": "CSSmatic - box shadow generator",
+        "desc": "The ultimate box shadow generator",
+        "url": "https://www.cssmatic.com/box-shadow"
+      },
+      {
+        "title": "AirBnB CSS / Sass Styleguide",
+        "desc": "A mostly reasonable approach to css and sass.",
+        "url": "https://github.com/airbnb/css"
+      },
+      {
+        "title": "Animista",
+        "desc": "CSS animations on demand.",
+        "url": "http://animista.net/"
+      },
+      {
+        "title": "Use CSS Grids the right way",
+        "desc": "CSS Grid is robust, flexible, and a refreshing paradigm shift from other CSS layout systems. While these are selling points for Grid, they also make it hard to learn.",
+        "url": "https://vgpena.github.io/using-css-grid-the-right-way/"
+      },
+      {
+        "title": "CSS Protips",
+        "desc": "A collection of tips to help take your CSS skills pro.",
+        "url": "https://github.com/AllThingsSmitty/css-protips#readme"
+      },
+      {
+        "title": "Flexbox Defense",
+        "desc": "Your job is to stop the incoming enemies from getting past your defenses. Unlike other tower defense games, you must position your towers using CSS!",
+        "url": "http://www.flexboxdefense.com/"
+      },
+      {
+        "title": "CSS Diner",
+        "desc": "Learn CSS selectors while playing a game.",
+        "url": "https://flukeout.github.io/"
+      },
+      {
+        "title": "CSS Animation",
+        "desc": "CSS animation articles, tips and tutorials. Level Up Your CSS Animation Skills.",
+        "url": "https://cssanimation.rocks/"
+      }
+    ]
+  },
+  {
+    "title": "Daily",
+    "resources": [
+      {
+        "title": "dev.to",
+        "desc": "Where programmers share ideas and help each other grow. It is an online community for sharing and discovering great ideas, having debates, and making friends.",
+        "url": "https://www.dev.to"
+      },
+      {
+        "title": "CSS Tricks",
+        "desc": "Daily webdev related articles, snippets and guides since 2007",
+        "url": "https://css-tricks.com/"
+      },
+      {
+        "title": "Smashing magazine",
+        "desc": "Founded in September 2006 in Germany, Smashing Magazine delivers reliable, useful, but most importantly practical articles to web designers and developers. ",
+        "url": "https://www.smashingmagazine.com/"
+      },
+      {
+        "title": "Hackernews",
+        "desc": "Hacker News is a social news website focusing on computer science and entrepreneurship.",
+        "url": "https://news.ycombinator.com/"
+      },
+      {
+        "title": "Producthunt",
+        "desc": "Check popular new products out and get inspired, maybe even post yours?",
+        "url": "https://www.producthunt.com/"
+      }
+    ]
+  },
+  { 
+    "title": "Design",
+    "resources": [
+      {
+        "title": "UX/UI Designer Roadmap 2017",
+        "desc": "Roadmap to becoming a UI/UX Designer in 2017",
+        "url": "https://github.com/togiberlin/ui-ux-designer-roadmap"
+      },
+      {
+        "title": "Undraw",
+        "desc": "Free vector illustrations for your website.",
+        "url": "https://undraw.co"
+      },
+      {
+        "title": "Practical UI tips",
+        "desc": "7 Tips to boost your UI design.",
+        "url": "https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886"
+      },
+      {
+        "title": "UI tips",
+        "desc": "Design tips by Steve Schoger",
+        "url": "https://twitter.com/i/moments/880688233641848832"
+      },
+      {
+        "title": "Colorhunt",
+        "desc": "Color Hunt is a free and open platform for color inspiration with thousands of trendy hand-picked color palettes",
+        "url": "http://colorhunt.co/"
+      },
+      {
+        "title": "Flatuicolorpicker",
+        "desc": "Flatuicolorpicker is a project digging the Flat Color Picker which gives you the perfect colors for flat designs",
+        "url": "http://www.flatuicolorpicker.com"
+      },
+      {
+        "title": "awwwards",
+        "desc": "The awards for design, creativity and innovation on the Internet. Get your inspiration here or even submit your own website!",
+        "url": "https://awwwards.com"
+      },
+      {
+        "title": "siteinspire",
+        "desc": "siteInspire is a showcase of the finest web and interactive design.",
+        "url": "https://www.siteinspire.com"
+      },
+      {
+        "title": "ShapeFactory",
+        "desc": "Simple design tools for everyone. Simply create a logo, pigment/color scheme, gradient or duetone style.",
+        "url": "https://shapefactory.co"
+      },
+      {
+        "title": "lapa.ninja",
+        "desc": "The best resources for learning design.",
+        "url": "https://www.lapa.ninja/learn/"
+      },
+      {
+        "title": "Typography Handbook",
+        "desc": "A concise, referential guide on best web typographic practices.",
+        "url": "http://typographyhandbook.com"
+      },
+      {
+        "title": "Hyperpixel.io",
+        "desc": "Discover the latest designs for your own inspiration from our curated list of landing pages.",
+        "url": "https://hyperpixel.io/"
+      },
+      {
+        "title": "sharpen.design",
+        "desc": "Sharpen is where designers hone their craft - randomly generated design challenges.",
+        "url": "https://sharpen.design/"
+      },
+      {
+        "title": "Good UI",
+        "desc": "A Good User Interface Is One That's Backed By Reproducible Evidence (A/B Tests)",
+        "url": "https://goodui.org/"
+      },
+      {
+        "title": "SVG ON THE WEB",
+        "desc": "A Practical Guide",
+        "url": "https://svgontheweb.com/"
+      },
+      {
+        "title": "UI Gradients",
+        "desc": "Beautiful colour gradients for design and code.",
+        "url": "https://uigradients.com/#NoontoDusk"
+      }
+    ]
+  },
+  { 
+    "title": "Frontend",
+    "resources": [
+      {
+        "title": "Frontend Handbook 2019",
+        "desc": "A lovely guide made by frontendmasters.",
+        "url": "https://frontendmasters.com/books/front-end-handbook/2019/"
+      },
+      {
+        "title": "Frontend Style Guide",
+        "desc": "Example on how to style, format and organize your frontend project.",
+        "url": "https://kaliop.github.io/frontend-style-guide/2.0/"
+      },
+      {
+        "title": "Learn to Code HTML and CSS",
+        "desc": "Learn to Code HTML & CSS is a simple and comprehensive guide dedicated to helping beginners learn HTML and CSS. Outlining the fundamentals, this guide works through all common elements of front-end design and development.",
+        "url": "https://learn.shayhowe.com/html-css/"
+      },
+      {
+        "title": "Frontendmasters",
+        "desc": "Premium tier video courses for any modern stack. Monthly or yearly subscription.",
+        "url": "https://frontendmasters.com"
+      },
+      {
+        "title": "Don't fear the internet",
+        "desc": "Basic HTML & CSS for NON-WEB DESIGNERS",
+        "url": "http://www.dontfeartheinternet.com/"
+      }
+    ]
+  },
+  { 
+    "title": "Fullstack",
+    "resources": [
+      {
+        "title": "freeCodeCamp curriculum",
+        "desc": "We have thousands of coding lessons to help you improve your skills. You can earn each certification by completing its 5 final projects. And yes - all of this is 100% free, thanks to the thousands of campers who donate to our nonprofit. If you are new to coding, we recommend you start at the beginning.",
+        "url": "https://learn.freecodecamp.org"
+      },
+      {
+        "title": "Learn Node",
+        "desc": "Permium course by WesBos teaching you the MEPN (Mongo, Express, Pug, Node) stack using a fullstack project as example.",
+        "url": "https://learnnode.com"
+      }
+    ]
+  },
+  { 
+    "title": "General",
+    "resources": [
+      {
+        "title": "Caniuse",
+        "desc": "'Can I use' provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.",
+        "url": "https://caniuse.com/"
+      },
+      {
+        "title": "DevDocs",
+        "desc": "DevDocs combines multiple API documentations in a fast, organized, and searchable interface. Online and offline, always have your docs with you.",
+        "url": "https://devdocs.io"
+      },
+      {
+        "title": "MDN web docs",
+        "desc": "Tutorials, references, tools and resources.",
+        "url": "https://developer.mozilla.org/en-US/docs/Web"
+      },
+      {
+        "title": "Rico's cheatsheets",
+        "desc": "Cheatsheets for any kind of technologies in the web domain.",
+        "url": "https://devhints.io"
+      },
+      {
+        "title": "Developer Roadmap",
+        "desc": "Below you find a set of charts demonstrating the paths that you can take and the technologies that you would want to adopt in order to become a frontend, backend or a devops.",
+        "url": "https://github.com/kamranahmedse/developer-roadmap/blob/master/readme.md"
+      },
+      {
+        "title": "ebookfoundation",
+        "desc": "Freely available programming books",
+        "url": "https://ebookfoundation.github.io/free-programming-books/"
+      },
+      {
+        "title": "Google Developer",
+        "desc": "Tutorials, guides, and best practices for building the next generation of web experiences.",
+        "url": "https://developers.google.com/web/"
+      },
+      {
+        "title": "Google Chrome Youtube",
+        "desc": "Making the web more awesome - latest news about google chrome",
+        "url": "https://www.youtube.com/channel/UCnUYZLuoy1rq1aVMwx4aTzw"
+      },
+      {
+        "title": "Code wars",
+        "desc": "Challenge yourself on kata, created by the community to strengthen different skills. Master your current language of choice, or expand your understanding of a new one.",
+        "url": "https://www.codewars.com/"
+      },
+      {
+        "title": "Learn X in Y min",
+        "desc": "Take a whirlwind tour of your next favorite language. Community-driven!",
+        "url": "https://learnxinyminutes.com/"
+      },
+      {
+        "title": "The A11Y Checklist",
+        "desc": "This checklist uses the The Web Content Accessibility Guidelines (WCAG) as a reference point. The WCAG is a shared standard for web content accessibility for individuals, organizations, and governments.",
+        "url": "https://a11yproject.com/checklist/"
+      }
+    ]
+  },
+  { 
+    "title": "HTML",
+    "resources": [
+      {
+        "title": "HTML ELEMENTS",
+        "desc": "All the HTML elemens you can use. There is more than just a div :)",
+        "url": "https://developer.mozilla.org/de/docs/Web/HTML/Element"
+      },
+      {
+        "title": "The web accessibility basics",
+        "desc": "The absolute web accessibility basics every web developer should know about.",
+        "url": "https://www.marcozehe.de/2015/12/14/the-web-accessibility-basics/"
+      },
+      {
+        "title": "Introduction to HTML",
+        "desc": "In just 4 hours, learn the basics of HTML5 and start building & editing web pages.",
+        "url": "https://www.codecademy.com/learn/learn-html"
+      },
+      {
+        "title": "Awesome Canvas",
+        "desc": "A curated list of awesome Canvas examples, related articles and posts.",
+        "url": "https://github.com/raphamorim/awesome-canvas#readme"
+      },
+      {
+        "title": "HTML Spec",
+        "desc": "This specification defines a big part of the Web platform, in lots of detail.",
+        "url": "https://html.spec.whatwg.org/"
+      },
+      {
+        "title": "Markup validator",
+        "desc": "This tool is checking your markup if it complies with the specification and will show you possible errors.",
+        "url": "https://validator.w3.org/nu/"
+      }
+    ]
+  },
+  { 
+    "title": "Javascript",
+    "resources": [
+      {
+        "title": "WarriorJS",
+        "desc": "An exciting game of programming and Artificial Intelligence",
+        "url": "https://warrior.js.org/"
+      },
+      {
+        "title": "Javascript30",
+        "desc": "Free video courses about javascript. Made by WesBos",
+        "url": "https://javascript30.com"
+      },
+      {
+        "title": "JS the right way",
+        "desc": "This is a guide intended to introduce new developers to JavaScript and help experienced developers learn more about its best practices.",
+        "url": "https://jstherightway.org"
+      },
+      {
+        "title": "Learn vanilla js",
+        "desc": "A vanilla JS roadmap, along with learning resources and project ideas to help you get started.",
+        "url": "https://learnvanillajs.com/"
+      },
+      {
+        "title": "Javascript Info",
+        "desc": "How it's done now. From the basics to advanced topics with simple, but detailed explanations.",
+        "url": "https://javascript.info/"
+      },
+      {
+        "title": "30 Seconds of Code",
+        "desc": "A curated collection of useful JavaScript snippets that you can understand in 30 seconds or less.",
+        "url": "https://30secondsofcode.org"
+      },
+      {
+        "title": "JS Tips",
+        "desc": "JS Tips is a collection of useful daily JavaScript tips that will allow you to improve your code writing.",
+        "url": "https://www.jstips.co"
+      },
+      {
+        "title": "YDKJS",
+        "desc": "This is a free series of books diving deep into the core mechanisms of the JavaScript language. The first edition of the series is now complete.",
+        "url": "https://github.com/getify/You-Dont-Know-JS"
+      },
+      {
+        "title": "Eloquent Javascript 3rd Edition",
+        "desc": "This is a book about javascript, programming, and the wonders of the digital. You can read it online or get a paperback copy of it.",
+        "url": "http://eloquentjavascript.net"
+      },
+      {
+        "title": "Learn javascript fast",
+        "desc": "Welcome to learnjavascriptfast.com, a free online course designed to help you learn Javascript fast with hands-on project. Our aim is to equip you with enough knowledge to start coding your own Javascript pages immediately upon completion of this course.",
+        "url": "https://learnjavascriptfast.com/"
+      },
+      {
+        "title": "ECMAScript 6",
+        "desc": "ES6 is a significant update to the language, and the first update to the language since ES5 was standardized in 2009.",
+        "url": "https://github.com/lukehoban/es6features#readme"
+      },
+      {
+        "title": "You might not need jquery",
+        "desc": "jQuery and its cousins are great, and by all means use them if it makes it easier to develop your application. If you're developing a library on the other hand, please take a moment to consider if you actually need jQuery as a dependency.",
+        "url": "http://youmightnotneedjquery.com"
+      }
+    ]
+  },
+  { 
+    "title": "PHP",
+    "resources": [
+      {
+        "title": "PHP the right way",
+        "desc": "PHP The Right Way is an easy-to-read, quick reference for PHP popular coding standards, links to authoritative tutorials around the Web and what the contributors consider to be best practices at the present time.",
+        "url": "https://phptherightway.com"
+      },
+      {
+        "title": "The PHP manual",
+        "desc": "The PHP manual is documenting the whole spec while giving examples for each property.",
+        "url": "https://www.php.net/manual/en/"
+      },
+      {
+        "title": "PHP for beginners",
+        "desc": "We all start somewhere. When it comes to web development with PHP, well, your first stop is this series. Designed specifically and exclusively for beginners, here, you'll learn the fundamentals of PHP - all the way down to defining variables and arrays.",
+        "url": "https://laracasts.com/series/php-for-beginners"
+      },
+      {
+        "title": "Learn PHP in Y Minutes",
+        "desc": "A quick short overview of PHP utilizing most of the spec.",
+        "url": "https://learnxinyminutes.com/docs/php/"
+      },
+      {
+        "title": "An online book for learning PHP",
+        "desc": "PHP Apprentice is an online, open source book about the PHP programming language. PHP is one of the most popular platforms for building websites and web services.",
+        "url": "https://phpapprentice.com/"
+      },
+      {
+        "title": "PHP-FIG",
+        "desc": "Moving PHP forward through collaboration and standards. Welcome to the PHP Framework Interop Group! We're a group of established PHP projects whose goal is to talk about commonalities between our projects and find ways we can work better together.",
+        "url": "https://www.php-fig.org/"
+      },
+      {
+        "title": "PHP Subreddit",
+        "desc": "Ask questions about frameworks, try your hand at php golf and strike gold or simply show off your latest work.",
+        "url": "https://reddit.com/r/php"
+      },
+      {
+        "title": "(The only proper) PDO tutorial",
+        "desc": "There are many tutorials on PDO already, but unfortunately, most of them fail to explain the real benefits of PDO, or even promote rather bad practices. The only two exceptions are phptherightway.com and hashphp.org, but they miss a lot of important information. As a result, half of PDO's features remain in obscurity and are almost never used by PHP developers, who, as a result, are constantly trying to reinvent the wheel which already exists in PDO.",
+        "url": "https://phpdelusions.net/pdo"
+      },
+      {
+        "title": "Online PHP shell",
+        "desc": "3v4l.org (leetspeak for eval) is an online shell that allows you to run your code on my server. I compiled more than 200 different PHP versions (every version released since 4.3.0) plus HHVM for you to use.",
+        "url": "https://3v4l.org/"
+      },
+      {
+        "title": "Safe Password Hashing",
+        "desc": "This section explains the reasons behind using hashing functions to secure passwords, as well as how to do so effectively.",
+        "url": "https://www.php.net/manual/en/faq.passwords.php"
+      },
+      {
+        "title": "14 Tips",
+        "desc": "14 Tips to Write PHP Code that is Hard to Maintain and Upgrade",
+        "url": "https://www.tomasvotruba.cz/blog/2018/11/26/14-tips-to-write-php-code-that-is-hard-to-maintain-and-upgrade/"
+      },
+      {
+        "title": "Object Calisthenics",
+        "desc": "Object Calisthenics are programming exercises, formalized as a set of 9 rules invented by Jeff Bay in his book The ThoughtWorks Anthology. The word Object is related to Object Oriented Programming. The word Calisthenics is derived from greek, and means exercises under the context of gymnastics.",
+        "url": "https://williamdurand.fr/2013/06/03/object-calisthenics/"
+      },
+      {
+        "title": "Your code sucks, let's fix it",
+        "desc": "134 Slides to help fix your code. Performance and testing are just one aspect of code, to really be successful your code needs to be readable, maintainable and generally easier to comprehend and work with.",
+        "url": "https://www.slideshare.net/rdohms/your-code-sucks-lets-fix-it-15471808"
+      }
+    ]
+  },
+  { 
+    "title": "Server",
+    "resources": [
+      {
+        "title": "Netlify",
+        "desc": "Free static hosting with privacy in mind!",
+        "url": "https://netlify.com"
+      },
+      {
+        "title": "Github Pages",
+        "desc": "Free static hosting by Github.",
+        "url": "https://pages.github.com"
+      },
+      {
+        "title": "Namecheap",
+        "desc": "Domains for your projects",
+        "url": "https://namecheap.com"
+      },
+      {
+        "title": "Servers for hackers",
+        "desc": "Tutorials on how to handle your servers.",
+        "url": "https://serversforhackers.com/"
+      }
+    ]
+  },
+  { 
+    "title": "Tools",
+    "resources": [
+      {
+        "title": "JSON Generator",
+        "desc": "Random JSON generator for your project - because debugging without data, does not make sense!",
+        "url": "https://www.json-generator.com"
+      },
+      {
+        "title": "Matomo",
+        "desc": "A free open source web analytics tool which can be compared to GA but actually gives a shit about privacy.",
+        "url": "https://matomo.org/"
+      },
+      {
+        "title": "Fathom",
+        "desc": "Fathom Analytics provides simple, useful website stats without tracking or storing personal data of your users.",
+        "url": "https://usefathom.com"
+      },
+      {
+        "title": "10 free tools",
+        "desc": "10 free-but-professional tools for your dev projects",
+        "url": "https://dev.to/sauloco/10-free-but-professional-tools-for-your-dev-projects-2eeo"
+      },
+      {
+        "title": "headless cms",
+        "desc": "A List of Content Management Systems for JAMstack Sites",
+        "url": "https://headlesscms.org"
+      },
+      {
+        "title": "Git and Git flow cheatsheet",
+        "desc": "Git cheat sheet saves you from learning all the commands by heart.",
+        "url": "https://github.com/arslanbilal/git-cheat-sheet#readme"
+      },
+      {
+        "title": "StaticGen",
+        "desc": "A List of Static Site Generators for JAMstack Sites",
+        "url": "https://www.staticgen.com"
+      },
+      {
+        "title": "Snippet generator",
+        "desc": "Create your own snippets for VSCode, Sublime or Atom using this generator. No need to format the snippet yourself",
+        "url": "https://snippet-generator.app/"
+      },
+      {
+        "title": "gitignore.io",
+        "desc": "Create usefull .gitignore files for your projects.",
+        "url": "https://www.gitignore.io"
+      },
+      {
+        "title": "Github",
+        "desc": "GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code, manage projects, and build software alongside 36 million developers.",
+        "url": "https://github.com"
+      },
+      {
+        "title": "NASA APIs",
+        "desc": "Welcome to the NASA API portal. The objective of this site is to make NASA data, including imagery, eminently accessible to application developers. The api.nasa.gov catalog is growing.",
+        "url": "https://api.nasa.gov"
+      },
+      {
+        "title": "PokéAPI",
+        "desc": "The RESTful Pokémon API",
+        "url": "https://pokeapi.co"
+      },
+      {
+        "title": "Reddit API .json",
+        "desc": "Take a any subreddit you like and append '.json' to consume it as an API (https://reddit.com/r/cats.json).",
+        "url": "https://www.reddit.com/.json"
+      },
+      {
+        "title": "quicktype",
+        "desc": "Generate types and serializers from JSON.",
+        "url": "https://quicktype.io"
+      },
+      {
+        "title": "NGINXconfig.io",
+        "desc": "Quickly generate a NGINX config for your server.",
+        "url": "https://nginxconfig.io/"
+      },
+      {
+        "title": "Online tools",
+        "desc": "Decode, encode and hash any string quickly.",
+        "url": "https://emn178.github.io/online-tools"
+      },
+      {
+        "title": "Favicon generator. For real.",
+        "desc": "A favicon generator for all browsers and platforms.",
+        "url": "https://realfavicongenerator.net"
+      },
+      {
+        "title": "JSFiddle",
+        "desc": "JSFiddle is for: Demos for docs, Bug reporting (test-case) for Github Issues, Live code collaboration, Code snippets hosting for free!",
+        "url": "https://jsfiddle.net"
+      },
+      {
+        "title": "Gifless",
+        "desc": "Create emoji and text gifs in seconds",
+        "url": "https://www.gifless.com/"
+      },
+      {
+        "title": "Learn Git",
+        "desc": "Become a git guru - a tutorial series by Atlassian.",
+        "url": "https://www.atlassian.com/git/tutorials"
+      },
+      {
+        "title": "Git form the inside out",
+        "desc": "This essay explains how Git works. It assumes you understand Git well enough to use it to version control your projects.",
+        "url": "https://codewords.recurse.com/issues/two/git-from-the-inside-out"
+      },
+      {
+        "title": "List of Public APIs",
+        "desc": "A collective list of free APIs for use in software and web development.",
+        "url": "https://github.com/public-apis/public-apis"
+      }
+    ]
+  }
+]
