@@ -24,6 +24,11 @@ export default {
           url: 'https://discord.gg/4KjgdNd'
         },
         {
+          title: 'Developer Hangout',
+          desc: 'Hangout and learn with new and experienced developers in this Discord community. All ages and experience levels welcome!',
+          url: 'https://discord.gg/developers'
+        },
+        {
           title: 'WebGL and Threejs',
           desc: 'desc',
           url: 'https://discord.gg/PJAjxvX'
@@ -31,7 +36,7 @@ export default {
         {
           title: 'Design Drop',
           desc: 'We\'re a community built up of creatives, who are looking to improve ourselves, meet new people, and have fun.',
-          url: 'discord.gg/yNBY9bP'
+          url: 'https://discord.gg/yNBY9bP'
         },
         {
           title: '/r/webdev',
