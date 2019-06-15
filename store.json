@@ -14,6 +14,11 @@
         "url": "https://discord.gg/4KjgdNd"
       },
       {
+        "title": "Developer Hangout",
+        "desc": "Hangout and learn with new and experienced developers in this Discord community. All ages and experience levels welcome!",
+        "url": "https://discord.gg/developers"
+      },
+      {
         "title": "WebGL and Threejs",
         "desc": "desc",
         "url": "https://discord.gg/PJAjxvX"
@@ -21,7 +26,7 @@
       {
         "title": "Design Drop",
         "desc": "We're a community built up of creatives, who are looking to improve ourselves, meet new people, and have fun.",
-        "url": "discord.gg/yNBY9bP"
+        "url": "https://discord.gg/yNBY9bP"
       },
       {
         "title": "/r/webdev",
@@ -670,6 +675,11 @@
         "url": "https://jsfiddle.net"
       },
       {
+        "title": "CodePen",
+        "desc": "CodePen is an online community for testing and showcasing user-created HTML, CSS and JavaScript code snippets.",
+        "url": "https://codepen.io/"
+      },
+      {
         "title": "Gifless",
         "desc": "Create emoji and text gifs in seconds",
         "url": "https://www.gifless.com/"
@@ -688,6 +698,11 @@
         "title": "List of Public APIs",
         "desc": "A collective list of free APIs for use in software and web development.",
         "url": "https://github.com/public-apis/public-apis"
+      },
+      {
+        "title": "Carbon",
+        "desc": "Create and share beautiful images of your source code.",
+        "url": "https://carbon.now.sh"
       }
     ]
   }
