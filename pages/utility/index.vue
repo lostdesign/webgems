@@ -104,6 +104,11 @@ export default {
           url: 'https://jsfiddle.net'
         },
         {
+          title: 'CodePen',
+          desc: 'CodePen is an online community for testing and showcasing user-created HTML, CSS and JavaScript code snippets.',
+          url: 'https://codepen.io/'
+        },
+        {
           title: 'Gifless',
           desc: 'Create emoji and text gifs in seconds',
           url: 'https://www.gifless.com/'
@@ -123,6 +128,11 @@ export default {
           desc: 'A collective list of free APIs for use in software and web development.',
           url: 'https://github.com/public-apis/public-apis'
         },
+        {
+          title: 'Carbon',
+          desc: 'Create and share beautiful images of your source code.',
+          url: 'https://carbon.now.sh'
+        }
       ]
     }
   },
