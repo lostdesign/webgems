@@ -68,6 +68,11 @@ export default {
           desc: 'ES6 is a significant update to the language, and the first update to the language since ES5 was standardized in 2009.',
           url: 'https://github.com/lukehoban/es6features#readme'
         },
+        {
+          title: 'You might not need jquery',
+          desc: 'jQuery and its cousins are great, and by all means use them if it makes it easier to develop your application. If you\'re developing a library on the other hand, please take a moment to consider if you actually need jQuery as a dependency.',
+          url: 'http://youmightnotneedjquery.com'
+        },
       ]
     }
   },
