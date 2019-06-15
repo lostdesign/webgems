@@ -24,6 +24,11 @@ export default {
           url: 'https://devdocs.io'
         },
         {
+          title: 'MDN web docs',
+          desc: 'Tutorials, references, tools and resources.',
+          url: 'https://developer.mozilla.org/en-US/docs/Web'
+        },
+        {
           title: 'Rico\'s cheatsheets',
           desc: 'Cheatsheets for any kind of technologies in the web domain.',
           url: 'https://devhints.io'

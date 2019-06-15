@@ -59,11 +59,6 @@ export default {
           url: 'http://eloquentjavascript.net'
         },
         {
-          title: 'MDN web docs - Javascript',
-          desc: 'Tutorials, references, tools and resources. Your goto documentation to learn js.',
-          url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
-        },
-        {
           title: 'Learn javascript fast',
           desc: 'Welcome to learnjavascriptfast.com, a free online course designed to help you learn Javascript fast with hands-on project. Our aim is to equip you with enough knowledge to start coding your own Javascript pages immediately upon completion of this course.',
           url: 'https://learnjavascriptfast.com/'
