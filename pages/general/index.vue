@@ -53,6 +53,11 @@ export default {
           desc: 'Challenge yourself on kata, created by the community to strengthen different skills. Master your current language of choice, or expand your understanding of a new one.',
           url: 'https://www.codewars.com/'
         },
+        {
+          title: 'Learn X in Y min',
+          desc: 'Take a whirlwind tour of your next favorite language. Community-driven!',
+          url: 'https://learnxinyminutes.com/'
+        },
       ]
     }
   },
