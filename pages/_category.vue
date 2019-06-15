@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import store from '../../store.json'
-import Card from '../../components/Card'
+import store from '../store.json'
+import Card from '../components/Card'
 
 export default {
   data () {
