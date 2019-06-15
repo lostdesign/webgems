@@ -68,6 +68,10 @@ export default {
           desc: 'For discussing Cascading Style Sheets, design principles, and technological innovations related to web development.',
           url: 'https://reddit.com/r/css'
         },
+        {
+          title: 'ES-Community',
+          desc: 'We\'re a french community built to provide a place for exchange, mutual aid and technology watch about the JavaScript ecosystem.'
+        },
       ]
     }
   },
