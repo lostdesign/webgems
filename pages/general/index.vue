@@ -58,6 +58,11 @@ export default {
           desc: 'Take a whirlwind tour of your next favorite language. Community-driven!',
           url: 'https://learnxinyminutes.com/'
         },
+        {
+          title: 'The A11Y Checklist',
+          desc: 'This checklist uses the The Web Content Accessibility Guidelines (WCAG) as a reference point. The WCAG is a shared standard for web content accessibility for individuals, organizations, and governments.',
+          url: 'https://a11yproject.com/checklist/'
+        },
       ]
     }
   },

@@ -1,18 +1,30 @@
 <template lang="pug">
-div
+.welcome
   main
     h1.text-black.font-bold.text-xl.mb-2 What is &nbsp;
       span 💎 webgems ?
-    p As of now, it's a curated list of resources for developers and designers. If you want to suggest a resource, go ahead and contact me&nbsp;
-      a(href="https://twitter.com/lostdesign") @lostdesign&nbsp;
-      | or lost#0001 on discord
-
-      //- a(href="https://discord.gg/Bjgjdrr") my discord server
-    p Please note that this project has just launched some days ago - many of the resources i have in my backlog have not been added yet. I plan on adding more contents first, improve the site and then slap a backend behind it, were you can submit resources and vote on others. It will also be able to manage your own favorite resources or mark some as done.
-    p Thank you :)
+    p Webgems is a goto place for devs and designers to find new resources and more. As a beginner it's sometimes not easy to find what you need since you don't know what you should look for.
+    p Therefore i created this project to have the most common and best resources for beginners and veterans in one place. Kinda like a bookmarks list for devs and designers, containing only the best gems out there.
+    p If you want to add your own gem, go ahead and open a pull request on github (click on that octocat at the top right corner).&nbsp;
+    p By the way, this project lives by getting shared, if you find with worthy please share it with others.
+    p made with love by&nbsp;
+        a(href="https://twitter.com/lostdesign") @lostdesign
 
 </template>
 
-<script>
-export default {}
-</script>
+<style lang="scss" scoped>
+.welcome {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+}
+</style>
+
