@@ -16,7 +16,7 @@ export default {
   },
   created() {
     this.menuEntries = store.map(({ title, slug }) => ({
-      slug: `/categories/${slug}`,
+      slug: '/categories' + slug,
       title
     }))
   }
