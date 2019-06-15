@@ -25,4 +25,3 @@ export default {
   components: { Card, },
 }
 </script>
-
