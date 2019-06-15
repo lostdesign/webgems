@@ -1,6 +1,7 @@
 [
-  { 
+  {
     "title": "Communities",
+    "slug": "/communities",
     "resources": [
       {
         "title": "Devcord",
@@ -56,6 +57,7 @@
   },
   {
     "title": "CSS",
+    "slug": "/css",
     "resources": [
       {
         "title": "CSS Grid Generator",
@@ -151,6 +153,7 @@
   },
   {
     "title": "Daily",
+    "slug": "/daily",
     "resources": [
       {
         "title": "dev.to",
@@ -181,6 +184,7 @@
   },
   { 
     "title": "Design",
+    "slug": "/design",
     "resources": [
       {
         "title": "UX/UI Designer Roadmap 2017",
@@ -266,6 +270,7 @@
   },
   { 
     "title": "Frontend",
+    "slug": "/frontend",
     "resources": [
       {
         "title": "Frontend Handbook 2019",
@@ -296,6 +301,7 @@
   },
   { 
     "title": "Fullstack",
+    "slug": "/fullstack",
     "resources": [
       {
         "title": "freeCodeCamp curriculum",
@@ -311,6 +317,7 @@
   },
   { 
     "title": "General",
+    "slug": "/general",
     "resources": [
       {
         "title": "Caniuse",
@@ -371,6 +378,7 @@
   },
   { 
     "title": "HTML",
+    "slug": "/html",
     "resources": [
       {
         "title": "HTML ELEMENTS",
@@ -406,6 +414,7 @@
   },
   { 
     "title": "Javascript",
+    "slug": "/javascript",
     "resources": [
       {
         "title": "WarriorJS",
@@ -471,6 +480,7 @@
   },
   { 
     "title": "PHP",
+    "slug": "/php",
     "resources": [
       {
         "title": "PHP the right way",
@@ -541,6 +551,7 @@
   },
   { 
     "title": "Server",
+    "slug": "/server",
     "resources": [
       {
         "title": "Netlify",
@@ -566,6 +577,7 @@
   },
   { 
     "title": "Tools",
+    "slug": "/tools",
     "resources": [
       {
         "title": "JSON Generator",

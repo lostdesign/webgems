@@ -18,12 +18,8 @@ export default {
     }
   },
   computed: {
-    category() {
-      console.log(this.categoryTitle)
-      console.log(this.categories)
-      const result = this.categories.find(category => category.title.toLowerCase() === this.categoryTitle.toLowerCase())
-      console.log(result)
-      return result
+    category() {      
+      return this.categories.find(category => category.title.toLowerCase() === this.categoryTitle.toLowerCase())
     }
   },
   components: { Card, },
