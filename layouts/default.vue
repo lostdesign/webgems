@@ -61,8 +61,11 @@ a {
   text-decoration: underline;
 }
 
+.card--title,
+.card--description,
 h1, p {
   color: white;
+  text-align: left ;
 }
 
 h1 {
@@ -95,10 +98,31 @@ h1 {
   grid-area: content;
 }
 
+.content > h1 ~ table
+{
+  display: table ;
+  width: 100% ;
+
+  td,
+  th
+  {
+    vertical-align: top ;
+
+    padding: 1rem ;
+  }
+}
+
+.content > h1 ~ table
 .cards {
   display:grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem,auto));
   grid-gap: 1rem;
+
+  td,
+  th
+  {
+    padding: 0 ;
+  }
 }
 
 

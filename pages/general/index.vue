@@ -1,9 +1,10 @@
 <template lang="pug">
   div
     h1 General
-    .cards
-      template(v-for='resource in resources')
-        Card(:title='resource.title' :desc='resource.desc' :url='resource.url')
+    table
+      tbody.cards
+        template(v-for='resource in resources')
+          Card(:title='resource.title' :desc='resource.desc' :url='resource.url')
 </template>
 
 <script>

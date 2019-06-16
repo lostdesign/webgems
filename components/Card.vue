@@ -1,8 +1,8 @@
 <template lang="pug">
-  .card(:class="active")
-    p.card--title {{title}}
-    p.card--description {{desc}}
-    .card--links
+  tr.card(:class="active")
+    th.card--title(scope='row') {{title}}
+    td.card--description {{desc}}
+    td.card--links
       a.card--reference(@click='createCopyUrl') Copy
       br
       a.card--target(:href="url" :target='title' rel='noreferrer') Open
@@ -53,13 +53,22 @@ export default {
 
 
 <style lang="scss" scoped>
+.cards > .card {
+  display: flex;
+  flex-direction: column;
+
+  &--links
+  {
+    display:flex;
+    justify-content:flex-end;
+  }
+}
+
 .card {
   background: #2D3748;
   border-radius: .3rem;
   padding: 1rem;
   transition: .2s ease-in-out;
-  display: flex;
-  flex-direction: column;
   position: relative;
 
   &--active {
@@ -71,9 +80,6 @@ export default {
   }
 
   &--links {
-    display:flex;
-    justify-content:flex-end;
-
     img {
       width: 1rem;
       margin-left: .5rem;
