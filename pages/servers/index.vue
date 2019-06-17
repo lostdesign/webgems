@@ -29,11 +29,6 @@ export default {
           url: 'https://www.heroku.com/'
         },
         {
-          title: 'Glitch',
-          desc: 'Glitch is the friendly community where everyone can discover and create the best stuff on the web.',
-          url: 'https://glitch.com/'
-        },
-        {
           title: 'Now',
           desc: 'Global Serverless Deployments. Now makes serverless application deployment easy. Don\'t spend time configuring the cloud. Just push your code.',
           url: 'https://zeit.co/now'

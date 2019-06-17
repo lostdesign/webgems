@@ -29,6 +29,11 @@ export default {
           url: 'https://discord.gg/developers'
         },
         {
+          title: 'Glitch',
+          desc: 'Glitch is the friendly community where everyone can discover and create the best stuff on the web.',
+          url: 'https://glitch.com/'
+        },
+        {
           title: 'WebGL and Threejs',
           desc: 'desc',
           url: 'https://discord.gg/PJAjxvX'
