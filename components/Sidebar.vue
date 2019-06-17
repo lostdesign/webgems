@@ -5,6 +5,7 @@
       nuxt-link(to="/html") HTML
       nuxt-link(to="/css") CSS
       nuxt-link(to="/javascript") Javascript
+      nuxt-link(to="/ruby") Ruby
       nuxt-link(to="/php") PHP
       nuxt-link(to="/design") Design
       nuxt-link(to="/frontend") Frontend

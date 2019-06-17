@@ -68,6 +68,11 @@ export default {
           desc: 'For discussing Cascading Style Sheets, design principles, and technological innovations related to web development.',
           url: 'https://reddit.com/r/css'
         },
+        {
+          title: 'MedellinJS',
+          desc: 'We are a passionate community whose goal is to strengthen and articulate the technological ecosystem of the city of Medellín, Colombia.',
+          url: 'https://medellinjs.org/'
+        },
       ]
     }
   },
