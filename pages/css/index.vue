@@ -29,6 +29,11 @@ export default {
           url: 'https://flexboxfroggy.com'
         },
         {
+          title: 'Flexbox Zombies',
+          desc: 'A course to learn Flexbox',
+          url: 'https://mastery.games/p/flexbox-zombies'
+        },
+        {
           title: 'CSS Gridgarden',
           desc: 'A game to learn Grid',
           url: 'https://cssgridgarden.com'

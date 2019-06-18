@@ -29,6 +29,11 @@ export default {
           url: 'https://discord.gg/developers'
         },
         {
+          title: 'Glitch',
+          desc: 'Glitch is the friendly community where everyone can discover and create the best stuff on the web.',
+          url: 'https://glitch.com/'
+        },
+        {
           title: 'WebGL and Threejs',
           desc: 'desc',
           url: 'https://discord.gg/PJAjxvX'
@@ -67,6 +72,11 @@ export default {
           title: '/r/css',
           desc: 'For discussing Cascading Style Sheets, design principles, and technological innovations related to web development.',
           url: 'https://reddit.com/r/css'
+        },
+        {
+          title: 'MedellinJS',
+          desc: 'We are a passionate community whose goal is to strengthen and articulate the technological ecosystem of the city of Medellín, Colombia.',
+          url: 'https://medellinjs.org/'
         },
       ]
     }
