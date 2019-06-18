@@ -13,6 +13,11 @@ export default {
   data() {
     return {
       resources: [
+              {
+          title: 'QuickCode',
+          desc: 'QuickCode is a collection of free online courses to learn any programming language or framework for developers.',
+          url: 'https://www.quickcode.co/'
+        },
         {
           title: 'Caniuse',
           desc: '"Can I use" provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.',
