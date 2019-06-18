@@ -14,6 +14,11 @@ export default {
     return {
       resources: [
         {
+          title: 'Design Courses',
+          desc: 'Collection of free online courses to learn design concepts & tools for designers',
+          url: 'http://designcourses.co'
+        },
+        {
           title: 'UX/UI Designer Roadmap 2017',
           desc: 'Roadmap to becoming a UI/UX Designer in 2017',
           url: 'https://github.com/togiberlin/ui-ux-designer-roadmap'
