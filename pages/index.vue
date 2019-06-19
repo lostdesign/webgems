@@ -24,7 +24,7 @@
 }
 
 .muted {
-  font-size:0.8rem;
+  font-size: 0.8rem;
   opacity: 0.5;
   margin-top: 3rem;
   margin-bottom: 0;
