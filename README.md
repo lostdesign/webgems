@@ -62,15 +62,15 @@ To add a completely new resource, include a new object at the root of the array,
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/lostdesign/webgems/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/webgems/webgems/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 Make sure to add yourself to the `contributors` file once you've created a PR.
 
 ## Authors
 
 * **lost.design** - *Initial work* - [lostdesign](https://github.com/lostdesign)
 
-See also the list of [contributors](https://github.com/lostdesign/webgems/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/webgems/webgems/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](https://github.com/lostdesign/webgems/blob/master/LICENSE) file for details
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](https://github.com/webgems/webgems/blob/master/LICENSE) file for details
