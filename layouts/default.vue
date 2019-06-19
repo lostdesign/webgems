@@ -1,7 +1,5 @@
 <template lang="pug">
   .layout
-    a(href="https://www.producthunt.com/posts/webgems-io?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-webgems-io" target="_blank")
-      img(src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=158653&theme=light" alt="webgems.io - resources for devs and designers | Product Hunt Embed" style="width: 150px; height: 35px;" width="150px" height="35px")
     Github
     Logo
     Sidebar
