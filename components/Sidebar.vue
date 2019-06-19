@@ -1,22 +1,24 @@
 <template lang="pug">
   aside.nav
     .sidebar
-      nuxt-link(to="/general") General
-      nuxt-link(to="/html") HTML
-      nuxt-link(to="/css") CSS
-      nuxt-link(to="/javascript") Javascript
-      nuxt-link(to="/ruby") Ruby
-      nuxt-link(to="/php") PHP
-      nuxt-link(to="/python") Python
-      nuxt-link(to="/design") Design
-      nuxt-link(to="/frontend") Frontend
-      nuxt-link(to="/fullstack") Fullstack
-      nuxt-link(to="/servers") Server
-      nuxt-link(to="/utility") Utility
-      nuxt-link(to="/daily") Daily
-      nuxt-link(to="/communities") Communities
+      template(v-for='category in categories')
+        nuxt-link(:to='category.slug') {{ category.title }}
 </template>
 
+<script>
+import store from '../store.json'
+
+export default {
+  data() {
+    return {
+      categories: [{ slug: '', title: '' }],
+    }
+  },
+  created() {
+    this.categories = store.map(({ title, slug }) => ({ title, slug }))
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .sidebar {
