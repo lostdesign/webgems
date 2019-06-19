@@ -16,7 +16,7 @@ export default {
         {
           title: 'HTML ELEMENTS',
           desc: 'All the HTML elemens you can use. There is more than just a div :)',
-          url: 'https://developer.mozilla.org/de/docs/Web/HTML/Element'
+          url: 'https://developer.mozilla.org/docs/Web/HTML/Element'
         },
         {
           title: 'The web accessibility basics',

@@ -14,12 +14,6 @@ export default {
     return {
       resources: [
         {
-          title: "Home of Python",
-          desc:
-            "Python is a programming language that lets you work quickly and integrate systems more effectively.",
-          url: "https://www.python.org/"
-        },
-        {
           title: "Python 3.7.3 documentation",
           desc: "Documentation for all releaases of Python.",
           url: "https://docs.python.org/3/"

@@ -38,11 +38,6 @@ export default {
           desc: 'Check popular new products out and get inspired, maybe even post yours?',
           url: 'https://www.producthunt.com/'
         },
-        {
-          title: 'Ruby Weekly',
-          desc: 'A free, once–weekly e-mail round-up of Ruby news and articles.',
-          url: 'https://rubyweekly.com/'
-        },
       ]
     }
   },

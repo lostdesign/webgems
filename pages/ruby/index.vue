@@ -29,11 +29,6 @@ export default {
           url: 'https://gorails.com/blog/'
         },
         {
-          title: 'Honeybadger Development Blog',
-          desc: 'Honeybadger blog.',
-          url: 'https://www.honeybadger.io/blog/'
-        },
-        {
         title: 'Reinteractive Articles',
           desc: 'Our expert team of designers and developers love what they do and enjoy sharing their knowledge with the world.',
           url: 'https://reinteractive.com/blog/'
@@ -74,9 +69,9 @@ export default {
           url: 'https://thoughtbot.com/blog/web/'
         },
         {
-          title: 'Victor Hazbun Blog',
-          desc: 'Victor Hazbun is an instructor at Egghead.io. He also writes about Ruby, JS and other techs.',
-          url: 'https://www.codementor.io/victor_hazbun/posts/'
+          title: 'Ruby Weekly',
+          desc: 'A free, once–weekly e-mail round-up of Ruby news and articles.',
+          url: 'https://rubyweekly.com/'
         },
       ]
     }

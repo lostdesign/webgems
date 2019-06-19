@@ -93,6 +93,11 @@ export default {
           desc: 'Beautiful colour gradients for design and code.',
           url: 'https://uigradients.com/#NoontoDusk'
         },
+        {
+          title: 'evernote.design',
+          desc: 'Basically webgems but just for design.',
+          url: 'https://evernote.design'
+        },
       ]
     }
   },

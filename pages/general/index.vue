@@ -26,7 +26,7 @@ export default {
         {
           title: 'MDN web docs',
           desc: 'Tutorials, references, tools and resources.',
-          url: 'https://developer.mozilla.org/en-US/docs/Web'
+          url: 'https://developer.mozilla.org/docs/Web'
         },
         {
           title: 'Rico\'s cheatsheets',
