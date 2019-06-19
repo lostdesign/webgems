@@ -1,4 +1,5 @@
 import pkg from './package'
+import store from './store.json'
 
 export default {
   mode: 'universal',
@@ -24,6 +25,13 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
+  },
+
+  /*
+  ** Generate dynamic routes
+  */
+  generate: {
+    routes: store.map(category => category.slug)
   },
 
   /*
