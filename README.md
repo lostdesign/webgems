@@ -43,7 +43,7 @@ We manage our resources in `store.json`. The schema is as follows:
       {
         "title": "Awesome resource",
         "desc": "This awesome resource will make your life much easier.", // 1 - 2 sentences long.
-        "url": "https://url.com" // Please do not use '&' as it will break the URL referencing.
+        "url": "https://url.com"
       }
     ]
   }
@@ -51,6 +51,11 @@ We manage our resources in `store.json`. The schema is as follows:
 ```
 
 If you just want to add a resource to an already existing category, extend the `resources` array with your resources. Please include all the keys enlisted (`title`, `desc`, `url`).
+
+For URLs, please consider the following:
+- Do not link to language specific pages (e.g., don't link to `<url>.org/en-US/docs`, instead, link to `<url>/docs` if possible).
+- Do not use '&' as it will break the URL referencing.
+- We won't allow referral links.
 
 To add a completely new resource, include a new object at the root of the array, the pages are dynamically rendered so you don't have to worry about anything else. Again, include all the enlisted keys, reference to the schema above.
 
