@@ -132,7 +132,22 @@ export default {
           title: 'Carbon',
           desc: 'Create and share beautiful images of your source code.',
           url: 'https://carbon.now.sh'
-        }
+        },
+        {
+          title: 'Mailnator',
+          desc: 'The Mailinator Email System puts millions of inboxes right at your fingertips. It is an amazing Email Workflow Testing tool for your Software or Service.',
+          url: 'https://www.mailinator.com/'
+        },
+        {
+          title: 'Ngrok',
+          desc: 'Secure introspectable tunnels to localhost.',
+          url: 'https://ngrok.com/'
+        },
+        {
+          title: 'Let\'s Encrypt',
+          desc: 'Let\'s Encrypt is a free, automated, and open certificate authority brought to you by the non-profit Internet Security Research Group (ISRG).',
+          url: 'https://letsencrypt.org/'
+        },
       ]
     }
   },

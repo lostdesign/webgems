@@ -33,20 +33,31 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 
 ### How to add a new resource
 
-In side the `pages` directory, choose any folder and modify each `index.vue`. At the moment you should add a resource to the end of the resources array.
-
-Please use this schema:
+We manage our resources in `store.json`. The schema is as follows:
 ```js
-{
-  title: 'title',
-  desc: 'desc',
-  url: 'url'
-},
+[
+  {
+    "title": "Category",
+    "slug": "/category",
+    "resources": [
+      {
+        "title": "Awesome resource",
+        "desc": "This awesome resource will make your life much easier.", // 1 - 2 sentences long.
+        "url": "https://url.com"
+      }
+    ]
+  }
+]
 ```
-> Currently do not use `'&'` as it will break the URL referencing as well as escape single qoutes with a backslash `\'`
 
-For a whole new section, create a new folder in the `pages` directory - be aware that the folder name is equal to the route of the site `webgems.io/NEWFOLDERNAME`.
-Inside the new section add at least the `index.vue` file and copy the structure of another section. Change the title and add it's own resources.
+If you just want to add a resource to an already existing category, extend the `resources` array with your resources. Please include all the keys enlisted (`title`, `desc`, `url`).
+
+For URLs, please consider the following:
+- Do not link to language specific pages (e.g., don't link to `<url>.org/en-US/docs`, instead, link to `<url>/docs` if possible).
+- Do not use '&' as it will break the URL referencing.
+- We won't allow referral links.
+
+To add a completely new resource, include a new object at the root of the array, the pages are dynamically rendered so you don't have to worry about anything else. Again, include all the enlisted keys, reference to the schema above.
 
 ## Built With
 
@@ -56,15 +67,15 @@ Inside the new section add at least the `index.vue` file and copy the structure 
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/lostdesign/webgems/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/webgems/webgems/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 Make sure to add yourself to the `contributors` file once you've created a PR.
 
 ## Authors
 
 * **lost.design** - *Initial work* - [lostdesign](https://github.com/lostdesign)
 
-See also the list of [contributors](https://github.com/lostdesign/webgems/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/webgems/webgems/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](https://github.com/lostdesign/webgems/blob/master/LICENSE) file for details
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](https://github.com/webgems/webgems/blob/master/LICENSE) file for details
