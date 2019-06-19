@@ -29,6 +29,11 @@ export default {
           url: 'https://www.heroku.com/'
         },
         {
+          title: 'Ploi',
+          desc: 'Stop the Hassle. Start deploi\'ing. Use Ploi.io for easy site deployments. We take all the difficult work out of your hands, so you can focus on doing what you love: developing your application.',
+          url: 'https://ploi.io'
+        },
+        {
           title: 'Now',
           desc: 'Global Serverless Deployments. Now makes serverless application deployment easy. Don\'t spend time configuring the cloud. Just push your code.',
           url: 'https://zeit.co/now'
