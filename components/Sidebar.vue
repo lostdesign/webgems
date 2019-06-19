@@ -1,8 +1,8 @@
 <template lang="pug">
   aside.nav
     .sidebar
-      template(v-for='entry in menuEntries')
-        nuxt-link(:to='entry.slug') {{ entry.title }}
+      template(v-for='category in categories')
+        nuxt-link(:to='category.slug') {{ category.title }}
 </template>
 
 <script>
@@ -11,11 +11,11 @@ import store from '../store.json'
 export default {
   data() {
     return {
-      menuEntries: [{ slug: '', title: '' }],
+      categories: [{ slug: '', title: '' }],
     }
   },
   created() {
-    this.menuEntries = store.map(({ title, slug }) => ({ title, slug }))
+    this.categories = store.map(({ title, slug }) => ({ title, slug }))
   }
 }
 </script>
