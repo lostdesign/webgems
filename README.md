@@ -33,20 +33,26 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 
 ### How to add a new resource
 
-In side the `pages` directory, choose any folder and modify each `index.vue`. At the moment you should add a resource to the end of the resources array.
-
-Please use this schema:
+We manage our resources in `store.json`. The schema is as follows:
 ```js
-{
-  title: 'title',
-  desc: 'desc',
-  url: 'url'
-},
+[
+  {
+    "title": "Category",
+    "slug": "/category",
+    "resources": [
+      {
+        "title": "Awesome resource",
+        "desc": "This awesome resource will make your life much easier.", // 1 - 2 sentences long.
+        "url": "https://url.com" // Please do not use '&' as it will break the URL referencing.
+      }
+    ]
+  }
+]
 ```
-> Currently do not use `'&'` as it will break the URL referencing as well as escape single qoutes with a backslash `\'`
 
-For a whole new section, create a new folder in the `pages` directory - be aware that the folder name is equal to the route of the site `webgems.io/NEWFOLDERNAME`.
-Inside the new section add at least the `index.vue` file and copy the structure of another section. Change the title and add it's own resources.
+If you just want to add a resource to an already existing category, extend the `resources` array with your resources. Please include all the keys enlisted (`title`, `desc`, `url`).
+
+To add a completely new resource, include a new object at the root of the array, the pages are dynamically rendered so you don't have to worry about anything else. Again, include all the enlisted keys, reference to the schema above.
 
 ## Built With
 
