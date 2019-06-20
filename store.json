@@ -571,6 +571,11 @@
         "title": "Your code sucks, let's fix it",
         "desc": "134 Slides to help fix your code. Performance and testing are just one aspect of code, to really be successful your code needs to be readable, maintainable and generally easier to comprehend and work with.",
         "url": "https://www.slideshare.net/rdohms/your-code-sucks-lets-fix-it-15471808"
+      },
+      {
+        "title": "Laracasts",
+        "desc": "Learn practical, modern web development, through expert screencasts on Laravel, Vue, and so much more.",
+        "url": "https://laracasts.com"
       }
     ]
   },
