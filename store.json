@@ -168,6 +168,11 @@
         "title": "CSS Animation",
         "desc": "CSS animation articles, tips and tutorials. Level Up Your CSS Animation Skills.",
         "url": "https://cssanimation.rocks/"
+      },
+      {
+        "title": "JustREM",
+        "desc": "Easily and quickly convert pixel values into rem values.",
+        "url": "https://justrem.xyz/"
       }
     ]
   },
@@ -202,7 +207,7 @@
       }
     ]
   },
-  { 
+  {
     "title": "Design",
     "slug": "/design",
     "resources": [
@@ -293,7 +298,7 @@
       }
     ]
   },
-  { 
+  {
     "title": "Frontend",
     "slug": "/frontend",
     "resources": [
@@ -324,7 +329,7 @@
       }
     ]
   },
-  { 
+  {
     "title": "Fullstack",
     "slug": "/fullstack",
     "resources": [
@@ -340,7 +345,7 @@
       }
     ]
   },
-  { 
+  {
     "title": "General",
     "slug": "/general",
     "resources": [
@@ -401,7 +406,7 @@
       }
     ]
   },
-  { 
+  {
     "title": "HTML",
     "slug": "/html",
     "resources": [
@@ -437,7 +442,7 @@
       }
     ]
   },
-  { 
+  {
     "title": "Javascript",
     "slug": "/javascript",
     "resources": [
@@ -503,7 +508,7 @@
       }
     ]
   },
-  { 
+  {
     "title": "PHP",
     "slug": "/php",
     "resources": [
@@ -518,14 +523,9 @@
         "url": "https://www.php.net/manual/en/"
       },
       {
-        "title": "PHP for beginners",
-        "desc": "We all start somewhere. When it comes to web development with PHP, well, your first stop is this series. Designed specifically and exclusively for beginners, here, you'll learn the fundamentals of PHP - all the way down to defining variables and arrays.",
-        "url": "https://laracasts.com/series/php-for-beginners"
-      },
-      {
-        "title": "Learn PHP in Y Minutes",
-        "desc": "A quick short overview of PHP utilizing most of the spec.",
-        "url": "https://learnxinyminutes.com/docs/php/"
+        "title": "Laracasts",
+        "desc": "Learn practical, modern web development, through expert screencasts on Laravel, Vue, and so much more.",
+        "url": "https://laracasts.com"
       },
       {
         "title": "An online book for learning PHP",
@@ -876,7 +876,7 @@
       }
     ]
   },
-  { 
+  {
     "title": "Server",
     "slug": "/server",
     "resources": [
@@ -917,9 +917,9 @@
       }
     ]
   },
-  { 
-    "title": "Tools",
-    "slug": "/tools",
+  {
+    "title": "Utility",
+    "slug": "/utility",
     "resources": [
       {
         "title": "JSON Generator",
