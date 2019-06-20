@@ -309,6 +309,32 @@
     ]
   },
   {
+    "title": "Elixir",
+    "slug": "/elixir",
+    "resources": [
+      {
+        "title": "Elixir Lang official website",
+        "desc": "Starting point for all things Elixir",
+        "url": "https://elixir-lang.org//"
+      },
+      {
+        "title": "Elixir Forum",
+        "desc": "Most active forum, with great community support",
+        "url": "https://elixirforum.com/"
+      },
+      {
+        "title": "Elixir Slack Group",
+        "desc": "Slack group for the Elixir Lang community",
+        "url": "https://elixir-slackin.herokuapp.com/"
+      },
+      {
+        "title": "Elixir Discord Group",
+        "desc": "Discord channel for the Elixir Lang community",
+        "url": "https://discord.gg/elixir"
+      }
+    ]
+  },
+  {
     "title": "Frontend",
     "slug": "/frontend",
     "resources": [
