@@ -523,14 +523,9 @@
         "url": "https://www.php.net/manual/en/"
       },
       {
-        "title": "PHP for beginners",
-        "desc": "We all start somewhere. When it comes to web development with PHP, well, your first stop is this series. Designed specifically and exclusively for beginners, here, you'll learn the fundamentals of PHP - all the way down to defining variables and arrays.",
-        "url": "https://laracasts.com/series/php-for-beginners"
-      },
-      {
-        "title": "Learn PHP in Y Minutes",
-        "desc": "A quick short overview of PHP utilizing most of the spec.",
-        "url": "https://learnxinyminutes.com/docs/php/"
+        "title": "Laracasts",
+        "desc": "Learn practical, modern web development, through expert screencasts on Laravel, Vue, and so much more.",
+        "url": "https://laracasts.com"
       },
       {
         "title": "An online book for learning PHP",
@@ -576,11 +571,6 @@
         "title": "Your code sucks, let's fix it",
         "desc": "134 Slides to help fix your code. Performance and testing are just one aspect of code, to really be successful your code needs to be readable, maintainable and generally easier to comprehend and work with.",
         "url": "https://www.slideshare.net/rdohms/your-code-sucks-lets-fix-it-15471808"
-      },
-      {
-        "title": "Laracasts",
-        "desc": "Learn practical, modern web development, through expert screencasts on Laravel, Vue, and so much more.",
-        "url": "https://laracasts.com"
       }
     ]
   },
