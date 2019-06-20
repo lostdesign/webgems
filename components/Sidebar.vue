@@ -2,6 +2,7 @@
   aside.nav
     .sidebar
       template(v-for='category in categories')
+        //- nuxt-link(:to='$i18n.path(category.slug)') {{ category.title }}
         nuxt-link(:to='category.slug') {{ category.title }}
 </template>
 
