@@ -207,7 +207,7 @@
       }
     ]
   },
-  { 
+  {
     "title": "Design",
     "slug": "/design",
     "resources": [
@@ -298,7 +298,7 @@
       }
     ]
   },
-  { 
+  {
     "title": "Frontend",
     "slug": "/frontend",
     "resources": [
@@ -329,7 +329,7 @@
       }
     ]
   },
-  { 
+  {
     "title": "Fullstack",
     "slug": "/fullstack",
     "resources": [
@@ -345,7 +345,7 @@
       }
     ]
   },
-  { 
+  {
     "title": "General",
     "slug": "/general",
     "resources": [
@@ -406,7 +406,7 @@
       }
     ]
   },
-  { 
+  {
     "title": "HTML",
     "slug": "/html",
     "resources": [
@@ -442,7 +442,7 @@
       }
     ]
   },
-  { 
+  {
     "title": "Javascript",
     "slug": "/javascript",
     "resources": [
@@ -508,7 +508,7 @@
       }
     ]
   },
-  { 
+  {
     "title": "PHP",
     "slug": "/php",
     "resources": [
@@ -876,7 +876,7 @@
       }
     ]
   },
-  { 
+  {
     "title": "Server",
     "slug": "/server",
     "resources": [
@@ -917,9 +917,9 @@
       }
     ]
   },
-  { 
-    "title": "Tools",
-    "slug": "/tools",
+  {
+    "title": "Utility",
+    "slug": "/utility",
     "resources": [
       {
         "title": "JSON Generator",
