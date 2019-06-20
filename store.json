@@ -62,11 +62,6 @@
         "title": "/r/css",
         "desc": "For discussing Cascading Style Sheets, design principles, and technological innovations related to web development.",
         "url": "https://reddit.com/r/css"
-      },
-      {
-        "title": "MedellinJS",
-        "desc": "We are a passionate community whose goal is to strengthen and articulate the technological ecosystem of the city of Medellín, Colombia.",
-        "url": "https://medellinjs.org/"
       }
     ]
   },
@@ -173,6 +168,16 @@
         "title": "JustREM",
         "desc": "Easily and quickly convert pixel values into rem values.",
         "url": "https://justrem.xyz/"
+      },
+      {
+        "title": "(Re)learn css layout",
+        "desc": "If you find yourself wrestling with CSS layout, it’s likely you’re making decisions for browsers they should be making themselves. Through a series of simple, composable layouts, Every Layout will teach you how to better harness the built-in algorithms that power browsers and CSS.",
+        "url": "https://every-layout.dev/"
+      },
+      {
+        "title": "Interactive CSS box-model view",
+        "desc": "Learn CSS box-model by interractively changing the values.",
+        "url": "https://codepen.io/carolineartz/full/ogVXZj"
       }
     ]
   },
@@ -295,6 +300,11 @@
         "title": "evernote.design",
         "desc": "Basically webgems but just for design.",
         "url": "https://evernote.design"
+      },
+      {
+        "title": "Inclusive Components",
+        "desc": "A blog trying to be a pattern library, with a focus on inclusive design. Each post explores a common interface component and comes up with a better, more robust and accessible version of it.",
+        "url": "https://inclusive-components.design"
       }
     ]
   },
