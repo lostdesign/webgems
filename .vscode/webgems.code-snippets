@@ -19,9 +19,9 @@
 	  "prefix": "wgem",
 	  "body": [
 	    "{",
-	    "  title: '${1:title}',",
-	    "  desc: '${2:desc}',",
-	    "  url: '${3:url}'",
+	    "  \"title\": \"${1:title}\",",
+	    "  \"desc\": \"${2:desc}\",",
+	    "  \"url\": \"${3:url}\"",
 	    "},"
 	  ],
 	  "description": "Add a webgem"
