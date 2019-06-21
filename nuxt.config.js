@@ -37,6 +37,9 @@ export default {
   */
   loading: { color: '#fff' },
 
+  plugins: [
+    '~/plugins/i18n.js'
+  ],
   /*
   ** Nuxt.js modules
   */
