@@ -283,6 +283,11 @@
         "url": "https://learn.freecodecamp.org"
       },
       {
+        "title": "free full-stack apps",
+        "desc": "A collection with full-stack apps, coded in different languages and technologies: React, Vue, GatsbyJS, Python. The service is supported by AppSeed.",
+        "url": "https://appseed.us/apps/free"
+      },
+      {
         "title": "Learn Node",
         "desc": "Permium course by WesBos teaching you the MEPN (Mongo, Express, Pug, Node) stack using a fullstack project as example.",
         "url": "https://learnnode.com"
