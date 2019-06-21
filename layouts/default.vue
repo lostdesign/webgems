@@ -99,6 +99,51 @@ h1 {
   grid-gap: 1rem;
 }
 
+.fade-title {
+  &-enter {
+    opacity: 0;
+
+    &-to {
+      opacity: 1;
+    }
+
+    &-active {
+       transition: opacity .3s ease-in-out;
+    }
+  }
+
+  &-leave {
+    &-active {
+      transition: opacity 5s ease-in-out;
+    }
+    &-to {
+      opacity: 0;
+    }
+  }
+}
+
+.fade-card {
+  &-enter {
+    opacity: 0;
+
+    &-to {
+      opacity: 1;
+    }
+
+    &-active {
+       transition: opacity .3s ease-in-out;
+    }
+  }
+
+  &-leave {
+    &-active {
+      transition: opacity 5s ease-in-out;
+    }
+    &-to {
+      opacity: 0;
+    }
+  }
+}
 
 @media (max-width: 400px) {
   .layout {

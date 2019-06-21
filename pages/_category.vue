@@ -1,9 +1,11 @@
 <template lang="pug">
   div
-    h1 {{ category.title }}
-    .cards
-      template(v-for='resource in category.resources')
-        Card(:title='resource.title' :desc='resource.desc' :url='resource.url')
+    transition(name="fade-title" @after-enter="afterEnter")
+      h1(v-if="showTitle") {{ category.title }}
+    transition(name="fade-card" v-on:before-leave="beforeLeave" mode="out-in")
+      .cards(v-if="showCards")
+        template(v-for='resource in category.resources')
+          Card(:title='resource.title' :desc='resource.desc' :url='resource.url')
 </template>
 
 <script>
@@ -15,6 +17,8 @@ export default {
     return {
       categoryRouteTitle: this.$route.params.category,
       categories: store,
+      showTitle: false,
+      showCards: false,
     }
   },
   computed: {
@@ -23,5 +27,16 @@ export default {
     }
   },
   components: { Card },
+  methods: {
+    beforeLeave: function (el) {
+      this.showCards = false;
+    },
+    afterEnter: function(el) {
+      this.showCards = true;
+    }
+  },
+  mounted() {
+    this.showTitle = true;
+  }
 }
 </script>
