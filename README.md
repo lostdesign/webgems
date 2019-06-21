@@ -11,7 +11,7 @@ Since this is a Nuxt project, you need nodejs and npm.
 
 ``` bash
 # clone repo
-$ git clone https://github.com/lostdesign/webgems.git
+$ git clone https://github.com/webgems/webgems.git
 
 # cd into webgems
 $ cd webgems
@@ -33,7 +33,9 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 
 ### How to add a new resource
 
-We manage our resources in `store.json`. The schema is as follows:
+If you are using VS Code, you can simply type `wgem` and hit tab in the `store.json` in order to get the correct template (see below).
+
+For any other editor, please use the following schema:
 ```js
 [
   {
