@@ -2,7 +2,7 @@
   div
     transition(name="fade-title" @after-enter="afterEnter")
       h1(v-if="showTitle") {{ category.title }}
-    transition(name="fade-card" v-on:before-leave="beforeLeave" mode="out-in")
+    transition(name="fade-card")
       .cards(v-if="showCards")
         template(v-for='resource in category.resources')
           Card(:title='resource.title' :desc='resource.desc' :url='resource.url')
@@ -28,10 +28,7 @@ export default {
   },
   components: { Card },
   methods: {
-    beforeLeave: function (el) {
-      this.showCards = false;
-    },
-    afterEnter: function(el) {
+    afterEnter: (el) => {
       this.showCards = true;
     }
   },

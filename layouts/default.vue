@@ -108,16 +108,7 @@ h1 {
     }
 
     &-active {
-       transition: opacity .3s ease-in-out;
-    }
-  }
-
-  &-leave {
-    &-active {
-      transition: opacity 5s ease-in-out;
-    }
-    &-to {
-      opacity: 0;
+       transition: opacity .2s ease-in-out;
     }
   }
 }
@@ -131,16 +122,7 @@ h1 {
     }
 
     &-active {
-       transition: opacity .3s ease-in-out;
-    }
-  }
-
-  &-leave {
-    &-active {
-      transition: opacity 5s ease-in-out;
-    }
-    &-to {
-      opacity: 0;
+       transition: opacity .2s ease-in-out;
     }
   }
 }
