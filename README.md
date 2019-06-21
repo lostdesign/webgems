@@ -11,7 +11,7 @@ Since this is a Nuxt project, you need nodejs and npm.
 
 ``` bash
 # clone repo
-$ git clone https://github.com/lostdesign/webgems.git
+$ git clone https://github.com/webgems/webgems.git
 
 # cd into webgems
 $ cd webgems
