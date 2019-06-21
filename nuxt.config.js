@@ -2,8 +2,6 @@ import pkg from './package'
 import store from './store.json'
 
 export default {
-  mode: 'universal',
-
   /*
   ** Headers of the page
   */
@@ -40,32 +38,9 @@ export default {
   loading: { color: '#fff' },
 
   /*
-  ** Global CSS
-  */
-  css: [
-  ],
-
-  /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
-
-  /*
   ** Nuxt.js modules
   */
   modules: [
     'nuxt-clipboard2',
-  ],
-
-  /*
-  ** Build configuration
-  */
-  build: {
-    /*
-    ** You can extend webpack config here
-    */
-    extend(config, ctx) {
-    }
-  }
+  ]
 }
