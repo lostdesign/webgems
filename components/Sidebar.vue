@@ -14,7 +14,7 @@ export default {
     }
   },
   created() {
-    this.categories = this.$store.state.data.resources.map(({ title, slug }) => ({ title, slug }))
+    this.categories = this.$store.getters['data/resources'].map(({ title, slug }) => ({ title, slug }))
   }
 }
 </script>

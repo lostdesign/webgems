@@ -36,11 +36,13 @@ export const state = () => ({
 })
 
 export const getters = {
-  findResources: state => title => {
-    return state.resources.find(resource => resource.title.toLowerCase() === title.toLowerCase())
-  },
-  findByTags: state => tags => {
-    const flat = state.resources.map(category => category.resources).flat()
-    return flat.filter(resource => resource.tags && includesElOf(resource.tags, tags)) 
-  }
+	tags: state => state.tags,
+	resources: state => state.resources,
+	findResources: state => title => {
+		return state.resources.find(resource => resource.title.toLowerCase() === title.toLowerCase())
+	},
+	findByTags: state => tags => {
+		const flat = state.resources.map(category => category.resources).flat()
+		return flat.filter(resource => resource.tags && includesElOf(resource.tags, tags)) 
+	}
 }
