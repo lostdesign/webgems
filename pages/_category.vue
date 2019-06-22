@@ -7,14 +7,13 @@
 </template>
 
 <script>
-import store from '../store.json'
 import Card from '../components/Card'
 
 export default {
   data () {
     return {
       categoryRouteTitle: this.$route.params.category,
-      categories: store,
+      categories: this.$store.state.resources,
     }
   },
   computed: {

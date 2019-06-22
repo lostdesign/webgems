@@ -7,8 +7,6 @@
 </template>
 
 <script>
-import store from '../store.json'
-
 export default {
   data() {
     return {
@@ -16,7 +14,7 @@ export default {
     }
   },
   created() {
-    this.categories = store.map(({ title, slug }) => ({ title, slug }))
+    this.categories = this.$store.state.resources.map(({ title, slug }) => ({ title, slug }))
   }
 }
 </script>

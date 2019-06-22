@@ -1,0 +1,36 @@
+{
+  "title": "HTML",
+  "slug": "/html",
+  "resources": [
+    {
+      "title": "HTML ELEMENTS",
+      "desc": "All the HTML elemens you can use. There is more than just a div :)",
+      "url": "https://developer.mozilla.org/docs/Web/HTML/Element"
+    },
+    {
+      "title": "The web accessibility basics",
+      "desc": "The absolute web accessibility basics every web developer should know about.",
+      "url": "https://www.marcozehe.de/2015/12/14/the-web-accessibility-basics/"
+    },
+    {
+      "title": "Introduction to HTML",
+      "desc": "In just 4 hours, learn the basics of HTML5 and start building & editing web pages.",
+      "url": "https://www.codecademy.com/learn/learn-html"
+    },
+    {
+      "title": "Awesome Canvas",
+      "desc": "A curated list of awesome Canvas examples, related articles and posts.",
+      "url": "https://github.com/raphamorim/awesome-canvas#readme"
+    },
+    {
+      "title": "HTML Spec",
+      "desc": "This specification defines a big part of the Web platform, in lots of detail.",
+      "url": "https://html.spec.whatwg.org/"
+    },
+    {
+      "title": "Markup validator",
+      "desc": "This tool is checking your markup if it complies with the specification and will show you possible errors.",
+      "url": "https://validator.w3.org/nu/"
+    }
+  ]
+}

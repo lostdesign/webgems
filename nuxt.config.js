@@ -1,5 +1,5 @@
 import pkg from './package'
-import store from './store.json'
+import resources from './resources/'
 
 export default {
   /*
@@ -29,7 +29,7 @@ export default {
   ** Generate dynamic routes
   */
   generate: {
-    routes: store.map(category => category.slug)
+    routes: resources.map(category => category.slug)
   },
 
   /*

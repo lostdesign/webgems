@@ -1,0 +1,29 @@
+import css from './css'
+import daily from './daily'
+import design from './design'
+import frontend from './frontend'
+import fullstack from './fullstack'
+import general from './general'
+import html from './html'
+import javascript from './javascript'
+import php from './php'
+import python from './python'
+import ruby from './ruby'
+import server from './server'
+import utility from './utility'
+
+export default [
+  css,
+  daily,
+  design,
+  frontend,
+  fullstack,
+  general,
+  html,
+  javascript,
+  php,
+  python,
+  ruby,
+  server,
+  utility,
+]
