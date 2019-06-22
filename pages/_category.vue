@@ -28,7 +28,7 @@ export default {
   },
   components: { Card },
   methods: {
-    afterEnter: (el) => {
+    afterEnter(el) {
       this.showCards = true;
     }
   },
