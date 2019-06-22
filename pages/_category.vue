@@ -12,7 +12,7 @@ import Card from '../components/Card'
 export default {
   data () {
     return {
-      category: this.$store.getters['resources/findResources'](this.$route.params.category),
+      category: this.$store.getters['data/findResources'](this.$route.params.category),
     }
   },
   components: { Card },
