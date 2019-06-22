@@ -13,12 +13,11 @@ export default {
   data () {
     return {
       categoryRouteTitle: this.$route.params.category,
-      categories: this.$store.state.resources,
     }
   },
   computed: {
-    category() {      
-      return this.categories.find(category => category.title.toLowerCase() === this.categoryRouteTitle.toLowerCase())
+    category() {
+      return this.$store.getters['resources/findResources'](this.categoryRouteTitle)
     }
   },
   components: { Card },
