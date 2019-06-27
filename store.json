@@ -449,6 +449,11 @@
         "title": "You might not need jquery",
         "desc": "jQuery and its cousins are great, and by all means use them if it makes it easier to develop your application. If you're developing a library on the other hand, please take a moment to consider if you actually need jQuery as a dependency.",
         "url": "http://youmightnotneedjquery.com"
+      },
+      {
+        "title": "The Net Ninja - Black-belt your web skills",
+        "desc": "Free YouTube tutorials on modern JavaScript (beginner to advanced), Node.js, React, Vue.js, Firebase, MongoDB, Plus loads more...",
+        "url": "https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg/playlists"
       }
     ]
   },
