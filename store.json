@@ -848,6 +848,11 @@
         "title": "Servers for hackers",
         "desc": "Tutorials on how to handle your servers.",
         "url": "https://serversforhackers.com/"
+      },
+      {
+        "title": "Serverless for Front-End Developers",
+        "desc": "Find Serverless services (e.g. functions, databases and other tools) for your next project. There are also articles related to Serverless and JAMstack.",
+        "url": "https://serverless.css-tricks.com/"
       }
     ]
   },
