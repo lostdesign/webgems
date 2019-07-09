@@ -848,6 +848,11 @@
         "title": "Servers for hackers",
         "desc": "Tutorials on how to handle your servers.",
         "url": "https://serversforhackers.com/"
+      },
+      {
+        "title" : "Glitch",
+        "desc" : "The friendly community where everyone can discover & create the best apps on the web.",
+        "url" : "https://glitch.com/"
       }
     ]
   },
