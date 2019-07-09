@@ -451,6 +451,11 @@
         "url": "http://youmightnotneedjquery.com"
       },
       {
+        "title": "BundlePhobia",
+        "desc": "Find the cost of adding a npm package to your bundle",
+        "url": "https://bundlephobia.com/"
+      },
+      {
         "title": "The Net Ninja - Black-belt your web skills",
         "desc": "Free YouTube tutorials on modern JavaScript (beginner to advanced), Node.js, React, Vue.js, Firebase, MongoDB, Plus loads more...",
         "url": "https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg/playlists"
