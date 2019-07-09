@@ -853,6 +853,11 @@
         "title" : "Glitch",
         "desc" : "The friendly community where everyone can discover & create the best apps on the web.",
         "url" : "https://glitch.com/"
+      },
+      {
+        "title": "Serverless for Front-End Developers",
+        "desc": "Find Serverless services (e.g. functions, databases and other tools) for your next project. There are also articles related to Serverless and JAMstack.",
+        "url": "https://serverless.css-tricks.com/"
       }
     ]
   },
