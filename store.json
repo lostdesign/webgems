@@ -239,6 +239,11 @@
         "title": "Inclusive Components",
         "desc": "A blog trying to be a pattern library, with a focus on inclusive design. Each post explores a common interface component and comes up with a better, more robust and accessible version of it.",
         "url": "https://inclusive-components.design"
+      },
+      {
+        "title": "UX Collective",
+        "desc": "A Medium-based blog, curating articles on modern UX Design practices, conventions, and ideas.",
+        "url": "https://uxdesign.cc/"
       }
     ]
   },
