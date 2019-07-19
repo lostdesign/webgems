@@ -62,6 +62,10 @@ export default {
   flex-direction: column;
   position: relative;
 
+  &:hover {
+    background-color: #364358;
+  }
+
   &--active {
     box-shadow:inset 0px 0px 0px 3px #08e5ff;
   }
