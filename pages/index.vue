@@ -7,6 +7,8 @@
     p Therefore I created this project to have the most common and best resources for beginners and veterans in one place. Kinda like a bookmarks list for devs and designers, containing only the best gems out there.
     p If you want to add your own gem, go ahead and open a pull request on GitHub (click on that octocat at the top right corner).
     p By the way, this project lives by getting shared, if you find this worthy please share it with others.
+    p Looking for a helpful community to join? Why not try 
+        a(href="https://devcord.com") Devcord?
     p.muted // made with love by
     p.contributors class&nbsp;
       a(href="https://twitter.com/lostdesign") @lostdesign&nbsp;
