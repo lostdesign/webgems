@@ -403,6 +403,11 @@
         "title": "The A11Y Checklist",
         "desc": "This checklist uses the The Web Content Accessibility Guidelines (WCAG) as a reference point. The WCAG is a shared standard for web content accessibility for individuals, organizations, and governments.",
         "url": "https://a11yproject.com/checklist/"
+      },
+      {
+        "title": "OWASP Security Cheat Sheets",
+        "desc": "A concise collection of high value information on specific applied security topics",
+        "url": "https://github.com/OWASP/CheatSheetSeries/blob/master/Index.md"
       }
     ]
   },
