@@ -143,6 +143,16 @@
         "title": "Producthunt",
         "desc": "Check popular new products out and get inspired, maybe even post yours?",
         "url": "https://www.producthunt.com/"
+      },
+      {
+        "title": "dailydev links",
+        "desc": "Fresh, daily links so you can keep up-to-date with everything developer ",
+        "url": "https://dailydevlinks.com/"
+      },
+      {
+        "title": "Sidebar.io",
+        "desc": "The five best design links, every day.",
+        "url": "https://sidebar.io/"
       }
     ]
   },
@@ -184,6 +194,21 @@
         "title": "awwwards",
         "desc": "The awards for design, creativity and innovation on the Internet. Get your inspiration here or even submit your own website!",
         "url": "https://awwwards.com"
+      },
+      {
+        "title": "One Page Love",
+        "desc": "One Page websites, templates and resources",
+        "url": "https://onepagelove.com/"
+      },
+      {
+        "title": "CSS Winner",
+        "desc": "CSS Winner is a unique global platform awarding and showcasing the best websites and promoting innovative web designers, developers and agencies. We popularize the websites designed elsewhere through CSS Winner, increasing competence and coherence in collation and awarding them.",
+        "url": "https://www.csswinner.com/"
+      }, 
+      {
+        "title": "Httpster",
+        "desc": "Httpster is an inspiration resource showcasing totally rocking websites made by people from all over the world.",
+        "url": "https://httpster.net/"
       },
       {
         "title": "siteinspire",
@@ -388,6 +413,11 @@
         "title": "Markup validator",
         "desc": "This tool is checking your markup if it complies with the specification and will show you possible errors.",
         "url": "https://validator.w3.org/nu/"
+      }, 
+      {
+        "title": "Trends",
+        "desc": "Browse trending github repos written in your favorite language with this high performance progressive web application",
+        "url": "https://trends.now.sh/"
       }
     ]
   },
@@ -464,6 +494,11 @@
         "title": "The Net Ninja - Black-belt your web skills",
         "desc": "Free YouTube tutorials on modern JavaScript (beginner to advanced), Node.js, React, Vue.js, Firebase, MongoDB, Plus loads more...",
         "url": "https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg/playlists"
+      },
+      {
+        "title": "Javascript Weekly",
+        "desc": "A free, once–weekly email roundup of JavaScript news and articles.",
+        "url": "https://javascriptweekly.com/"
       }
     ]
   },
