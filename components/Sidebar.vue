@@ -7,29 +7,29 @@
 </template>
 
 <script>
-import store from '../store.json'
-import { mapMutations } from 'vuex'
+import store from "../store.json";
+import { mapMutations } from "vuex";
 
 export default {
   data() {
     return {
-			categories: [{ slug: '', title: '' }],
-    }
-	},
-	computed: {
+      categories: [{ slug: "", title: "" }]
+    };
+  },
+  computed: {
     cardsShown() {
-      return this.$store.state.Sidebar.cardsShown
+      return this.$store.state.Sidebar.cardsShown;
     }
   },
   created() {
-		this.categories = store.map(({ title, slug }) => ({ title, slug }))
-	},
-	methods: {
-		...mapMutations({
-			toggleCardsShown: 'Sidebar/toggleCardsShown',
-		})
-	}
-}
+    this.categories = store.map(({ title, slug }) => ({ title, slug }));
+  },
+  methods: {
+    ...mapMutations({
+      toggleCardsShown: "Sidebar/toggleCardsShown"
+    })
+  }
+};
 </script>
 
 <style lang="scss" scoped>

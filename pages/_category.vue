@@ -11,27 +11,30 @@
 </template>
 
 <script>
-import store from '../store.json'
-import Card from '../components/Card'
-import TableHead from '../components/TableHead'
-import TableRow from '../components/TableRow'
+import store from "../store.json";
+import Card from "../components/Card";
+import TableHead from "../components/TableHead";
+import TableRow from "../components/TableRow";
 
 export default {
-  data () {
+  data() {
     return {
       categoryRouteTitle: this.$route.params.category,
-      categories: store,
+      categories: store
       // cardsShown: store.cardsShown,
-    }
+    };
   },
   computed: {
-		cardsShown() {
-      return this.$store.state.Sidebar.cardsShown
+    cardsShown() {
+      return this.$store.state.Sidebar.cardsShown;
     },
-    category() {      
-      return this.categories.find(category => category.title.toLowerCase() === this.categoryRouteTitle.toLowerCase())
+    category() {
+      return this.categories.find(
+        category =>
+          category.title.toLowerCase() === this.categoryRouteTitle.toLowerCase()
+      );
     }
   },
-  components: { Card, TableHead, TableRow },
-}
+  components: { Card, TableHead, TableRow }
+};
 </script>
