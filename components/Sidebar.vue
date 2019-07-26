@@ -44,6 +44,15 @@ export default {
     padding: 0.5rem 1rem 0.5rem 1rem;
     font-weight: 600;
   }
+	.viewToggle {
+		background-color: yellow;
+		border: 3px;
+		border-style: solid;
+
+	}
+	.active {
+		background-color: green;
+	}
 }
 
 @media (max-width: 400px) {
