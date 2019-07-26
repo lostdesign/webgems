@@ -986,7 +986,7 @@
         "url": "https://www.atlassian.com/git/tutorials"
       },
       {
-        "title": "Git form the inside out",
+        "title": "Git from the inside out",
         "desc": "This essay explains how Git works. It assumes you understand Git well enough to use it to version control your projects.",
         "url": "https://codewords.recurse.com/issues/two/git-from-the-inside-out"
       },
