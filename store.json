@@ -291,6 +291,11 @@
         "title": "Learn Node",
         "desc": "Permium course by WesBos teaching you the MEPN (Mongo, Express, Pug, Node) stack using a fullstack project as example.",
         "url": "https://learnnode.com"
+      },
+      {
+        "title": "egghead.io",
+        "desc": "Lecture platform about anything ranging from basic Javascript to advanced React methods. Community courses available free of charge with an opt-in paid section for full course paths.",
+        "url": "https://egghead.io"
       }
     ]
   },
