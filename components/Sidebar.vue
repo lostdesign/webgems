@@ -3,7 +3,9 @@
     .sidebar
       template(v-for='category in categories')
         nuxt-link(:to='category.slug') {{ category.title }}
-      input(type='checkbox' :checked='cardsShown' @change="toggleCardsShown()")
+      div(class="toggleWrapper" @click="toggleCardsShown")
+        div(class="viewToggle" :class="{active: cardsShown}") Cards
+        div(class="viewToggle" :class="{active: !cardsShown}") Table
 </template>
 
 <script>
@@ -42,6 +44,24 @@ export default {
     padding: 0.5rem 1rem 0.5rem 1rem;
     font-weight: 600;
   }
+	.toggleWrapper {
+		display: grid;
+  	grid-template-columns: 1fr 1fr;
+		width: min-content;
+		border: 3px;
+		border-color: #08e5ff;
+		border-style: solid;
+		border-radius: .5rem;
+		overflow:hidden;
+	}
+	.viewToggle {
+		padding: 0 .2rem;
+		color: #008190;
+	}
+	.active {
+		background-color: #08e5ff;
+		color: #232331;
+	}
 }
 
 @media (max-width: 400px) {
