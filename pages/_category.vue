@@ -21,7 +21,6 @@ export default {
     return {
       categoryRouteTitle: this.$route.params.category,
       categories: store
-      // cardsShown: store.cardsShown,
     };
   },
   computed: {

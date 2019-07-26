@@ -3,7 +3,9 @@
     .sidebar
       template(v-for='category in categories')
         nuxt-link(:to='category.slug') {{ category.title }}
-      input(type='checkbox' :checked='cardsShown' @change="toggleCardsShown()")
+      div(@click="toggleCardsShown")
+        div(class="viewToggle" :class="{active: cardsShown}") Cards
+        div(class="viewToggle" :class="{active: !cardsShown}") Table
 </template>
 
 <script>
