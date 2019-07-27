@@ -44,24 +44,27 @@ export default {
     padding: 0.5rem 1rem 0.5rem 1rem;
     font-weight: 600;
   }
-	.toggleWrapper {
-		display: grid;
-  	grid-template-columns: 1fr 1fr;
-		width: min-content;
-		border: 3px;
-		border-color: #08e5ff;
-		border-style: solid;
-		border-radius: .5rem;
-		overflow:hidden;
-	}
-	.viewToggle {
-		padding: 0 .2rem;
-		color: #008190;
-	}
-	.active {
-		background-color: #08e5ff;
-		color: #232331;
-	}
+  div {
+    cursor: pointer;
+  }
+  .toggleWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: min-content;
+    border: 3px;
+    border-color: #08e5ff;
+    border-style: solid;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .viewToggle {
+    padding: 0 0.2rem;
+    color: #008190;
+  }
+  .active {
+    background-color: #08e5ff;
+    color: #232331;
+  }
 }
 
 @media (max-width: 400px) {

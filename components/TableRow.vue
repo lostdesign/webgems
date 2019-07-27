@@ -57,58 +57,41 @@ export default {
 <style lang="scss" scoped>
 .tableRow {
   background: #2d3748;
-  border-radius: 0.3rem;
-  padding: 1rem;
+  padding: 0.25rem;
   transition: 0.2s ease-in-out;
-  // display: flex;
-  // flex-direction: column;
-  // position: relative;
+  width: 1fr;
+  display: grid;
+  grid-template-columns: minmax(150px, 2fr) 8fr 125px;
 
-  &--active {
-    box-shadow: inset 0px 0px 0px 3px #08e5ff;
+  &--title {
+    color: white;
   }
 
-  &--reference {
-    cursor: pointer;
+  &--description {
+    color: #008190;
+    line-height: 1.3;
+		margin-right: 10px;
   }
 
   &--links {
-    display: flex;
-    justify-content: flex-end;
+    cursor: pointer;
+
+    tr {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
 
     img {
       width: 1rem;
       margin-left: 0.5rem;
     }
-  }
-
-  &--title {
-    font-weight: 900;
-    margin: 0;
-  }
-
-  &--description {
-    // display: flex;
-    // align-content: stretch;
-    // flex: 1 1 auto;
-    // flex-direction: column;
-    font-size: 13px;
-    color: white;
-    margin: 0 0 0.7rem 0;
-    line-height: 1.3;
-    letter-spacing: 0.5px;
-    max-width: 15rem;
-  }
-  a {
-    font-size: 12px;
-    line-height: 1;
-    align-self: flex-end;
-    margin-left: 1.7rem;
 
     &:hover::before {
       opacity: 0.5;
     }
   }
+
   &--reference {
     &::before {
       position: absolute;

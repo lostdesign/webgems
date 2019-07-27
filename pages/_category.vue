@@ -4,7 +4,7 @@
     .cards(v-if="cardsShown")
       template(v-for='resource in category.resources')
         Card(:title='resource.title' :desc='resource.desc' :url='resource.url')
-    .table(v-if="!cardsShown")
+    table(v-if="!cardsShown")
       TableHead(:title="'Welcome'" :desc="'Description'" :url="'URL'")
       template(v-for='resource in category.resources')
         TableRow(:title='resource.title' :desc='resource.desc' :url='resource.url')
@@ -37,3 +37,9 @@ export default {
   components: { Card, TableHead, TableRow }
 };
 </script>
+
+<style lang="scss" scoped>
+table {
+	width: 100%;
+}
+</style>
