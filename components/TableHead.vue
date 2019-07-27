@@ -52,58 +52,26 @@ export default {
 <style lang="scss" scoped>
 .tableHead {
   background: #2d3748;
-  border-radius: 0.3rem;
-  padding: 1rem;
+  padding: 0.25rem;
   transition: 0.2s ease-in-out;
-  // display: flex;
-  // flex-direction: column;
-  // position: relative;
-
-  &--active {
-    box-shadow: inset 0px 0px 0px 3px #08e5ff;
-  }
-
-  &--reference {
-    cursor: pointer;
-  }
-
-  &--links {
-    display: flex;
-    justify-content: flex-end;
-
-    img {
-      width: 1rem;
-      margin-left: 0.5rem;
-    }
-  }
+  width: 1fr;
+  display: grid;
+  grid-template-columns: minmax(150px, 2fr) 8fr 125px;
 
   &--title {
-    font-weight: 900;
-    margin: 0;
+    color: #008190;
   }
 
   &--description {
-    // display: flex;
-    // align-content: stretch;
-    // flex: 1 1 auto;
-    // flex-direction: column;
-    font-size: 13px;
-    color: white;
-    margin: 0 0 0.7rem 0;
+    color: #008190;
     line-height: 1.3;
-    letter-spacing: 0.5px;
-    max-width: 15rem;
   }
-  a {
-    font-size: 12px;
-    line-height: 1;
-    align-self: flex-end;
-    margin-left: 1.7rem;
 
-    &:hover::before {
-      opacity: 0.5;
-    }
+  &--links {
+    cursor: pointer;
+    color: #008190;
   }
+
   &--reference {
     &::before {
       position: absolute;
