@@ -504,6 +504,16 @@
         "title": "Javascript Weekly",
         "desc": "A free, once–weekly email roundup of JavaScript news and articles.",
         "url": "https://javascriptweekly.com/"
+      }, 
+      {
+        "title": "Learn JavaScript Online",
+        "desc": "The easiest way to learn & practice modern JavaScript",
+        "url": "https://learnjavascript.online/"
+      },
+      {
+        "title": "Code to go",
+        "desc": "Find up to date snippets for common JavaScript use cases",
+        "url": "https://codetogo.io/"
       }
     ]
   },
