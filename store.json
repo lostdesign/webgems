@@ -204,7 +204,7 @@
         "title": "CSS Winner",
         "desc": "CSS Winner is a unique global platform awarding and showcasing the best websites and promoting innovative web designers, developers and agencies. We popularize the websites designed elsewhere through CSS Winner, increasing competence and coherence in collation and awarding them.",
         "url": "https://www.csswinner.com/"
-      }, 
+      },
       {
         "title": "Httpster",
         "desc": "Httpster is an inspiration resource showcasing totally rocking websites made by people from all over the world.",
@@ -418,7 +418,7 @@
         "title": "Markup validator",
         "desc": "This tool is checking your markup if it complies with the specification and will show you possible errors.",
         "url": "https://validator.w3.org/nu/"
-      }, 
+      },
       {
         "title": "Trends",
         "desc": "Browse trending github repos written in your favorite language with this high performance progressive web application",
@@ -504,6 +504,11 @@
         "title": "Javascript Weekly",
         "desc": "A free, once–weekly email roundup of JavaScript news and articles.",
         "url": "https://javascriptweekly.com/"
+      },
+      {
+        "title": "Clean Code Javascript",
+        "desc": "Software engineering principles, from Robert C. Martin's book Clean Code, adapted for JavaScript. This is not a style guide. It's a guide to producing readable, reusable, and refactorable software in JavaScript.",
+        "url": "https://github.com/ryanmcdermott/clean-code-javascript"
       }
     ]
   },
@@ -905,9 +910,9 @@
         "url": "https://serversforhackers.com/"
       },
       {
-        "title" : "Glitch",
-        "desc" : "The friendly community where everyone can discover & create the best apps on the web.",
-        "url" : "https://glitch.com/"
+        "title": "Glitch",
+        "desc": "The friendly community where everyone can discover & create the best apps on the web.",
+        "url": "https://glitch.com/"
       },
       {
         "title": "Serverless for Front-End Developers",
