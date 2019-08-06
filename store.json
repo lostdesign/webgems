@@ -382,7 +382,12 @@
         "title": "The A11Y Checklist",
         "desc": "This checklist uses the The Web Content Accessibility Guidelines (WCAG) as a reference point. The WCAG is a shared standard for web content accessibility for individuals, organizations, and governments.",
         "url": "https://a11yproject.com/checklist/"
-      }
+	    },
+	    {
+        "title": "Math ∩ Programming",
+        "desc": "Set of tutorial and article about various Math` tools and how to use them in computer science.",
+        "url": "https://jeremykun.com/main-content/"
+	    }
     ]
   },
   {
@@ -509,6 +514,11 @@
         "title": "Clean Code Javascript",
         "desc": "Software engineering principles, from Robert C. Martin's book Clean Code, adapted for JavaScript. This is not a style guide. It's a guide to producing readable, reusable, and refactorable software in JavaScript.",
         "url": "https://github.com/ryanmcdermott/clean-code-javascript"
+      },
+      {
+        "title": "Interneting Is Hard",
+        "desc": "Complete tutorial on HTML and CSS.",
+        "url": "https://internetingishard.com/html-and-css/introduction/"
       }
     ]
   },
