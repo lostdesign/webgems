@@ -1059,7 +1059,13 @@
         "title": "Let's Encrypt",
         "desc": "Let's Encrypt is a free, automated, and open certificate authority brought to you by the non-profit Internet Security Research Group (ISRG).",
         "url": "https://letsencrypt.org/"
+      },
+      {
+        "title": "Pingbreak",
+        "desc": "Pingbreak is a free and simple website monitoring. Be notified in Slack, Twitter, Discord, email and more whenever your websites are down",
+        "url": "https://pingbreak.com/"
       }
+
     ]
   }
 ]
