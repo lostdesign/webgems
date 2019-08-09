@@ -32,7 +32,11 @@ const includesElOf = (list1, list2) => list1.some(element => list2.includes(elem
 export const state = () => ({
   resources,
   // List of all tags, duplicates removed
-  tags: [...new Set(resources.map(resource => resource.resources).flat().map(resource => resource.tags).flat())]
+  tags: [...new Set(
+		resources
+			.map(resource => resource.resources).flat()
+			.map(resource => resource.tags).flat()
+	)]
 })
 
 export const getters = {
