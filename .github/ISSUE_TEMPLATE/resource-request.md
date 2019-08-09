@@ -15,3 +15,6 @@ webgems.io
 
 **URL**
 https://example.com
+
+**Category**
+javascript/html/php...
