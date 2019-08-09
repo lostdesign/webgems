@@ -373,6 +373,10 @@
         "desc": "Challenge yourself on kata, created by the community to strengthen different skills. Master your current language of choice, or expand your understanding of a new one.",
         "url": "https://www.codewars.com/"
       },
+      { "title": "Exercism",
+        "desc": "Learn to code in a variety of languages. Complete programming challenges, view other's solutions, and get community feedback on your code.",
+        "url": "https://exercism.io"
+      },
       {
         "title": "Learn X in Y min",
         "desc": "Take a whirlwind tour of your next favorite language. Community-driven!",
