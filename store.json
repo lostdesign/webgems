@@ -509,6 +509,11 @@
         "title": "Clean Code Javascript",
         "desc": "Software engineering principles, from Robert C. Martin's book Clean Code, adapted for JavaScript. This is not a style guide. It's a guide to producing readable, reusable, and refactorable software in JavaScript.",
         "url": "https://github.com/ryanmcdermott/clean-code-javascript"
+      },
+      {
+        "title": "List of (Advanced) JavaScript Questions",
+        "desc": "A curated list of JavaScript questions from basic to advanced to either refresh your knowledge or prepare for job interviews. Updated weekly with new questions and available in several languages.",
+        "url": "https://github.com/lydiahallie/javascript-questions"
       }
     ]
   },
