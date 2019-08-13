@@ -1,60 +1,43 @@
 <template lang="pug">
-  tr.tableRow(:class="active")
-    td.tableRow--title {{title}}
-    td.tableRow--description {{desc}}
+  tr.tableRow(:class="{ rowActive: isActive }")
+    td.tableRow--title {{resource.title}}
+    td.tableRow--description {{resource.desc}}
     td.tableRow--links
       tr
         td
           a.tableRow--reference(@click='createCopyUrl') Copy
         td
-          a.tableRow--target(:href="url" :target='title' rel='noreferrer') Open
+          a.tableRow--target(:href="resource.url" :target='resource.title' rel='noreferrer') Open
 </template>
 
 <script>
 export default {
-  props: ["title", "desc", "url"],
+  props: ['resource', 'isActive'],
   data() {
-    return {
-      active: ""
-    };
+    return {};
   },
   methods: {
-    async createCopyUrl() {
+     async createCopyUrl() {
       try {
-        let currentPath = this.$router.history.current.path;
-        let reference = this.createReferenceTag(this.$props.title);
-
-        await this.$copyText(
-          `https://webgems.io${currentPath}?card=${reference}`
-        );
-        this.$router.push(`${currentPath}?card=${reference}`);
+        const { path } = this.resource
+        await this.$copyText(`https://webgems.io${path}`)
+        this.$emit('toggle', 'test')
+        this.$router.push(path)
       } catch (e) {
         console.error(e);
       }
     },
-    createReferenceTag(tag) {
-      return tag.replace(/ /g, "").toLowerCase();
-    },
-    checkReference() {
-      const query = this.$route.query.card;
-      const title = this.createReferenceTag(this.$props.title);
-
-      this.active = title === query ? "card--active" : "";
-    }
   },
-  mounted() {
-    this.checkReference();
-  },
-  watch: {
-    $route: function() {
-      this.checkReference();
-    }
-  }
+  mounted() {},
+  watch: {},
 };
 </script>
 
 
 <style lang="scss" scoped>
+.rowActive {
+    box-shadow:inset 0px 0px 0px 3px #08e5ff;
+  }
 .tableRow {
   background: #2d3748;
   padding: 0.25rem;
