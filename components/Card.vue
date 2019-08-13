@@ -28,12 +28,6 @@ export default {
   },
   mounted() {},
   watch: {},
-  // category() {
-  //     return this.categories.find(
-  //       category =>
-  //         category.title.toLowerCase() === this.categoryRouteTitle.toLowerCase()
-  //     );
-  //   }
 }
 </script>
 
