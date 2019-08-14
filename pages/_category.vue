@@ -56,9 +56,9 @@ export default {
     },
     async createCopyUrl(resource) {      
       try {
-        const { path } = resource
+        const { path, title } = resource
         await this.$copyText(`https://webgems.io${path}`)
-        this.onToggle(resource.title)
+        this.onToggle(title)
         this.$router.push(path)
       } catch (e) {
         console.error(e);
