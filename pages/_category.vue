@@ -4,12 +4,12 @@
     .cards(v-if="cardsShown")
       template
         div(v-for='resource in category.resources' :key='resource.title')
-          Card(:resource='resource' :isActive='activeCard === resource.title' v-on:toggle='onToggle(resource.title)')
+          Card(:resource='resource' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.title')
     table(v-if="!cardsShown")
       TableHead(:title="'Welcome'" :desc="'Description'" :url="'URL'")
       template
         div(v-for='resource in category.resources' :key='resource.title')
-          TableRow(:resource='resource' :isActive='activeCard === resource.title' v-on:toggle='onToggle(resource.title)')
+          TableRow(:resource='resource' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.title')
 </template>
 
 <script>
@@ -52,6 +52,16 @@ export default {
         this.activeCard = null;
       } else {
         this.activeCard = index;
+      }
+    },
+    async createCopyUrl(resource) {      
+      try {
+        const { path } = resource
+        await this.$copyText(`https://webgems.io${path}`)
+        this.onToggle(resource.title)
+        this.$router.push(path)
+      } catch (e) {
+        console.error(e);
       }
     }
   },

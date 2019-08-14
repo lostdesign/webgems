@@ -5,31 +5,14 @@
     td.tableRow--links
       tr
         td
-          a.tableRow--reference(@click='createCopyUrl') Copy
+          a.tableRow--reference(@click='createCopyUrl(resource)') Copy
         td
           a.tableRow--target(:href="resource.url" :target='resource.title' rel='noreferrer') Open
 </template>
 
 <script>
 export default {
-  props: ['resource', 'isActive'],
-  data() {
-    return {};
-  },
-  methods: {
-     async createCopyUrl() {
-      try {
-        const { path } = this.resource
-        await this.$copyText(`https://webgems.io${path}`)
-        this.$emit('toggle', 'test')
-        this.$router.push(path)
-      } catch (e) {
-        console.error(e);
-      }
-    },
-  },
-  mounted() {},
-  watch: {},
+  props: ['resource', 'isActive', 'createCopyUrl'],
 };
 </script>
 

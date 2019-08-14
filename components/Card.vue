@@ -3,31 +3,14 @@
     p.card--title {{resource.title}}
     p.card--description {{resource.desc}}
     .card--links
-      a.card--reference(@click='createCopyUrl') Copy
+      a.card--reference(@click='createCopyUrl(resource)') Copy
       br
       a.card--target(:href="resource.url" :target='resource.title' rel='noreferrer') Open
 </template>
 
 <script>
 export default {
-  props: ['resource', 'isActive'],
-  data(){
-    return {}
-  },
-  methods: {
-     async createCopyUrl() {
-      try {
-        const { path } = this.resource
-        await this.$copyText(`https://webgems.io${path}`)
-        this.$emit('toggle', 'test')
-        this.$router.push(path)
-      } catch (e) {
-        console.error(e);
-      }
-    },
-  },
-  mounted() {},
-  watch: {},
+  props: ['resource', 'isActive', 'createCopyUrl'],
 }
 </script>
 
