@@ -43,10 +43,20 @@ export default {
         resource.path = `${pagePath}?card=${resource.cleanTitle}`
         resource.active = (resource.cleanTitle === query) ? 'card--active' : ''
       }
-      return category
+			category.resources.sort(this.compareTitles)
+			return category
     },
   },
   methods: {
+    compareTitles(x, y) {
+      if (x.cleanTitle > y.cleanTitle) {
+          return 1
+      } else if (x.cleanTitle < y.cleanTitle) {
+          return -1
+      } else {
+				return 0
+			}
+    },
     onToggle(index) {
       if (this.activeCard === index) {
         this.activeCard = null;
