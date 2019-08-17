@@ -1,58 +1,25 @@
 <template lang="pug">
-  .card(:class="active")
-    p.card--title {{title}}
-    p.card--description {{desc}}
+  .card(:class="{ cardActive: isActive }")
+    p.card--title {{resource.title}}
+    p.card--description {{resource.desc}}
     .card--links
-      a.card--reference(@click='createCopyUrl') Copy
+      a.card--reference(@click='createCopyUrl(resource)') Copy
       br
-      a.card--target(:href="url" :target='title' rel='noreferrer') Open
+      a.card--target(:href="resource.url" :target='resource.title' rel='noreferrer') Open
 </template>
 
 <script>
 export default {
-  props: ['title', 'desc', 'url'],
-  data(){
-    return {
-      active:''
-    }
-  },
-  methods: {
-     async createCopyUrl() {
-      try {
-        let currentPath = this.$router.history.current.path
-        let reference =  this.createReferenceTag(this.$props.title)
-
-        await this.$copyText(`https://webgems.io${currentPath}?card=${reference}`)
-        this.$router.push(`${currentPath}?card=${reference}`)
-      } catch (e) {
-        console.error(e);
-      }
-    },
-    createReferenceTag(tag){
-      return tag.replace(/ /g, '').toLowerCase()
-    },
-    checkReference(){
-      const query = this.$route.query.card
-      const title = this.createReferenceTag(this.$props.title)
-
-      this.active = title === query
-        ? 'card--active'
-        : ''
-    },
-  },
-  mounted() {
-    this.checkReference();
-  },
-  watch: {
-    '$route': function() {
-      this.checkReference();
-    }
-  }
+  props: ['resource', 'isActive', 'createCopyUrl'],
 }
 </script>
 
 
 <style lang="scss" scoped>
+.cardActive {
+    box-shadow:inset 0px 0px 0px 3px #08e5ff;
+  }
+
 .card {
   background: #2D3748;
   border-radius: .3rem;
@@ -61,10 +28,6 @@ export default {
   display: flex;
   flex-direction: column;
   position: relative;
-
-  &--active {
-    box-shadow:inset 0px 0px 0px 3px #08e5ff;
-  }
 
   &--reference {
     cursor: pointer;
