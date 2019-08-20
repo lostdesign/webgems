@@ -269,6 +269,11 @@
         "title": "UX Collective",
         "desc": "A Medium-based blog, curating articles on modern UX Design practices, conventions, and ideas.",
         "url": "https://uxdesign.cc/"
+      },
+      {
+        "title": "Codrops",
+        "desc": "Codrops is a web design and development blog that publishes articles and tutorials about the latest web trends, techniques and new possibilities.",
+        "url": "https://tympanus.net/codrops/"
       }
     ]
   },
@@ -1064,6 +1069,27 @@
         "title": "Let's Encrypt",
         "desc": "Let's Encrypt is a free, automated, and open certificate authority brought to you by the non-profit Internet Security Research Group (ISRG).",
         "url": "https://letsencrypt.org/"
+      }
+    ]
+  },
+  {
+    "title": "Podcasts",
+    "slug": "/podcasts",
+    "resources": [
+      {
+        "title": "syntax.fm",
+        "desc": "Full Stack Developers Wes Bos and Scott Tolinski dive deep into web development topics, explaining how they work and talking about their own experiences. They cover from JavaScript frameworks like React, to the latest advancements in CSS to simplifying web tooling.",
+        "url": "https://syntax.fm/"
+      },
+      {
+        "title": "The Changelog",
+        "desc": "News and podcasts for developers.",
+        "url": "https://changelog.com/"
+      },
+      {
+        "title": "Ladybug Podcast",
+        "desc": "Listen to Kelly Vaughn, Ali Spittel, Emma Wedekind, and Lindsey Kopacz, four women in tech, discuss topics such as how to get your first job in tech and how to manage side projects.",
+        "url": "https://ladybug.dev/"
       }
     ]
   }
