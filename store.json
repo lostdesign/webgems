@@ -204,7 +204,7 @@
         "title": "CSS Winner",
         "desc": "CSS Winner is a unique global platform awarding and showcasing the best websites and promoting innovative web designers, developers and agencies. We popularize the websites designed elsewhere through CSS Winner, increasing competence and coherence in collation and awarding them.",
         "url": "https://www.csswinner.com/"
-      }, 
+      },
       {
         "title": "Httpster",
         "desc": "Httpster is an inspiration resource showcasing totally rocking websites made by people from all over the world.",
@@ -269,6 +269,11 @@
         "title": "UX Collective",
         "desc": "A Medium-based blog, curating articles on modern UX Design practices, conventions, and ideas.",
         "url": "https://uxdesign.cc/"
+      },
+      {
+        "title": "Codrops",
+        "desc": "Codrops is a web design and development blog that publishes articles and tutorials about the latest web trends, techniques and new possibilities.",
+        "url": "https://tympanus.net/codrops/"
       }
     ]
   },
@@ -418,7 +423,7 @@
         "title": "Markup validator",
         "desc": "This tool is checking your markup if it complies with the specification and will show you possible errors.",
         "url": "https://validator.w3.org/nu/"
-      }, 
+      },
       {
         "title": "Trends",
         "desc": "Browse trending github repos written in your favorite language with this high performance progressive web application",
@@ -514,6 +519,16 @@
         "title": "Code to go",
         "desc": "Find up to date snippets for common JavaScript use cases",
         "url": "https://codetogo.io/"
+      },
+      {
+        "title": "Clean Code Javascript",
+        "desc": "Software engineering principles, from Robert C. Martin's book Clean Code, adapted for JavaScript. This is not a style guide. It's a guide to producing readable, reusable, and refactorable software in JavaScript.",
+        "url": "https://github.com/ryanmcdermott/clean-code-javascript"
+      },
+      {
+        "title": "List of (Advanced) JavaScript Questions",
+        "desc": "A curated list of JavaScript questions from basic to advanced to either refresh your knowledge or prepare for job interviews. Updated weekly with new questions and available in several languages.",
+        "url": "https://github.com/lydiahallie/javascript-questions"
       }
     ]
   },
@@ -915,9 +930,9 @@
         "url": "https://serversforhackers.com/"
       },
       {
-        "title" : "Glitch",
-        "desc" : "The friendly community where everyone can discover & create the best apps on the web.",
-        "url" : "https://glitch.com/"
+        "title": "Glitch",
+        "desc": "The friendly community where everyone can discover & create the best apps on the web.",
+        "url": "https://glitch.com/"
       },
       {
         "title": "Serverless for Front-End Developers",
@@ -1064,6 +1079,27 @@
         "title": "Let's Encrypt",
         "desc": "Let's Encrypt is a free, automated, and open certificate authority brought to you by the non-profit Internet Security Research Group (ISRG).",
         "url": "https://letsencrypt.org/"
+      }
+    ]
+  },
+  {
+    "title": "Podcasts",
+    "slug": "/podcasts",
+    "resources": [
+      {
+        "title": "syntax.fm",
+        "desc": "Full Stack Developers Wes Bos and Scott Tolinski dive deep into web development topics, explaining how they work and talking about their own experiences. They cover from JavaScript frameworks like React, to the latest advancements in CSS to simplifying web tooling.",
+        "url": "https://syntax.fm/"
+      },
+      {
+        "title": "The Changelog",
+        "desc": "News and podcasts for developers.",
+        "url": "https://changelog.com/"
+      },
+      {
+        "title": "Ladybug Podcast",
+        "desc": "Listen to Kelly Vaughn, Ali Spittel, Emma Wedekind, and Lindsey Kopacz, four women in tech, discuss topics such as how to get your first job in tech and how to manage side projects.",
+        "url": "https://ladybug.dev/"
       }
     ]
   }
