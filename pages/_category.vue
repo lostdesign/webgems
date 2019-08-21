@@ -2,14 +2,12 @@
   div
     h1 {{ category.title }}
     .cards(v-if="cardsShown")
-      template
-        div(v-for='resource in category.resources' :key='resource.title')
-          Card(:resource='resource' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.title')
+      template(v-for='resource in category.resources' )
+        Card(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.title')
     table(v-if="!cardsShown")
       TableHead(:title="'Welcome'" :desc="'Description'" :url="'URL'")
-      template
-        div(v-for='resource in category.resources' :key='resource.title')
-          TableRow(:resource='resource' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.title')
+      template(v-for='resource in category.resources' )
+        TableRow(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.title')
 </template>
 
 <script>
