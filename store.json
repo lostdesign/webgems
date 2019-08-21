@@ -269,6 +269,11 @@
         "title": "UX Collective",
         "desc": "A Medium-based blog, curating articles on modern UX Design practices, conventions, and ideas.",
         "url": "https://uxdesign.cc/"
+      },
+      {
+        "title": "Codrops",
+        "desc": "Codrops is a web design and development blog that publishes articles and tutorials about the latest web trends, techniques and new possibilities.",
+        "url": "https://tympanus.net/codrops/"
       }
     ]
   },
@@ -509,6 +514,16 @@
         "title": "Javascript Weekly",
         "desc": "A free, once–weekly email roundup of JavaScript news and articles.",
         "url": "https://javascriptweekly.com/"
+      }, 
+      {
+        "title": "Learn JavaScript Online",
+        "desc": "The easiest way to learn & practice modern JavaScript",
+        "url": "https://learnjavascript.online/"
+      },
+      {
+        "title": "Code to go",
+        "desc": "Find up to date snippets for common JavaScript use cases",
+        "url": "https://codetogo.io/"
       },
       {
         "title": "Clean Code Javascript",
@@ -519,6 +534,11 @@
         "title": "Interneting Is Hard",
         "desc": "Complete tutorial on HTML and CSS.",
         "url": "https://internetingishard.com/html-and-css/introduction/"
+      },
+      {
+        "title": "List of (Advanced) JavaScript Questions",
+        "desc": "A curated list of JavaScript questions from basic to advanced to either refresh your knowledge or prepare for job interviews. Updated weekly with new questions and available in several languages.",
+        "url": "https://github.com/lydiahallie/javascript-questions"
       }
     ]
   },
@@ -1069,6 +1089,27 @@
         "title": "Let's Encrypt",
         "desc": "Let's Encrypt is a free, automated, and open certificate authority brought to you by the non-profit Internet Security Research Group (ISRG).",
         "url": "https://letsencrypt.org/"
+      }
+    ]
+  },
+  {
+    "title": "Podcasts",
+    "slug": "/podcasts",
+    "resources": [
+      {
+        "title": "syntax.fm",
+        "desc": "Full Stack Developers Wes Bos and Scott Tolinski dive deep into web development topics, explaining how they work and talking about their own experiences. They cover from JavaScript frameworks like React, to the latest advancements in CSS to simplifying web tooling.",
+        "url": "https://syntax.fm/"
+      },
+      {
+        "title": "The Changelog",
+        "desc": "News and podcasts for developers.",
+        "url": "https://changelog.com/"
+      },
+      {
+        "title": "Ladybug Podcast",
+        "desc": "Listen to Kelly Vaughn, Ali Spittel, Emma Wedekind, and Lindsey Kopacz, four women in tech, discuss topics such as how to get your first job in tech and how to manage side projects.",
+        "url": "https://ladybug.dev/"
       }
     ]
   }
