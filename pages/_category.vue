@@ -2,14 +2,12 @@
   div
     h1 {{ category.title }}
     .cards(v-if="cardsShown")
-      template
-        div(v-for='resource in category.resources' :key='resource.title')
-          Card(:resource='resource' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.title')
+      template(v-for='resource in category.resources' )
+        Card(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.title')
     table(v-if="!cardsShown")
       TableHead(:title="'Welcome'" :desc="'Description'" :url="'URL'")
-      template
-        div(v-for='resource in category.resources' :key='resource.title')
-          TableRow(:resource='resource' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.title')
+      template(v-for='resource in category.resources' )
+        TableRow(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.title')
 </template>
 
 <script>
@@ -43,10 +41,20 @@ export default {
         resource.path = `${pagePath}?card=${resource.cleanTitle}`
         resource.active = (resource.cleanTitle === query) ? 'card--active' : ''
       }
-      return category
+			category.resources.sort(this.compareTitles)
+			return category
     },
   },
   methods: {
+    compareTitles(x, y) {
+      if (x.cleanTitle > y.cleanTitle) {
+          return 1
+      } else if (x.cleanTitle < y.cleanTitle) {
+          return -1
+      } else {
+				return 0
+			}
+    },
     onToggle(index) {
       if (this.activeCard === index) {
         this.activeCard = null;
