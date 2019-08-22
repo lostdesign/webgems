@@ -1,20 +1,71 @@
 <template lang="pug">
   div
     h1 {{ category.title }}
-    .cards
-      template(v-for='resource in category.resources')
-        Card(:title='resource.title' :desc='resource.desc' :url='resource.url')
+    .cards(v-if="cardsShown")
+      template
+        div(v-for='resource in category.resources' :key='resource.title')
+          Card(:resource='resource' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.title')
+    table(v-if="!cardsShown")
+      TableHead(:title="'Welcome'" :desc="'Description'" :url="'URL'")
+      template
+        div(v-for='resource in category.resources' :key='resource.title')
+          TableRow(:resource='resource' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.title')
 </template>
 
 <script>
-import Card from '../components/Card'
+import Card from "../components/Card";
+import TableHead from "../components/TableHead";
+import TableRow from "../components/TableRow";
 
 export default {
-  data () {
+  data() {
     return {
-      category: this.$store.getters['data/findResources'](this.$route.params.category),
+      categoryRouteTitle: this.$route.params.category,
+      index: '',
+      activeCard: ''
+    };
+  },
+  computed: {
+    cardsShown() {
+      return this.$store.state.Sidebar.cardsShown;
+    },
+    category() {
+      const category = this.$store.getters['data/findResources'](this.categoryRouteTitle)
+      const pagePath = this.$router.history.current.path
+      const query = this.$route.query.card
+      for (const resource of category.resources) {
+        resource.cleanTitle = resource.title.replace(/ /g, '').toLowerCase()
+        resource.path = `${pagePath}?card=${resource.cleanTitle}`
+        resource.active = (resource.cleanTitle === query) ? 'card--active' : ''
+      }
+      return category
+    },
+  },
+  methods: {
+    onToggle(index) {
+      if (this.activeCard === index) {
+        this.activeCard = null;
+      } else {
+        this.activeCard = index;
+      }
+    },
+    async createCopyUrl(resource) {      
+      try {
+        const { path, title } = resource
+        await this.$copyText(`https://webgems.io${path}`)
+        this.onToggle(title)
+        this.$router.push(path)
+      } catch (e) {
+        console.error(e);
+      }
     }
   },
-  components: { Card },
-}
+  components: { Card, TableHead, TableRow }
+};
 </script>
+
+<style lang="scss" scoped>
+table {
+	width: 100%;
+}
+</style>
