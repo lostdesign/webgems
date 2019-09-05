@@ -5,17 +5,20 @@
     {
       "title": "syntax.fm",
       "desc": "Full Stack Developers Wes Bos and Scott Tolinski dive deep into web development topics, explaining how they work and talking about their own experiences. They cover from JavaScript frameworks like React, to the latest advancements in CSS to simplifying web tooling.",
-      "url": "https://syntax.fm/"
+      "url": "https://syntax.fm/",
+      "tags": []
     },
     {
       "title": "The Changelog",
       "desc": "News and podcasts for developers.",
-      "url": "https://changelog.com/"
+      "url": "https://changelog.com/",
+      "tags": []
     },
     {
       "title": "Ladybug Podcast",
       "desc": "Listen to Kelly Vaughn, Ali Spittel, Emma Wedekind, and Lindsey Kopacz, four women in tech, discuss topics such as how to get your first job in tech and how to manage side projects.",
-      "url": "https://ladybug.dev/"
+      "url": "https://ladybug.dev/",
+      "tags": []
     }
   ]
 }
