@@ -76,11 +76,26 @@
       "title": "Javascript Weekly",
       "desc": "A free, once–weekly email roundup of JavaScript news and articles.",
       "url": "https://javascriptweekly.com/"
+    }, 
+    {
+      "title": "Learn JavaScript Online",
+      "desc": "The easiest way to learn & practice modern JavaScript",
+      "url": "https://learnjavascript.online/"
+    },
+    {
+      "title": "Code to go",
+      "desc": "Find up to date snippets for common JavaScript use cases",
+      "url": "https://codetogo.io/"
     },
     {
       "title": "Clean Code Javascript",
       "desc": "Software engineering principles, from Robert C. Martin's book Clean Code, adapted for JavaScript. This is not a style guide. It's a guide to producing readable, reusable, and refactorable software in JavaScript.",
       "url": "https://github.com/ryanmcdermott/clean-code-javascript"
+    },
+    {
+      "title": "List of (Advanced) JavaScript Questions",
+      "desc": "A curated list of JavaScript questions from basic to advanced to either refresh your knowledge or prepare for job interviews. Updated weekly with new questions and available in several languages.",
+      "url": "https://github.com/lydiahallie/javascript-questions"
     }
   ]
 }

@@ -111,6 +111,11 @@
       "title": "UX Collective",
       "desc": "A Medium-based blog, curating articles on modern UX Design practices, conventions, and ideas.",
       "url": "https://uxdesign.cc/"
+    },
+    {
+      "title": "Codrops",
+      "desc": "Codrops is a web design and development blog that publishes articles and tutorials about the latest web trends, techniques and new possibilities.",
+      "url": "https://tympanus.net/codrops/"
     }
   ]
 }
