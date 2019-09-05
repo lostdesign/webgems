@@ -29,9 +29,8 @@ export default {
     },
     category() {
       const category = this.$store.getters['data/sortByTitle'](this.categoryRouteTitle)
-      const pagePath = this.$router.history.current.path
-      const query = this.$route.query.card
       const clone = JSON.parse(JSON.stringify(category))
+      const query = this.$route.query.card
       for (const resource of clone.resources) {
         resource.active = resource.cleanTitle === query ? 'card--active' : ''
       }
