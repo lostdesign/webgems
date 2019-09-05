@@ -28,28 +28,18 @@ export default {
       return this.$store.state.Sidebar.cardsShown;
     },
     category() {
-      const category = this.$store.getters['data/findResources'](this.categoryRouteTitle)
+      const category = this.$store.getters['data/sortByTitle'](this.categoryRouteTitle)
       const pagePath = this.$router.history.current.path
       const query = this.$route.query.card
+      // console.log(category.resources)
       for (const resource of category.resources) {
-        resource.cleanTitle = resource.title.replace(/ /g, '').toLowerCase()
-        resource.path = `${pagePath}?card=${resource.cleanTitle}`
         resource.active = (resource.cleanTitle === query) ? 'card--active' : ''
       }
-			category.resources.sort(this.compareTitles)
+      // category.resources.sort(this.compareTitles)
 			return category
     },
   },
   methods: {
-    compareTitles(x, y) {
-      if (x.cleanTitle > y.cleanTitle) {
-          return 1
-      } else if (x.cleanTitle < y.cleanTitle) {
-          return -1
-      } else {
-				return 0
-			}
-    },
     onToggle(index) {
       if (this.activeCard === index) {
         this.activeCard = null;

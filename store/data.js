@@ -30,7 +30,17 @@ if (!Array.prototype.flat) {
 const includesElOf = (list1, list2) => list1.some(element => list2.includes(element))
 
 export const state = () => ({
-  resources,
+  resources: resources.map(category => ({
+		...category,
+		resources: category.resources.map(resource => {
+			const cleanTitle = resource.title.replace(/ /g, '').toLowerCase()
+			return {
+				...resource,
+				cleanTitle,
+				path: `${category.slug}?card=${cleanTitle}`,
+			}
+		})
+	})),
   // List of all tags, duplicates removed
   tags: [...new Set(
 		resources
@@ -43,10 +53,28 @@ export const getters = {
 	tags: state => state.tags,
 	resources: state => state.resources,
 	findResources: state => title => {
-		return state.resources.find(resource => resource.title.toLowerCase() === title.toLowerCase())
+		return Object.assign(state.resources.find(resource => resource.title.toLowerCase() === title.toLowerCase()))
 	},
 	findByTags: state => tags => {
 		const flat = state.resources.map(category => category.resources).flat()
 		return flat.filter(resource => resource.tags && includesElOf(resource.tags, tags)) 
+	},
+	sortByTitle: (_, getters) => title => {
+		const category = getters.findResources(title)
+		const copy = [...category.resources]
+		return {
+			...category,
+			resources: copy.sort(compareTitles)
+		}
+	}
+}
+
+const compareTitles = (x, y) => {
+	if (x.cleanTitle > y.cleanTitle) {
+			return 1
+	} else if (x.cleanTitle < y.cleanTitle) {
+			return -1
+	} else {
+		return 0
 	}
 }
