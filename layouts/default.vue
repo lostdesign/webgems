@@ -45,18 +45,32 @@ html {
 }
 
 a {
+  position: relative;
   color: #08e5ff;
   text-decoration: none;
   overflow-wrap: break-word;
 
-  &:hover {
-    color: #008190;
+  &::after {
+    content: "";
+    background-color: #08e5ff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    width: 0;
+    transition: 0.2s width;
+  }
+
+  &:hover::after {
+    width: 100%;
   }
 }
 
 .nuxt-link-active {
-  color: white;
-  text-decoration: underline;
+  &::after {
+    width: 100%;
+  }
 }
 
 h1, p {
