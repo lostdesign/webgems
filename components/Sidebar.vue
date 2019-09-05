@@ -20,7 +20,7 @@ export default {
   },
   computed: {
     cardsShown() {
-      return this.$store.state.Sidebar.cardsShown;
+      return this.$store.getters['Sidebar/isCardsShown']
     }
   },
   created() {

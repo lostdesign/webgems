@@ -25,17 +25,16 @@ export default {
   },
   computed: {
     cardsShown() {
-      return this.$store.state.Sidebar.cardsShown;
+      return this.$store.getters['Sidebar/isCardsShown']
     },
     category() {
       const category = this.$store.getters['data/sortByTitle'](this.categoryRouteTitle)
       const pagePath = this.$router.history.current.path
       const query = this.$route.query.card
-      // console.log(category.resources)
-      for (const resource of category.resources) {
-        resource.active = (resource.cleanTitle === query) ? 'card--active' : ''
+      const clone = JSON.parse(JSON.stringify(category))
+      for (const resource of clone.resources) {
+        resource.active = resource.cleanTitle === query ? 'card--active' : ''
       }
-      // category.resources.sort(this.compareTitles)
 			return category
     },
   },

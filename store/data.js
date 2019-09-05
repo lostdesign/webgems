@@ -61,10 +61,10 @@ export const getters = {
 	},
 	sortByTitle: (_, getters) => title => {
 		const category = getters.findResources(title)
-		const copy = [...category.resources]
+		const clone = [...category.resources]
 		return {
 			...category,
-			resources: copy.sort(compareTitles)
+			resources: clone.sort(compareTitles)
 		}
 	}
 }
