@@ -1,14 +1,14 @@
 export const state = () => ({
-  cardsShown: true
+  areCardsVisible: true
 })
 
 export const getters = {
-  isCardsShown: state => state.cardsShown
+  areCardsVisible: state => state.areCardsVisible
 }
 
 export const mutations = {
-  toggleCardsShown(state) {
-    if (process.browser) localStorage.setItem('cardsShown', !state.cardsShown)
-    state.cardsShown = !state.cardsShown
+  toggleCardsVisible(state) {
+    if (process.browser) localStorage.setItem('areCardsVisible', !state.areCardsVisible)
+    state.areCardsVisible = !state.areCardsVisible
   }
 }

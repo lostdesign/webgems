@@ -1,10 +1,10 @@
 <template lang="pug">
   div
     h1 {{ category.title }}
-    .cards(v-if="cardsShown")
+    .cards(v-if="areCardsVisible")
       template(v-for='resource in category.resources' )
         Card(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.title')
-    table(v-if="!cardsShown")
+    table(v-if="!areCardsVisible")
       TableHead(:title="'Welcome'" :desc="'Description'" :url="'URL'")
       template(v-for='resource in category.resources' )
         TableRow(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.title')
@@ -24,8 +24,8 @@ export default {
     };
   },
   computed: {
-    cardsShown() {
-      return this.$store.getters['Sidebar/isCardsShown']
+    areCardsVisible() {
+      return this.$store.getters['Sidebar/areCardsVisible']
     },
     category() {
       const category = this.$store.getters['data/sortByTitle'](this.categoryRouteTitle)

@@ -4,9 +4,9 @@
       template(v-for='category in categories')
         //- nuxt-link(:to='$i18n.path(category.slug)') {{ category.title }}
         nuxt-link(:to='category.slug') {{ category.title }}
-      div(class="toggleWrapper" @click="toggleCardsShown")
-        div(class="viewToggle" :class="{active: cardsShown}") Cards
-        div(class="viewToggle" :class="{active: !cardsShown}") Table
+      div(class="toggleWrapper" @click="toggleCardsVisible")
+        div(class="viewToggle" :class="{active: areCardsVisible}") Cards
+        div(class="viewToggle" :class="{active: !areCardsVisible}") Table
 </template>
 
 <script>
@@ -19,8 +19,8 @@ export default {
     };
   },
   computed: {
-    cardsShown() {
-      return this.$store.getters['Sidebar/isCardsShown']
+    areCardsVisible() {
+      return this.$store.getters['Sidebar/areCardsVisible']
     }
   },
   created() {
@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     ...mapMutations({
-      toggleCardsShown: "Sidebar/toggleCardsShown"
+      toggleCardsVisible: "Sidebar/toggleCardsVisible"
     })
   }
 };
