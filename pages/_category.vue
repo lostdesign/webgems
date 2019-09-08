@@ -3,11 +3,11 @@
     h1 {{ category.title }}
     .cards(v-if="areCardsVisible")
       template(v-for='resource in category.resources' )
-        Card(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.title')
+        Card(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
     table(v-if="!areCardsVisible")
       TableHead(:title="'Welcome'" :desc="'Description'" :url="'URL'")
       template(v-for='resource in category.resources' )
-        TableRow(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.title')
+        TableRow(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
 </template>
 
 <script>
@@ -20,7 +20,7 @@ export default {
     return {
       categoryRouteTitle: this.$route.params.category,
       index: '',
-      activeCard: ''
+      activeCard: '',
     };
   },
   computed: {
@@ -28,33 +28,26 @@ export default {
       return this.$store.getters['Sidebar/areCardsVisible']
     },
     category() {
-      const category = this.$store.getters['data/sortByTitle'](this.categoryRouteTitle)
-      const clone = JSON.parse(JSON.stringify(category))
-      const query = this.$route.query.card
-      for (const resource of clone.resources) {
-        resource.active = resource.cleanTitle === query ? 'card--active' : ''
-      }
-			return category
+      return this.$store.getters['data/sortByTitle'](this.categoryRouteTitle)
     },
   },
   methods: {
-    onToggle(index) {
-      if (this.activeCard === index) {
-        this.activeCard = null;
-      } else {
-        this.activeCard = index;
-      }
+    setActiveCard(index) {
+      this.activeCard = index
     },
     async createCopyUrl(resource) {      
       try {
-        const { path, title } = resource
+        const { path, cleanTitle } = resource
         await this.$copyText(`https://webgems.io${path}`)
-        this.onToggle(title)
+        this.setActiveCard(cleanTitle)
         this.$router.push(path)
       } catch (e) {
         console.error(e);
       }
     }
+  },
+  created() {
+    this.activeCard = this.$route.query.card || ''
   },
   components: { Card, TableHead, TableRow }
 };
