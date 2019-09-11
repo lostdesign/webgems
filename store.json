@@ -274,6 +274,11 @@
         "title": "Codrops",
         "desc": "Codrops is a web design and development blog that publishes articles and tutorials about the latest web trends, techniques and new possibilities.",
         "url": "https://tympanus.net/codrops/"
+      },
+      {
+        "title": "Fontjoy",
+        "desc": "Generate font combinations with deep learning.",
+        "url": "https://fontjoy.com/"
       }
     ]
   },
