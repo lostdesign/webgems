@@ -1,0 +1,72 @@
+{
+  "title": "General",
+  "slug": "/general",
+  "resources": [
+    {
+      "title": "Caniuse",
+      "desc": "'Can I use' provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.",
+      "url": "https://caniuse.com/",
+      "tags": []
+    },
+    {
+      "title": "DevDocs",
+      "desc": "DevDocs combines multiple API documentations in a fast, organized, and searchable interface. Online and offline, always have your docs with you.",
+      "url": "https://devdocs.io",
+      "tags": []
+    },
+    {
+      "title": "MDN web docs",
+      "desc": "Tutorials, references, tools and resources.",
+      "url": "https://developer.mozilla.org/docs/Web",
+      "tags": []
+    },
+    {
+      "title": "Rico's cheatsheets",
+      "desc": "Cheatsheets for any kind of technologies in the web domain.",
+      "url": "https://devhints.io",
+      "tags": []
+    },
+    {
+      "title": "Developer Roadmap",
+      "desc": "Below you find a set of charts demonstrating the paths that you can take and the technologies that you would want to adopt in order to become a frontend, backend or a devops.",
+      "url": "https://github.com/kamranahmedse/developer-roadmap/blob/master/readme.md",
+      "tags": []
+    },
+    {
+      "title": "ebookfoundation",
+      "desc": "Freely available programming books",
+      "url": "https://ebookfoundation.github.io/free-programming-books/",
+      "tags": []
+    },
+    {
+      "title": "Google Developer",
+      "desc": "Tutorials, guides, and best practices for building the next generation of web experiences.",
+      "url": "https://developers.google.com/web/",
+      "tags": []
+    },
+    {
+      "title": "Google Chrome Youtube",
+      "desc": "Making the web more awesome - latest news about google chrome",
+      "url": "https://www.youtube.com/channel/UCnUYZLuoy1rq1aVMwx4aTzw",
+      "tags": []
+    },
+    {
+      "title": "Code wars",
+      "desc": "Challenge yourself on kata, created by the community to strengthen different skills. Master your current language of choice, or expand your understanding of a new one.",
+      "url": "https://www.codewars.com/",
+      "tags": []
+    },
+    {
+      "title": "Learn X in Y min",
+      "desc": "Take a whirlwind tour of your next favorite language. Community-driven!",
+      "url": "https://learnxinyminutes.com/",
+      "tags": []
+    },
+    {
+      "title": "The A11Y Checklist",
+      "desc": "This checklist uses the The Web Content Accessibility Guidelines (WCAG) as a reference point. The WCAG is a shared standard for web content accessibility for individuals, organizations, and governments.",
+      "url": "https://a11yproject.com/checklist/",
+      "tags": []
+    }
+  ]
+}
