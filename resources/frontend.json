@@ -1,0 +1,36 @@
+{
+  "title": "Frontend",
+  "slug": "/frontend",
+  "resources": [
+    {
+      "title": "Frontend Handbook 2019",
+      "desc": "A lovely guide made by frontendmasters.",
+      "url": "https://frontendmasters.com/books/front-end-handbook/2019/",
+      "tags": []
+    },
+    {
+      "title": "Frontend Style Guide",
+      "desc": "Example on how to style, format and organize your frontend project.",
+      "url": "https://kaliop.github.io/frontend-style-guide/2.0/",
+      "tags": []
+    },
+    {
+      "title": "Learn to Code HTML and CSS",
+      "desc": "Learn to Code HTML & CSS is a simple and comprehensive guide dedicated to helping beginners learn HTML and CSS. Outlining the fundamentals, this guide works through all common elements of front-end design and development.",
+      "url": "https://learn.shayhowe.com/html-css/",
+      "tags": []
+    },
+    {
+      "title": "Frontendmasters",
+      "desc": "Premium tier video courses for any modern stack. Monthly or yearly subscription.",
+      "url": "https://frontendmasters.com",
+      "tags": []
+    },
+    {
+      "title": "Don't fear the internet",
+      "desc": "Basic HTML & CSS for NON-WEB DESIGNERS",
+      "url": "http://www.dontfeartheinternet.com/",
+      "tags": []
+    }
+  ]
+}

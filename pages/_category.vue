@@ -1,84 +1,59 @@
 <template lang="pug">
   div
     h1 {{ category.title }}
-    .cards(v-if="cardsShown")
+    .cards(v-if="areCardsVisible")
       template(v-for='resource in category.resources' )
-        Card(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.title')
-    table(v-if="!cardsShown")
-      TableHead(:title="'Welcome'" :desc="'Description'" :url="'URL'")
+        Card(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
+    table(v-if="!areCardsVisible")
       template(v-for='resource in category.resources' )
-        TableRow(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.title')
+        TableRow(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
 </template>
 
 <script>
-import store from "../store.json";
 import Card from "../components/Card";
-import TableHead from "../components/TableHead";
 import TableRow from "../components/TableRow";
 
 export default {
   data() {
     return {
       categoryRouteTitle: this.$route.params.category,
-      categories: store,
       index: '',
-      activeCard: ''
+      activeCard: '',
     };
   },
   computed: {
-    cardsShown() {
-      return this.$store.state.Sidebar.cardsShown;
+    areCardsVisible() {
+      return this.$store.getters['Sidebar/areCardsVisible']
     },
     category() {
-      const category = this.categories.find(
-        category =>
-          category.title.toLowerCase() === this.categoryRouteTitle.toLowerCase()
-      );
-      const pagePath = this.$router.history.current.path
-      const query = this.$route.query.card
-      for (const resource of category.resources) {
-        resource.cleanTitle = resource.title.replace(/ /g, '').toLowerCase()
-        resource.path = `${pagePath}?card=${resource.cleanTitle}`
-        resource.active = (resource.cleanTitle === query) ? 'card--active' : ''
-      }
-			category.resources.sort(this.compareTitles)
-			return category
+      return this.$store.getters['data/sortByTitle'](this.categoryRouteTitle)
     },
   },
   methods: {
-    compareTitles(x, y) {
-      if (x.cleanTitle > y.cleanTitle) {
-          return 1
-      } else if (x.cleanTitle < y.cleanTitle) {
-          return -1
-      } else {
-				return 0
-			}
+    setActiveCard(index) {
+      this.activeCard = index
     },
-    onToggle(index) {
-      if (this.activeCard === index) {
-        this.activeCard = null;
-      } else {
-        this.activeCard = index;
-      }
-    },
-    async createCopyUrl(resource) {      
+    async createCopyUrl(resource) {
       try {
-        const { path, title } = resource
+        const { path, cleanTitle } = resource
         await this.$copyText(`https://webgems.io${path}`)
-        this.onToggle(title)
+        this.setActiveCard(cleanTitle)
         this.$router.push(path)
       } catch (e) {
         console.error(e);
       }
     }
   },
-  components: { Card, TableHead, TableRow }
+  created() {
+    this.activeCard = this.$route.query.card || ''
+  },
+  components: { Card, TableRow }
 };
 </script>
 
 <style lang="scss" scoped>
 table {
 	width: 100%;
+  table-layout: fixed;
 }
 </style>

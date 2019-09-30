@@ -16,10 +16,6 @@ export default {
 
 
 <style lang="scss" scoped>
-.cardActive {
-    box-shadow:inset 0px 0px 0px 3px #08e5ff;
-  }
-
 .card {
   background: #2D3748;
   border-radius: .3rem;
@@ -28,6 +24,10 @@ export default {
   display: flex;
   flex-direction: column;
   position: relative;
+
+  &Active {
+    box-shadow:inset 0px 0px 0px 3px #08e5ff;
+  }
 
   &--reference {
     cursor: pointer;
