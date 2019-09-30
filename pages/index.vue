@@ -7,6 +7,7 @@
     p Therefore we created this project to have the most common and best resources for beginners and veterans in one place — kind of like a bookmarks list for devs and designers, containing only the best gems out there.
     p If you want to add your gem, go ahead and open a pull request on GitHub (click on that octocat at the top right corner).
     p By the way, this project lives by getting shared; if you find this worthy, please share it with others.
+    
     p.muted // made with love by
     p.contributors class&nbsp;
       a(href="https://twitter.com/lostdesign") @lostdesign&nbsp;
