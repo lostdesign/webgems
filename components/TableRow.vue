@@ -34,11 +34,14 @@ export default {
   &--title {
     color: white;
     font-weight: 900;
+    width: 80%;
   }
 
   &--description {
-    color: #008190;
     line-height: 1.3;
+    font-size: 13px;
+    color: white;
+    width: 80%;
   }
 
   &--links {
