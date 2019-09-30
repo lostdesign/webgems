@@ -51,10 +51,10 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: min-content;
-    border: 3px;
+    border: 1px;
     border-color: #08e5ff;
     border-style: solid;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     overflow: hidden;
   }
   .viewToggle {

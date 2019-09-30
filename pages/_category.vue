@@ -5,14 +5,12 @@
       template(v-for='resource in category.resources' )
         Card(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
     table(v-if="!areCardsVisible")
-      TableHead(:title="'Welcome'" :desc="'Description'" :url="'URL'")
       template(v-for='resource in category.resources' )
         TableRow(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
 </template>
 
 <script>
 import Card from "../components/Card";
-import TableHead from "../components/TableHead";
 import TableRow from "../components/TableRow";
 
 export default {
@@ -35,7 +33,7 @@ export default {
     setActiveCard(index) {
       this.activeCard = index
     },
-    async createCopyUrl(resource) {      
+    async createCopyUrl(resource) {
       try {
         const { path, cleanTitle } = resource
         await this.$copyText(`https://webgems.io${path}`)
@@ -49,12 +47,13 @@ export default {
   created() {
     this.activeCard = this.$route.query.card || ''
   },
-  components: { Card, TableHead, TableRow }
+  components: { Card, TableRow }
 };
 </script>
 
 <style lang="scss" scoped>
 table {
 	width: 100%;
+  table-layout: fixed;
 }
 </style>
