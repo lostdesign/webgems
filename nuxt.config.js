@@ -32,6 +32,22 @@ export default {
     routes: resources.map(category => category.slug)
   },
 
+  /**
+   * Configure ESLint to run on save with hot reloading
+   */
+  build: {
+    extend(config, ctx) {
+      if (ctx.isDev && ctx.isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/
+        })
+      }
+    }
+  },
+
   /*
   ** Customize the progress-bar color
   */
