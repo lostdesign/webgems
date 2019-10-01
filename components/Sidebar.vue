@@ -15,22 +15,22 @@ import { mapMutations } from 'vuex'
 export default {
   data() {
     return {
-      categories: [{ slug: '', title: '' }]
+      categories: [{ slug: '', title: '' }],
     }
   },
   computed: {
     areCardsVisible() {
       return this.$store.getters['Sidebar/areCardsVisible']
-    }
+    },
   },
   created() {
     this.categories = this.$store.getters['data/resources'].map(({ title, slug }) => ({ title, slug }))
   },
   methods: {
     ...mapMutations({
-      toggleCardsVisible: 'Sidebar/toggleCardsVisible'
-    })
-  }
+      toggleCardsVisible: 'Sidebar/toggleCardsVisible',
+    }),
+  },
 }
 </script>
 

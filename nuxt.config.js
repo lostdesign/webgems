@@ -18,18 +18,18 @@ export default {
       { rel:'manifest', href:'/site.webmanifest' },
       { rel:'icon', type:'image/png', sizes:'16x16', href:'/favicon-16x16.png' },
       { rel:'icon', type:'image/png', sizes:'32x32', href:'/favicon-32x32.png' },
-      { rel:'apple-touch-icon', sizes:'76x76', href:'/apple-touch-icon.png' }
+      { rel:'apple-touch-icon', sizes:'76x76', href:'/apple-touch-icon.png' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    ],
   },
 
   /*
   ** Generate dynamic routes
   */
   generate: {
-    routes: resources.map(category => category.slug)
+    routes: resources.map(category => category.slug),
   },
 
   /**
@@ -42,10 +42,10 @@ export default {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
         })
       }
-    }
+    },
   },
 
   /*
@@ -54,12 +54,12 @@ export default {
   loading: { color: '#fff' },
 
   plugins: [
-    '~/plugins/i18n.js'
+    '~/plugins/i18n.js',
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
     'nuxt-clipboard2',
-  ]
+  ],
 }

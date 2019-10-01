@@ -17,7 +17,7 @@ if (!Array.prototype.flat) {
 				return acc
 			}, []) : Array.prototype.slice.call(this)
 		},
-		writable: true
+		writable: true,
 	})
 }
 
@@ -39,14 +39,14 @@ export const state = () => ({
 				cleanTitle,
 				path: `${category.slug}?card=${cleanTitle}`,
 			}
-		})
+		}),
 	})),
   // List of all tags, duplicates removed
   tags: [...new Set(
 		resources
 			.map(resource => resource.resources).flat()
 			.map(resource => resource.tags).flat()
-	)]
+	)],
 })
 
 export const getters = {
@@ -64,9 +64,9 @@ export const getters = {
 		const clone = [...category.resources]
 		return {
 			...category,
-			resources: clone.sort(compareTitles)
+			resources: clone.sort(compareTitles),
 		}
-	}
+	},
 }
 
 const compareTitles = (x, y) => {

@@ -17,8 +17,8 @@ export default {
     Github,
     Logo,
     Search,
-    Sidebar
-  }
+    Sidebar,
+  },
 }
 </script>
 

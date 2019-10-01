@@ -20,9 +20,11 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    'semi': [2, 'never'],
+    'semi': ['error', 'never'],
     'no-console': 'off',
     'vue/max-attributes-per-line': 'off',
-    'quotes': [2, 'single', { 'avoidEscape': true }],
+    'quotes': ['error', 'single', { 'avoidEscape': true }],
+    'comma-dangle': ['error', 'always-multiline'],
+    'vue/require-default-prop': 'off',
   }
 }

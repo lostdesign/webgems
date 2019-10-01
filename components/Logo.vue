@@ -9,8 +9,8 @@ export default {
   methods: {
     goToHome() {
       this.$router.push('/')
-    }
-  }
+    },
+  },
 }
 </script>
 
