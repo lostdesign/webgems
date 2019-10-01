@@ -13,7 +13,7 @@
 <script>
 export default {
   props: ['resource', 'isActive', 'createCopyUrl'],
-};
+}
 </script>
 
 

@@ -10,16 +10,17 @@
 </template>
 
 <script>
-import Card from "../components/Card";
-import TableRow from "../components/TableRow";
+import Card from '../components/Card'
+import TableRow from '../components/TableRow'
 
 export default {
+  components: { Card, TableRow },
   data() {
     return {
       categoryRouteTitle: this.$route.params.category,
       index: '',
       activeCard: '',
-    };
+    }
   },
   computed: {
     areCardsVisible() {
@@ -28,6 +29,9 @@ export default {
     category() {
       return this.$store.getters['data/sortByTitle'](this.categoryRouteTitle)
     },
+  },
+  created() {
+    this.activeCard = this.$route.query.card || ''
   },
   methods: {
     setActiveCard(index) {
@@ -40,15 +44,11 @@ export default {
         this.setActiveCard(cleanTitle)
         this.$router.push(path)
       } catch (e) {
-        console.error(e);
+        console.error(e)
       }
     }
-  },
-  created() {
-    this.activeCard = this.$route.query.card || ''
-  },
-  components: { Card, TableRow }
-};
+  }
+}
 </script>
 
 <style lang="scss" scoped>

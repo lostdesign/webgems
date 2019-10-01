@@ -10,13 +10,13 @@
 </template>
 
 <script>
-import { mapMutations } from "vuex";
+import { mapMutations } from 'vuex'
 
 export default {
   data() {
     return {
-      categories: [{ slug: "", title: "" }]
-    };
+      categories: [{ slug: '', title: '' }]
+    }
   },
   computed: {
     areCardsVisible() {
@@ -28,10 +28,10 @@ export default {
   },
   methods: {
     ...mapMutations({
-      toggleCardsVisible: "Sidebar/toggleCardsVisible"
+      toggleCardsVisible: 'Sidebar/toggleCardsVisible'
     })
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
