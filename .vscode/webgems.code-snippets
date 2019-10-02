@@ -22,7 +22,7 @@
 	    "  \"title\": \"${1:title}\",",
 	    "  \"desc\": \"${2:desc}\",",
 			"  \"url\": \"${3:url}\",",
-			"  \"tags\": \"[${4:tags}]\"",
+			"  \"tags\": [\"${4:tag}\"]",
 	    "},"
 	  ],
 	  "description": "Add a webgem"
