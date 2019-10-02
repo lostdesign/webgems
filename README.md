@@ -60,7 +60,7 @@ For URLs, please consider the following:
 - Do not use `'&'` as it will break the URL referencing.
 - We won't allow referral links.
 
-To add a completely new resource, add a `<category>.json file to [resources](resources/). Make sure it follows the sceme like any other category resource:
+To add a completely new resource, add a `<category>.json` file to [resources](resources/). Make sure it follows the sceme like any other category resource:
 ```js
 {
   "title": String,
@@ -68,7 +68,7 @@ To add a completely new resource, add a `<category>.json file to [resources](res
   "resources": [Rescource] // Reference to above for schema of Resource
 }
 ```
-Add it to [resources](resources/index.js) list of imports and export it aswell, that way Nuxt can take care of rendering the page.
+Add it to [resources.index.js](resources/index.js) list of imports and export it aswell, that way Nuxt can take care of rendering the page.
 
 ## Built With
 
