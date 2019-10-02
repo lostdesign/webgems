@@ -139,6 +139,12 @@
       "desc": "Codrops is a web design and development blog that publishes articles and tutorials about the latest web trends, techniques and new possibilities.",
       "url": "https://tympanus.net/codrops/",
       "tags": []
+    },
+    {
+      "title": "Image Color Picker",
+      "desc": "An online tool to select color or create color pallete from an image.",
+      "url": "https://image-color.com",
+      "tags": []
     }
   ]
 }
