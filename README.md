@@ -45,21 +45,30 @@ For any other editor, please use the following schema:
       {
         "title": "Awesome resource",
         "desc": "This awesome resource will make your life much easier.", // 1 - 2 sentences long.
-        "url": "https://url.com"
+        "url": "https://url.com",
+        "tags": ["UI", "workflow", "API"] // Please add at least 3 tags
       }
     ]
   }
 ]
 ```
 
-If you just want to add a resource to an already existing category, extend the `resources` array with your resources. Please include all the keys enlisted (`title`, `desc`, `url`).
+In our [resources](resources/) we have an `<category>.json` file for each category, you can add your suggested resource by adding it to the `resources` array in the JSON file using the schema as described above. Please include all the keys enlisted (`title`, `desc`, `url`, `tags` with at least 3 tags).
 
 For URLs, please consider the following:
 - Do not link to language specific pages (e.g. don't link to `<url>.org/en-US/docs`, instead, link to `<url>/docs` if possible).
 - Do not use `'&'` as it will break the URL referencing.
 - We won't allow referral links.
 
-To add a completely new resource, include a new object at the root of the array, the pages are dynamically rendered so you don't have to worry about anything else. Again, include all the enlisted keys, reference to the schema above.
+To add a completely new resource, add a `<category>.json file to [resources](resources/). Make sure it follows the sceme like any other category resource:
+```js
+{
+  "title": String,
+  "slug": String, // use lowecase letters, eg: "/ruby"
+  "resources": [Rescource] // Reference to above for schema of Resource
+}
+```
+Add it to [resources](resources/index.js) list of imports and export it aswell, that way Nuxt can take care of rendering the page.
 
 ## Built With
 

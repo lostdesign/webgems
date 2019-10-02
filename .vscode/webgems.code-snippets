@@ -21,7 +21,8 @@
 	    "{",
 	    "  \"title\": \"${1:title}\",",
 	    "  \"desc\": \"${2:desc}\",",
-	    "  \"url\": \"${3:url}\"",
+			"  \"url\": \"${3:url}\",",
+			"  \"tags\": \"[${4:tags}]\"",
 	    "},"
 	  ],
 	  "description": "Add a webgem"
