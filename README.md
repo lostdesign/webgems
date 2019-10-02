@@ -46,14 +46,14 @@ For any other editor, please use the following schema:
         "title": String,
         "desc": String, // 1 - 2 sentences long
         "url": String, // See below for notes about correct format of URLs
-        "tags": [String] // Please add at least 3 tags
+        "tags": [String] // Please try to add at least 3 tags
       }
     ]
   }
 ]
 ```
 
-In our [resources](resources/) we have an `<category>.json` file for each category, you can add your suggested resource by adding it to the `resources` array in the JSON file using the schema as described above. Please include all the keys enlisted (`title`, `desc`, `url`, `tags` with at least 3 tags).
+In our [resources](resources/) we have an `<category>.json` file for each category, you can add your suggested resource by adding it to the `resources` array in the JSON file using the schema as described above. Please include all the keys enlisted (`title`, `desc`, `url`, `tags`).
 
 For URLs, please consider the following:
 - Do not link to language specific pages (e.g. don't link to `<url>.org/en-US/docs`, instead, link to `<url>/docs` if possible).
