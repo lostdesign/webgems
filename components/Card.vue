@@ -10,7 +10,11 @@
 
 <script>
 export default {
-  props: ['resource', 'isActive', 'createCopyUrl'],
+  props: {
+    resource: Object,
+    isActive: Boolean,
+    createCopyUrl: Function, 
+  },
 }
 </script>
 

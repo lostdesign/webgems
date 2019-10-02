@@ -5,20 +5,20 @@ if (!Array.prototype.flat) {
 	Object.defineProperty(Array.prototype, 'flat', {
 		configurable: true,
 		value: function flat () {
-			var depth = isNaN(arguments[0]) ? 1 : Number(arguments[0]);
+			var depth = isNaN(arguments[0]) ? 1 : Number(arguments[0])
 
 			return depth ? Array.prototype.reduce.call(this, function (acc, cur) {
 				if (Array.isArray(cur)) {
-					acc.push.apply(acc, flat.call(cur, depth - 1));
+					acc.push.apply(acc, flat.call(cur, depth - 1))
 				} else {
-					acc.push(cur);
+					acc.push(cur)
 				}
 
-				return acc;
-			}, []) : Array.prototype.slice.call(this);
+				return acc
+			}, []) : Array.prototype.slice.call(this)
 		},
-		writable: true
-	});
+		writable: true,
+	})
 }
 
 /**
@@ -39,14 +39,14 @@ export const state = () => ({
 				cleanTitle,
 				path: `${category.slug}?card=${cleanTitle}`,
 			}
-		})
+		}),
 	})),
   // List of all tags, duplicates removed
   tags: [...new Set(
 		resources
 			.map(resource => resource.resources).flat()
 			.map(resource => resource.tags).flat()
-	)]
+	)],
 })
 
 export const getters = {
@@ -64,9 +64,9 @@ export const getters = {
 		const clone = [...category.resources]
 		return {
 			...category,
-			resources: clone.sort(compareTitles)
+			resources: clone.sort(compareTitles),
 		}
-	}
+	},
 }
 
 const compareTitles = (x, y) => {
