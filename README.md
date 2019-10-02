@@ -39,14 +39,14 @@ For any other editor, please use the following schema:
 ```js
 [
   {
-    "title": "Category",
-    "slug": "/category",
+    "title": String, // Start with uppercase
+    "slug": String, // All lowercase, eg: "/category"
     "resources": [
       {
-        "title": "Awesome resource",
-        "desc": "This awesome resource will make your life much easier.", // 1 - 2 sentences long.
-        "url": "https://url.com",
-        "tags": ["UI", "workflow", "API"] // Please add at least 3 tags
+        "title": String,
+        "desc": String, // 1 - 2 sentences long
+        "url": String, // See below for notes about correct format of URLs
+        "tags": [String] // Please add at least 3 tags
       }
     ]
   }
@@ -60,14 +60,7 @@ For URLs, please consider the following:
 - Do not use `'&'` as it will break the URL referencing.
 - We won't allow referral links.
 
-To add a completely new resource, add a `<category>.json` file to [resources](resources/). Make sure it follows the sceme like any other category resource:
-```js
-{
-  "title": String,
-  "slug": String, // use lowecase letters, eg: "/ruby"
-  "resources": [Rescource] // Reference to above for schema of Resource
-}
-```
+To add a completely new resource, add a `<category>.json` file to [resources](resources/). Make sure it follows the sceme as described above.
 Add it to [resources.index.js](resources/index.js) list of imports and export it aswell, that way Nuxt can take care of rendering the page.
 
 ## Built With
