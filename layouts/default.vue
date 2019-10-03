@@ -99,6 +99,13 @@ h1 {
   grid-gap: 1rem;
 }
 
+// Fade transitions
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
 
 @media (max-width: 400px) {
   .layout {
@@ -112,7 +119,6 @@ h1 {
       'content';
   }
 }
-
 
 // #232331 dark bg
 // #2D3748 ligher cards
