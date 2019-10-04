@@ -25,7 +25,7 @@ export default {
       activeCard: '',
       showTitle: false,
       showCards: false,
-    };
+    }
   },
   computed: {
     areCardsVisible() {
@@ -37,6 +37,9 @@ export default {
   },
   created() {
     this.activeCard = this.$route.query.card || ''
+  },
+  mounted() {
+    this.showTitle = true
   },
   methods: {
     setActiveCard(index) {
@@ -52,15 +55,9 @@ export default {
         console.error(e)
       }
     },
-    afterEnter(el) {
-      this.showCards = true;
-    }
-  },
-  mounted() {
-    this.showTitle = true;
-  },
-  created() {
-    this.activeCard = this.$route.query.card || ''
+    afterEnter() {
+      this.showCards = true
+    },
   },
 }
 </script>
