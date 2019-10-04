@@ -49,6 +49,7 @@ export default {
       }
     },
     afterEnter(el) {
+      console.log('changes');
       this.showCards = true;
     }
   },
