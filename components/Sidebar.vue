@@ -36,6 +36,8 @@ export default {
 
 <style lang="scss" scoped>
 .sidebar {
+  position: sticky;
+  top: 10px;
   display: grid;
   grid-template-columns: 1fr;
   font-size: 14px;
