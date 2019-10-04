@@ -99,6 +99,35 @@ h1 {
   grid-gap: 1rem;
 }
 
+// Fade in title and cards and rows
+.fade-title {
+  &-enter {
+    opacity: 0;
+
+    &-to {
+      opacity: 1;
+    }
+
+    &-active {
+       transition: opacity .1s ease-in-out;
+    }
+  }
+}
+
+.fade-card {
+  &-enter {
+    opacity: 0;
+
+    &-to {
+      opacity: 1;
+    }
+
+    &-active {
+       transition: opacity .1s ease-in-out;
+    }
+  }
+}
+
 
 @media (max-width: 400px) {
   .layout {
