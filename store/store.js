@@ -1,6 +1,6 @@
 export const state = () => ({
   locales: ['en', 'fr', 'de'],
-  locale: 'en'
+  locale: 'en',
 })
 
 export const mutations = {
@@ -8,5 +8,5 @@ export const mutations = {
     if (state.locales.indexOf(locale) !== -1) {
       state.locale = locale
     }
-  }
+  },
 }

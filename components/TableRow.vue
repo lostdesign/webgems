@@ -5,15 +5,19 @@
     td.tableRow--links
       tr
         td
-          a.tableRow--reference(@click='createCopyUrl(resource)') Copy
+          a.tableRow--reference(@click="createCopyUrl(resource)") Copy
         td
           a.tableRow--target(:href="resource.url" :target='resource.title' rel='noreferrer') Open
 </template>
 
 <script>
 export default {
-  props: ['resource', 'isActive', 'createCopyUrl'],
-};
+  props: {
+    resource: Object,
+    isActive: Boolean,
+    createCopyUrl: Function,
+  },
+}
 </script>
 
 

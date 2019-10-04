@@ -163,6 +163,12 @@
       "desc": "Let's Encrypt is a free, automated, and open certificate authority brought to you by the non-profit Internet Security Research Group (ISRG).",
       "url": "https://letsencrypt.org/",
       "tags": []
+    },
+    {
+      "title": "Mailhog",
+      "desc": "Web and API based SMTP testing.",
+      "url": "https://github.com/mailhog/MailHog",
+      "tags": []
     }
   ]
 }
