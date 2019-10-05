@@ -1,12 +1,15 @@
 <template lang="pug">
   div
-    h1 {{ category.title }}
-    .cards(v-if="areCardsVisible")
-      template(v-for='resource in category.resources' )
-        Card(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
-    table(v-if="!areCardsVisible")
-      template(v-for='resource in category.resources' )
-        TableRow(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
+    transition(name="fade-title" @after-enter="afterEnter")
+      h1(v-if="showTitle") {{ category.title }}
+    transition(name="fade-card")
+      .cards(v-if="areCardsVisible && showCards")
+        template(v-for='resource in category.resources' )
+          Card(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
+    transition(name="fade-card")
+      table(v-if="!areCardsVisible && showCards")
+        template(v-for='resource in category.resources' )
+          TableRow(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
 </template>
 
 <script>
@@ -20,6 +23,8 @@ export default {
       categoryRouteTitle: this.$route.params.category,
       index: '',
       activeCard: '',
+      showTitle: false,
+      showCards: false,
     }
   },
   computed: {
@@ -32,6 +37,9 @@ export default {
   },
   created() {
     this.activeCard = this.$route.query.card || ''
+  },
+  mounted() {
+    this.showTitle = true
   },
   methods: {
     setActiveCard(index) {
@@ -46,6 +54,9 @@ export default {
       } catch (e) {
         console.error(e)
       }
+    },
+    afterEnter() {
+      this.showCards = true
     },
   },
 }
