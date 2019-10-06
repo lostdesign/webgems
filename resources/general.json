@@ -57,6 +57,12 @@
       "tags": []
     },
     {
+      "title": "Exercism",
+      "desc": "Learn to code in a variety of languages. Complete programming challenges, view other's solutions, and get community feedback on your code.",
+      "url": "https://exercism.io",
+      "tags": []
+    },
+    {
       "title": "Learn X in Y min",
       "desc": "Take a whirlwind tour of your next favorite language. Community-driven!",
       "url": "https://learnxinyminutes.com/",
