@@ -17,8 +17,8 @@ export default {
     Github,
     Logo,
     Search,
-    Sidebar
-  }
+    Sidebar,
+  },
 }
 </script>
 
@@ -97,6 +97,35 @@ h1 {
   display:grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem,auto));
   grid-gap: 1rem;
+}
+
+// Fade in title and cards and rows
+.fade-title {
+  &-enter {
+    opacity: 0;
+
+    &-to {
+      opacity: 1;
+    }
+
+    &-active {
+       transition: opacity .1s ease-in-out;
+    }
+  }
+}
+
+.fade-card {
+  &-enter {
+    opacity: 0;
+
+    &-to {
+      opacity: 1;
+    }
+
+    &-active {
+       transition: opacity .1s ease-in-out;
+    }
+  }
 }
 
 

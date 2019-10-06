@@ -10,32 +10,34 @@
 </template>
 
 <script>
-import { mapMutations } from "vuex";
+import { mapMutations } from 'vuex'
 
 export default {
   data() {
     return {
-      categories: [{ slug: "", title: "" }]
-    };
+      categories: [{ slug: '', title: '' }],
+    }
   },
   computed: {
     areCardsVisible() {
       return this.$store.getters['Sidebar/areCardsVisible']
-    }
+    },
   },
   created() {
     this.categories = this.$store.getters['data/resources'].map(({ title, slug }) => ({ title, slug }))
   },
   methods: {
     ...mapMutations({
-      toggleCardsVisible: "Sidebar/toggleCardsVisible"
-    })
-  }
-};
+      toggleCardsVisible: 'Sidebar/toggleCardsVisible',
+    }),
+  },
+}
 </script>
 
 <style lang="scss" scoped>
 .sidebar {
+  position: sticky;
+  top: 10px;
   display: grid;
   grid-template-columns: 1fr;
   font-size: 14px;

@@ -12,6 +12,7 @@ import python from './python'
 import ruby from './ruby'
 import server from './server'
 import utility from './utility'
+import icons from './icons'
 
 export default [
   css,
@@ -28,4 +29,5 @@ export default [
   ruby,
   server,
   utility,
+  icons,
 ]
