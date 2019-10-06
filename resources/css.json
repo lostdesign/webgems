@@ -133,6 +133,12 @@
       "desc": "Learn CSS box-model by interractively changing the values.",
       "url": "https://codepen.io/carolineartz/full/ogVXZj",
       "tags": ["visual tool", "educational", "beginner"]
+    },
+    {
+      "title": "Bennett Feely clip-path maker",
+      "desc": "This CSS clip-path maker helps you understand the clip-path property and all the cool things you can do with it.",
+      "url": "https://bennettfeely.com/clippy/",
+      "tags": []
     }
   ]
 }
