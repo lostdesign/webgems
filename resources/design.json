@@ -157,6 +157,12 @@
       "desc": "Image color picker and palette generator.",
       "url": "https://image-color.com",
       "tags": []
+    },
+    {
+      "title": "GoodBrief",
+      "desc": "GoodBrief is a random generator for design briefs. Choose the type of creative work and the industry, and goodbrief will generate a unique brief.",
+      "url": "http://goodbrief.io",
+      "tags": ["generator"]
     }
   ]
 }
