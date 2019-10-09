@@ -22,7 +22,6 @@ export default {
 }
 </script>
 
-
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,900');
 
@@ -41,7 +40,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  // color: #22292F;
 }
 
 a {
@@ -99,14 +97,6 @@ h1 {
   grid-gap: 1rem;
 }
 
-// Fade transitions
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .2s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
-
 @media (max-width: 400px) {
   .layout {
     display: grid;
@@ -124,7 +114,6 @@ h1 {
 // #2D3748 ligher cards
 // #ff3e35 or #08e5ff links
 </style>
-
 
 <style lang="scss">
 ::-webkit {
@@ -145,5 +134,4 @@ h1 {
     background: #232331;
   }
 }
-
 </style>
