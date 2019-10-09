@@ -26,14 +26,6 @@ export default {
   },
 
   /*
-  ** Set transitions for all pages
-  */
-  transition: {
-    name: 'fade',
-    mode: 'out-in'
-  },
-
-  /*
   ** Generate dynamic routes
   */
   generate: {
