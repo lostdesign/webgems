@@ -13,6 +13,7 @@ import ruby from './ruby'
 import server from './server'
 import utility from './utility'
 import icons from './icons'
+import accessibility from './accessibility'
 
 export default [
   css,
@@ -30,4 +31,5 @@ export default [
   server,
   utility,
   icons,
+  accessibility,
 ]
