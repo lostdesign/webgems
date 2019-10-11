@@ -1,0 +1,37 @@
+{
+    "title": "YouTube",
+    "slug": "/youtube",
+    "resources": [
+     {
+      "title": "Traversy Media",
+      "desc": "Traversy Media is owned by Brad Traversy. The channel has a lot of great tutorials to learn full web development and coding. It features online web development and programming tutorials for the latest web technologies including Node.js, Angular 2, React.js, PHP, Rails, HTML, CSS, and more.",
+      "url": "https://www.youtube.com/user/TechGuyWeb",
+      "tags": []
+    },
+    {
+      "title": "The Net Ninja",
+      "desc": "The Net Ninja is a channel to strengthen your web skills. It has many tutorials for designers and developers.",
+      "url": "https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg",
+      "tags": []
+    },
+    {
+      "title": "The Futur",
+      "desc": "The mission of The Futur is to be the future of online education for creative entrepreneurs. It features design content on identity design and branding, user experience, logos and lettering, typography, the business of design, and plenty of case studies.",
+      "url": "https://www.youtube.com/channel/UC-b3c7kxa5vU-bnmaROgvog",
+      "tags": []
+    },
+    {
+      "title": "Tutvid",
+      "desc": "Nathaniel Dodson’s Tutvid is a site to learn advanced graphic design skills, with tutorials in Adobe Photoshop and Adobe Illustrator. Tutvid also includes tutorials to master animation and video with Adobe Premiere Pro, Adobe After Effects, and Adobe Lightroom. Tutvid’s “Daily Photoshop Tutorials” playlist covers tools, features, and tricks.",
+      "url": "https://www.youtube.com/user/tutvid",
+      "tags": []
+    },
+    {
+      "title": "CharliMarieTV",
+      "desc": "Charli Marie TV is a channel from Charli Marie, a web and graphic designer in London. Videos are posted weekly about tools, projects, and concepts. There are also weekly videos about her life as a designer.",
+      "url": "https://www.youtube.com/user/charlimarieTV",
+      "tags": []
+    }
+    
+    ]
+  }
