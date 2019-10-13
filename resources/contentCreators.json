@@ -1,0 +1,69 @@
+{
+    "title": "Content creators",
+    "slug": "/content-creators",
+    "resources": [
+     {
+      "title": "Traversy Media",
+      "desc": "Traversy Media is owned by Brad Traversy. The channel has a lot of great tutorials to learn full web development and coding. It features online web development and programming tutorials for the latest web technologies including Node.js, Angular 2, React.js, PHP, Rails, HTML, CSS, and more.",
+      "url": "https://www.youtube.com/user/TechGuyWeb",
+      "categories": "", 
+      "tags": ["Start from scratch", "Web Development crash courses", "Responsive portfolio website"]
+    },
+    {
+      "title": "The Net Ninja",
+      "desc": "The Net Ninja is a channel to strengthen your web skills. It has many tutorials for designers and developers.",
+      "url": "https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg",
+      "categories": "",
+      "tags": ["Object oriented JavaAcript", "Biginners", "CSS animation tutorial"]
+    },
+    {
+      "title": "The Futur",
+      "desc": "The mission of The Futur is to be the future of online education for creative entrepreneurs. It features design content on identity design and branding, user experience, logos and lettering, typography, the business of design, and plenty of case studies.",
+      "url": "https://www.youtube.com/channel/UC-b3c7kxa5vU-bnmaROgvog",
+      "categories": "Design",
+      "tags": ["UX/UI Web design", "Marketing & sales", "Logo design"]
+    },
+    {
+      "title": "Tutvid",
+      "desc": "Nathaniel Dodson’s Tutvid is a site to learn advanced graphic design skills, with tutorials in Adobe Photoshop and Adobe Illustrator. Tutvid also includes tutorials to master animation and video with Adobe Premiere Pro, Adobe After Effects, and Adobe Lightroom. Tutvid’s “Daily Photoshop Tutorials” playlist covers tools, features, and tricks.",
+      "url": "https://www.youtube.com/user/tutvid",
+      "categories": "Graphic design",
+      "tags": ["Photoshop tutorial", "Video editing", "Web design tutorial"]
+    },
+    {
+      "title": "CharliMarieTV",
+      "desc": "Charli Marie TV is a channel from Charli Marie, a web and graphic designer in London. Videos are posted weekly about tools, projects, and concepts. There are also weekly videos about her life as a designer.",
+      "url": "https://www.youtube.com/user/charlimarieTV",
+      "categories": "Show",
+      "tags": ["Designer", "Design and build a webpage", "Custom ecommerce website"]
+    },
+    {
+      "title": "Funfunfunction",
+      "desc": "Fun Fun Function is like a show about programming. Not a database of tutorials and courses, a show. A regular show with an different topic every week, with an entertaining host that explains things well, with the purpose of keeping you curious and excited about the programming craft. Basically, the purpose of Fun Fun Function is to keep programming fun.",
+      "url": "https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q",
+      "categories": "Youtube show",
+      "tags": ["Machine learning", "Unit testing", "Live mob programming"]
+    },      
+    {
+      "title": "Mayuko",
+      "desc": "Mayuko is a Senior iOS Software Engineer from San Diego. She makes Youtube videos about what life is like as a Software Engineer living and working in Silicon Valley. She aims to make the tech industry feel more accessible to those entering the industry.",
+      "url": "https://www.youtube.com/user/hellomayuko",
+      "categories": "Life experiences sharing",
+      "tags": ["Vlogs", "Tech Advice", "Software Engineering"]
+    },
+    {
+      "title": "MDN Web Docs",
+      "desc": "MDN Web Docs, previously Mozilla Developer Network and formerly Mozilla Developer Center, is the official Mozilla website for development documentation of web standards and Mozilla projects. It is a resource for developers, maintained by the community of developers and technical writers and hosting many documents on a wide variety of subjects.",
+      "url": "https://developer.mozilla.org/en-US/",
+      "categories": "Wiki site",
+      "tags": ["Web development", "Web technologies", "Mozilla"]
+    },
+    {
+      "title": "Getify",
+      "desc": "Getify writes about JavaScript, finding new and useful ways to teach it to more learners, and exploring and researching JavaScript through OSS coding.",
+      "url": "https://twitter.com/getify?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "categories": "Twitter",
+      "tags": ["Short tips", "Guide for programming", "Debugging updates"]
+    }
+    ]
+  }
