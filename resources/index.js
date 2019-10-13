@@ -15,6 +15,12 @@ import utility from './utility'
 import icons from './icons'
 import accessibility from './accessibility'
 
+const sortByTitle = ({ title: titleA }, { title: titleB }) => {
+  if(titleA < titleB) return -1
+  if(titleA > titleB) return 1
+  return 0
+}
+
 export default [
   css,
   daily,
@@ -32,4 +38,4 @@ export default [
   utility,
   icons,
   accessibility,
-]
+].sort(sortByTitle)
