@@ -14,6 +14,7 @@ import server from './server'
 import utility from './utility'
 import icons from './icons'
 import accessibility from './accessibility'
+import contentCreators from './contentCreators'
 
 export default [
   css,
@@ -32,4 +33,5 @@ export default [
   utility,
   icons,
   accessibility,
+  contentCreators,
 ]
