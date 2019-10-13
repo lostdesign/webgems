@@ -157,6 +157,30 @@
       "desc": "descCool Backgrounds offers a selection of beautiful, enticing image backgrounds to add to your blog post, website, or wallpaper.",
       "url": "https://coolbackgrounds.io/",
       "tags": ["background", "inspiration"]
+    },
+    {
+      "title": "Fontjoy",
+      "desc": "Generate font combinations with deep learning.",
+      "url": "https://fontjoy.com/",
+      "tags": []
+    },
+    {
+      "title": "Can't Unsee",
+      "desc": "A game where your attention to details earns you a lot of coins. WARNING: Once you see the difference between the images, you won't be able to unsee it!",
+      "url": "https://cantunsee.space/",
+      "tags": []
+    },
+    {
+      "title": "Image Color Picker",
+      "desc": "Image color picker and palette generator.",
+      "url": "https://image-color.com",
+      "tags": ["generator"]
+    },
+    {
+      "title": "GoodBrief",
+      "desc": "GoodBrief is a random generator for design briefs. Choose the type of creative work and the industry, and goodbrief will generate a unique brief.",
+      "url": "http://goodbrief.io",
+      "tags": ["generator"]
     }
   ]
 }
