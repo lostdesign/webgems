@@ -16,6 +16,12 @@ import icons from './icons'
 import accessibility from './accessibility'
 import typography from './typography'
 
+const sortByTitle = ({ title: titleA }, { title: titleB }) => {
+  if(titleA < titleB) return -1
+  if(titleA > titleB) return 1
+  return 0
+}
+
 export default [
   css,
   daily,
@@ -34,4 +40,5 @@ export default [
   icons,
   accessibility,
   typography,
-]
+].sort(sortByTitle)
+
