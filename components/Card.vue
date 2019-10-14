@@ -1,7 +1,7 @@
 <template lang="pug">
   .card(:class="{ cardActive: isActive }")
     .card--meta
-      img.card--favicon(:src="'https://www.google.com/s2/favicons?domain=' + resource.url")
+      img.card--favicon(:src="'https://www.google.com/s2/favicons?domain=' + resource.url" aria-hidden="true")
       p.card--title {{resource.title}}
     p.card--description {{resource.desc}}
     .card--links
