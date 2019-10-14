@@ -1,5 +1,7 @@
 <template lang="pug">
   tr.tableRow(:class="{ rowActive: isActive }")
+    td.tableRow--favicon
+      img(:src="'https://www.google.com/s2/favicons?domain=' + resource.url" aria-hidden="true")
     td.tableRow--title {{resource.title}}
     td.tableRow--description {{resource.desc}}
     td.tableRow--links
@@ -33,7 +35,7 @@ export default {
   transition: 0.2s ease-in-out;
   width: 1fr;
   display: grid;
-  grid-template-columns: minmax(150px, 2fr) 8fr 125px;
+  grid-template-columns: 1.5rem minmax(150px, 2fr) 8fr 125px;
 
   &--title {
     color: white;
