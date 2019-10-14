@@ -31,6 +31,12 @@
       "desc": "Basic HTML & CSS for NON-WEB DESIGNERS",
       "url": "http://www.dontfeartheinternet.com/",
       "tags": []
+    },
+    {
+      "title": "The Font Loading Checklist",
+      "desc": "Four important considerations when loading web fonts.",
+      "url": "https://www.zachleat.com/web/font-checklist/",
+      "tags": ["typography", "tips", "best practices"]
     }
   ]
 }

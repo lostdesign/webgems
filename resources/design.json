@@ -177,12 +177,6 @@
       "tags": ["typography", "collection"]
     },
     {
-      "title": "The Font Loading Checklist",
-      "desc": "Four important considerations when loading web fonts.",
-      "url": "https://www.zachleat.com/web/font-checklist/",
-      "tags": ["typography", "tips", "best practices"]
-    },
-    {
       "title": "Practical Typography",
       "desc": "A just-deep-enough dive into typography for designers.",
       "url": "https://practicaltypography.com/",
