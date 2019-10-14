@@ -181,6 +181,12 @@
       "desc": "GoodBrief is a random generator for design briefs. Choose the type of creative work and the industry, and goodbrief will generate a unique brief.",
       "url": "http://goodbrief.io",
       "tags": ["generator"]
+    },
+    {
+      "title": "Palettte.app",
+      "desc": "Build, analyze and edit smooth color palettes.",
+      "url": "https://palettte.app/",
+      "tags": ["color"]
     }
   ]
 }
