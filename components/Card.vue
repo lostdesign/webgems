@@ -1,6 +1,8 @@
 <template lang="pug">
   .card(:class="{ cardActive: isActive }")
-    p.card--title {{resource.title}}
+    .card--meta
+      img.card--favicon(:src="'https://www.google.com/s2/favicons?domain=' + resource.url")
+      p.card--title {{resource.title}}
     p.card--description {{resource.desc}}
     .card--links
       a.card--reference(@click='createCopyUrl(resource)') Copy
@@ -31,6 +33,17 @@ export default {
 
   &Active {
     box-shadow:inset 0px 0px 0px 3px #08e5ff;
+  }
+
+  &--meta {
+    display: flex;
+    align-items: center;
+  }
+
+  &--favicon {
+    height: 16px;
+    width: 16px;
+    margin-right: .5rem;
   }
 
   &--reference {
