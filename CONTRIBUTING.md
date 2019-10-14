@@ -1,92 +1,110 @@
 # Contributing
 
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. 
+## Introduction
 
-Please note we have a code of conduct, please follow it in all your interactions with the project.
+Thank you for considering to contribute to webgems.io!
 
-## Pull Request Process
+Whether you want to report a bug, request a feature or contribute new resources
+or code, we appreciate your effort and will do our best to incorporate them into
+the project.
 
-1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
-   build.
-2. Update the README.md with details of changes to the interface, this includes new environment 
-   variables, exposed ports, useful file locations and container parameters.
-3. Increase the version numbers in any examples files and the README.md to the new version that this
-   Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
-4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you 
-   do not have permission to do that, you may request the second reviewer to merge it for you.
+Please understand that some of your contributions might not align with our
+vision for the project, which means we may reject some of your issues or pull
+request. When in doubt, we recommend opening an issue first in order to discuss
+your ideas with the maintainers, before starting to implement your changes.
 
-## Code of Conduct
+### Code of Conduct
 
-### Our Pledge
+Please adhere to our [Code of Conduct](CODE_OF_CONDUCT.md) during your
+interactions with this project's maintainers and community. This helps maintain
+a friendly and tolerant environment that everyone enjoys being a part of.
 
-In the interest of fostering an open and welcoming environment, we as
-contributors and maintainers pledge to making participation in our project and
-our community a harassment-free experience for everyone, regardless of age, body
-size, disability, ethnicity, gender identity and expression, level of experience,
-nationality, personal appearance, race, religion, or sexual identity and
-orientation.
+## Issues
 
-### Our Standards
+If you want to report a bug or suggest an enhancement, you are more than welcome
+to open an issue in this repository! You can use the provided templates to
+answer our most common questions, which helps us better understand your feedback
+and get back to you faster.
 
-Examples of behavior that contributes to creating a positive environment
-include:
+Before filing an issue, please do a quick check using the project's issue search
+in order to avoid opening duplicate issues. In case your feedback has already
+been reported elsewhere, you can either add a "+1" (:+1:) reaction to that
+issue, or post a comment if you have further details to add to the conversation.
 
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
+## Pull Requests
 
-Examples of unacceptable behavior by participants include:
+If you'd like to contribute code to the project, follow these steps:
 
-* The use of sexualized language or imagery and unwelcome sexual attention or
-advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic
-  address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+0. Make sure your change will be accepted. This may mean opening an issue to
+   discuss your desired changes first.
+1. Fork and clone the project. Then, create a new feature branch based on the
+   project's `dev` branch.
+2. Run `npm install` in the root of the project.
+3. You can use the following npm scripts to perform common tasks during
+   development:
+   - `npm run dev`: Launch a development server on `localhost:3000`
+   - `npm run build; npm start`: Build and serve a production version of the
+   app
+   - `npm run generate`: Generate the final, pre-rendered version of
+   the site.
+4. Start coding! See below for some guidance.
+5. Once you are ready to open your PR: Commit and push the changes to your fork,
+   and then open a new pull request in this project's GitHub UI.
+   - Make sure that the base branch is set to `dev` instead of `master` (this
+     can also be corrected later on by clicking on the "Edit" button next to a
+     PR's title).
+   - Please exclude potential build or install artifacts (such as `yarn.lock` or
+     log files) from the changeset.
+6. Wait for the maintainers to review your pull request. We usually require at
+   least two approving reviews in order to merge a PR.
+   - If you'd like to, you can add yourself to the
+     [CONTRIBUTORS.md](CONTRIBUTORS.md) file before your PR is merged.
+   - You might be asked to make additional changes, if so you can simply create
+     a new commit and push it to the same branch you used to open the PR in the
+     first place.
 
-### Our Responsibilities
+### Adding a new resource
 
-Project maintainers are responsible for clarifying the standards of acceptable
-behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
+If you are using VS Code, you can simply type `wgem` and hit tab in one of the
+JSON files in the `resources` folder in order to get the correct template (see
+below).
 
-Project maintainers have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to this Code of Conduct, or to ban temporarily or
-permanently any contributor for other behaviors that they deem inappropriate,
-threatening, offensive, or harmful.
+For any other editor, please use the following schema:
+```js
+[
+  {
+    "title": String, // Start with uppercase
+    "slug": String, // All lowercase, eg: "/category"
+    "resources": [
+      {
+        "title": String,
+        "desc": String, // 1 - 2 sentences long
+        "url": String, // See below for notes about correct format of URLs
+        "tags": [String] // Please try to add at least 3 tags
+      }
+    ]
+  }
+]
+```
 
-### Scope
+In our [resources](resources/) we have an `<category>.json` file for each
+category, you can add your suggested resource by adding it to the `resources`
+array in the JSON file using the schema as described above. Please include all
+the keys enlisted (`title`, `desc`, `url`, `tags`).
 
-This Code of Conduct applies both within project spaces and in public spaces
-when an individual is representing the project or its community. Examples of
-representing a project or community include using an official project e-mail
-address, posting via an official social media account, or acting as an appointed
-representative at an online or offline event. Representation of a project may be
-further defined and clarified by project maintainers.
+For URLs, please consider the following:
+- Do not link to language specific pages (e.g. don't link to
+  `<url>.org/en-US/docs`, instead, link to `<url>/docs` if possible).
+- Do not use `'&'` as it will break the URL referencing.
+- We won't allow referral links.
 
-### Enforcement
+To add a completely new resource, add a `<category>.json` file to
+[resources](resources/). Make sure it follows the sceme as described above. Add
+it to [resources.index.js](resources/index.js) list of imports and export it as
+well, that way Nuxt can take care of rendering the page.
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at [INSERT EMAIL ADDRESS]. All
-complaints will be reviewed and investigated and will result in a response that
-is deemed necessary and appropriate to the circumstances. The project team is
-obligated to maintain confidentiality with regard to the reporter of an incident.
-Further details of specific enforcement policies may be posted separately.
+### Tech stack
 
-Project maintainers who do not follow or enforce the Code of Conduct in good
-faith may face temporary or permanent repercussions as determined by other
-members of the project's leadership.
-
-### Attribution
-
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
-available at [http://contributor-covenant.org/version/1/4][version]
-
-[homepage]: http://contributor-covenant.org
-[version]: http://contributor-covenant.org/version/1/4/
+webgems.io is built with [Vue.js](https://vuejs.org/) and
+[Nuxt](https://nuxtjs.org/). You can refer to their respective documentation to
+find out more about how they work.
