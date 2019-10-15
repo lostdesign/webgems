@@ -19,7 +19,12 @@
         "desc": "A client-side script that checks HTML source code and detects violations of a defined coding standard.",
         "url": "http://squizlabs.github.io/HTML_CodeSniffer/",
         "tags": []
+      },
+      {
+        "title": "The web accessibility basics",
+        "desc": "The absolute web accessibility basics every web developer should know about.",
+        "url": "https://www.marcozehe.de/2015/12/14/the-web-accessibility-basics/",
+        "tags": []
       }
     ]
   }
-  

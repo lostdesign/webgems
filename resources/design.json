@@ -106,7 +106,7 @@
     },
     {
       "title": "UI Gradients",
-      "desc": "Beautiful colour gradients for design and code.",
+      "desc": "Beautiful color gradients for design and code.",
       "url": "https://uigradients.com/",
       "tags": ["generator", "inspiration", "color"]
     },
@@ -205,6 +205,30 @@
       "desc": "Generate font combinations with deep learning.",
       "url": "https://fontjoy.com/",
       "tags": ["typography", "tools"]
+    },
+    {
+      "title": "Web Color Data",
+      "desc": "Disover color palettes of popular websites.",
+      "url": "http://webcolourdata.com/",
+      "tags": ["color", "palette", "inspiration"]
+    },
+    {
+      "title": "Adobe Color",
+      "desc": "Create a color palette with this helpful tool of Adobe.",
+      "url": "https://color.adobe.com/",
+      "tags": ["color", "palette"]
+    },
+    {
+      "title": "Colourcode",
+      "desc": "colourco.de is an online designer tool, which allows you to easily and intuitively combine colours.",
+      "url": "https://colourco.de",
+      "tags": ["color", "palette"]
+    },
+    {
+      "title": "ColorBox",
+      "desc": "Colorbox is a color tool to produce color sets.",
+      "url": "https://www.colorbox.io",
+      "tags": ["color", "palette"]
     }
   ]
 }
