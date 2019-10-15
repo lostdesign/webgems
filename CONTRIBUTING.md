@@ -80,7 +80,7 @@ For any other editor, please use the following schema:
         "title": String,
         "desc": String, // 1 - 2 sentences long
         "url": String, // See below for notes about correct format of URLs
-        "tags": [String] // Please try to add at least 3 tags
+        "tags": [String] // Please try to add at least 3 single-worded tags
       }
     ]
   }
