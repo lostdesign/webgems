@@ -78,7 +78,7 @@ export default {
     flex-direction: column;
     font-size: 13px;
     color: white;
-    margin: 0 0 .7rem 0;
+    margin: .7rem 0 .7rem 0;
     line-height: 1.3;
     letter-spacing: .5px;
     max-width: 15rem;

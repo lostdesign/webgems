@@ -81,12 +81,6 @@
       "tags": ["educational", "tutorial", "learning"]
     },
     {
-      "title": "Typography Handbook",
-      "desc": "A concise, referential guide on best web typographic practices.",
-      "url": "http://typographyhandbook.com",
-      "tags": ["typography", "guide", "best practices", "educational"]
-    },
-    {
       "title": "Hyperpixel.io",
       "desc": "Discover the latest designs for your own inspiration from our curated list of landing pages.",
       "url": "https://hyperpixel.io/",
@@ -159,12 +153,6 @@
       "tags": ["background", "inspiration"]
     },
     {
-      "title": "Fontjoy",
-      "desc": "Generate font combinations with deep learning.",
-      "url": "https://fontjoy.com/",
-      "tags": []
-    },
-    {
       "title": "Can't Unsee",
       "desc": "A game where your attention to details earns you a lot of coins. WARNING: Once you see the difference between the images, you won't be able to unsee it!",
       "url": "https://cantunsee.space/",
@@ -181,6 +169,42 @@
       "desc": "GoodBrief is a random generator for design briefs. Choose the type of creative work and the industry, and goodbrief will generate a unique brief.",
       "url": "http://goodbrief.io",
       "tags": ["generator"]
+    },
+    {
+      "title": "Google Fonts",
+      "desc": "Large library of high-quality, free web fonts.",
+      "url": "https://fonts.google.com/",
+      "tags": ["typography", "collection"]
+    },
+    {
+      "title": "Practical Typography",
+      "desc": "A just-deep-enough dive into typography for designers.",
+      "url": "https://practicaltypography.com/",
+      "tags": ["typography", "educational", "reading"]
+    },
+    {
+      "title": "Wakamai Fondue",
+      "desc": "Extensive font file analyzer that tells you everything you need to know about your font.",
+      "url": "https://wakamaifondue.com/",
+      "tags": ["typography", "tools"]
+    },
+    {
+      "title": "Typewolf",
+      "desc": "Discover trending fonts and pairings from around the web.",
+      "url": "https://www.typewolf.com/",
+      "tags": ["typography", "collection", "inspiration"]
+    },
+    {
+      "title": "Typography Handbook",
+      "desc": "A concise, referential guide on best web typographic practices.",
+      "url": "http://typographyhandbook.com",
+      "tags": ["typography", "guide", "best practices", "educational"]
+    },
+    {
+      "title": "Fontjoy",
+      "desc": "Generate font combinations with deep learning.",
+      "url": "https://fontjoy.com/",
+      "tags": ["typography", "tools"]
     }
   ]
 }
