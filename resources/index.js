@@ -16,6 +16,12 @@ import icons from './icons'
 import accessibility from './accessibility'
 import contentCreators from './contentCreators'
 
+const sortByTitle = ({ title: titleA }, { title: titleB }) => {
+  if(titleA < titleB) return -1
+  if(titleA > titleB) return 1
+  return 0
+}
+
 export default [
   css,
   daily,
@@ -33,5 +39,6 @@ export default [
   utility,
   icons,
   accessibility,
-  contentCreators,
-]
+  contentCreators
+].sort(sortByTitle)
+
