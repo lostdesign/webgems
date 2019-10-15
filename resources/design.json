@@ -229,6 +229,12 @@
       "desc": "Colorbox is a color tool to produce color sets.",
       "url": "https://www.colorbox.io",
       "tags": ["color", "palette"]
+    },
+    {
+      "title": "Palettte.app",
+      "desc": "Build, analyze and edit smooth color palettes.",
+      "url": "https://palettte.app/",
+      "tags": ["color", "palette"]
     }
   ]
 }
