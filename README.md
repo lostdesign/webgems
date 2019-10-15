@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/32128bab-176e-4a45-b21e-7a57425a36d1/deploy-status)](https://app.netlify.com/sites/epic-sammet-7ed06e/deploys)
+
 # webgems.io
 
 This project should help anyone to find new resources but especially beginners in the field to have something they can look things up.
@@ -39,27 +41,29 @@ For any other editor, please use the following schema:
 ```js
 [
   {
-    "title": "Category",
-    "slug": "/category",
+    "title": String, // Start with uppercase
+    "slug": String, // All lowercase, eg: "/category"
     "resources": [
       {
-        "title": "Awesome resource",
-        "desc": "This awesome resource will make your life much easier.", // 1 - 2 sentences long.
-        "url": "https://url.com"
+        "title": String,
+        "desc": String, // 1 - 2 sentences long
+        "url": String, // See below for notes about correct format of URLs
+        "tags": [String] // Please try to add at least 3 tags
       }
     ]
   }
 ]
 ```
 
-If you just want to add a resource to an already existing category, extend the `resources` array with your resources. Please include all the keys enlisted (`title`, `desc`, `url`).
+In our [resources](resources/) we have an `<category>.json` file for each category, you can add your suggested resource by adding it to the `resources` array in the JSON file using the schema as described above. Please include all the keys enlisted (`title`, `desc`, `url`, `tags`).
 
 For URLs, please consider the following:
 - Do not link to language specific pages (e.g. don't link to `<url>.org/en-US/docs`, instead, link to `<url>/docs` if possible).
 - Do not use `'&'` as it will break the URL referencing.
 - We won't allow referral links.
 
-To add a completely new resource, include a new object at the root of the array, the pages are dynamically rendered so you don't have to worry about anything else. Again, include all the enlisted keys, reference to the schema above.
+To add a completely new resource, add a `<category>.json` file to [resources](resources/). Make sure it follows the sceme as described above.
+Add it to [resources.index.js](resources/index.js) list of imports and export it aswell, that way Nuxt can take care of rendering the page.
 
 ## Built With
 

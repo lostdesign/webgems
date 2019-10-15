@@ -1,19 +1,25 @@
 <template lang="pug">
   tr.tableRow(:class="{ rowActive: isActive }")
+    td.tableRow--favicon
+      img(:src="'https://www.google.com/s2/favicons?domain=' + resource.url" aria-hidden="true")
     td.tableRow--title {{resource.title}}
     td.tableRow--description {{resource.desc}}
     td.tableRow--links
       tr
         td
-          a.tableRow--reference(@click='createCopyUrl(resource)') Copy
+          a.tableRow--reference(@click="createCopyUrl(resource)") Copy
         td
           a.tableRow--target(:href="resource.url" :target='resource.title' rel='noreferrer') Open
 </template>
 
 <script>
 export default {
-  props: ['resource', 'isActive', 'createCopyUrl'],
-};
+  props: {
+    resource: Object,
+    isActive: Boolean,
+    createCopyUrl: Function,
+  },
+}
 </script>
 
 
@@ -30,7 +36,7 @@ export default {
   transition: 0.2s ease-in-out;
   width: 1fr;
   display: grid;
-  grid-template-columns: minmax(150px, 2fr) 8fr 125px;
+  grid-template-columns: 1.5rem minmax(150px, 2fr) 8fr 125px;
 
   &--title {
     color: white;

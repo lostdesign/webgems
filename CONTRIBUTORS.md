@@ -6,3 +6,4 @@ These are lovely people who have helped this project:
 - [Kevin](https://github.com/S3B4S) :dog:
 - [jacobparis](https://github.com/jacobparis) : Team Devcord
   * twitter: @jacobmparis
+- [JonasPardon](https://github.com/JonasPardon)

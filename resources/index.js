@@ -12,6 +12,14 @@ import python from './python'
 import ruby from './ruby'
 import server from './server'
 import utility from './utility'
+import icons from './icons'
+import accessibility from './accessibility'
+
+const sortByTitle = ({ title: titleA }, { title: titleB }) => {
+  if(titleA < titleB) return -1
+  if(titleA > titleB) return 1
+  return 0
+}
 
 export default [
   css,
@@ -28,4 +36,6 @@ export default [
   ruby,
   server,
   utility,
-]
+  icons,
+  accessibility,
+].sort(sortByTitle)

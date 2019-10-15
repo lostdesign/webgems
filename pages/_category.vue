@@ -1,25 +1,31 @@
 <template lang="pug">
   div
-    h1 {{ category.title }}
-    .cards(v-if="areCardsVisible")
-      template(v-for='resource in category.resources' )
-        Card(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
-    table(v-if="!areCardsVisible")
-      template(v-for='resource in category.resources' )
-        TableRow(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
+    transition(name="fade-title" @after-enter="afterEnter")
+      h1(v-if="showTitle") {{ category.title }}
+    transition(name="fade-card")
+      .cards(v-if="areCardsVisible && showCards")
+        template(v-for='resource in category.resources' )
+          Card(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
+    transition(name="fade-card")
+      table(v-if="!areCardsVisible && showCards")
+        template(v-for='resource in category.resources' )
+          TableRow(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
 </template>
 
 <script>
-import Card from "../components/Card";
-import TableRow from "../components/TableRow";
+import Card from '../components/Card'
+import TableRow from '../components/TableRow'
 
 export default {
+  components: { Card, TableRow },
   data() {
     return {
       categoryRouteTitle: this.$route.params.category,
       index: '',
       activeCard: '',
-    };
+      showTitle: false,
+      showCards: false,
+    }
   },
   computed: {
     areCardsVisible() {
@@ -28,6 +34,12 @@ export default {
     category() {
       return this.$store.getters['data/sortByTitle'](this.categoryRouteTitle)
     },
+  },
+  created() {
+    this.activeCard = this.$route.query.card || ''
+  },
+  mounted() {
+    this.showTitle = true
   },
   methods: {
     setActiveCard(index) {
@@ -40,15 +52,14 @@ export default {
         this.setActiveCard(cleanTitle)
         this.$router.push(path)
       } catch (e) {
-        console.error(e);
+        console.error(e)
       }
-    }
+    },
+    afterEnter() {
+      this.showCards = true
+    },
   },
-  created() {
-    this.activeCard = this.$route.query.card || ''
-  },
-  components: { Card, TableRow }
-};
+}
 </script>
 
 <style lang="scss" scoped>
