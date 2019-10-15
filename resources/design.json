@@ -81,12 +81,6 @@
       "tags": ["educational", "tutorial", "learning"]
     },
     {
-      "title": "Typography Handbook",
-      "desc": "A concise, referential guide on best web typographic practices.",
-      "url": "http://typographyhandbook.com",
-      "tags": ["typography", "guide", "best practices", "educational"]
-    },
-    {
       "title": "Hyperpixel.io",
       "desc": "Discover the latest designs for your own inspiration from our curated list of landing pages.",
       "url": "https://hyperpixel.io/",
@@ -112,7 +106,7 @@
     },
     {
       "title": "UI Gradients",
-      "desc": "Beautiful colour gradients for design and code.",
+      "desc": "Beautiful color gradients for design and code.",
       "url": "https://uigradients.com/",
       "tags": ["generator", "inspiration", "color"]
     },
@@ -159,12 +153,6 @@
       "tags": ["background", "inspiration"]
     },
     {
-      "title": "Fontjoy",
-      "desc": "Generate font combinations with deep learning.",
-      "url": "https://fontjoy.com/",
-      "tags": []
-    },
-    {
       "title": "Can't Unsee",
       "desc": "A game where your attention to details earns you a lot of coins. WARNING: Once you see the difference between the images, you won't be able to unsee it!",
       "url": "https://cantunsee.space/",
@@ -183,10 +171,71 @@
       "tags": ["generator"]
     },
     {
+<<<<<<< HEAD
       "title": "Palettte.app",
       "desc": "Build, analyze and edit smooth color palettes.",
       "url": "https://palettte.app/",
       "tags": ["color"]
+=======
+      "title": "Google Fonts",
+      "desc": "Large library of high-quality, free web fonts.",
+      "url": "https://fonts.google.com/",
+      "tags": ["typography", "collection"]
+    },
+    {
+      "title": "Practical Typography",
+      "desc": "A just-deep-enough dive into typography for designers.",
+      "url": "https://practicaltypography.com/",
+      "tags": ["typography", "educational", "reading"]
+    },
+    {
+      "title": "Wakamai Fondue",
+      "desc": "Extensive font file analyzer that tells you everything you need to know about your font.",
+      "url": "https://wakamaifondue.com/",
+      "tags": ["typography", "tools"]
+    },
+    {
+      "title": "Typewolf",
+      "desc": "Discover trending fonts and pairings from around the web.",
+      "url": "https://www.typewolf.com/",
+      "tags": ["typography", "collection", "inspiration"]
+    },
+    {
+      "title": "Typography Handbook",
+      "desc": "A concise, referential guide on best web typographic practices.",
+      "url": "http://typographyhandbook.com",
+      "tags": ["typography", "guide", "best practices", "educational"]
+    },
+    {
+      "title": "Fontjoy",
+      "desc": "Generate font combinations with deep learning.",
+      "url": "https://fontjoy.com/",
+      "tags": ["typography", "tools"]
+    },
+    {
+      "title": "Web Color Data",
+      "desc": "Disover color palettes of popular websites.",
+      "url": "http://webcolourdata.com/",
+      "tags": ["color", "palette", "inspiration"]
+    },
+    {
+      "title": "Adobe Color",
+      "desc": "Create a color palette with this helpful tool of Adobe.",
+      "url": "https://color.adobe.com/",
+      "tags": ["color", "palette"]
+    },
+    {
+      "title": "Colourcode",
+      "desc": "colourco.de is an online designer tool, which allows you to easily and intuitively combine colours.",
+      "url": "https://colourco.de",
+      "tags": ["color", "palette"]
+    },
+    {
+      "title": "ColorBox",
+      "desc": "Colorbox is a color tool to produce color sets.",
+      "url": "https://www.colorbox.io",
+      "tags": ["color", "palette"]
+>>>>>>> 2146ae652818237000de6b2294d6f09656b0239f
     }
   ]
 }

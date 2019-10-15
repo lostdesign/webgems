@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/32128bab-176e-4a45-b21e-7a57425a36d1/deploy-status)](https://app.netlify.com/sites/epic-sammet-7ed06e/deploys)
+
 # webgems.io
 
 This project should help anyone to find new resources but especially beginners in the field to have something they can look things up.

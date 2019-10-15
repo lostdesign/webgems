@@ -31,6 +31,24 @@
       "desc": "Basic HTML & CSS for NON-WEB DESIGNERS",
       "url": "http://www.dontfeartheinternet.com/",
       "tags": []
+    },
+    {
+      "title": "The Font Loading Checklist",
+      "desc": "Four important considerations when loading web fonts.",
+      "url": "https://www.zachleat.com/web/font-checklist/",
+      "tags": ["typography", "tips", "best practices"]
+    },
+    {
+      "title": "My Device",
+      "desc": "Inspect the root css rules and viewport measurements of your device, and compare it to other devices.",
+      "url": "https://www.mydevice.io/",
+      "tags": ["viewport", "measurements", "responsive"]
+    },
+    {
+      "title": "Layers of CSS Box Model",
+      "desc": "Understand in which order the elements of the CSS box model are stacked.",
+      "url": "https://hicksdesign.co.uk/boxmodel/",
+      "tags": ["educational", "css"]
     }
   ]
 }
