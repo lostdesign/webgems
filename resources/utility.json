@@ -169,6 +169,12 @@
       "desc": "Web and API based SMTP testing.",
       "url": "https://github.com/mailhog/MailHog",
       "tags": []
+    },
+    {
+      "title": "git-history-editor",
+      "desc": "Messed up some of your commits? Make it undone",
+      "url": "https://bokub.github.io/git-history-editor/",
+      "tags": []
     }
   ]
 }
