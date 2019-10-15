@@ -67,6 +67,13 @@
       "desc": "HTML, CSS, JavaScript and WordPress web development tutorials!",
       "url": "https://www.youtube.com/user/wesbos",
       "tags": ["tips", "webdesign", "ui", "tutorial", "programming", "javascript", "wordpress"]
+    },
+    {
+       "title": "Mayuko",
+       "desc": "Mayuko is a Senior iOS Software Engineer from San Diego. She makes Youtube videos about what life is like as a Software Engineer living and working in Silicon Valley. She aims to make the tech industry feel more accessible to those entering the industry.",
+       "url": "https://www.youtube.com/user/hellomayuko",
+       "categories": "Life experiences sharing",
+       "tags": ["vlog", "techadvice", "programming"]
     }
     ]
   }
