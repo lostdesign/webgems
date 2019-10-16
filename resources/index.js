@@ -14,7 +14,6 @@ import server from './server'
 import utility from './utility'
 import icons from './icons'
 import accessibility from './accessibility'
-import contentCreators from './contentCreators'
 
 const sortByTitle = ({ title: titleA }, { title: titleB }) => {
   if(titleA < titleB) return -1
@@ -39,6 +38,4 @@ export default [
   utility,
   icons,
   accessibility,
-  contentCreators
 ].sort(sortByTitle)
-
