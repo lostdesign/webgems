@@ -69,6 +69,12 @@
       "tags": ["layout", "educational", "beginner"]
     },
     {
+      "title": "Learn Styling HTML using CSS",
+      "desc": "Mozilla's official CSS guide, helful for beginners and intermediates.",
+      "url": "https://developer.mozilla.org/docs/Learn/CSS",
+      "tags": ["educational", "beginner"]
+    },
+    {
       "title": "CSSmatic - box shadow generator",
       "desc": "The ultimate box shadow generator",
       "url": "https://www.cssmatic.com/box-shadow",
