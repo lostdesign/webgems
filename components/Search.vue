@@ -20,11 +20,10 @@ export default {
       const tags = R.filter(isTag, words)
       const titles = R.filter(R.compose(R.not, isTag), words)
       console.group()
-      console.log("words:", words)
+      console.log("words:", titles)
       console.log("tags:", tags)
-      console.log("titles:", titles)
-      console.log(this.$store.getters['data/findByName'](titles))
-      console.log(this.$store.getters['data/findByTags'](R.map(removeFirstChar, tags)))
+      console.log("returned by words search:", this.$store.getters['data/findByName'](titles))
+      console.log("returned by tags search:", this.$store.getters['data/findByTags'](R.map(removeFirstChar, tags)))
       console.groupEnd()
     },
   },
