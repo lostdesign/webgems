@@ -21,13 +21,12 @@ export const state = () => ({
 			}
 		}),
 	})),
-  // List of all tags, duplicates removed
   tags: getAllTags(resources),
 })
 
 export const getters = {
-	tags: state => state.tags,
-	resources: state => state.resources,
+	tags: R.prop('tags'),
+	resources: R.prop('resources'),
 	findCategory: state => categoryTitle => {
 		// equalsCategoryTitle :: Category -> Bool
 		const equalsCategoryTitle = R.compose(

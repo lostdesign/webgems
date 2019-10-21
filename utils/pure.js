@@ -22,13 +22,13 @@ const Category = {
 export const isNotEmpty = R.compose(R.not, R.isEmpty)
 
 // getAllResources :: [Category] -> [Resource]
-export const getAllResources = R.compose(R.flatten, R.map(R.prop('resources')))
+export const getAllResources = R.compose(R.flatten, R.pluck('resources'))
 
 // getAllTags :: [Category] -> [String]
 export const getAllTags = R.compose(
   R.uniq,
   R.flatten,
-  R.map(R.prop('tags')),
+  R.pluck('tags'),
   getAllResources
 )
 
