@@ -1,27 +1,13 @@
 import resources from '../resources'
 import * as R from 'ramda'
-import { includesElOf, getAllResources, tagsNotEmpty, partiallyIncludesElOf, cleanString } from '../utils/pure'
-
-// Polyfill for flat 
-if (!Array.prototype.flat) {
-	Object.defineProperty(Array.prototype, 'flat', {
-		configurable: true,
-		value: function flat () {
-			var depth = isNaN(arguments[0]) ? 1 : Number(arguments[0])
-
-			return depth ? Array.prototype.reduce.call(this, function (acc, cur) {
-				if (Array.isArray(cur)) {
-					acc.push.apply(acc, flat.call(cur, depth - 1))
-				} else {
-					acc.push(cur)
-				}
-
-				return acc
-			}, []) : Array.prototype.slice.call(this)
-		},
-		writable: true,
-	})
-}
+import {
+	getAllResources,
+	getAllTags,
+	includesElOf,
+	partiallyIncludesElOf,
+	tagsNotEmpty,
+	cleanString,
+} from '../utils/pure'
 
 export const state = () => ({
   resources: resources.map(category => ({
@@ -36,11 +22,7 @@ export const state = () => ({
 		}),
 	})),
   // List of all tags, duplicates removed
-  tags: [...new Set(
-		resources
-			.map(resource => resource.resources).flat()
-			.map(resource => resource.tags).flat()
-	)],
+  tags: getAllTags(resources),
 })
 
 export const getters = {
@@ -49,7 +31,7 @@ export const getters = {
 	findCategory: state => categoryTitle => {
 		// equalsCategoryTitle :: Category -> Bool
 		const equalsCategoryTitle = R.compose(
-			R.equals(R.toLower(categoryTitle)), R.toLower, R.prop('title')
+			R.equals(cleanString(categoryTitle)), cleanString, R.prop('title')
 		)
 		// findCategory :: [Category] -> Category
 		const findCategory = R.find(equalsCategoryTitle)

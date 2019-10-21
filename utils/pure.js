@@ -24,6 +24,14 @@ export const isNotEmpty = R.compose(R.not, R.isEmpty)
 // getAllResources :: [Category] -> [Resource]
 export const getAllResources = R.compose(R.flatten, R.map(R.prop('resources')))
 
+// getAllTags :: [Category] -> [String]
+export const getAllTags = R.compose(
+  R.uniq,
+  R.flatten,
+  R.map(R.prop('tags')),
+  getAllResources
+)
+
 // tagsNotEmpty :: Resource -> Bool
 export const tagsNotEmpty = R.compose(isNotEmpty, R.prop('tags'))
 
