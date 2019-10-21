@@ -2,6 +2,7 @@
   .layout
     Github
     Logo
+    Search
     Sidebar
     nuxt.content
 </template>
@@ -73,7 +74,7 @@ h1 {
   grid-template-columns: fit-content(200px) auto;
   grid-gap: 1rem;
   grid-template-areas:
-    'logo .'
+    'logo search'
     'sidebar content';
 }
 

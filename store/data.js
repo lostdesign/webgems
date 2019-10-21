@@ -1,4 +1,5 @@
 import resources from '../resources'
+import { prop, compose, flatten, map, filter, isEmpty, not, any, includes, curry } from 'ramda'
 
 // Polyfill for flat 
 if (!Array.prototype.flat) {
@@ -21,13 +22,13 @@ if (!Array.prototype.flat) {
 	})
 }
 
-/**
- * Check if list 2 has an element of list 1.
- * includesElOf(list1, list2) -> read as list1 includesElOf list2.
- * @param {any[]} list1 
- * @param {any[]} list2 
- */
-const includesElOf = (list1, list2) => list1.some(element => list2.includes(element))
+// True if list2 has element that appears in list1
+// includesElOf([1, 2], [3]) -> false
+// includesElOf([1, 2])([3]) -> false
+// includesElOf([1, 2], [2]) -> true
+// includesElOf([1, 2])([2]) -> true
+// includesElOf :: [a] -> [a] -> Bool
+// const includesElOf = curry((list1, list2) => any(flip(includes)(list2), list1))
 
 export const state = () => ({
   resources: resources.map(category => ({
@@ -52,15 +53,28 @@ export const state = () => ({
 export const getters = {
 	tags: state => state.tags,
 	resources: state => state.resources,
-	findResources: state => title => {
-		return Object.assign(state.resources.find(resource => resource.title.toLowerCase() === title.toLowerCase()))
+	findCategory: state => categoryTitle => {
+		return Object.assign(state.resources.find(category => category.title.toLowerCase() === categoryTitle.toLowerCase()))
 	},
 	findByTags: state => tags => {
-		const flat = state.resources.map(category => category.resources).flat()
-		return flat.filter(resource => resource.tags && includesElOf(resource.tags, tags)) 
+		// true if list2 has element that appears in list1 else false
+		// includesElOf [a] -> [a] -> Bool
+		const includesElOf = curry((list1, list2) => any(el => includes(el, list2), list1))
+		// getAllResources :: [Category] -> [Resource]
+		const getAllResources = compose(flatten, map(prop('resources')))
+		// tagsNotEmpty :: [Resource] -> Bool
+		const tagsNotEmpty = compose(not, isEmpty, prop('tags'))
+		// containsTags :: [Resource] -> [Resource]
+		const containsTags = filter(tagsNotEmpty)
+		// findResourcesByTag :: [Resource] -> [Resource]
+		const findResourcesByTag = filter(compose(includesElOf(tags), prop('tags')))
+		// getDesiredResources :: [Category] -> [Resource]
+		const getDesiredResources = compose(findResourcesByTag, containsTags, getAllResources)
+
+		return getDesiredResources(state.resources)
 	},
 	sortByTitle: (_, getters) => title => {
-		const category = getters.findResources(title)
+		const category = getters.findCategory(title)
 		const clone = [...category.resources]
 		return {
 			...category,

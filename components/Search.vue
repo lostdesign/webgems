@@ -1,6 +1,26 @@
 <template lang="pug">
-  input.search(placeholder="Search (does not work currently, sorry)")
+  input.search(v-model="searchInput" type="text" placeholder="Search (does not work currently, sorry)")
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      searchInput: '',
+    }
+  },
+  watch: {
+    searchInput(e) {
+      console.log(this.$store.getters['data/findByTags']([e]))
+    },
+  },
+  methods: {
+    updateSearchResults(e) {
+      console.log(e)
+    },
+  },
+}
+</script>
 
 <style lang="scss">
 input {
@@ -13,5 +33,4 @@ input {
     outline:none;
   }
 }
-
 </style>

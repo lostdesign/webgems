@@ -16,6 +16,7 @@
     "cross-env": "^5.2.0",
     "nuxt": "^2.4.0",
     "nuxt-clipboard2": "^0.2.1",
+    "ramda": "^0.26.1",
     "vue-i18n": "^8.11.2"
   },
   "devDependencies": {
