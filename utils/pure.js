@@ -49,4 +49,11 @@ const partiallyIncludesElOf = R.curry((list1, list2) =>
   list2)
 )
 
-export { getAllResources, tagsNotEmpty, includesElOf, partiallyIncludesElOf, cleanString }
+export {
+  isNotEmpty,
+  getAllResources,
+  tagsNotEmpty,
+  includesElOf,
+  partiallyIncludesElOf,
+  cleanString
+}

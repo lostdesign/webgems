@@ -4,6 +4,7 @@
 
 <script>
 import * as R from 'ramda'
+import { isNotEmpty } from '../utils/pure'
 
 export default {
   data() {
@@ -12,11 +13,11 @@ export default {
     }
   },
   watch: {
-    searchInput(e) {
+    searchInput(input) {
       const isTag = R.startsWith('#')
       const removeFirstChar = x => R.splitAt(1, x)[1]
 
-      const words = R.split(' ', e)
+      const words = R.filter(isNotEmpty, R.split(' ', input))
       const tags = R.filter(isTag, words)
       const titles = R.filter(R.compose(R.not, isTag), words)
       console.group()
