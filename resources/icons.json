@@ -9,6 +9,12 @@
       "tags": []
     },
     {
+      "title": "Fontello",
+      "desc": "Fontello has a collection of icons from various font and icon toolkits and the icons can be individually selected and downloaded. This greatly improves the website performance owing the reduced css to download.",
+      "url": "http://fontello.com/",
+      "tags": ["tag"]
+    },
+    {
       "title": "Icomoon",
       "desc": "IcoMoon provides a package of vector icons, along with a free HTML5 app for making custom icon fonts or SVG sprites.",
       "url": "https://icomoon.io/",
