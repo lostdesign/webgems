@@ -19,6 +19,19 @@ export default {
     Search,
     Sidebar,
   },
+
+  head () {
+    return {
+      meta: [
+        { hid: 'og:image', property: 'og:image', content: this.prodBaseUrl + 'apple-touch-icon.png' },
+        { hid: 'og:url', property: 'og:url', content: this.prodBaseUrl },
+      ],
+    }
+  },
+  created: function () {    
+      this.prodBaseUrl = 'https://webgems.io/'
+    return '' 
+  },
 }
 </script>
 

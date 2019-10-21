@@ -12,6 +12,11 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
       { hid: 'keywords', name: 'keywords', content: 'css, html, php, server, resources, design, gems, nuxt, javascript, tutorials, development, software'},
+      
+      { name: "robots", content: "index, follow" },
+      { name: "distribution", content: "global"},  
+      { property: "og:title", content: "webgems" },
+     
       { name:'theme-color', content: '#ffffff' },
       { name: 'msapplication-TileColor', content: '#da532c' },
       { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' },
