@@ -47,7 +47,13 @@ export const getters = {
 	tags: state => state.tags,
 	resources: state => state.resources,
 	findCategory: state => categoryTitle => {
-		return Object.assign(state.resources.find(category => category.title.toLowerCase() === categoryTitle.toLowerCase()))
+		// equalsCategoryTitle :: Category -> Bool
+		const equalsCategoryTitle = R.compose(
+			R.equals(R.toLower(categoryTitle)), R.toLower, R.prop('title')
+		)
+		// findCategory :: [Category] -> Category
+		const findCategory = R.find(equalsCategoryTitle)
+		return findCategory(state.resources)
 	},
 	findByName: state => names => {
 		const cleaned = R.map(cleanString, names)
@@ -59,7 +65,6 @@ export const getters = {
 		// [Category] -> [Resource]
 		const getDesiredResources = R.compose(appearsInResource, getAllResources)
 		return getDesiredResources(state.resources)
-
 	},
 	findByTags: state => tags => {
 		const cleaned = R.map(cleanString, tags)
