@@ -1,6 +1,6 @@
 import resources from '../resources'
-import { prop, compose, filter } from 'ramda'
-import { includesElOf, getAllResources, tagsNotEmpty } from '../utils/pure'
+import * as R from 'ramda'
+import { includesElOf, getAllResources, tagsNotEmpty, partiallyIncludesElOf, cleanString } from '../utils/pure'
 
 // Polyfill for flat 
 if (!Array.prototype.flat) {
@@ -49,15 +49,29 @@ export const getters = {
 	findCategory: state => categoryTitle => {
 		return Object.assign(state.resources.find(category => category.title.toLowerCase() === categoryTitle.toLowerCase()))
 	},
+	findByName: state => names => {
+		const cleaned = R.map(cleanString, names)
+
+		// [Resource] -> [Resource]
+		const appearsInResource = R.filter(({ cleanTitle, url, desc }) => 
+			partiallyIncludesElOf([cleanTitle, url, desc], cleaned)
+		)
+		// [Category] -> [Resource]
+		const getDesiredResources = R.compose(appearsInResource, getAllResources)
+		return getDesiredResources(state.resources)
+
+	},
 	findByTags: state => tags => {
+		const cleaned = R.map(cleanString, tags)
+
 		// containsTags :: [Resource] -> [Resource]
-		const containsTags = filter(tagsNotEmpty)
+		const containsTags = R.filter(tagsNotEmpty)
 		// includesDesiredTags :: Resource -> Bool
-		const includesDesiredTags = compose(includesElOf(tags), prop('tags'))
+		const includesDesiredTags = R.compose(includesElOf(cleaned), R.prop('tags'))
 		// findResourcesByTag :: [Resource] -> [Resource]
-		const findResourcesByTag = filter(includesDesiredTags)
+		const findResourcesByTag = R.filter(includesDesiredTags)
 		// getDesiredResources :: [Category] -> [Resource]
-		const getDesiredResources = compose(findResourcesByTag, containsTags, getAllResources)
+		const getDesiredResources = R.compose(findResourcesByTag, containsTags, getAllResources)
 
 		return getDesiredResources(state.resources)
 	},

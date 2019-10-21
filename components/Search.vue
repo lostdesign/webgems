@@ -3,6 +3,8 @@
 </template>
 
 <script>
+import * as R from 'ramda'
+
 export default {
   data() {
     return {
@@ -11,7 +13,19 @@ export default {
   },
   watch: {
     searchInput(e) {
-      console.log(this.$store.getters['data/findByTags']([e]))
+      const isTag = R.startsWith('#')
+      const removeFirstChar = x => R.splitAt(1, x)[1]
+
+      const words = R.split(' ', e)
+      const tags = R.filter(isTag, words)
+      const titles = R.filter(R.compose(R.not, isTag), words)
+      console.group()
+      console.log("words:", words)
+      console.log("tags:", tags)
+      console.log("titles:", titles)
+      console.log(this.$store.getters['data/findByName'](titles))
+      console.log(this.$store.getters['data/findByTags'](R.map(removeFirstChar, tags)))
+      console.groupEnd()
     },
   },
   methods: {
