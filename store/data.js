@@ -7,18 +7,13 @@ import {
 	partiallyIncludesElOf,
 	tagsNotEmpty,
 	cleanString,
-	addCleanTitleAndPath,
+	transformToResources,
 } from '../utils/pure'
 
-export const state = () => {
-	const resourcesLens = R.lens(R.prop('resources'), R.assoc('resources'))
-	return {
-		resources: R.map(category => 
-				R.over(resourcesLens, R.map(addCleanTitleAndPath(category.slug)), category),
-			categories),
-		tags: getAllTags(categories),
-	}
-}
+export const state = () => ({
+	resources: transformToResources(categories),
+	tags: getAllTags(categories),
+})
 
 export const getters = {
 	tags: R.prop('tags'),

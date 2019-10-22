@@ -1,7 +1,7 @@
 /*eslint-disable */
 import * as R from 'ramda'
 
-/// Types
+/// TYPES ///
 // const Category = {
 //   title: String,
 //   slug: String,
@@ -17,7 +17,7 @@ import * as R from 'ramda'
 //   tags: [String],
 // }
 
-/// Functions
+/// FUNCTIONS ///
 // isNotEmpty [a] -> Bool
 export const isNotEmpty = R.compose(R.not, R.isEmpty)
 
@@ -54,7 +54,7 @@ export const partiallyIncludesElOf = R.curry((list1, list2) =>
 )
 
 // addCleanTitleAndPath :: Object -> Resource
-export const addCleanTitleAndPath = R.curry((slug, obj) => {
+const addCleanTitleAndPath = R.curry((slug, obj) => {
   const cleanTitle = cleanStringAndRemoveSpaces(obj.title)
   return {
     ...obj,
@@ -62,3 +62,11 @@ export const addCleanTitleAndPath = R.curry((slug, obj) => {
     path: `${slug}?card=${cleanTitle}`,
   }
 })
+
+// transformToResources :: [Object] -> [Resource]
+export const transformToResources = categories => {
+  const resourcesLens = R.lens(R.prop('resources'), R.assoc('resources'))
+  return R.map(category => 
+    R.over(resourcesLens, R.map(addCleanTitleAndPath(category.slug)), category),
+  categories)
+}

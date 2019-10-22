@@ -1,4 +1,6 @@
 import * as P from '../utils/pure.js'
+import mockCategories from './mockCategories.json'
+import mockOutput from './mockOutput.json'
 
 test('includesElOf 1', () => {
   expect(P.includesElOf([1, 2])([2])).toBeTruthy
@@ -26,4 +28,14 @@ test('partiallyIncludesElOf 2', () => {
 
 test('partiallyIncludesElOf 3', () => {
   expect(P.partiallyIncludesElOf(['aa', 'b'], ['c'])).toBeFalsy
+})
+
+test('get all tags', () => {
+  expect(P.getAllTags(mockCategories)).toStrictEqual([
+    "generator", "grid", "layout", "visual tool", "animation", "educational", "beginner", "career", "ui", "ux", "illustration", "svg", "tips", "tricks",
+  ])
+})
+
+test('transform resources', () => {
+  expect(P.transformToResources(mockCategories)).toStrictEqual(mockOutput)
 })
