@@ -1,4 +1,4 @@
-import resources from '../resources'
+import categories from '../resources'
 import * as R from 'ramda'
 import {
 	getAllResources,
@@ -7,22 +7,18 @@ import {
 	partiallyIncludesElOf,
 	tagsNotEmpty,
 	cleanString,
+	addCleanTitleAndPath,
 } from '../utils/pure'
 
-export const state = () => ({
-  resources: resources.map(category => ({
-		...category,
-		resources: category.resources.map(resource => {
-			const cleanTitle = resource.title.replace(/ /g, '').toLowerCase()
-			return {
-				...resource,
-				cleanTitle,
-				path: `${category.slug}?card=${cleanTitle}`,
-			}
-		}),
-	})),
-  tags: getAllTags(resources),
-})
+export const state = () => {
+	const resourcesLens = R.lens(R.prop('resources'), R.assoc('resources'))
+	return {
+		resources: R.map(category => 
+				R.over(resourcesLens, R.map(addCleanTitleAndPath(category.slug)), category),
+			categories),
+		tags: getAllTags(categories),
+	}
+}
 
 export const getters = {
 	tags: R.prop('tags'),
