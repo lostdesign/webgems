@@ -8,6 +8,13 @@ import * as R from 'ramda'
 //   resources: [Resource],
 // }
 
+// const RawResource = {
+//   title: String,
+//   desc: String,
+//   url: String,
+//   tags: [String]
+// }
+
 // const Resource = {
 //   title: String,
 //   cleanTitle: String,
@@ -53,7 +60,7 @@ export const partiallyIncludesElOf = R.curry((list1, list2) =>
   list2)
 )
 
-// addCleanTitleAndPath :: Object -> Resource
+// addCleanTitleAndPath :: RawResource -> Resource
 const addCleanTitleAndPath = R.curry((slug, obj) => {
   const cleanTitle = cleanStringAndRemoveSpaces(obj.title)
   return {
@@ -63,7 +70,7 @@ const addCleanTitleAndPath = R.curry((slug, obj) => {
   }
 })
 
-// transformToResources :: [Object] -> [Resource]
+// transformToResources :: [RawResource] -> [Resource]
 export const transformToResources = categories => {
   const resourcesLens = R.lens(R.prop('resources'), R.assoc('resources'))
   return R.map(category => 
