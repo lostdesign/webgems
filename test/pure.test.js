@@ -7,7 +7,7 @@ test('includesElOf 1', () => {
 })
 
 test('includesElOf 2', () => {
-  expect(P.includesElOf([1, 2])([3])).toBeFalsy
+  expect(P.includesElOf([1, 2], [3])).toBeFalsy
 })
 
 test('includesElOf 3', () => {
@@ -23,7 +23,7 @@ test('partiallyIncludesElOf 1', () => {
 })
 
 test('partiallyIncludesElOf 2', () => {
-  expect(P.partiallyIncludesElOf(['aa', 'b'], ['a'])).toBeTruthy
+  expect(P.partiallyIncludesElOf(['aa', 'b'])(['a'])).toBeTruthy
 })
 
 test('partiallyIncludesElOf 3', () => {
