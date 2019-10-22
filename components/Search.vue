@@ -28,11 +28,6 @@ export default {
       console.groupEnd()
     },
   },
-  methods: {
-    updateSearchResults(e) {
-      console.log(e)
-    },
-  },
 }
 </script>
 

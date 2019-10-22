@@ -11,11 +11,11 @@ test('includesElOf 2', () => {
 })
 
 test('includesElOf 3', () => {
-  expect(P.includesElOf(['a', 'b'])(['a'])).toBeTruthy
+  expect(P.includesElOf(['a', 'b'])(['a', 'c'])).toBeTruthy
 })
 
 test('includesElOf 4', () => {
-  expect(P.includesElOf(['aa', 'b'])(['a'])).toBeFalsy
+  expect(P.includesElOf(['aa', 'b'])(['a', 'c'])).toBeFalsy
 })
 
 test('partiallyIncludesElOf 1', () => {
@@ -23,11 +23,11 @@ test('partiallyIncludesElOf 1', () => {
 })
 
 test('partiallyIncludesElOf 2', () => {
-  expect(P.partiallyIncludesElOf(['aa', 'b'])(['a'])).toBeTruthy
+  expect(P.partiallyIncludesElOf(['aa', 'b'])(['a', 'c'])).toBeTruthy
 })
 
 test('partiallyIncludesElOf 3', () => {
-  expect(P.partiallyIncludesElOf(['aa', 'b'], ['c'])).toBeFalsy
+  expect(P.partiallyIncludesElOf(['aa', 'b'], ['c', 'd'])).toBeFalsy
 })
 
 test('get all tags', () => {
