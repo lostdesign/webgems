@@ -38,7 +38,7 @@
 <style lang="scss" scoped>
 h2 {
   margin-top: 2rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0.5rem;
 }
 p {
   margin-top: 0;
