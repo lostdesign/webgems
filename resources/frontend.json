@@ -49,6 +49,12 @@
       "desc": "Understand in which order the elements of the CSS box model are stacked.",
       "url": "https://hicksdesign.co.uk/boxmodel/",
       "tags": ["educational", "css"]
+    },
+    {
+      "title": "Flavio Copes Blog",
+      "desc": "I write tutorials for JavaScript and Web Developers.",
+      "url": "https://flaviocopes.com/",
+      "tags": ["svelte", "daily", "books", "free", "react"]
     }
   ]
 }
