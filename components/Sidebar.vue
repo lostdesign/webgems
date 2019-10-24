@@ -4,6 +4,11 @@
       template(v-for='category in categories')
         //- nuxt-link(:to='$i18n.path(category.slug)') {{ category.title }}
         nuxt-link(:to='category.slug') {{ category.title }}
+      hr
+      nuxt-link(to='privacy-policy') Privacy Policy
+      nuxt-link(to='cookie-policy') Cookie Policy
+      nuxt-link(to='imprint') Imprint
+      hr
       div(class="toggleWrapper" @click="toggleCardsVisible")
         div(class="viewToggle" :class="{active: areCardsVisible}") Cards
         div(class="viewToggle" :class="{active: !areCardsVisible}") Table
@@ -58,6 +63,7 @@ export default {
     border-style: solid;
     border-radius: 0.25rem;
     overflow: hidden;
+    margin: 1rem auto;
   }
   .viewToggle {
     padding: 0 0.2rem;
@@ -66,6 +72,10 @@ export default {
   .active {
     background-color: #08e5ff;
     color: #232331;
+  }
+  hr {
+    width: 80%;
+    background-color: #08e5ff;
   }
 }
 

@@ -3,7 +3,14 @@
     Github
     Logo
     Sidebar
+    no-ssr
+      template(v-if="showNotice")
+        .cookie
+          p This site uses cookies, please read our&nbsp;
+            nuxt-link.highlighted.highlighted__inverted(to="privacy-policy") Privacy policy.
+            button(@click.preventDefault="hideCookieNotice") X
     nuxt.content
+
 </template>
 
 <script>
@@ -18,6 +25,32 @@ export default {
     Logo,
     Search,
     Sidebar,
+  },
+  data() {
+    return {
+      showNotice: false,
+    }
+  },
+  beforeMount() {
+    this.checkCookieNoticeHidden()
+  },
+  methods: {
+    hideCookieNotice() {
+      if(typeof(Storage) !== 'undefined'){
+        localStorage.setItem('cookieNoticeHidden', true)
+        this.showNotice = false
+      }
+    },
+    checkCookieNoticeHidden() {
+      if(typeof(Storage) !== 'undefined'){
+        let cookieNotice = localStorage.getItem('cookieNoticeHidden')
+        if(cookieNotice) {
+          this.showNotice = false
+        } else {
+          this.showNotice = true
+        }
+      }
+    },
   },
 }
 </script>
@@ -59,7 +92,7 @@ a {
   text-decoration: underline;
 }
 
-h1, p {
+h1, h2, p, ol, i, small {
   color: white;
 }
 
@@ -139,6 +172,46 @@ h1 {
       'logo'
       'sidebar'
       'content';
+  }
+}
+
+.highlighted {
+  text-decoration: none;
+  background-color: #08e5ff;
+  color: #212121;
+  padding: 0 5px;
+  border-radius: .1rem;
+
+  &:hover {
+    background-color: #008190;
+    color: white;
+  }
+
+  &__inverted{
+    background-color: #232331;
+    color: #08e5ff;
+    border-radius: .2rem;
+  }
+}
+
+.cookie {
+  position: fixed;
+  margin: 1rem;
+  bottom: 0;
+  left: 0;
+  background-color: #08e5ff;
+  padding: 0 1rem;
+  border-radius: .3rem;
+
+  p {
+    color: #212121;
+    font-size: 12px;
+  }
+
+  button {
+    background: none;
+    border: none;
+    margin-left: .8rem;
   }
 }
 
