@@ -30,43 +30,43 @@
       "title": "Colorhunt",
       "desc": "Color Hunt is a free and open platform for color inspiration with thousands of trendy hand-picked color palettes",
       "url": "http://colorhunt.co/",
-      "tags": ["color", "palette"]
+      "tags": ["color", "palette", "sets", "coordinated"]
     },
     {
       "title": "Flatuicolorpicker",
       "desc": "Flatuicolorpicker is a project digging the Flat Color Picker which gives you the perfect colors for flat designs",
       "url": "http://www.flatuicolorpicker.com",
-      "tags": ["color", "palette"]
+      "tags": ["color", "palette", "flat", "design"]
     },
     {
       "title": "awwwards",
       "desc": "The awards for design, creativity and innovation on the Internet. Get your inspiration here or even submit your own website!",
       "url": "https://awwwards.com",
-      "tags": ["inspiration", "awards"]
+      "tags": ["inspiration", "awards", "aggregator", "directory"]
     },
     {
       "title": "One Page Love",
       "desc": "One Page websites, templates and resources",
       "url": "https://onepagelove.com/",
-      "tags": ["templates", "inspiration"]
+      "tags": ["templates", "inspiration", "aggregator"]
     },
     {
       "title": "CSS Winner",
       "desc": "CSS Winner is a unique global platform awarding and showcasing the best websites and promoting innovative web designers, developers and agencies. We popularize the websites designed elsewhere through CSS Winner, increasing competence and coherence in collation and awarding them.",
       "url": "https://www.csswinner.com/",
-      "tags": ["inspiration", "awards"]
+      "tags": ["inspiration", "awards", "collection"]
     },
     {
       "title": "Httpster",
       "desc": "Httpster is an inspiration resource showcasing totally rocking websites made by people from all over the world.",
       "url": "https://httpster.net/",
-      "tags": ["inspiration", "showcase"]
+      "tags": ["inspiration", "showcase", "collection"]
     },
     {
       "title": "siteinspire",
       "desc": "siteInspire is a showcase of the finest web and interactive design.",
       "url": "https://www.siteinspire.com",
-      "tags": ["inspiration", "showcase"]
+      "tags": ["inspiration", "showcase", "directory"]
     },
     {
       "title": "ShapeFactory",
@@ -84,7 +84,7 @@
       "title": "Hyperpixel.io",
       "desc": "Discover the latest designs for your own inspiration from our curated list of landing pages.",
       "url": "https://hyperpixel.io/",
-      "tags": ["inspiration", "showcase"]
+      "tags": ["inspiration", "showcase", "collection"]
     },
     {
       "title": "sharpen.design",
@@ -96,13 +96,13 @@
       "title": "Good UI",
       "desc": "A Good User Interface Is One That's Backed By Reproducible Evidence (A/B Tests)",
       "url": "https://goodui.org/",
-      "tags": ["educational", "inspiration"]
+      "tags": ["educational", "inspiration", "testing", "patterns"]
     },
     {
       "title": "SVG ON THE WEB",
       "desc": "A Practical Guide",
       "url": "https://svgontheweb.com/",
-      "tags": ["educational", "guide", "svg"]
+      "tags": ["educational", "guide", "svg", "vector", "graphics"]
     },
     {
       "title": "UI Gradients",
@@ -132,7 +132,7 @@
       "title": "Codrops",
       "desc": "Codrops is a web design and development blog that publishes articles and tutorials about the latest web trends, techniques and new possibilities.",
       "url": "https://tympanus.net/codrops/",
-      "tags": ["reading", "educational"]
+      "tags": ["reading", "educational", "collection", "reference"]
     },
     {
       "title": "Hero Patterns",
@@ -148,21 +148,21 @@
     },
     {
       "title": "Cool Backgrounds",
-      "desc": "descCool Backgrounds offers a selection of beautiful, enticing image backgrounds to add to your blog post, website, or wallpaper.",
+      "desc": "Cool Backgrounds offers a selection of beautiful, enticing image backgrounds to add to your blog post, website, or wallpaper.",
       "url": "https://coolbackgrounds.io/",
-      "tags": ["background", "inspiration"]
+      "tags": ["background", "inspiration", "wallpaper", "generator"]
     },
     {
       "title": "Can't Unsee",
       "desc": "A game where your attention to details earns you a lot of coins. WARNING: Once you see the difference between the images, you won't be able to unsee it!",
       "url": "https://cantunsee.space/",
-      "tags": []
+      "tags": ["comparison", "difficulty", "images"]
     },
     {
       "title": "Image Color Picker",
       "desc": "Image color picker and palette generator.",
       "url": "https://image-color.com",
-      "tags": ["generator"]
+      "tags": ["generator", "personalize", "hex"]
     },
     {
       "title": "GoodBrief",
@@ -174,7 +174,7 @@
       "title": "Google Fonts",
       "desc": "Large library of high-quality, free web fonts.",
       "url": "https://fonts.google.com/",
-      "tags": ["typography", "collection"]
+      "tags": ["typography", "collection", "download"]
     },
     {
       "title": "Practical Typography",
@@ -186,7 +186,7 @@
       "title": "Wakamai Fondue",
       "desc": "Extensive font file analyzer that tells you everything you need to know about your font.",
       "url": "https://wakamaifondue.com/",
-      "tags": ["typography", "tools"]
+      "tags": ["typography", "tools", "analyze"]
     },
     {
       "title": "Typewolf",
@@ -204,7 +204,7 @@
       "title": "Fontjoy",
       "desc": "Generate font combinations with deep learning.",
       "url": "https://fontjoy.com/",
-      "tags": ["typography", "tools"]
+      "tags": ["typography", "tools", "pairing"]
     },
     {
       "title": "Web Color Data",
@@ -216,31 +216,31 @@
       "title": "Adobe Color",
       "desc": "Create a color palette with this helpful tool of Adobe.",
       "url": "https://color.adobe.com/",
-      "tags": ["color", "palette"]
+      "tags": ["color", "palette", "wheel", "extract", "triad"]
     },
     {
       "title": "Colourcode",
       "desc": "colourco.de is an online designer tool, which allows you to easily and intuitively combine colours.",
       "url": "https://colourco.de",
-      "tags": ["color", "palette"]
+      "tags": ["color", "palette", "interactive", "download"]
     },
     {
       "title": "ColorBox",
       "desc": "Colorbox is a color tool to produce color sets.",
       "url": "https://www.colorbox.io",
-      "tags": ["color", "palette"]
+      "tags": ["color", "palette", "luminosity", "saturation", "hue"]
     },
     {
       "title": "Palettte.app",
       "desc": "Build, analyze and edit smooth color palettes.",
       "url": "https://palettte.app/",
-      "tags": ["color", "palette"]
+      "tags": ["color", "palette", "sliders", "import", "export"]
     },
     {
       "title": "colormind.io",
       "desc": "Generate colorpalettes with a live preview of how it could look like on a website.",
       "url": "http://colormind.io/",
-      "tags": ["color", "palette"]
+      "tags": ["color", "palette", "sets", "templates"]
     }
   ]
 }

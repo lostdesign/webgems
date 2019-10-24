@@ -18,19 +18,19 @@
       "title": "Flexbox Froggy",
       "desc": "A game to learn Flexbox",
       "url": "https://flexboxfroggy.com",
-      "tags": ["educational", "beginner"]
+      "tags": ["educational", "beginner", "interactive"]
     },
     {
       "title": "Flexbox Zombies",
       "desc": "A course to learn Flexbox",
       "url": "https://mastery.games/p/flexbox-zombies",
-      "tags": ["educational", "beginner"]
+      "tags": ["educational", "beginner", "challenges"]
     },
     {
       "title": "CSS Gridgarden",
       "desc": "A game to learn Grid",
       "url": "https://cssgridgarden.com",
-      "tags": ["educational", "beginner"]
+      "tags": ["educational", "beginner", "template"]
     },
     {
       "title": "30 Seconds of Code",
@@ -60,7 +60,7 @@
       "title": "A complete guide to flexbox",
       "desc": "A comprehensive guide to flexbox, focusing on all the different possible properties for the parent element (the flex container).",
       "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
-      "tags": ["guide", "educational"]
+      "tags": ["guide", "educational", "examples"]
     },
     {
       "title": "Learn CSS layout",
@@ -72,7 +72,7 @@
       "title": "CSSmatic - box shadow generator",
       "desc": "The ultimate box shadow generator",
       "url": "https://www.cssmatic.com/box-shadow",
-      "tags": ["generator", "visual tool"]
+      "tags": ["generator", "visual tool", "interactive"]
     },
     {
       "title": "AirBnB CSS / Sass Styleguide",
@@ -90,7 +90,7 @@
       "title": "Use CSS Grids the right way",
       "desc": "CSS Grid is robust, flexible, and a refreshing paradigm shift from other CSS layout systems. While these are selling points for Grid, they also make it hard to learn.",
       "url": "https://vgpena.github.io/using-css-grid-the-right-way/",
-      "tags": ["guide", "educational"]
+      "tags": ["guide", "educational", "overview"]
     },
     {
       "title": "CSS Protips",
@@ -102,13 +102,13 @@
       "title": "Flexbox Defense",
       "desc": "Your job is to stop the incoming enemies from getting past your defenses. Unlike other tower defense games, you must position your towers using CSS!",
       "url": "http://www.flexboxdefense.com/",
-      "tags": ["educational", "beginner"]
+      "tags": ["educational", "beginner", "game"]
     },
     {
       "title": "CSS Diner",
       "desc": "Learn CSS selectors while playing a game.",
       "url": "https://flukeout.github.io/",
-      "tags": ["educational", "beginner"]
+      "tags": ["educational", "beginner", "selectors"]
     },
     {
       "title": "CSS Animation",
@@ -120,13 +120,13 @@
       "title": "JustREM",
       "desc": "Easily and quickly convert pixel values into rem values.",
       "url": "https://justrem.xyz/",
-      "tags": ["units"]
+      "tags": ["units", "convert", "instant"]
     },
     {
       "title": "(Re)learn css layout",
       "desc": "If you find yourself wrestling with CSS layout, it’s likely you’re making decisions for browsers they should be making themselves. Through a series of simple, composable layouts, Every Layout will teach you how to better harness the built-in algorithms that power browsers and CSS.",
       "url": "https://every-layout.dev/",
-      "tags": ["educational", "guide"]
+      "tags": ["educational", "guide", "blog"]
     },
     {
       "title": "Interactive CSS box-model view",
@@ -138,7 +138,7 @@
       "title": "Bennett Feely clip-path maker",
       "desc": "This CSS clip-path maker helps you understand the clip-path property and all the cool things you can do with it.",
       "url": "https://bennettfeely.com/clippy/",
-      "tags": []
+      "tags": ["interactive", "visual", "shapes"]
     }
   ]
 }
