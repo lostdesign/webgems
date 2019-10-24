@@ -15,7 +15,10 @@ export default {
   watch: {
     searchInput(input) {
       const isTag = R.startsWith('#')
-      const removeFirstChar = x => R.splitAt(1, x)[1]
+      const removeFirstChar = R.compose(
+        R.join(''),
+        R.adjust(0, () => '')
+      )
 
       const words = R.filter(isNotEmpty, R.split(' ', input))
       const tags = R.filter(isTag, words)
