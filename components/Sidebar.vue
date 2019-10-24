@@ -5,9 +5,9 @@
         //- nuxt-link(:to='$i18n.path(category.slug)') {{ category.title }}
         nuxt-link(:to='category.slug') {{ category.title }}
       hr
-      nuxt-link(to='privacy-policy') Privacy Policy
-      nuxt-link(to='cookie-policy') Cookie Policy
-      nuxt-link(to='imprint') Imprint
+      nuxt-link(to='/privacy-policy') Privacy Policy
+      nuxt-link(to='/cookie-policy') Cookie Policy
+      nuxt-link(to='/imprint') Imprint
       hr
       div(class="toggleWrapper" @click="toggleCardsVisible")
         div(class="viewToggle" :class="{active: areCardsVisible}") Cards
