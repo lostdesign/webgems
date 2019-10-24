@@ -31,7 +31,7 @@
         a(href="https://support.microsoft.com/en-us/kb/260971", title="Google Chrome") Internet Explorer
 
     h2 Opt Out From Tracking
-    iframe(style="border: 0; height: 200px; width: 100%; border-radius: 3px;" src="https://stats.lost.services/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=08e5ff&fontColor=212121&fontSize=&fontFamily=Poppins")
+    iframe(style="border: 0; width: 100%; border-radius: 3px; font-family:Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;" src="https://stats.lost.services/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=08e5ff&fontColor=212121&fontSize=&fontFamily=Poppins")
 
 </template>
 
