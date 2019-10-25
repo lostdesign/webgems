@@ -14,6 +14,24 @@
         "bug",
         "design"
       ]
+    },
+    {
+      "login": "lostdesign",
+      "name": "wellá",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/5164617?v=4",
+      "profile": "https://lost.design",
+      "contributions": [
+        "business",
+        "infra",
+        "security",
+        "bug",
+        "code",
+        "content",
+        "ideas",
+        "maintenance",
+        "review",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7,
