@@ -6,67 +6,134 @@
       "title": "Caniuse",
       "desc": "'Can I use' provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.",
       "url": "https://caniuse.com/",
-      "tags": ["compatibility", "browser", "search"]
+      "tags": [
+        "compatibility",
+        "browser",
+        "search"
+      ]
     },
     {
       "title": "DevDocs",
       "desc": "DevDocs combines multiple API documentations in a fast, organized, and searchable interface. Online and offline, always have your docs with you.",
       "url": "https://devdocs.io",
-      "tags": ["search", "aggregator", "languages", "api"]
+      "tags": [
+        "search",
+        "aggregator",
+        "languages",
+        "api"
+      ]
     },
     {
       "title": "MDN web docs",
       "desc": "Tutorials, references, tools and resources.",
       "url": "https://developer.mozilla.org/docs/Web",
-      "tags": ["mozilla", "basics", "scripting", "graphics", "accessibility"]
+      "tags": [
+        "mozilla",
+        "basics",
+        "scripting",
+        "graphics",
+        "accessibility"
+      ]
     },
     {
       "title": "Rico's cheatsheets",
       "desc": "Cheatsheets for any kind of technologies in the web domain.",
       "url": "https://devhints.io",
-      "tags": ["search", "ruby", "javascript", "bash", "cli"]
+      "tags": [
+        "search",
+        "ruby",
+        "javascript",
+        "bash",
+        "cli"
+      ]
     },
     {
       "title": "Developer Roadmap",
       "desc": "Below you find a set of charts demonstrating the paths that you can take and the technologies that you would want to adopt in order to become a frontend, backend or a devops.",
       "url": "https://github.com/kamranahmedse/developer-roadmap/blob/master/readme.md",
-      "tags": ["roadmaps", "visual", "graphics", "connections"]
+      "tags": [
+        "roadmaps",
+        "visual",
+        "graphics",
+        "connections"
+      ]
     },
     {
       "title": "ebookfoundation",
       "desc": "Freely available programming books",
       "url": "https://ebookfoundation.github.io/free-programming-books/",
-      "tags": ["lists", "languages", "courses", "resources"]
+      "tags": [
+        "lists",
+        "languages",
+        "courses",
+        "resources"
+      ]
     },
     {
       "title": "Google Developer",
       "desc": "Tutorials, guides, and best practices for building the next generation of web experiences.",
       "url": "https://developers.google.com/web/",
-      "tags": ["tools", "videos", "fundamentals", "web", "chrome"]
+      "tags": [
+        "tools",
+        "videos",
+        "fundamentals",
+        "web",
+        "chrome"
+      ]
     },
     {
       "title": "Google Chrome Youtube",
       "desc": "Making the web more awesome - latest news about google chrome",
       "url": "https://www.youtube.com/channel/UCnUYZLuoy1rq1aVMwx4aTzw",
-      "tags": ["videos", "keynotes", "channels"]
+      "tags": [
+        "videos",
+        "keynotes",
+        "channels"
+      ]
     },
     {
       "title": "Code wars",
       "desc": "Challenge yourself on kata, created by the community to strengthen different skills. Master your current language of choice, or expand your understanding of a new one.",
       "url": "https://www.codewars.com/",
-      "tags": ["skills", "rank", "languages", "training"]
+      "tags": [
+        "skills",
+        "rank",
+        "languages",
+        "training"
+      ]
     },
     {
       "title": "Exercism",
       "desc": "Learn to code in a variety of languages. Complete programming challenges, view other's solutions, and get community feedback on your code.",
       "url": "https://exercism.io",
-      "tags": ["mentors", "tracks", "exercises", "feedback"]
+      "tags": [
+        "mentors",
+        "tracks",
+        "exercises",
+        "feedback"
+      ]
     },
     {
       "title": "Learn X in Y min",
       "desc": "Take a whirlwind tour of your next favorite language. Community-driven!",
       "url": "https://learnxinyminutes.com/",
-      "tags": ["languages", "quick", "resources", "basics"]
+      "tags": [
+        "languages",
+        "quick",
+        "resources",
+        "basics"
+      ]
+    },
+    {
+      "title": "CodeSignal",
+      "desc": "CodeSignal (formerly CodeFights) is an online programming tournament where you compete against real people in real time to try to finish the coding challenges first. You can play with random people, your friends, or they even have a single player arcade mode.",
+      "url": "https://codesignal.com/developers",
+      "tags": [
+        "languages",
+        "tournament",
+        "resources",
+        "peer-coding"
+      ]
     }
   ]
 }
