@@ -15,7 +15,7 @@ export default {
   props: {
     resource: Object,
     isActive: Boolean,
-    createCopyUrl: Function, 
+    createCopyUrl: Function,
   },
 }
 </script>
@@ -37,13 +37,15 @@ export default {
 
   &--meta {
     display: flex;
-    align-items: center;
+    justify-content: flex-start;
   }
 
   &--favicon {
     height: 16px;
     width: 16px;
-    margin-right: .5rem;
+    margin-top: 0.3rem;
+    margin-right: 0.5rem;
+
   }
 
   &--reference {
