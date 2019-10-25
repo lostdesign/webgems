@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Banou26",
+      "name": "Banou",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/5209149?v=4",
+      "profile": "https://banou.dev",
+      "contributions": [
+        "bug",
+        "design"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "webgems",
+  "projectOwner": "webgems",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
