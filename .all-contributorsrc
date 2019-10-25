@@ -1,59 +1,58 @@
 {
-  "files": [
-    "README.md"
-  ],
-  "imageSize": 100,
-  "commit": false,
-  "contributors": [
-    {
-      "login": "lostdesign",
-      "name": "wellá",
-      "avatar_url": "https://avatars0.githubusercontent.com/u/5164617?v=4",
-      "profile": "https://lost.design",
-      "contributions": [
-        "business",
-        "infra",
-        "security",
-        "dev",
-        "bug",
-        "code",
-        "content",
-        "ideas",
-        "maintenance",
-        "review",
-        "test"
-       ]
-    },
-    {
-      "login": "S3B4S",
-      "name": "Kevin van der Werff",
-      "avatar_url": "https://avatars0.githubusercontent.com/u/17083334?v=4",
-      "profile": "https://github.com/S3B4S",
-      "contributions": [
-        "dev",
-        "bug",
-        "code",
-        "content",
-        "ideas",
-        "maintenance",
-        "review",
-        "test"
-      ]
-    },
-    {
-      "login": "Banou26",
-      "name": "Banou",
-      "avatar_url": "https://avatars0.githubusercontent.com/u/5209149?v=4",
-      "profile": "https://banou.dev",
-      "contributions": [
-        "bug",
-        "design"
-      ]
-    },
-  ],
-  "contributorsPerLine": 7,
-  "projectName": "webgems",
-  "projectOwner": "webgems",
-  "repoType": "github",
-  "repoHost": "https://github.com"
+	"files": [
+		"README.md"
+	],
+	"imageSize": 100,
+	"commit": false,
+	"contributors": [{
+			"login": "lostdesign",
+			"name": "wellá",
+			"avatar_url": "https://avatars0.githubusercontent.com/u/5164617?v=4",
+			"profile": "https://lost.design",
+			"contributions": [
+				"business",
+				"infra",
+				"security",
+				"dev",
+				"bug",
+				"code",
+				"content",
+				"ideas",
+				"maintenance",
+				"review",
+				"test"
+			]
+		},
+		{
+			"login": "S3B4S",
+			"name": "Kevin van der Werff",
+			"avatar_url": "https://avatars0.githubusercontent.com/u/17083334?v=4",
+			"profile": "https://github.com/S3B4S",
+			"contributions": [
+				"dev",
+				"bug",
+				"code",
+				"content",
+				"ideas",
+				"maintenance",
+				"review",
+				"test"
+			]
+		},
+		{
+			"login": "Banou26",
+			"name": "Banou",
+			"avatar_url": "https://avatars0.githubusercontent.com/u/5209149?v=4",
+			"profile": "https://banou.dev",
+			"contributions": [
+				"bug",
+				"design"
+			]
+		}
+	],
+	"contributorsPerLine": 7,
+	"projectName": "webgems",
+	"projectOwner": "webgems",
+	"repoType": "github",
+	"repoHost": "https://github.com"
 }
