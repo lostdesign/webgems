@@ -39,7 +39,7 @@ export default {
   },
   data() {
     return {
-      this.prodBaseUrl = 'https://webgems.io/'
+      prodBaseUrl = 'https://webgems.io/'
       showNotice: false,
     }
   },
