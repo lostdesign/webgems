@@ -7,7 +7,7 @@
       template(v-if="showNotice")
         .cookie
           p This site uses cookies, please read our&nbsp;
-            nuxt-link.highlighted.highlighted__inverted(to="privacy-policy") Privacy policy.
+            nuxt-link.highlighted(to="privacy-policy") Privacy policy.
             button(@click.preventDefault="hideCookieNotice") X
     nuxt.content
 
@@ -186,12 +186,6 @@ h1 {
     background-color: #008190;
     color: white;
   }
-
-  &__inverted{
-    background-color: #232331;
-    color: #08e5ff;
-    border-radius: .2rem;
-  }
 }
 
 .cookie {
@@ -199,16 +193,17 @@ h1 {
   margin: 1rem;
   bottom: 0;
   left: 0;
-  background-color: #08e5ff;
+  background-color: #232331;
   padding: 0 1rem;
   border-radius: .3rem;
+  box-shadow:inset 0px 0px 0px 2px #08e5ff;
 
   p {
-    color: #212121;
     font-size: 12px;
   }
 
   button {
+    color: #fff;
     background: none;
     border: none;
     margin-left: .8rem;
