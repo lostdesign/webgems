@@ -1,5 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/32128bab-176e-4a45-b21e-7a57425a36d1/deploy-status)](https://app.netlify.com/sites/epic-sammet-7ed06e/deploys)
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 
 # webgems.io
 
