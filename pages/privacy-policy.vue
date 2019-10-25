@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  main
     h1 Our Privacy Policy
     p This Privacy Policy describes how webgems collects, uses and discloses information, and what choices you have with respect to the information. We respect the Browser's "Do Not Track" feature, you won't be affected by this policy if enabled.
 
@@ -38,7 +38,7 @@
 
     h2 Opt Out From Tracking
     p If you do not agree to this data from your visit being stored and evaluated, then you can object to the storage and use at any time by clicking below. In this case, an opt-out cookie will be placed in your browser, which means that Matomo does not collect any session data. Please note that the complete deletion of your cookies means that the opt-out cookie will be deleted too and you may need to activate it again.
-    iframe(style="border: 0; width: 100%; border-radius: 3px; font-family:Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;" src="https://stats.lost.services/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=08e5ff&fontColor=212121&fontSize=&fontFamily=Poppins")
+    OptOutIframe
 
     h2 Re-Enable Cookie Banner
     p Click&nbsp;
@@ -50,7 +50,12 @@
 </template>
 
 <script>
+import OptOutIframe from '@/components/OptOutIframe.vue'
+
 export default {
+  components: {
+    OptOutIframe,
+  },
   data() {
     return {
     }

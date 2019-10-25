@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  main
     h1 Our Cookie Policy
     p We believe in being transparent about how we collect and use data. This policy provides information about how and when we use cookies for these purposes. Capitalized terms used in this policy but not defined have the meaning set forth in our&nbsp;
       nuxt-link.highlighted(to="privacy-policy") Privacy Policy
@@ -31,9 +31,19 @@
         a(href="https://support.microsoft.com/en-us/kb/260971", title="Google Chrome") Internet Explorer
 
     h2 Opt Out From Tracking
-    iframe(style="border: 0; width: 100%; border-radius: 3px; font-family:Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;" src="https://stats.lost.services/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=08e5ff&fontColor=212121&fontSize=&fontFamily=Poppins")
+    OptOutIframe
 
 </template>
+
+<script>
+import OptOutIframe from '@/components/OptOutIframe.vue'
+
+export default {
+  components: {
+    OptOutIframe,
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 h2 {
