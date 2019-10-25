@@ -8,7 +8,7 @@
         .cookie
           p This site uses cookies, please read our&nbsp;
             nuxt-link.highlighted(to="privacy-policy") Privacy policy.
-            button(@click.preventDefault="hideCookieNotice") X
+            button.highlighted(@click.preventDefault="hideCookieNotice" type="button") X
     nuxt.content
 
 </template>
@@ -116,10 +116,12 @@ h1 {
 .layout {
   display: grid;
   grid-template-columns: fit-content(200px) auto;
-  grid-gap: 1rem;
+  grid-gap: 3rem;
   grid-template-areas:
     'logo .'
     'sidebar content';
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -212,6 +214,7 @@ h1 {
   padding: 0 1rem;
   border-radius: .3rem;
   box-shadow:inset 0px 0px 0px 2px #08e5ff;
+  z-index: 999;
 
   p {
     font-size: 12px;
@@ -228,10 +231,9 @@ h1 {
   }
 
   button {
-    color: #fff;
-    background: none;
     border: none;
     margin-left: .8rem;
+    cursor: pointer;
   }
 }
 
