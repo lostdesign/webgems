@@ -1,5 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/32128bab-176e-4a45-b21e-7a57425a36d1/deploy-status)](https://app.netlify.com/sites/epic-sammet-7ed06e/deploys)
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 # webgems.io
 
@@ -34,6 +34,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://banou.dev"><img src="https://avatars0.githubusercontent.com/u/5209149?v=4" width="100px;" alt="Banou"/><br /><sub><b>Banou</b></sub></a><br /><a href="https://github.com/webgems/webgems/issues?q=author%3ABanou26" title="Bug reports">🐛</a> <a href="#design-Banou26" title="Design">🎨</a></td>
+    <td align="center"><a href="https://lost.design"><img src="https://avatars0.githubusercontent.com/u/5164617?v=4" width="100px;" alt="wellá"/><br /><sub><b>wellá</b></sub></a><br /><a href="#business-lostdesign" title="Business development">💼</a> <a href="#infra-lostdesign" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#security-lostdesign" title="Security">🛡️</a> <a href="https://github.com/webgems/webgems/issues?q=author%3Alostdesign" title="Bug reports">🐛</a> <a href="https://github.com/webgems/webgems/commits?author=lostdesign" title="Code">💻</a> <a href="#content-lostdesign" title="Content">🖋</a> <a href="#ideas-lostdesign" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-lostdesign" title="Maintenance">🚧</a> <a href="#review-lostdesign" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/webgems/webgems/commits?author=lostdesign" title="Tests">⚠️</a></td>
   </tr>
 </table>
 
