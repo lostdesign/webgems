@@ -6,12 +6,19 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'webgems',
+    htmlAttrs: {
+      lang: 'en',
+    },
+    title: pkg.name,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
       { hid: 'keywords', name: 'keywords', content: 'css, html, php, server, resources, design, gems, nuxt, javascript, tutorials, development, software'},
+      
+      { name: 'robots', content: 'index, follow' },
+      { name: 'distribution', content: 'global'},  
+      
       { name:'theme-color', content: '#ffffff' },
       { name: 'msapplication-TileColor', content: '#da532c' },
       { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' },
