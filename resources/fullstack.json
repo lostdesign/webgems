@@ -19,6 +19,12 @@
       "desc": "Lecture platform about anything ranging from basic Javascript to advanced React methods. Community courses available free of charge with an opt-in paid section for full course paths.",
       "url": "https://egghead.io",
       "tags": ["videos", "frontend", "react", "javascript"]
+    },
+    {
+      "title": "Refactoring Guru",
+      "desc": "This site makes it easy for you to discover everything you need to know about refactoring, design patterns, SOLID principles, and other smart programming topics.",
+      "url": "https://refactoring.guru/",
+      "tags": ["refactoring", "patterns", "educational", "learning"]
     }
   ]
 }
