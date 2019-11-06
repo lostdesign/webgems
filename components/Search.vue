@@ -10,25 +10,32 @@ export default {
   data() {
     return {
       searchInput: '',
+      searchPath: '/search',
     }
+  },
+  methods: {
+    // isTag :: String -> Bool
+    isTag: R.startsWith('#'),
+
+    // removeFirstChar :: String -> String
+    removeFirstChar: R.compose(
+      R.join(''),
+      R.adjust(0, () => '')
+    ),
   },
   watch: {
     searchInput(input) {
-      const isTag = R.startsWith('#')
-      const removeFirstChar = R.compose(
-        R.join(''),
-        R.adjust(0, () => '')
-      )
-
       const words = R.filter(isNotEmpty, R.split(' ', input))
-      const tags = R.filter(isTag, words)
-      const titles = R.filter(R.compose(R.not, isTag), words)
-      console.group()
-      console.log('words:', titles)
-      console.log('tags:', tags)
-      console.log('returned by words search:', this.$store.getters['data/findByName'](titles))
-      console.log('returned by tags search:', this.$store.getters['data/findByTags'](R.map(removeFirstChar, tags)))
-      console.groupEnd()
+      const tags = R.filter(this.isTag, words)
+      const titles = R.filter(R.compose(R.not, this.isTag), words)
+
+      const searchParams = new URLSearchParams()
+      if (isNotEmpty(titles))
+        searchParams.append('keywords', titles)
+      if (isNotEmpty(tags))  
+        searchParams.append('tags', R.map(this.removeFirstChar, tags))
+      
+      this.$router.push(this.searchPath + '?' + searchParams.toString())
     },
   },
 }
