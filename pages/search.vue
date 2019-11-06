@@ -16,7 +16,6 @@
 import Card from '../components/Card'
 import TableRow from '../components/TableRow'
 import * as R from 'ramda'
-// import { removeFirstChar } from '../utils/pure'
 
 export default {
   components: { Card, TableRow },
@@ -27,6 +26,7 @@ export default {
       searchInput: {},
       showTitle: false,
       showCards: false,
+      debounceID: 0,
     }
   },
   computed: {
@@ -36,13 +36,16 @@ export default {
   },
   watch: {
     $route(updatedChanges) {
-      const keywords = updatedChanges.query.keywords
-      const tags = updatedChanges.query.tags
-      const newSearchInput = {
-        keywords: keywords && R.split(',', keywords),
-        tags: tags && R.split(',', tags),
-      }
-      this.searchInput = newSearchInput
+      clearTimeout(this.debounceID)
+      this.debounceID = setTimeout(() => {
+        const keywords = updatedChanges.query.keywords
+        const tags = updatedChanges.query.tags
+        const newSearchInput = {
+          keywords: keywords && R.split(',', keywords),
+          tags: tags && R.split(',', tags),
+        }
+        this.searchInput = newSearchInput
+      }, 500)
     },
     searchInput(searchInput) {
       this.resources = this.$store.getters['data/findBySearchInputs'](searchInput.keywords, searchInput.tags)
