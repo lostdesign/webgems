@@ -24,7 +24,7 @@
       "title": "Frontendmasters",
       "desc": "Premium tier video courses for any modern stack. Monthly or yearly subscription.",
       "url": "https://frontendmasters.com",
-      "tags": ["courses", "framworks", "videos", "javascript"]
+      "tags": ["courses", "frameworks", "videos", "javascript"]
     },
     {
       "title": "Don't fear the internet",
@@ -49,6 +49,12 @@
       "desc": "Understand in which order the elements of the CSS box model are stacked.",
       "url": "https://hicksdesign.co.uk/boxmodel/",
       "tags": ["educational", "css", "visual"]
+    },
+    {
+      "title": "Flavio Copes Blog",
+      "desc": "I write tutorials for JavaScript and Web Developers.",
+      "url": "https://flaviocopes.com/",
+      "tags": ["mentor", "books", "tutorial"]
     }
   ]
 }
