@@ -52,6 +52,12 @@ export const getters = {
 
 		return getDesiredResources(state.resources)
 	},
+	findBySearchInputs: (_, getters) => (keywords = [], tags = []) => {
+		const foundByKeywords = getters.findByName(keywords)
+		const foundByTags = getters.findByTags(tags)
+		const uniqueResources = foundByTags.filter(x => !foundByKeywords.some(y => equalResources(x, y)))
+		return uniqueResources.concat(foundByKeywords)
+	},
 	sortByTitle: (_, getters) => title => {
 		const category = getters.findCategory(title)
 		const clone = [...category.resources]
@@ -71,3 +77,7 @@ const compareTitles = (x, y) => {
 		return 0
 	}
 }
+
+const equalResources = (a, b) => 
+	a.title === b.title &&
+	a.cleanTitle == b.cleanTitle

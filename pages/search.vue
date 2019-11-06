@@ -25,7 +25,6 @@ export default {
       activeCard: '',
       resources: [],
       searchInput: {},
-      tags: [],
       showTitle: false,
       showCards: false,
     }
@@ -46,13 +45,8 @@ export default {
       this.searchInput = newSearchInput
     },
     searchInput(searchInput) {
-      let resources = []
-      if (searchInput.keywords)
-        resources = resources.concat(this.$store.getters['data/findByName'](searchInput.keywords))
-      if (searchInput.tags)
-        resources = resources.concat(this.$store.getters['data/findByTags'](searchInput.tags))
-      this.resources = resources
-    },  
+      this.resources = this.$store.getters['data/findBySearchInputs'](searchInput.keywords, searchInput.tags)
+    },
   },
   mounted() {
     this.showTitle = true
