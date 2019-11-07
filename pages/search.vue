@@ -4,12 +4,16 @@
       h1(v-if="showTitle") Search
     transition(name="fade-card")
       .cards(v-if="areCardsVisible && showCards")
-        template(v-for='resource in resources' )
-          Card(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
+        template(v-if="resources.length")
+          template(v-for='resource in resources' )
+            Card(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
+        p(v-else) No results
     transition(name="fade-card")
       table(v-if="!areCardsVisible && showCards")
-        template(v-for='resource in resources' )
-          TableRow(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
+        template(v-if="resources.length")
+          template(v-for='resource in resources' )
+            TableRow(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
+        p(v-else) No results
 </template>
 
 <script>
@@ -49,6 +53,7 @@ export default {
     },
     searchInput(searchInput) {
       this.resources = this.$store.getters['data/findBySearchInputs'](searchInput.keywords, searchInput.tags)
+      console.log(this.resources)
     },
   },
   mounted() {
