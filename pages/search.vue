@@ -44,16 +44,14 @@ export default {
       this.debounceID = setTimeout(() => {
         const keywords = updatedChanges.query.keywords
         const tags = updatedChanges.query.tags
-        const newSearchInput = {
+        this.searchInput = {
           keywords: keywords && R.split(',', keywords),
           tags: tags && R.split(',', tags),
         }
-        this.searchInput = newSearchInput
       }, 500)
     },
     searchInput(searchInput) {
       this.resources = this.$store.getters['data/findBySearchInputs'](searchInput.keywords, searchInput.tags)
-      console.log(this.resources)
     },
   },
   mounted() {
