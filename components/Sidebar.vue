@@ -68,12 +68,11 @@ export default {
     border: 1px;
     border-color: #08e5ff;
     border-style: solid;
-    border-radius: 0.25rem;
     overflow: hidden;
     margin: 1rem auto;
   }
   .viewToggle {
-    padding: 0 0.2rem;
+    padding: .2rem.2rem;
     color: #008190;
   }
   .active {
