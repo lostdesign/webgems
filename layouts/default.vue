@@ -176,7 +176,7 @@ h1 {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .layout {
     display: grid;
     grid-template-columns: auto;

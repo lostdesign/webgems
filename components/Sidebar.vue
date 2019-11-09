@@ -86,7 +86,7 @@ export default {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .sidebar {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
