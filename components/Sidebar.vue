@@ -82,7 +82,7 @@ export default {
   }
   hr {
     width: 80%;
-    background-color: #08e5ff;
+    border-color: #08e5ff;
   }
 }
 
