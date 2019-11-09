@@ -46,6 +46,7 @@ export default {
   display: grid;
   grid-template-columns: 1fr;
   font-size: 14px;
+  align-items: center;
 
   a {
     padding: 0.5rem 1rem 0.5rem 1rem;
