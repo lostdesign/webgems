@@ -50,6 +50,13 @@ export default {
   a {
     padding: 0.5rem 1rem 0.5rem 1rem;
     font-weight: 600;
+    transition-duration: 0.2s;
+    transition-property: background-color,color;
+    &:hover, &.nuxt-link-exact-active {
+      background-color: #08e5ff;
+      color: #000;
+      text-decoration: none;
+    }
   }
   div {
     cursor: pointer;
