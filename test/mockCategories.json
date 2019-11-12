@@ -1,0 +1,50 @@
+[
+  {
+    "title": "CSS",
+    "slug": "/css",
+    "resources": [
+      {
+        "title": "CSS Grid Generator",
+        "desc": "Visually create your css grid and export the code.",
+        "url": "https://cssgrid-generator.netlify.com/",
+        "tags": ["generator", "grid", "layout", "visual tool"]
+      },
+      {
+        "title": "Keyframes Editor",
+        "desc": "An insanely simple way to create CSS animations",
+        "url": "https://keyframes.app/editor/",
+        "tags": ["generator", "animation", "visual tool"]
+      },
+      {
+        "title": "Flexbox Froggy",
+        "desc": "A game to learn Flexbox",
+        "url": "https://flexboxfroggy.com",
+        "tags": ["educational", "beginner"]
+      }
+    ]
+  },
+  {
+    "title": "Design",
+    "slug": "/design",
+    "resources": [
+      {
+        "title": "UX/UI Designer Roadmap 2017",
+        "desc": "Roadmap to becoming a UI/UX Designer in 2017",
+        "url": "https://github.com/togiberlin/ui-ux-designer-roadmap",
+        "tags": ["career", "ui", "ux"]
+      },
+      {
+        "title": "Undraw",
+        "desc": "Free vector illustrations for your website.",
+        "url": "https://undraw.co",
+        "tags": ["illustration", "svg", "ui"]
+      },
+      {
+        "title": "Practical UI tips",
+        "desc": "7 Tips to boost your UI design.",
+        "url": "https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886",
+        "tags": ["ui", "tips", "tricks"]
+      }
+    ]
+  }
+]

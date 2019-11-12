@@ -1,66 +1,65 @@
-import resources from '../resources'
-
-// Polyfill for flat 
-if (!Array.prototype.flat) {
-	Object.defineProperty(Array.prototype, 'flat', {
-		configurable: true,
-		value: function flat () {
-			var depth = isNaN(arguments[0]) ? 1 : Number(arguments[0])
-
-			return depth ? Array.prototype.reduce.call(this, function (acc, cur) {
-				if (Array.isArray(cur)) {
-					acc.push.apply(acc, flat.call(cur, depth - 1))
-				} else {
-					acc.push(cur)
-				}
-
-				return acc
-			}, []) : Array.prototype.slice.call(this)
-		},
-		writable: true,
-	})
-}
-
-/**
- * Check if list 2 has an element of list 1.
- * includesElOf(list1, list2) -> read as list1 includesElOf list2.
- * @param {any[]} list1 
- * @param {any[]} list2 
- */
-const includesElOf = (list1, list2) => list1.some(element => list2.includes(element))
+import categories from '../resources'
+import * as R from 'ramda'
+import {
+	getAllResources,
+	getAllTags,
+	includesElOf,
+	partiallyIncludesElOf,
+	tagsNotEmpty,
+	cleanString,
+	transformToResources,
+} from '../utils/pure'
 
 export const state = () => ({
-  resources: resources.map(category => ({
-		...category,
-		resources: category.resources.map(resource => {
-			const cleanTitle = resource.title.replace(/ /g, '').toLowerCase()
-			return {
-				...resource,
-				cleanTitle,
-				path: `${category.slug}?card=${cleanTitle}`,
-			}
-		}),
-	})),
-  // List of all tags, duplicates removed
-  tags: [...new Set(
-		resources
-			.map(resource => resource.resources).flat()
-			.map(resource => resource.tags).flat()
-	)],
+	resources: transformToResources(categories),
+	tags: getAllTags(categories),
 })
 
 export const getters = {
-	tags: state => state.tags,
-	resources: state => state.resources,
-	findResources: state => title => {
-		return Object.assign(state.resources.find(resource => resource.title.toLowerCase() === title.toLowerCase()))
+	tags: R.prop('tags'),
+	resources: R.prop('resources'),
+	findCategory: state => categoryTitle => {
+		// equalsCategoryTitle :: Category -> Bool
+		const equalsCategoryTitle = R.compose(
+			R.equals(cleanString(categoryTitle)), cleanString, R.prop('title')
+		)
+		// findCategory :: [Category] -> Category
+		const findCategory = R.find(equalsCategoryTitle)
+		return findCategory(state.resources)
+	},
+	findByName: state => names => {
+		const cleaned = R.map(cleanString, names)
+
+		// [Resource] -> [Resource]
+		const appearsInResource = R.filter(({ cleanTitle, url, desc }) => 
+			partiallyIncludesElOf([cleanTitle, url, desc], cleaned)
+		)
+		// [Category] -> [Resource]
+		const getDesiredResources = R.compose(appearsInResource, getAllResources)
+		return getDesiredResources(state.resources)
 	},
 	findByTags: state => tags => {
-		const flat = state.resources.map(category => category.resources).flat()
-		return flat.filter(resource => resource.tags && includesElOf(resource.tags, tags)) 
+		const cleaned = R.map(cleanString, tags)
+
+		// containsTags :: [Resource] -> [Resource]
+		const containsTags = R.filter(tagsNotEmpty)
+		// includesDesiredTags :: Resource -> Bool
+		const includesDesiredTags = R.compose(includesElOf(cleaned), R.prop('tags'))
+		// findResourcesByTag :: [Resource] -> [Resource]
+		const findResourcesByTag = R.filter(includesDesiredTags)
+		// getDesiredResources :: [Category] -> [Resource]
+		const getDesiredResources = R.compose(findResourcesByTag, containsTags, getAllResources)
+
+		return getDesiredResources(state.resources)
+	},
+	findBySearchInputs: (_, getters) => (keywords = [], tags = []) => {
+		const foundByKeywords = getters.findByName(keywords)
+		const foundByTags = getters.findByTags(tags)
+		const uniqueResources = foundByTags.filter(x => !foundByKeywords.some(y => equalResources(x, y)))
+		return uniqueResources.concat(foundByKeywords)
 	},
 	sortByTitle: (_, getters) => title => {
-		const category = getters.findResources(title)
+		const category = getters.findCategory(title)
 		const clone = [...category.resources]
 		return {
 			...category,
@@ -78,3 +77,7 @@ const compareTitles = (x, y) => {
 		return 0
 	}
 }
+
+const equalResources = (a, b) => 
+	a.title === b.title &&
+	a.cleanTitle == b.cleanTitle
