@@ -3,26 +3,24 @@
     transition(name="fade-title" @after-enter="afterEnter")
       h1(v-if="showTitle") Search
     transition(name="fade-card")
-      .cards(v-if="areCardsVisible && showCards")
-        template(v-if="resources.length")
-          template(v-for='resource in resources' )
-            Card(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
-        p(v-else) No results
-    transition(name="fade-card")
-      table(v-if="!areCardsVisible && showCards")
-        template(v-if="resources.length")
-          template(v-for='resource in resources' )
-            TableRow(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
+      div(showCards)
+        component(
+          v-if="resources.length"
+          :is="areCardsVisible ? 'CardsView' : 'TableView'"
+          :createCopyUrl="createCopyUrl"
+          :activeCard="activeCard"
+          :resources="resources"
+        )
         p(v-else) No results
 </template>
 
 <script>
-import Card from '../components/Card'
-import TableRow from '../components/TableRow'
+import CardsView from '../components/CardsView'
+import TableView from '../components/TableView'
 import * as R from 'ramda'
 
 export default {
-  components: { Card, TableRow },
+  components: { CardsView, TableView },
   data() {
     return {
       activeCard: '',

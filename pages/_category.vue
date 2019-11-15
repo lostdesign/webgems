@@ -4,7 +4,12 @@
       h1(v-if="showTitle") {{ category.title }}
     transition(name="fade-card")
       div(v-if="showCards")
-        <component :is="areCardsVisible ? 'CardsView' : 'TableView'" :category="category" :createCopyUrl="createCopyUrl" :activeCard='activeCard'></component>
+        component(
+          :is="areCardsVisible ? 'CardsView' : 'TableView'"
+          :resources="category.resources"
+          :createCopyUrl="createCopyUrl"
+          :activeCard='activeCard'
+        )
 </template>
 
 <script>
