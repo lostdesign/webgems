@@ -3,21 +3,16 @@
     transition(name="fade-title" @after-enter="afterEnter")
       h1(v-if="showTitle") {{ category.title }}
     transition(name="fade-card")
-      .cards(v-if="areCardsVisible && showCards")
-        template(v-for='resource in category.resources' )
-          Card(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
-    transition(name="fade-card")
-      table(v-if="!areCardsVisible && showCards")
-        template(v-for='resource in category.resources' )
-          TableRow(:resource='resource' :key='resource.title' :createCopyUrl="createCopyUrl" :isActive='activeCard === resource.cleanTitle')
+      div(v-if="showCards")
+        <component :is="areCardsVisible ? 'CardsView' : 'TableView'" :category="category" :createCopyUrl="createCopyUrl" :activeCard='activeCard'></component>
 </template>
 
 <script>
-import Card from '../components/Card'
-import TableRow from '../components/TableRow'
+import CardsView from '../components/CardsView'
+import TableView from '../components/TableView'
 
 export default {
-  components: { Card, TableRow },
+  components: { CardsView, TableView },
   data() {
     return {
       categoryRouteTitle: this.$route.params.category,
