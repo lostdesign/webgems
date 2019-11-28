@@ -1,3 +1,5 @@
 {
-  "editor.formatOnSave": false
+  "editor.formatOnSave": false,
+  "vue-i18n-ally.localesPaths": "locales",
+  "i18n-ally.localesPaths": "locales"
 }
