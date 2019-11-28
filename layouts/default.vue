@@ -186,6 +186,7 @@ h1 {
     grid-template-areas:
       'logo'
       'sidebar'
+      'search'
       'content';
   }
   hr {
