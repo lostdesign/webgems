@@ -46,10 +46,18 @@ export default {
   display: grid;
   grid-template-columns: 1fr;
   font-size: 14px;
+  align-items: center;
 
   a {
     padding: 0.5rem 1rem 0.5rem 1rem;
     font-weight: 600;
+    transition-duration: 0.2s;
+    transition-property: background-color,color;
+    &:hover, &.nuxt-link-exact-active {
+      background-color: #08e5ff;
+      color: #000;
+      text-decoration: none;
+    }
   }
   div {
     cursor: pointer;
@@ -61,12 +69,11 @@ export default {
     border: 1px;
     border-color: #08e5ff;
     border-style: solid;
-    border-radius: 0.25rem;
     overflow: hidden;
     margin: 1rem auto;
   }
   .viewToggle {
-    padding: 0 0.2rem;
+    padding: .2rem.2rem;
     color: #008190;
   }
   .active {
@@ -75,11 +82,11 @@ export default {
   }
   hr {
     width: 80%;
-    background-color: #08e5ff;
+    border-color: #08e5ff;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .sidebar {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));

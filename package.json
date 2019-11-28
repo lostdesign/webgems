@@ -10,28 +10,39 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "test": "jest"
   },
   "dependencies": {
     "cross-env": "^5.2.0",
     "nuxt": "^2.4.0",
     "nuxt-clipboard2": "^0.2.1",
-    "vue-i18n": "^8.11.2"
+    "vue-i18n": "^8.11.2",
+    "ramda": "^0.26.1",
+    "vue-matomo": "^3.12.0-5"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@vue/test-utils": "^1.0.0-beta.29",
     "autoprefixer": "^8.6.4",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
     "eslint": "^6.5.1",
     "eslint-config-prettier": "^6.3.0",
     "eslint-loader": "^3.0.2",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.2.3",
+    "jest": "^24.9.0",
+    "jest-serializer-vue": "^2.0.2",
     "node-sass": "^4.12.0",
     "nodemon": "^1.18.9",
     "prettier": "^1.18.2",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^7.1.0",
-    "tailwindcss": "^0.7.0"
+    "tailwindcss": "^0.7.0",
+    "vue-jest": "^3.0.5"
   }
 }
