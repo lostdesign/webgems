@@ -2,6 +2,7 @@
   .layout
     Github
     Logo
+    Search
     Sidebar
     no-ssr
       template(v-if="showNotice")
@@ -118,7 +119,7 @@ h1 {
   grid-template-columns: fit-content(200px) auto;
   grid-gap: 3rem;
   grid-template-areas:
-    'logo .'
+    'logo search'
     'sidebar content';
   max-width: 1200px;
   margin: 0 auto;
@@ -176,7 +177,7 @@ h1 {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .layout {
     display: grid;
     grid-template-columns: auto;
