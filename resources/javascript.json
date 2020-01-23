@@ -109,6 +109,12 @@
       "desc": "A curated list of JavaScript questions from basic to advanced to either refresh your knowledge or prepare for job interviews. Updated weekly with new questions and available in several languages.",
       "url": "https://github.com/lydiahallie/javascript-questions",
       "tags": ["email", "solutions", "detailed"]
-    }
+    },
+     {
+      "title": "React Tutorial",
+      "desc": "Learn React in an interactive environment. Understand how React works not just how to build with React.",
+      "url": "https://react-tutorial.app/",
+      "tags": ["react", "flashcards", "challenges", "fundamentals"]
+    },
   ]
 }
