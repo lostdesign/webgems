@@ -48,7 +48,7 @@ export default {
           keywords: keywords && R.split(',', keywords),
           tags: tags && R.split(',', tags),
         }
-      }, 500)
+      }, 150)
     },
     searchInput(searchInput) {
       this.resources = this.$store.getters['data/findBySearchInputs'](searchInput.keywords, searchInput.tags)
