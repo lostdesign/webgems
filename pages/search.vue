@@ -56,6 +56,13 @@ export default {
   },
   mounted() {
     this.showTitle = true
+
+    const keywords = this.$route.query.keywords
+    const tags = this.$route.query.tags
+    this.searchInput = {
+      keywords: keywords && R.split(',', keywords),
+      tags: tags && R.split(',', tags),
+    }
   },
   methods: {
     async createCopyUrl(resource) {

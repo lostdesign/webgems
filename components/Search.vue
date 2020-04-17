@@ -32,11 +32,20 @@ export default {
       const searchParams = new URLSearchParams()
       if (isNotEmpty(titles))
         searchParams.append('keywords', titles)
-      if (isNotEmpty(tags))  
+      if (isNotEmpty(tags))
         searchParams.append('tags', R.map(this.removeFirstChar, tags))
-      
+
       this.$router.push(this.searchPath + '?' + searchParams.toString())
     },
+  },
+  mounted() {
+    let keywords = this.$route.query.keywords || ''
+    keywords = keywords.split(',').join(' ')
+
+    let tags = this.$route.query.tags || ''
+    tags = R.filter(this.isTag, tags.split(',')).map(tag => `#${tag}`).join(' ')
+
+    this.searchInput = `${tags} ${keywords}`.trim()
   },
 }
 </script>
