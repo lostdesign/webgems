@@ -41,14 +41,19 @@ export default {
   watch: {
     $route(updatedChanges) {
       clearTimeout(this.debounceID)
-      this.debounceID = setTimeout(() => {
+      const updateSearch = () => {
         const keywords = updatedChanges.query.keywords
         const tags = updatedChanges.query.tags
         this.searchInput = {
           keywords: keywords && R.split(',', keywords),
           tags: tags && R.split(',', tags),
         }
-      }, 500)
+      }
+
+      if (updatedChanges.query.enter !== 'true')
+        this.debounceID = setTimeout(updateSearch, 300)
+      else
+        updateSearch()
     },
     searchInput(searchInput) {
       this.resources = this.$store.getters['data/findBySearchInputs'](searchInput.keywords, searchInput.tags)
@@ -56,6 +61,13 @@ export default {
   },
   mounted() {
     this.showTitle = true
+
+    const keywords = this.$route.query.keywords
+    const tags = this.$route.query.tags
+    this.searchInput = {
+      keywords: keywords && R.split(',', keywords),
+      tags: tags && R.split(',', tags),
+    }
   },
   methods: {
     async createCopyUrl(resource) {
