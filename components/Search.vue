@@ -1,5 +1,5 @@
 <template lang="pug">
-  input.search(v-model="searchInput" type="text" placeholder="Search")
+  input.search(v-model="searchInput" @keydown.enter="onEnter" type="text" placeholder="Search")
 </template>
 
 <script>
@@ -22,6 +22,10 @@ export default {
       R.join(''),
       R.adjust(0, () => '')
     ),
+    onEnter() {
+      const searchParams = new URLSearchParams({ ...this.$route.query, enter: true })
+      this.$router.push(this.searchPath + '?' + searchParams.toString())
+    },
   },
   watch: {
     searchInput(input) {
