@@ -62,10 +62,6 @@ export default {
 
   plugins: [
     '~/plugins/i18n.js',
-    {
-      src: '~/plugins/vue-matomo.js',
-      ssr: false,
-    },
   ],
   /*
   ** Nuxt.js modules

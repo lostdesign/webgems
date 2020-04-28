@@ -1,5 +1,5 @@
 <template lang="pug">
-  input.search(v-model="searchInput" type="text" placeholder="Search")
+  input.search(v-model="searchInput" @keydown.enter="onEnter" type="text" placeholder="Search")
 </template>
 
 <script>
@@ -13,16 +13,6 @@ export default {
       searchPath: '/search',
     }
   },
-  methods: {
-    // isTag :: String -> Bool
-    isTag: R.startsWith('#'),
-
-    // removeFirstChar :: String -> String
-    removeFirstChar: R.compose(
-      R.join(''),
-      R.adjust(0, () => '')
-    ),
-  },
   watch: {
     searchInput(input) {
       const words = R.filter(isNotEmpty, R.split(' ', input))
@@ -32,9 +22,32 @@ export default {
       const searchParams = new URLSearchParams()
       if (isNotEmpty(titles))
         searchParams.append('keywords', titles)
-      if (isNotEmpty(tags))  
+      if (isNotEmpty(tags))
         searchParams.append('tags', R.map(this.removeFirstChar, tags))
-      
+
+      this.$router.push(this.searchPath + '?' + searchParams.toString())
+    },
+  },
+  mounted() {
+    let keywords = this.$route.query.keywords || ''
+    keywords = keywords.split(',').join(' ')
+
+    let tags = this.$route.query.tags || ''
+    tags = R.filter(this.isTag, tags.split(',')).map(tag => `#${tag}`).join(' ')
+
+    this.searchInput = `${tags} ${keywords}`.trim()
+  },
+  methods: {
+    // isTag :: String -> Bool
+    isTag: R.startsWith('#'),
+
+    // removeFirstChar :: String -> String
+    removeFirstChar: R.compose(
+      R.join(''),
+      R.adjust(0, () => ''),
+    ),
+    onEnter() {
+      const searchParams = new URLSearchParams({ ...this.$route.query, enter: true })
       this.$router.push(this.searchPath + '?' + searchParams.toString())
     },
   },
