@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  h1 Imprint
+  h1 Legal Notice
   p Webgems.io is a project of&nbsp;
     a.highlighted(href="https://lost.design", title="Visit lost.design") www.lost.design
 

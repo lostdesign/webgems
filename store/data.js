@@ -21,7 +21,7 @@ export const getters = {
 	findCategory: state => categoryTitle => {
 		// equalsCategoryTitle :: Category -> Bool
 		const equalsCategoryTitle = R.compose(
-			R.equals(cleanString(categoryTitle)), cleanString, R.prop('title')
+			R.equals(cleanString(categoryTitle)), cleanString, R.prop('title'),
 		)
 		// findCategory :: [Category] -> Category
 		const findCategory = R.find(equalsCategoryTitle)
@@ -31,8 +31,8 @@ export const getters = {
 		const cleaned = R.map(cleanString, names)
 
 		// [Resource] -> [Resource]
-		const appearsInResource = R.filter(({ cleanTitle, url, desc }) => 
-			partiallyIncludesElOf([cleanTitle, url, desc], cleaned)
+		const appearsInResource = R.filter(({ cleanTitle, url, desc }) =>
+			partiallyIncludesElOf([cleanTitle, url, desc], cleaned),
 		)
 		// [Category] -> [Resource]
 		const getDesiredResources = R.compose(appearsInResource, getAllResources)
@@ -78,6 +78,6 @@ const compareTitles = (x, y) => {
 	}
 }
 
-const equalResources = (a, b) => 
+const equalResources = (a, b) =>
 	a.title === b.title &&
 	a.cleanTitle == b.cleanTitle

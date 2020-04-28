@@ -13,20 +13,6 @@ export default {
       searchPath: '/search',
     }
   },
-  methods: {
-    // isTag :: String -> Bool
-    isTag: R.startsWith('#'),
-
-    // removeFirstChar :: String -> String
-    removeFirstChar: R.compose(
-      R.join(''),
-      R.adjust(0, () => '')
-    ),
-    onEnter() {
-      const searchParams = new URLSearchParams({ ...this.$route.query, enter: true })
-      this.$router.push(this.searchPath + '?' + searchParams.toString())
-    },
-  },
   watch: {
     searchInput(input) {
       const words = R.filter(isNotEmpty, R.split(' ', input))
@@ -50,6 +36,20 @@ export default {
     tags = R.filter(this.isTag, tags.split(',')).map(tag => `#${tag}`).join(' ')
 
     this.searchInput = `${tags} ${keywords}`.trim()
+  },
+  methods: {
+    // isTag :: String -> Bool
+    isTag: R.startsWith('#'),
+
+    // removeFirstChar :: String -> String
+    removeFirstChar: R.compose(
+      R.join(''),
+      R.adjust(0, () => ''),
+    ),
+    onEnter() {
+      const searchParams = new URLSearchParams({ ...this.$route.query, enter: true })
+      this.$router.push(this.searchPath + '?' + searchParams.toString())
+    },
   },
 }
 </script>
