@@ -139,12 +139,6 @@
       "desc": "This CSS clip-path maker helps you understand the clip-path property and all the cool things you can do with it.",
       "url": "https://bennettfeely.com/clippy/",
       "tags": ["interactive", "visual", "shapes"]
-    },
-    {
-      "title": "Interneting is hard",
-      "desc": "Friendly web development tutorials for complete beginners in HTML and CSS",
-      "url": "https://www.internetingishard.com/",
-      "tags": ["html", "semantic", "css", "typography"]
     }
   ]
 }

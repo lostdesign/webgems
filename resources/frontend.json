@@ -55,6 +55,12 @@
       "desc": "I write tutorials for JavaScript and Web Developers.",
       "url": "https://flaviocopes.com/",
       "tags": ["mentor", "books", "tutorial"]
+    },
+    {
+      "title": "Interneting is hard",
+      "desc": "Friendly web development tutorials for complete beginners in HTML and CSS",
+      "url": "https://www.internetingishard.com/",
+      "tags": ["html", "semantic", "css", "typography"]
     }
   ]
 }
