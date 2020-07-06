@@ -37,6 +37,12 @@
       "desc": "Browse trending github repos written in your favorite language with this high performance progressive web application",
       "url": "https://trends.now.sh/",
       "tags": ["aggregator", "github", "search", "ratings"]
+    },
+    {
+      "title": "Interneting is hard",
+      "desc": "Friendly web development tutorials for complete beginners in HTML and CSS",
+      "url": "https://www.internetingishard.com/",
+      "tags": ["html", "semantic", "css", "typography"]
     }
   ]
 }
