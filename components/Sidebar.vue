@@ -6,10 +6,6 @@
         nuxt-link(:to='category.slug') {{ category.title }}
       hr
       nuxt-link(to='/legal-notice') Legal Notice
-      hr
-      div(class="toggleWrapper" @click="toggleCardsVisible")
-        div(class="viewToggle" :class="{active: areCardsVisible}") Cards
-        div(class="viewToggle" :class="{active: !areCardsVisible}") Table
 </template>
 
 <script>
