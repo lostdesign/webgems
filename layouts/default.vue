@@ -4,14 +4,7 @@
     Logo
     Search
     Sidebar
-    no-ssr
-      template(v-if="showNotice")
-        .cookie
-          p This site uses cookies, please read our&nbsp;
-            nuxt-link.highlighted(to="privacy-policy") Privacy policy.
-            button.highlighted(@click.preventDefault="hideCookieNotice" type="button") X
     nuxt.content
-
 </template>
 
 <script>
@@ -43,27 +36,6 @@ export default {
       prodBaseUrl: 'https://webgems.io/',
       showNotice: false,
     }
-  },
-  beforeMount() {
-    this.checkCookieNoticeHidden()
-  },
-  methods: {
-    hideCookieNotice() {
-      if(typeof(Storage) !== 'undefined'){
-        localStorage.setItem('cookieNoticeHidden', true)
-        this.showNotice = false
-      }
-    },
-    checkCookieNoticeHidden() {
-      if(typeof(Storage) !== 'undefined'){
-        let cookieNotice = localStorage.getItem('cookieNoticeHidden')
-        if(cookieNotice) {
-          this.showNotice = false
-        } else {
-          this.showNotice = true
-        }
-      }
-    },
   },
 }
 </script>
