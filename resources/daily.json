@@ -43,6 +43,12 @@
       "desc": "The five best design links, every day.",
       "url": "https://sidebar.io/",
       "tags": ["design", "reading", "aggregator"]
+    },
+    {
+      "title": "daily.dev",
+      "desc": "Daily delivers the best programming news every new tab. It is a browser extension that boosts your professional growth.",
+      "url": "https://daily.dev/",
+      "tags": ["development", "reading", "aggregator", "discover"]
     }
   ]
 }
