@@ -67,6 +67,12 @@
       "desc": "Take a whirlwind tour of your next favorite language. Community-driven!",
       "url": "https://learnxinyminutes.com/",
       "tags": ["languages", "quick", "resources", "basics"]
+    },
+    {
+      "title": "webgems.io",
+      "desc": "It's a great collection for learning materials for all sorts of programming topics.",
+      "url": "https://webgems.io",
+      "tags": ["quick", "resources", "basics", "search", "aggregator"]
     }
   ]
 }
