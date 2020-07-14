@@ -40,9 +40,15 @@
     },
     {
       "title": "YDKJS",
-      "desc": "This is a free series of books diving deep into the core mechanisms of the JavaScript language. The first edition of the series is now complete.",
+      "desc": "This is a free series of books diving deep into the core mechanisms of the JavaScript language. The first edition of the series is now complete, and the first two chapters of the second edition have already been published.",
       "url": "https://github.com/getify/You-Dont-Know-JS",
       "tags": ["online", "comprehensive", "courses"]
+    },
+    {
+      "title": "Deep JavaScript",
+      "desc": "A high-end book by Dr. Axel Rauschmayer which answers some of the questions that experienced JS developers might still encounter through their career.",
+      "url": "https://exploringjs.com/deep-js/",
+      "tags": ["book", "basics", "advanced"]
     },
     {
       "title": "Eloquent Javascript 3rd Edition",
@@ -91,6 +97,12 @@
       "desc": "The easiest way to learn & practice modern JavaScript",
       "url": "https://learnjavascript.online/",
       "tags": ["flashcards", "challenges", "fundamentals"]
+    },
+    {
+      "title": "Loupe",
+      "desc": "Loupe is a little visualisation to help you understand how JavaScript's call stack/event loop/callback queue interact with each other.",
+      "url": "http://latentflip.com/loupe/",
+      "tags": ["event", "queue", "visualizer"]
     },
     {
       "title": "Code to go",
