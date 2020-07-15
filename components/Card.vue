@@ -72,6 +72,7 @@ export default {
     font-size: 16px;
     font-weight: 900;
     margin: 0;
+    margin-left: 0;
   }
 
   &--description {
