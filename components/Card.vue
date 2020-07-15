@@ -2,7 +2,7 @@
   .card(:class="{ cardActive: isActive }")
     .card--meta
       img.card--favicon(:src="'https://www.google.com/s2/favicons?domain=' + resource.url" aria-hidden="true")
-      p.card--title(:href="resource.url" :target='resource.title' rel='noreferrer') {{resource.title}}
+      a.card--title(:href="resource.url" :target='resource.title' rel='noreferrer') {{resource.title}}
     p.card--description {{resource.desc}}
     .card--links
       a.card--reference(@click='createCopyUrl(resource)') Copy
