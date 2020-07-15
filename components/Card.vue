@@ -68,11 +68,10 @@ export default {
     }
   }
 
-  &--title {
-    font-size: 16px;
+  &--title { 
+    font-size: 16px !important;
     font-weight: 900;
-    margin: 0;
-    margin-left: 0;
+    margin: 0 !important;
   }
 
   &--description {
