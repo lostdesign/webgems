@@ -70,7 +70,7 @@ export default {
 
   &--title { 
     font-size: 16px !important;
-    font-weight: 900;
+    font-weight: 600;
     margin: 0 !important;
   }
 
