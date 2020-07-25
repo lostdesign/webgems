@@ -73,11 +73,11 @@
       "desc": "It's a great collection for learning materials for all sorts of programming topics.",
       "url": "https://webgems.io",
       "tags": ["quick", "resources", "basics", "search", "aggregator"]
-    }
+    },
     {
       "title": "Codesignal",
       "desc": "Online programming tournaments to practice your skills. Play with random people, your friends, or in the singleplayer arcade mode.",
-      "url": " https://codesignal.com/developers/ ",
+      "url": "https://codesignal.com/developers/",
       "tags": ["game", "practice", "multiplayer"]
     }
   ]
