@@ -74,5 +74,11 @@
       "url": "https://webgems.io",
       "tags": ["quick", "resources", "basics", "search", "aggregator"]
     }
+    {
+      "title": "Codesignal",
+      "desc": "Online programming tournaments to practice your skills. Play with random people, your friends, or in the singleplayer arcade mode.",
+      "url": "https://developers.google.com/web/",
+      "tags": ["tools", "videos", "fundamentals", "web", "chrome"]
+    }
   ]
 }
