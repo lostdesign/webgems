@@ -7,3 +7,4 @@ These are lovely people who have helped this project:
 - [jacobparis](https://github.com/jacobparis) : Team Devcord
   * twitter: @jacobmparis
 - [JonasPardon](https://github.com/JonasPardon)
+- [AadityaSahay](https://github.com/AadityaSahay) : :crab:
