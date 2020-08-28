@@ -2,7 +2,7 @@
   "name": "webgems.io",
   "version": "1.0.0",
   "description": "Webgems is a place for devs and designers to find useful resources all at one place. It has server resources on HTML, CSS, Javascript, Design, Icons,Accessibility, PHP, Podcasts, Python, Ruby, Servers and more.",
-  "author": "lost.design",
+  "author": "lost.design <info@lost.design>",
   "private": true,
   "scripts": {
     "dev": "nuxt",
