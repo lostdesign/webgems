@@ -1,0 +1,28 @@
+{
+  "name": "webgems.io",
+  "version": "1.0.0",
+  "description": "Webgems is a place for devs and designers to find useful resources all at one place. It has server resources on HTML, CSS, Javascript, Design, Icons,Accessibility, PHP, Podcasts, Python, Ruby, Servers and more.",
+  "author": "lost.design",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.7.0",
+    "nuxt": "^2.14.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^2.1.0",
+    "@vue/test-utils": "^1.0.3",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^26.1.0",
+    "jest": "^26.1.0",
+    "pug": "^3.0.0",
+    "pug-plain-loader": "^1.0.0",
+    "vue-jest": "^3.0.4"
+  }
+}
