@@ -1,3 +1,95 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html {
+  color: theme('colors.gray.900');
+  font-family: theme('fontFamily.sans');
+  font-weight: theme('fontWeight.normal');
+}
+
+body {
+  background: theme('colors.white');
+  width: 100%;
+  height: 100%;
+}
+
+::selection {
+  background: rgb(0 0 0 / 15%);
+  text-shadow: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: theme('fontFamily.serif');
+  font-weight: theme('fontWeight.bold');
+  margin-bottom: theme('spacing.2');
+}
+
+h1,
+.h1 {
+  font-size: 2.5rem;
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.75rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.5rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+  font-size: 1rem;
+}
+
+a {
+  color: theme('colors.blue.500');
+  text-decoration: underline;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  transition: color ease 150ms;
+}
+
+a:hover {
+  color: theme('colors.blue.600');
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):hover,
+a:not([href]):not([tabindex]):focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+
+hr {
+  border-color: theme('colors.gray.300');
+  margin-top: theme('spacing.4');
+  margin-bottom: theme('spacing.4');
+}

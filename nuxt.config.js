@@ -45,15 +45,22 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
+    '@nuxtjs/svg',
     '@nuxtjs/tailwindcss',
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
+    'nuxt-webfontloader',
     '@nuxt/content',
   ],
+
+  webfontloader: {
+    google: {
+      families: ['Inter:400,500,700', 'Eczar:500,600,700']
+    }
+  },
 
   content: {
     // @nuxt/content options

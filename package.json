@@ -13,9 +13,11 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.7.0",
-    "nuxt": "^2.14.0"
+    "nuxt": "^2.14.0",
+    "nuxt-webfontloader": "^1.1.0"
   },
   "devDependencies": {
+    "@nuxtjs/svg": "^0.1.12",
     "@nuxtjs/tailwindcss": "^2.1.0",
     "@vue/test-utils": "^1.0.3",
     "babel-core": "7.0.0-bridge.0",
