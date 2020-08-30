@@ -61,16 +61,16 @@ h6,
 }
 
 a {
-  color: theme('colors.blue.500');
-  text-decoration: underline;
+  color: theme('colors.themelightblue.default');
+  text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   transition: color ease 150ms;
 }
 
 a:hover {
-  color: theme('colors.blue.600');
-  text-decoration: none;
+  color: theme('colors.themelightblue.400');
+  text-decoration: underline;
 }
 
 a:not([href]):not([tabindex]) {

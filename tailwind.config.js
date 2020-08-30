@@ -27,7 +27,20 @@ module.exports = {
       mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
     },
     extend: {
+      opacity: {
+        '95': '0.95'
+      },
+      borderRadius: {
+        xl: "1rem",
+      },
+      zIndex: {
+        '-1': '-1',
+      },
       colors: {
+        themelightblue: {
+          '400': '#2083e4',
+          default: '#1976D2',
+        },
         themeblue: {
           '200': '#0F4092',
           '300': '#003690',
@@ -37,10 +50,11 @@ module.exports = {
           '600': '#001E52',
           '700': '#001436'
         },
+        themewhite: {
+          default: '#E5EFFF',
+          '500': '#73A7FE',
+        },
       },
-      borderRadius: {
-        xl: "1rem",
-      }
     }
   },
   variants: {
