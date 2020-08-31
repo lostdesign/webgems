@@ -14,7 +14,8 @@
   "dependencies": {
     "@nuxt/content": "^1.7.0",
     "nuxt": "^2.14.0",
-    "nuxt-webfontloader": "^1.1.0"
+    "nuxt-webfontloader": "^1.1.0",
+    "vue-masonry-css": "^1.0.3"
   },
   "devDependencies": {
     "@nuxtjs/svg": "^0.1.12",

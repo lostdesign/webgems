@@ -27,14 +27,21 @@ module.exports = {
       mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
     },
     extend: {
+      spacing: {
+        'aside': '21rem',
+      },
       opacity: {
         '95': '0.95'
       },
       borderRadius: {
         xl: "1rem",
+        card: '0.8rem'
       },
       zIndex: {
         '-1': '-1',
+      },
+      boxShadow: {
+        'card': '0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04)',
       },
       colors: {
         themelightblue: {
