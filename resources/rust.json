@@ -1,0 +1,114 @@
+{
+    "title": "Rust",
+    "slug": "/rust",
+    "resources": [
+        {
+            "title": "The Rust Book",
+            "desc": "The Rust Programming Language book will give you an overview of the language from first principles.",
+            "url": "https://doc.rust-lang.org/book/",
+            "tags": ["official", "reference", "guide"]
+        },
+        {
+            "title": "Rustlings",
+            "desc": "Small exercises to get you used to reading and writing Rust code.",
+            "url": "https://github.com/rust-lang/rustlings/",
+            "tags": ["official", "excercises", "guide"]
+        },
+        {
+            "title": "Rust Playground",
+            "desc": "An online playground to try out rust.",
+            "url": "https://play.rust-lang.org/",
+            "tags": ["official", "playground"]
+        },
+        {
+            "title": "Are we web yet?",
+            "desc": "List of resources for web development in Rust",
+            "url": "https://www.arewewebyet.org/",
+            "tags": ["official", "web"]
+        },
+        {
+            "title": "Rust and WebAssembly",
+            "desc": "A small book that describes how to use Rust and WebAssembly together.",
+            "url": "https://rustwasm.github.io/docs/book/",
+            "tags": ["official", "web", "webassembly"]
+        },
+        {
+            "title": "Rocket",
+            "desc": "Rocket is a web framework for Rust that makes it simple to write fast, secure web applications without sacrificing flexibility, usability, or type safety.",
+            "url": "https://rocket.rs/v0.4/guide/",
+            "tags": ["framework", "web", "application"]
+        },
+        {
+            "title": "Actix",
+            "desc": "Rust's powerful actor system and most fun web framework",
+            "url": "https://actix.rs/",
+            "tags": ["framework", "web", "application"]
+        },
+        {
+            "title": "Rust 101",
+            "desc": "A small, interactive and hands-on tutorial into the rust language.",
+            "url": "https://www.ralfj.de/projects/rust-101/main.html",
+            "tags": ["guide", "tutorial", "basics"]
+        },
+        {
+            "title": "Warp",
+            "desc": "A super-easy, composable, web server framework for warp speeds.",
+            "url": "https://github.com/seanmonstar/warp",
+            "tags": ["web", "framework", "application"]
+        },
+        {
+            "title": "Rust by Example",
+            "desc": "Rust by Example (RBE) is a collection of runnable examples that illustrate various Rust concepts and standard libraries.",
+            "url": "https://doc.rust-lang.org/stable/rust-by-example/index.html",
+            "tags": ["official", "guide", "tutorial"]
+        },
+        {
+            "title": "Yew",
+            "desc": "A modern Rust framework for creating multi-threaded front-end web apps with WebAssembly.",
+            "url": "https://yew.rs/docs/en/intro/",
+            "tags": ["web", "webassembly", "frontend"]
+        },
+        {
+            "title": "Seed",
+            "desc": "Rust framework for creating fast and reliable web apps",
+            "url": "https://seed-rs.org/",
+            "tags": ["web", "webassembly", "frontend"]
+        },
+        {
+            "title": "Rust blog",
+            "desc": "This is the main Rust blog. The core team uses this blog to announce big developments in the world of Rust.",
+            "url": "https://blog.rust-lang.org/",
+            "tags": ["blog", "official", "history", "features"]
+        },
+        {
+            "title": "The Embedded Rust Book",
+            "desc": "An introductory book about using the Rust Programming Language on \"Bare Metal\" embedded systems, such as Microcontrollers.",
+            "url": "https://rust-embedded.github.io/book/",
+            "tags": ["microcontrollers", "embedded", "guide"]
+        },
+        {
+            "title": "Rusoto",
+            "desc": "An AWS SDK for rust.",
+            "url": "https://www.rusoto.org/",
+            "tags": ["aws", "servers", "infrastructure"]
+        },
+        {
+            "title": "Tokio",
+            "desc": "An asynchronous runtime for the Rust programming language. It provides the building blocks needed for writing network applications.",
+            "url": "https://tokio.rs/",
+            "tags": ["networking", "async", "server"]
+        },
+        {
+            "title": "Juniper",
+            "desc": "Juniper is a GraphQL server library for Rust. Build type-safe and fast API servers with minimal boilerplate and configuration.",
+            "url": "https://graphql-rust.github.io/juniper/current/",
+            "tags": ["web", "application", "graphql", "api"]
+        },
+        {
+            "title": "Diesel",
+            "desc": "Diesel is a Safe, Extensible ORM and Query Builder for Rust",
+            "url": "https://diesel.rs/",
+            "tags": ["web", "database", "orm"]
+        }
+    ]
+  }
