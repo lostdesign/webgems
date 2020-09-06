@@ -27,7 +27,7 @@
                 div(class="flex -mx-3 md:-mx-4")
                   div(class="w-1/2 px-3 md:px-4")
                     button(
-                      class="block w-full bg-themeblue-600 rounded-card font-medium text-white text-xs md:text-sm hover:bg-opacity-95 focus:bg-opacity-95 focus:outline-none focus:shadow-outline leading-tight select-none align-middle whitespace-no-wrap px-3 md:px-4 xl:px-5 cursor-pointer"
+                      class="block w-full bg-themeblue-600 transform scale-100 hover:scale-97 transition-transform duration-75 ease-linear rounded-card font-medium text-white text-xs md:text-sm hover:bg-opacity-95 focus:bg-opacity-95 focus:outline-none focus:shadow-outline leading-tight select-none align-middle whitespace-no-wrap px-3 md:px-4 xl:px-5 cursor-pointer"
                     )
                       .flex.items-center.justify-center
                         .mr-2
@@ -36,7 +36,7 @@
                           span Copy
                   div(class="w-1/2 px-3 md:px-4")
                     a(
-                      class="block w-full bg-themeblue-600 rounded-card font-medium text-white hover:text-white focus:text-white no-underline hover:no-underline text-xs md:text-sm hover:bg-opacity-95 focus:bg-opacity-95 focus:outline-none focus:shadow-outline leading-tight select-none align-middle whitespace-no-wrap px-3 md:px-4 xl:px-5 cursor-pointer"
+                      class="block w-full bg-themeblue-600 transform scale-100 hover:scale-97 transition-transform duration-75 ease-linear rounded-card font-medium text-white hover:text-white focus:text-white no-underline hover:no-underline text-xs md:text-sm hover:bg-opacity-95 focus:bg-opacity-95 focus:outline-none focus:shadow-outline leading-tight select-none align-middle whitespace-no-wrap px-3 md:px-4 xl:px-5 cursor-pointer"
                       :href="gem.url"
                       rel='noreferrer'
                       target="_blank"

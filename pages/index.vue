@@ -12,13 +12,13 @@
           template(v-for="(topic, index) in topics")
             button(
               v-if="topic.special"
-              class="inline-block bg-white rounded-xl shadow-lg font-medium text-themeblue-200 text-xs md:text-sm lg:text-base hover:bg-opacity-95 focus:bg-opacity-95 border-2 border-white focus:outline-none focus:shadow-outline leading-tight select-none align-middle whitespace-no-wrap px-3 md:px-4 xl:px-5 py-2 cursor-pointer mr-4 md:mr-6 lg:mr-8 mb-4 md:mb-6 lg:mb-6 xl:mb-8 last:mr-0"
+              class="inline-block transform scale-100 hover:scale-95 transition-transform duration-75 ease-linear bg-white rounded-xl shadow-lg font-medium text-themeblue-200 text-xs md:text-sm lg:text-base hover:bg-opacity-95 focus:bg-opacity-95 border-2 border-white focus:outline-none focus:shadow-outline leading-tight select-none align-middle whitespace-no-wrap px-3 md:px-4 xl:px-5 py-2 cursor-pointer mr-4 md:mr-6 lg:mr-8 mb-4 md:mb-6 lg:mb-6 xl:mb-8 last:mr-0"
               :key="`button-${index}`"
               @click="$router.push({ path: topic.path })"
             ) {{ topic.label }}
             button(
               v-else
-              class="inline-block bg-themeblue-600 rounded-xl shadow-lg font-medium text-white text-xs md:text-sm lg:text-base hover:bg-opacity-75 focus:bg-opacity-75 border-2 border-themeblue-200 focus:outline-none focus:shadow-outline leading-tight select-none align-middle whitespace-no-wrap px-3 md:px-4 xl:px-5 py-2 cursor-pointer mr-4 md:mr-6 lg:mr-8 mb-4 md:mb-6 lg:mb-6 xl:mb-8 last:mr-0"
+              class="inline-block transform scale-100 hover:scale-95 transition-transform duration-75 ease-linear bg-themeblue-600 rounded-xl shadow-lg font-medium text-white text-xs md:text-sm lg:text-base hover:bg-opacity-75 focus:bg-opacity-75 border-2 border-themeblue-200 focus:outline-none focus:shadow-outline leading-tight select-none align-middle whitespace-no-wrap px-3 md:px-4 xl:px-5 py-2 cursor-pointer mr-4 md:mr-6 lg:mr-8 mb-4 md:mb-6 lg:mb-6 xl:mb-8 last:mr-0"
               :key="`special-${index}`"
               @click="$router.push({ path: topic.path })"
             ) {{ topic.label }}
@@ -44,7 +44,7 @@
         h2(class="font-semibold text-white md:text-center lg:text-5xl xl:text-6xl md:mb-6") Fork us on GitHub
         div(class="md:text-center")
           a(
-            class="inline-block bg-themeblue-600 rounded-xl shadow-lg font-medium md:font-bold text-white hover:text-white focus:text-white hover:no-underline md:uppercase text-xs md:text-sm lg:text-base hover:bg-opacity-75 focus:bg-opacity-75 border-2 border-themeblue-200 focus:outline-none focus:shadow-outline leading-tight select-none align-middle whitespace-no-wrap px-3 md:px-4 lg:px-6 xl:px-8 py-2 lg:py-3 cursor-pointer mr-4 md:mr-6 lg:mr-8 mb-4 md:mb-6 lg:mb-6 xl:mb-8 last:mr-0"
+            class="inline-block transform scale-100 hover:scale-95 transition-transform duration-75 ease-linear bg-themeblue-600 rounded-xl shadow-lg font-medium md:font-bold text-white hover:text-white focus:text-white hover:no-underline md:uppercase text-xs md:text-sm lg:text-base hover:bg-opacity-75 focus:bg-opacity-75 border-2 border-themeblue-200 focus:outline-none focus:shadow-outline leading-tight select-none align-middle whitespace-no-wrap px-3 md:px-4 lg:px-6 xl:px-8 py-2 lg:py-3 cursor-pointer mr-4 md:mr-6 lg:mr-8 mb-4 md:mb-6 lg:mb-6 xl:mb-8 last:mr-0"
             href="https://github.com/webgems/webgems/blob/dev/CONTRIBUTING.md"
           )
             div.flex.items-center
@@ -52,7 +52,7 @@
                 span Post A webgem
               div
                 GitHub(class="hidden md:inline-block h-5 w-5 lg:h-6 lg:w-6 ml-2")
-          button(class="inline-block bg-themeblue-600 rounded-xl shadow-lg font-medium md:font-bold text-white md:uppercase text-xs md:text-sm lg:text-base hover:bg-opacity-75 focus:bg-opacity-75 border-2 border-themeblue-200 focus:outline-none focus:shadow-outline leading-tight select-none align-middle whitespace-no-wrap px-3 md:px-4 lg:px-6 xl:px-8 py-2 lg:py-3 cursor-pointer mr-4 md:mr-6 lg:mr-8 mb-4 md:mb-6 lg:mb-6 xl:mb-8 last:mr-0")
+          button(class="inline-block transform scale-100 hover:scale-95 transition-transform duration-75 ease-linear bg-themeblue-600 rounded-xl shadow-lg font-medium md:font-bold text-white md:uppercase text-xs md:text-sm lg:text-base hover:bg-opacity-75 focus:bg-opacity-75 border-2 border-themeblue-200 focus:outline-none focus:shadow-outline leading-tight select-none align-middle whitespace-no-wrap px-3 md:px-4 lg:px-6 xl:px-8 py-2 lg:py-3 cursor-pointer mr-4 md:mr-6 lg:mr-8 mb-4 md:mb-6 lg:mb-6 xl:mb-8 last:mr-0")
             .flex.items-center
               div
                 span Spread the words

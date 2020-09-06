@@ -33,6 +33,10 @@ module.exports = {
       opacity: {
         '95': '0.95'
       },
+      scale: {
+        '95': '0.95',
+        '97': '0.97',
+      },
       borderRadius: {
         xl: "1rem",
         card: '0.8rem'
