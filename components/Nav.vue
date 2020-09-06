@@ -4,9 +4,11 @@
       div(class="flex justify-end items-center")
         div(class="flex lg:hidden flex-col items-center mr-auto")
           div
-            Logo
+            nuxt-link(to="/")
+              Logo
           div
-            p(class="text-white font-serif font-medium lg:text-lg") webgems.io
+            nuxt-link(to="/" class="hover:no-underline")
+              p(class="text-white font-serif font-medium lg:text-lg") webgems.io
         div(class="hidden md:block mr-8")
           input(type="search" placeholder="Search" class="block w-full max-w-lg appearance-none bg-themeblue-400 lg:bg-white font-medium text-white lg:text-gray-600 leading-tight rounded-xl focus:outline-none lg:focus:shadow-outline border-2 lg:border border-solid border-themeblue-300 lg:border-gray-300 placeholder-white lg:placeholder-gray-600 py-2 px-6")
         div(class="mr-8 lg:mr-0")

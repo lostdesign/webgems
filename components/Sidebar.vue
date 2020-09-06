@@ -4,9 +4,11 @@
       div(class="flex justify-center items-center mb-8")
         div(class="flex flex-col items-center")
           div
-            Logo
+            nuxt-link(to="/")
+              Logo
           div
-            p(class="text-white font-serif font-medium lg:text-lg") webgems.io
+            nuxt-link(to="/" class="hover:no-underline")
+              p(class="text-white font-serif font-medium lg:text-lg") webgems.io
       div(class="flex flex-col justify-center items-center")
         div
           .mb-4
