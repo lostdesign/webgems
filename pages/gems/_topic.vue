@@ -15,19 +15,19 @@
           :gutter="32"
         )
           div(v-for="(gem, index) in gems" :key="index")
-            div(class="shadow-card mb-8" :class="index === gems.length - 1 ? 'is-active' : 'rounded-xl'")
+            div(class="shadow-card mb-8" :class="index === gems.length - 1 || index === 1 ? 'is-active' : 'rounded-xl'")
               div(class="rounded-xl bg-white p-6 md:p-8")
-                .flex.items-center.mb-4
+                .flex.items-start.mb-4
                   div
-                    img(class="mr-2" :src="'https://www.google.com/s2/favicons?domain=' + gem.url" aria-hidden="true")
+                    img(class="mr-2" style="margin-top: .4rem" :src="'https://www.google.com/s2/favicons?domain=' + gem.url" aria-hidden="true")
                   div
                     h2(class="font-sans text-lg mb-0") {{ gem.title }}
-                .mb-4
+                .mb-5
                   p {{ gem.desc }}
                 div(class="flex -mx-3 md:-mx-4")
                   div(class="w-1/2 px-3 md:px-4")
                     button(
-                      class="block w-full bg-themeblue-600 rounded-card font-medium text-white text-xs md:text-sm lg:text-base hover:bg-opacity-95 focus:bg-opacity-95 focus:outline-none focus:shadow-outline leading-tight select-none align-middle whitespace-no-wrap px-3 md:px-4 xl:px-5 cursor-pointer"
+                      class="block w-full bg-themeblue-600 rounded-card font-medium text-white text-xs md:text-sm hover:bg-opacity-95 focus:bg-opacity-95 focus:outline-none focus:shadow-outline leading-tight select-none align-middle whitespace-no-wrap px-3 md:px-4 xl:px-5 cursor-pointer"
                     )
                       .flex.items-center.justify-center
                         .mr-2
@@ -36,9 +36,10 @@
                           span Copy
                   div(class="w-1/2 px-3 md:px-4")
                     a(
-                      class="block w-full bg-themeblue-600 rounded-card font-medium text-white hover:text-white focus:text-white no-underline hover:no-underline text-xs md:text-sm lg:text-base hover:bg-opacity-95 focus:bg-opacity-95 focus:outline-none focus:shadow-outline leading-tight select-none align-middle whitespace-no-wrap px-3 md:px-4 xl:px-5 cursor-pointer"
+                      class="block w-full bg-themeblue-600 rounded-card font-medium text-white hover:text-white focus:text-white no-underline hover:no-underline text-xs md:text-sm hover:bg-opacity-95 focus:bg-opacity-95 focus:outline-none focus:shadow-outline leading-tight select-none align-middle whitespace-no-wrap px-3 md:px-4 xl:px-5 cursor-pointer"
                       :href="gem.url"
                       rel='noreferrer'
+                      target="_blank"
                     )
                       .flex.items-center.justify-center
                         .mr-2
@@ -215,7 +216,7 @@ export default {
   100%{ background-position:0% 50% }
 }
 button, a {
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 </style>
