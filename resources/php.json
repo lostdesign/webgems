@@ -67,6 +67,18 @@
       "desc": "134 Slides to help fix your code. Performance and testing are just one aspect of code, to really be successful your code needs to be readable, maintainable and generally easier to comprehend and work with.",
       "url": "https://www.slideshare.net/rdohms/your-code-sucks-lets-fix-it-15471808",
       "tags": ["slides", "readability", "rules"]
+    },
+    {
+      "title": "Treating PHP Delusions",
+      "desc": "This site is dedicated to PHP programming language and its proper use, with the focus on disproving various delusions and superstitions.",
+      "url": "https://phpdelusions.net",
+      "tags": ["mistakes", "delusions"]
+    },
+    {
+      "title": "PHP The Wrong Way",
+      "desc": "In the world of PHP programming, a set of trends are massively being propagated by some people (in their books and on websites) as “Modern PHP” while all other approaches are frowned upon as backward, stupid, or just plain wrong.",
+      "url": "https://phpthewrongway.com",
+      "tags": []
     }
   ]
 }
