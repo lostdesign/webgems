@@ -253,6 +253,12 @@
       "desc": "Customize and apply backgrounds fast SVGs enable full-screen hi-res visuals with a file-size near 5KB and are well-supported by all modern browsers. What's not to love?",
       "url": "https://www.svgbackgrounds.com",
       "tags": ["svg"]
+    },
+    {
+      "title": "Organic Blob Maker",
+      "desc": "Blobmaker is a free generative design tool made with 💕 by z creative labs, to help you quickly create random, unique, and organic-looking SVG shapes.",
+      "url": "https://www.blobmaker.app",
+      "tags": ["blob", "organic"]
     }
   ]
 }
