@@ -241,6 +241,18 @@
       "desc": "Generate colorpalettes with a live preview of how it could look like on a website.",
       "url": "http://colormind.io/",
       "tags": ["color", "palette", "sets", "templates"]
+    },
+    {
+      "title": "CSS Patterns",
+      "desc": "CSS only library to fill your empty background with beautiful patterns.",
+      "url": "https://bansal.io/pattern-css",
+      "tags": ["pattern", "css"]
+    },
+    {
+      "title": "SVG Backgrounds",
+      "desc": "Customize and apply backgrounds fast SVGs enable full-screen hi-res visuals with a file-size near 5KB and are well-supported by all modern browsers. What's not to love?",
+      "url": "https://www.svgbackgrounds.com",
+      "tags": ["svg"]
     }
   ]
 }
