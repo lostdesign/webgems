@@ -1,16 +1,17 @@
 <template lang="pug">
-  div
-    Navbar
-    main
+  .flex
+    Sidebar
+    div(class="w-full lg:w-10/12 xl:w-full")
+      Nav
       Nuxt
-    Footer
+      Footer
 </template>
 
 <script>
 export default {
   head: {
     bodyAttrs: {
-      class: 'bg-themeblue'
+      class: 'bg-gray-100'
     }
   }
 }
