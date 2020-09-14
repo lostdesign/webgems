@@ -23,14 +23,16 @@
               svg(class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg")
                 title Menu
                 path(d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z")
-    div(class="hidden lg:hidden bg-themeblue-600 mt-5" :class="[nav === true ? 'show' : '']")
+    div(class="hidden lg:hidden mt-5" :class="[nav === true ? 'show' : '']")
       div(class="container mx-auto px-4 lg:px-8")
-        ul.flex.flex-wrap.py-6
+        div(class="block md:hidden")
+          input(type="search" placeholder="Search" class="block w-full appearance-none bg-themeblue-400 lg:bg-white font-medium text-white lg:text-gray-600 leading-tight rounded-xl focus:outline-none lg:focus:shadow-outline border-2 lg:border border-solid border-themeblue-300 lg:border-gray-300 placeholder-white lg:placeholder-gray-600 py-2 px-6")
+        ul.flex.flex-wrap.pb-6.pt-3
           li(
-            class="w-full md:w-1/3"
+            class="w-1/2 md:w-1/4"
             v-for="(topic, index) in topics" :key="index"
           )
-            nuxt-link(class="font-medium leading-9 text-white hover:text-white focus:text-white" :to="topic.path") {{ topic.label }}
+            nuxt-link(class="font-medium leading-10 text-white hover:text-white focus:text-white" :to="topic.path") {{ topic.label }}
 </template>
 
 <script>
