@@ -1,7 +1,7 @@
 <template lang="pug">
   .flex
     Sidebar
-    .w-full
+    div(class="w-full lg:w-10/12 xl:w-full")
       Nav
       Nuxt
       Footer

@@ -16,7 +16,7 @@
           div
             ul
               li(v-for="(topic, index) in topics" :key="index")
-                nuxt-link(class="font-medium leading-8 text-white hover:text-white focus:text-white" :to="topic.path") {{ topic.label }}
+                nuxt-link(class="font-medium leading-9 text-white hover:text-white focus:text-white" :to="topic.path") {{ topic.label }}
 </template>
 
 <script>
