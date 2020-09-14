@@ -4,9 +4,9 @@
       div(class="container mx-auto px-4 lg:px-8")
         div(class="flex justify-between items-center flex-wrap md:flex-no-wrap")
           div(class="w-full md:w-auto")
-            h1(class="font-sans font-bold text-3xl lg:text-4xl") Accessibility
+            h1(class="font-sans font-semibold text-3xl lg:text-4xl") Accessibility
           div(class="w-full md:w-auto")
-            p(class="text-gray-700 lg:text-sm") <b>{{ gems.length }}</b> <i>Gems</i>
+            p(class="text-gray-700 lg:text-sm") <b class="font-medium">{{ gems.length }}</b> <i>Gems</i>
 
     section(class="py-10 lg:py-12")
       div(class="container mx-auto px-4 lg:px-8")
@@ -21,7 +21,7 @@
                   div.mr-2(style="width: 16px;margin-top: .4rem")
                     img(:src="'https://www.google.com/s2/favicons?domain=' + gem.url" aria-hidden="true")
                   div
-                    h2(class="font-sans text-lg break-words mb-0") {{ gem.title }}
+                    h2(class="font-sans font-medium text-lg break-words mb-0") {{ gem.title }}
                 .mb-5
                   p {{ gem.desc }}
                 div(class="flex -mx-3 md:-mx-4 lg:-mx-3")
