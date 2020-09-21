@@ -139,6 +139,12 @@
       "desc": "This CSS clip-path maker helps you understand the clip-path property and all the cool things you can do with it.",
       "url": "https://bennettfeely.com/clippy/",
       "tags": ["interactive", "visual", "shapes"]
+    },
+    {
+      "title": "SVG to CSS Base64 background-image",
+      "desc": "This tool will convert your SVG code to CSS background-image compatible Base64 image.",
+      "url": "https://yoksel.github.io/url-encoder/",
+      "tags": ["convert", "generator", "icons"]
     }
   ]
 }
