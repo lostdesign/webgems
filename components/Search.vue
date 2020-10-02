@@ -56,10 +56,13 @@ export default {
 
 <style lang="scss">
 input {
+  font-family: "Poppins";
   padding: .5rem 1.5rem .5rem 1.5rem;
   border-radius: .3rem;
-  background: #eee;
-  font-size:12px;
+  border: none;
+  background: #2E2E40;
+  font-size: 14px;
+  color: #fff;
 
   &:focus {
     outline:none;
