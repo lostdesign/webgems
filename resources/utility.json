@@ -187,6 +187,12 @@
       "desc": "The Postwoman API request builder helps you create your requests faster, saving you precious time on your development.",
       "url": "https://Postwoman.io/",
       "tags": ["testing","api"]
+    },
+    {
+      "title": "NoPaste",
+      "desc": "A privacy-focused service where you can paste and share any piece of code. Similar to Pastebin, except the service stores nothing",
+      "url": "https://nopaste.ml/",
+      "tags": ["paste", "url", "interactive", "share", "privacy"]
     }
   ]
 }
