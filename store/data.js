@@ -21,7 +21,7 @@ export const getters = {
 	findCategory: state => categoryTitle => {
 		// equalsCategoryTitle :: Category -> Bool
 		const equalsCategoryTitle = R.compose(
-			R.equals(cleanString(categoryTitle)), cleanString, R.prop('title'),
+			R.equals(cleanString(categoryTitle)), R.replace(/ /g, '-') ,cleanString, R.prop('title'),
 		)
 		// findCategory :: [Category] -> Category
 		const findCategory = R.find(equalsCategoryTitle)
