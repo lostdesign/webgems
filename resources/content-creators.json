@@ -1,0 +1,113 @@
+{
+  "title": "Content Creators",
+  "slug": "/content-creators",
+  "resources": [
+    {
+      "title": "Traversy Media",
+      "desc": "Traversy Media is owned by Brad Traversy. The channel has a lot of great tutorials to learn full web development and coding. It features online web development and programming tutorials for the latest web technologies including Node.js, Angular 2, React.js, PHP, Rails, HTML, CSS, and more.",
+      "url": "https://www.youtube.com/user/TechGuyWeb",
+      "tags": [
+        "beginner",
+        "fullstack",
+        "frontend",
+        "javascript",
+        "mongodb",
+        "node",
+        "php",
+        "wordpress",
+        "tutorial",
+        "programming"
+      ]
+    },
+    {
+      "title": "The Net Ninja",
+      "desc": "The Net Ninja is a channel to strengthen your web skills. It has many tutorials for designers and developers.",
+      "url": "https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg",
+      "tags": ["javascript", "beginner", "css", "tutorial", "programming"]
+    },
+    {
+      "title": "The Futur",
+      "desc": "The mission of The Futur is to be the future of online education for creative entrepreneurs. It features design content on identity design and branding, user experience, logos and lettering, typography, the business of design, and plenty of case studies.",
+      "url": "https://www.youtube.com/channel/UC-b3c7kxa5vU-bnmaROgvog",
+      "tags": [
+        "marketing",
+        "design",
+        "logo",
+        "tutorial",
+        "business",
+        "ui",
+        "ux",
+        "webdesign"
+      ]
+    },
+    {
+      "title": "Tutvid",
+      "desc": "Nathaniel Dodson’s Tutvid is a site to learn advanced graphic design skills, with tutorials in Adobe Photoshop and Adobe Illustrator. Tutvid also includes tutorials to master animation and video with Adobe Premiere Pro, Adobe After Effects, and Adobe Lightroom. Tutvid’s “Daily Photoshop Tutorials” playlist covers tools, features, and tricks.",
+      "url": "https://www.youtube.com/user/tutvid",
+      "tags": [
+        "photoshop",
+        "tutorial",
+        "videoediting",
+        "webdesign",
+        "programming"
+      ]
+    },
+    {
+      "title": "CharliMarieTV",
+      "desc": "Charli Marie TV is a channel from Charli Marie, a web and graphic designer in London. Videos are posted weekly about tools, projects, and concepts. There are also weekly videos about her life as a designer.",
+      "url": "https://www.youtube.com/user/charlimarieTV",
+      "tags": ["design", "webdesign", "tutorial"]
+    },
+    {
+      "title": "Funfunfunction",
+      "desc": "Fun Fun Function is like a show about programming. Not a database of tutorials and courses, a show. A regular show with an different topic every week, with an entertaining host that explains things well, with the purpose of keeping you curious and excited about the programming craft. Basically, the purpose of Fun Fun Function is to keep programming fun.",
+      "url": "https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q",
+      "tags": ["machinelearning", "testing", "live"]
+    },
+    {
+      "title": "Getify",
+      "desc": "Getify writes about JavaScript, finding new and useful ways to teach it to more learners, and exploring and researching JavaScript through OSS coding.",
+      "url": "https://twitter.com/getify",
+      "tags": ["tips", "programming", "javascript"]
+    },
+    {
+      "title": "Steve Schoger",
+      "desc": "Steve Schoger is a visual designer from Canada. Many people know him as the guy who shares design tips on Twitter or refactors UI’s on YouTube.",
+      "url": "https://www.youtube.com/channel/UCxqiDtkXtOCNJdckODHk9YA",
+      "tags": ["tips", "webdesign", "ui"]
+    },
+    {
+      "title": "DevTips",
+      "desc": "DevTips is a weekly show for YOU who want to be inspired 👍 and learn 🖖 about programming. Hosted by David and MPJ - two notorious bug generators 💖 and teachers 🤗. Exploring code together and learning programming along the way - yay!",
+      "url": "https://www.youtube.com/user/DevTipsForDesigners",
+      "tags": ["tips", "webdesign", "ui", "tutorial", "programming"]
+    },
+    {
+      "title": "LevelUpTuts",
+      "desc": "840+ free video tutorials created, recorded, edited, published and maintained by Scott Tolinski.",
+      "url": "https://www.youtube.com/user/LevelUpTuts",
+      "tags": ["tips", "webdesign", "ui", "tutorial", "programming"]
+    },
+    {
+      "title": "Wes Bos",
+      "desc": "HTML, CSS, JavaScript and WordPress web development tutorials!",
+      "url": "https://www.youtube.com/user/wesbos",
+      "tags": [
+        "tips",
+        "webdesign",
+        "ui",
+        "tutorial",
+        "programming",
+        "javascript",
+        "wordpress"
+      ]
+    },
+    {
+      "title": "Mayuko",
+      "desc": "Mayuko is a Senior iOS Software Engineer from San Diego. She makes Youtube videos about what life is like as a Software Engineer living and working in Silicon Valley. She aims to make the tech industry feel more accessible to those entering the industry.",
+      "url": "https://www.youtube.com/user/hellomayuko",
+      "categories": "Life experiences sharing",
+      "tags": ["vlog", "techadvice", "programming"]
+    }
+  ]
+}

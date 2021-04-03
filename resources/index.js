@@ -15,6 +15,7 @@ import utility from './utility'
 import icons from './icons'
 import accessibility from './accessibility'
 import rust from './rust'
+import contentCreators from './content-creators'
 
 const sortByTitle = ({ title: titleA }, { title: titleB }) => {
   if(titleA < titleB) return -1
@@ -40,4 +41,5 @@ export default [
   icons,
   accessibility,
   rust,
+  contentCreators,
 ].sort(sortByTitle)
