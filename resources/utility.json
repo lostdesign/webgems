@@ -183,9 +183,9 @@
       "tags": ["development", "ide","editor", "share", "testing"]
     },
     {
-      "title": "Postwoman.io",
-      "desc": "The Postwoman API request builder helps you create your requests faster, saving you precious time on your development.",
-      "url": "https://Postwoman.io/",
+      "title": "Hoppscotch",
+      "desc": "The Hoppscotch API request builder helps you create your requests faster, saving you precious time on your development.",
+      "url": "https://hoppscotch.io/",
       "tags": ["testing","api"]
     },
     {
