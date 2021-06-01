@@ -79,6 +79,32 @@
       "desc": "Online programming tournaments to practice your skills. Play with random people, your friends, or in the singleplayer arcade mode.",
       "url": "https://codesignal.com/developers/",
       "tags": ["game", "practice", "multiplayer"]
-    }
+    },
+    {
+      "title": "Periodic Table of Web APIs",
+      "desc": "A visual map of almost all browser APIs with links to tutorials and documentation, color-coded by browser support",
+      "url": "https://wwwperiodictable.surge.sh/",
+      "tags": [
+        "resources",
+        "aggregator",
+        "fundamentals",
+        "web",
+        "visual",
+        "browser",
+        "frontend",
+        "overview",
+        "guides",
+        "tutorial",
+        "compatibility",
+        "lists",
+        "obselete",
+        "reference",
+        "specification",
+        "standards",
+        "comprehensive",
+        "advanced",
+        "guides",
+        "links"
+      ]
   ]
 }
