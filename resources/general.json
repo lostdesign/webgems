@@ -79,6 +79,12 @@
       "desc": "Online programming tournaments to practice your skills. Play with random people, your friends, or in the singleplayer arcade mode.",
       "url": "https://codesignal.com/developers/",
       "tags": ["game", "practice", "multiplayer"]
+    },
+    {
+      "title": "Code Catalog",
+      "desc": "A collection of instructive code examples from prominent open source projects.",
+      "url": "https://codecatalog.org",
+      "tags": ["resources", "lists", "aggregator", "example", "educational"]
     }
   ]
 }
