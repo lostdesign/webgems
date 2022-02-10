@@ -35,7 +35,7 @@
     "eslint-plugin-vue": "^5.2.3",
     "jest": "^24.9.0",
     "jest-serializer-vue": "^2.0.2",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "nodemon": "^1.18.9",
     "prettier": "^1.18.2",
     "pug": "^2.0.3",
